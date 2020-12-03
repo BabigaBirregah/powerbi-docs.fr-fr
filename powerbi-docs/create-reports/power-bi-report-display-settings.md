@@ -2,25 +2,25 @@
 title: Paramètres d’affichage de page dans un rapport Power BI
 description: Paramètres d’affichage des pages et de mode Page pour un rapport
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/29/2019
-ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: c08d4959b8e3958651282ac0fd52e6ed80a6b345
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9452a4a6340480bcb6c8b646c16125fe73f68235
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237256"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96393482"
 ---
 # <a name="apply-page-display-settings-in-a-power-bi-report"></a>Appliquer des paramètres d’affichage de page dans un rapport Power BI
 Nous sommes conscients qu’il est essentiel de préserver la qualité de présentation de vos rapports. Cela n’est pas toujours évident, car vous et vos collègues pouvez consulter ces rapports sur des écrans de taille et de proportions différentes. 
 
-L’affichage par défaut est **Ajuster à la page** et la taille d’affichage par défaut est **16:9**. Si vous voulez verrouiller des proportions différentes ou présenter votre rapport d’une autre façon, deux outils peuvent vous y aider : les paramètres de ***mode Page*** et les paramètres ***Taille de la page***.
+L’affichage par défaut est **Ajuster à la page** et la taille d’affichage par défaut est **16:9**. Si vous voulez verrouiller des proportions différentes ou présenter votre rapport d’une autre façon, deux outils peuvent vous aider : les paramètres du **_mode Page_* _ et les paramètres de la _*_taille de page_*_.
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5tg-OXzxe2g" frameborder="0" allowfullscreen></iframe>
@@ -30,7 +30,7 @@ L’affichage par défaut est **Ajuster à la page** et la taille d’affichage 
 Les paramètres de mode Page sont disponibles aussi bien dans le service Power BI que dans Power BI Desktop, mais l’interface est un peu différente. Les sections suivantes expliquent où vous pouvez trouver des paramètres d’affichage dans chaque outil Power BI.
 
 ### <a name="in-power-bi-desktop"></a>Dans Power BI Desktop
-En mode Rapport, sélectionnez l’onglet **Affichage** pour ouvrir les paramètres de mode Page, ainsi que les paramètres du mode téléphone.
+En mode Rapport, sélectionnez l’onglet *Affichage* pour ouvrir les paramètres du mode Page ainsi que les paramètres du mode téléphone.
 
   ![Paramètres de mode Page Desktop](media/power-bi-report-display-settings/power-bi-desktop-view-settings.png)
 

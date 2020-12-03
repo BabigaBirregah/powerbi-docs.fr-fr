@@ -2,19 +2,19 @@
 title: Importer des classeurs Excel dans Power BI Desktop
 description: Vous pouvez importer des classeurs Excel qui contiennent des requêtes Power Query, des modèles Power Pivot et des feuilles de calcul Power View dans Power BI Desktop.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/22/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6fce5e88fa41c2eb7ed03b805494165344701da7
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 874e95c6ac917ca723e67ae0741d5244a09f288d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223536"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411008"
 ---
 # <a name="import-excel-workbooks-into-power-bi-desktop"></a>Importer des classeurs Excel dans Power BI Desktop
 Avec Power BI Desktop, vous pouvez facilement importer des classeurs Excel qui contiennent des requêtes Power Query, des modèles Power Pivot et des feuilles de calcul Power View dans Power BI Desktop. Power BI Desktop crée automatiquement des rapports et des visualisations basés sur le classeur Excel. Après avoir importé les rapports, vous pouvez continuer à les améliorer et à les affiner dans Power BI Desktop, à l’aide des fonctionnalités existantes et des nouvelles fonctionnalités proposées lors de chaque mise à jour mensuelle de Power BI Desktop.
@@ -54,7 +54,7 @@ Avec Power BI Desktop, vous pouvez facilement importer des classeurs Excel qui c
 Après avoir importé le classeur, vous pouvez continuer à travailler sur le rapport. Par exemple, créez des visualisations, ajoutez des données ou créez des pages de rapport à l’aide des fonctionnalités et caractéristiques incluses dans Power BI Desktop.
 
 ## <a name="which-workbook-elements-are-imported"></a>Quels sont les éléments du classeur qui sont importés ?
-Power BI Desktop peut importer les éléments suivants, communément appelés *objets*dans Excel.
+Power BI Desktop peut importer les éléments suivants, communément appelés *objets* dans Excel.
 
 | Objet d’un classeur Excel | Résultat final dans le fichier Power BI Desktop |
 | --- | --- |
@@ -71,6 +71,6 @@ Il existe quelques limitations quant à l’importation d’un classeur dans Pow
 * **Hiérarchies :** ce type d’objet de modèle de données n’est pas pris en charge actuellement dans Power BI Desktop. Par conséquent, les hiérarchies sont ignorées lors de l’importation d’un classeur Excel dans Power BI Desktop.
 * **Colonnes de données binaires :** ce type de colonne de modèle de données n’est pas pris en charge actuellement dans Power BI Desktop. Les colonnes de données binaires sont supprimées du tableau créé dans Power BI Desktop.
 * **Éléments Power View non pris en charge :** certaines fonctionnalités de Power View ne sont pas encore disponibles dans Power BI Desktop, telles que les thèmes ou certains types de visualisations (nuages de points avec axe de lecture et comportements d’exploration au niveau du détail, entre autres). Ces visualisations non prises en charge génèrent des messages *Visualisation non prise en charge* à leurs emplacements correspondants dans le rapport Power BI Desktop, que vous pouvez supprimer ou reconfigurer en fonction de vos besoins.
-* **Plages nommées utilisant** ***À partir du tableau*** **dans Power Query ou utilisant** ***Excel.CurrentWorkbook*** **en M :** l’importation des données de cette plage nommée dans Power BI Desktop n’est pas prise en charge actuellement, mais il s’agit d’une mise à jour planifiée. Actuellement, ces plages nommées sont chargées dans Power BI Desktop en tant que connexion au classeur Excel externe.
+* **Plages nommées utilisant**  **_À partir du tableau_ *_ _* dans Power Query ou utilisant** **_Excel.CurrentWorkbook_ *_ _* dans M :** l’importation des données de cette plage nommée dans Power BI Desktop n’est pas prise en charge actuellement, mais il s’agit d’une mise à jour planifiée. Actuellement, ces plages nommées sont chargées dans Power BI Desktop en tant que connexion au classeur Excel externe.
 * **PowerPivot vers SSRS :** les connexions externes PowerPivot vers SQL Server Reporting Services (SSRS) ne sont pas prises en charge actuellement, car cette source de données n’est pas disponible dans Power BI Desktop.
 

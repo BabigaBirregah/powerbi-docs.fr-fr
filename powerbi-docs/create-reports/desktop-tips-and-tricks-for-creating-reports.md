@@ -2,19 +2,19 @@
 title: Conseils et astuces pour créer des rapports dans Power BI
 description: Découvrez les meilleures pratiques pour la création de rapports dans le service Power BI et Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: willthom
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/07/2020
-ms.author: davidi
-ms.openlocfilehash: 336dbad3ac77fb333b52cd3f4c4c0b104573314a
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 2684d5e29015e5fccd6eb75f0a4acf5f45542991
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633535"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412687"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Conseils et astuces pour créer des rapports dans Power BI Desktop
 Que diriez-vous d’un petit coup de pouce pour vous aider à tirer le meilleur parti de vos données ? Cette page recense des trucs et astuces qui pourront vous être utiles lors de la création de rapports dans Microsoft Power BI Desktop *et* dans Microsoft Excel 2016 ou 2013 Professionnel Plus (après activation du complément Power Pivot et installation et activation de Power Query). 
@@ -205,8 +205,8 @@ La plupart des gens lisent de haut en bas. Placez donc les informations de haut 
 * Encodez soigneusement les données quantitatives. Ne dépassez pas trois ou quatre chiffres pour les nombres. Affichez les mesures avec un ou deux chiffres à gauche de la décimale et procédez à une mise à l’échelle pour les milliers et les millions (c’est-à-dire 3,4 millions et non 3 400 000).    
 * Essayez d’éviter de mélanger des niveaux de précision et d’heure. Assurez-vous que les périodes sont bien comprises.  Ne mettez pas côte à côte un graphique concernant le mois dernier et des graphiques filtrés concernant un certain mois de l’année.    
 * Essayez également d’éviter de mélanger des grandes et des petites mesures sur une même mise à l’échelle, telle qu’une ligne ou un graphique à barres.  Par exemple, une mesure en millions et une autre en milliers.  Avec une telle échelle, il serait difficile de voir les différences de la mesure en milliers.  Si vous devez les mélanger, choisissez une visualisation, par exemple un graphique combiné, qui permet d’utiliser un deuxième axe.    
-* Évitez d’encombrer vos graphiques avec des étiquettes de données qui ne sont pas nécessaires. Les valeurs exprimées sous la forme de graphiques à barres, ***si elles sont suffisamment grandes***, sont généralement bien comprises et ne nécessitent pas l’affichage du nombre réel.   
-* Faites attention à la manière dont les [graphiques sont organisés](../consumer/end-user-change-sort.md). Si vous voulez attirer l’attention sur le nombre le plus élevé ou le plus bas, effectuez un tri par mesure. Si vous voulez que les utilisateurs puissent trouver rapidement une catégorie parmi de nombreuses autres catégories, effectuez un tri par axe.  
+* Évitez d’encombrer vos graphiques avec des étiquettes de données qui ne sont pas nécessaires. Les valeurs dans les graphiques à barres, ***si elles sont suffisamment grandes** _, sont généralement bien comprises sans nécessiter l’affichage du nombre réel.   
+_ Faites attention à la façon dont les [graphiques sont triés](../consumer/end-user-change-sort.md). Si vous voulez attirer l’attention sur le nombre le plus élevé ou le plus bas, effectuez un tri par mesure. Si vous voulez que les utilisateurs puissent trouver rapidement une catégorie parmi de nombreuses autres catégories, effectuez un tri par axe.  
 * Si vous avez moins de huit catégories, les graphiques en secteurs conviendront le mieux. Étant donné que vous ne pouvez pas comparer des valeurs côte à côte, il est plus difficile de comparer des valeurs dans un graphique à secteurs que dans un graphique à barres ou dans un histogramme. Les graphiques en secteurs conviennent mieux à l’affichage des relations partie-tout qu’à la comparaison de différentes parties. Les graphiques en jauge conviennent parfaitement à l’affichage de l’état actuel dans le contexte d’un objectif.    
 
 Pour plus de conseils spécifiques aux visualisations, consultez [Types de visualisations dans Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  

@@ -9,11 +9,11 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
 ms.openlocfilehash: 09489c3dbb33e1c5fb289cc1cc132eae0083a95f
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91981732"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96120802"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sécurité au niveau des lignes avec Power BI Embedded
 
@@ -88,9 +88,9 @@ L’API accepte une liste des identités avec l’indication des jeux de donnée
 
 Vous pouvez créer le jeton d’incorporation à l’aide de la méthode **GenerateTokenInGroup** sur **PowerBIClient.Reports**.
 
-Par exemple, vous pourriez modifier l’exemple *[PowerBI-Developer-Samples](https://github.com/Microsoft/PowerBI-Developer-Samples) > .NET Framework > Incorporer pour vos clients > **PowerBIEmbedded_AppOwnsData***.
+Par exemple, vous pourriez modifier l’exemple *[PowerBI-Developer-Samples](https://github.com/Microsoft/PowerBI-Developer-Samples) > .NET Framework > Incorporer pour vos clients > **PowerBIEmbedded_AppOwnsData** _.
 
-**Avant la modification**
+_ *Avant la modification**
 
 ```csharp
 // Generate Embed Token with effective identities.

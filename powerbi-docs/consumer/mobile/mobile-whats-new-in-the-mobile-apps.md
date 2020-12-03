@@ -2,18 +2,18 @@
 title: Nouveautés dans les applications mobiles pour Power BI
 description: Nouveautés dans les applications mobiles pour Power BI
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/01/2020
-ms.author: painbar
-ms.openlocfilehash: 83a280b94a6db937133e0d7ab1e6d7ad64af06f4
-ms.sourcegitcommit: 29cafa1602efb56cfa8dbd0010dd04ad3fcdd02c
+ms.date: 12/01/2020
+ms.openlocfilehash: 81a387d2f87e857cb56dcbc1fb22c8da72bbd27e
+ms.sourcegitcommit: 2fd64f96b5bfbc14ff47e5c892171e5c921fb525
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93355931"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96502054"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -25,9 +25,19 @@ Pour plus d’informations sur les nouveautés, consultez :
 >[!NOTE]
 >La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
+## <a name="december-2020"></a>Décembre 2020
+### <a name="weve-added-dark-mode-to-power-bi-mobile-android"></a>Nous avons ajouté le mode foncé à Power BI Mobile (iOS)
+
+Essayez le nouveau mode foncé dans l’application Power BI Mobile pour les appareils Android. Avec le mode Sombre, le texte clair s’affiche sur un arrière-plan sombre, réduisant ainsi la luminosité de l’écran et facilitant la visualisation de votre contenu. Vous pouvez basculer entre les thèmes dans les paramètres de l’apparence de l’application. [En savoir plus](mobile-apps-dark-mode.md)
+
+![Capture d’écran du mode foncé dans l’application Power BI Mobile pour Android.](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-dark-mode-android.png)
+
+### <a name="maximize-the-view-with-full-screen-mode-ipads"></a>Maximiser l’affichage avec le mode plein écran (iPad)
+Nous avons ajouté un nouveau bouton à l’application mobile pour iPads qui vous permet de supprimer les en-têtes et les pieds de page de l’application, et de disposer ainsi d’un espace de visualisation maximal pour votre contenu. Appuyez simplement sur le bouton de bascule en plein écran ![Capture d’écran de l’icône du mode plein écran.](media/mobile-whats-new-in-the-mobile-apps/power-bi-full-screen-icon.png) dans le coin supérieur droit de l’écran pour basculer entre les modes.
+
 ## <a name="november-2020"></a>Novembre 2020
 ### <a name="maximize-the-view-with-full-screen-mode-android-tablets"></a>Optimiser l’affichage avec le mode plein écran (tablettes Android)
-Nous avons ajouté un nouveau bouton à l’application mobile pour tablettes Android qui vous permet de supprimer les en-têtes et les pieds de page de l’application et ainsi de disposer d’une surface de visualisation maximale pour votre contenu. Appuyez simplement sur le bouton bascule de plein écran en haut à droite de l’écran pour basculer entre les modes.
+Nous avons ajouté un nouveau bouton à l’application mobile pour tablettes Android qui vous permet de supprimer les en-têtes et les pieds de page de l’application et ainsi de disposer d’une surface de visualisation maximale pour votre contenu. Appuyez simplement sur le bouton de bascule en plein écran ![Capture d’écran de l’icône du mode plein écran.](media/mobile-whats-new-in-the-mobile-apps/power-bi-full-screen-icon.png) dans le coin supérieur droit de l’écran pour basculer entre les modes.
 
 ## <a name="october-2020"></a>Octobre 2020
 ### <a name="automatic-page-refresh-is-now-supported-windows"></a>L’actualisation automatique des pages est maintenant prise en charge (Windows)

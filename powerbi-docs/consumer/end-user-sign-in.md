@@ -2,20 +2,20 @@
 title: Connexion et déconnexion
 description: Découvrez comment vous connecter au service Power BI et vous en déconnecter sur le web.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 Ms.custom: css_fy20Q4
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 10/06/2020
-ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: bea5b36c98ab8a62b444bfc731b5d54df6550f0f
-ms.sourcegitcommit: 6ba33e5a500928163e02e007f5ccd52dd2227610
+ms.openlocfilehash: 18fe7dc1c2d1b064d28e32782dc58fcbcf92341d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780422"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96389618"
 ---
 # <a name="sign-in-to-power-bi-service"></a>Se connecter au service Power BI
 
@@ -68,7 +68,7 @@ Dans la page d’accueil, vous voyez tout le contenu que vous êtes autorisé à
 Si vous ne voulez pas que Power BI ouvre votre page d’accueil, vous pouvez [définir un tableau de bord ou un rapport **Par défaut**](end-user-featured.md) à ouvrir à la place. 
 
 ## <a name="safely-interact-with-content"></a>Interagir avec le contenu de manière sécurisée
-En tant qu’***utilisateur professionnel***, d’autres utilisateurs partagent du contenu avec vous et vous interagissez avec ce contenu pour explorer les données et prendre des décisions.  Vous pouvez filtrer, découper, exporter et redimensionner du contenu, ou bien vous abonner à du contenu sans impacter le jeu de données sous-jacent ni le contenu d’origine partagé (tableaux de bord et rapports). Power BI est un espace sécurisé que vous pouvez explorer et tester. Cela ne veut pas dire que vous ne pouvez pas enregistrer vos changements. Mais ces changements affectent uniquement votre **vue** du contenu. Pour revenir à la vue d’origine par défaut, il vous suffit de cliquer sur un bouton.
+En tant qu’**_utilisateur professionnel_ *, d’autres utilisateurs partagent du contenu avec vous, et vous interagissez avec ce contenu pour explorer les données et prendre des décisions.  Vous pouvez filtrer, découper, exporter et redimensionner du contenu, ou bien vous abonner à du contenu sans impacter le jeu de données sous-jacent ni le contenu d’origine partagé (tableaux de bord et rapports). Power BI est un espace sécurisé que vous pouvez explorer et tester. Cela ne veut pas dire que vous ne pouvez pas enregistrer vos changements. Ces modifications affectent cependant seulement* votre** vue du contenu. Pour revenir à la vue d’origine par défaut, il vous suffit de cliquer sur un bouton.
 
 ![Bouton Rétablir les valeurs par défaut](media/end-user-sign-in/power-bi-reset.png)
 

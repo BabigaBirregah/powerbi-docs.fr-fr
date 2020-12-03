@@ -2,20 +2,20 @@
 title: Utiliser des agrégats (somme, moyenne, etc.) dans le service Power BI
 description: Découvrez comment changer l’agrégation dans un graphique (somme, moyenne, maximum, etc.) dans le service Power BI.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 06/16/2020
-ms.author: maggies
 ms.custom: seodec18
 LocalizationGroup: Reports
-ms.openlocfilehash: 4addd87085eb4321253bcf34842ca135f536f981
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 4ed1d6c68549e621f42b23d05a061e7fe1c9e230
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238116"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96395414"
 ---
 # <a name="work-with-aggregates-sum-average-and-so-on-in-the-power-bi-service"></a>Utiliser des agrégats (somme, moyenne, etc.) dans le service Power BI
 
@@ -39,7 +39,7 @@ Prenons l’exemple ci-dessous :
 
    ![Capture d’écran d’un exemple de jeu de données.](media/service-aggregates/power-bi-aggregate-chart.png)
 
-Lorsque vous créez une visualisation dans Power BI, le service agrège les champs numériques (la valeur par défaut étant *somme*) sur un champ catégoriel.  Par exemple, « Unités vendues ***par produit*** », « Unités vendues ***par mois*** » et « Prix de fabrication ***par Segment*** ». Power BI fait référence aux champs numériques comme à des **mesures**. Il est facile d’identifier les mesures dans l’éditeur de rapport Power BI : la liste **Champs** indique les mesures avec le symbole ∑ situé en regard. Pour plus d’informations, consultez la [visite guidée de l’éditeur de rapport](service-the-report-editor-take-a-tour.md).
+Lorsque vous créez une visualisation dans Power BI, le service agrège les champs numériques (la valeur par défaut étant *somme*) sur un champ catégoriel.  Par exemple, « Unités vendues ***par Produit** _ », « Unités vendues _*_par Mois_*_  » et « Prix de fabrication _*_par Segment_*_  ». Power BI fait référence à certains champs numériques en tant que _*mesures**. Il est facile d’identifier les mesures dans l’éditeur de rapport Power BI : la liste **Champs** indique les mesures avec le symbole ∑ situé en regard. Pour plus d’informations, consultez la [visite guidée de l’éditeur de rapport](service-the-report-editor-take-a-tour.md).
 
 ![Capture d’écran de Power BI avec la liste Champs appelée.](media/service-aggregates/power-bi-aggregate-fields.png)
 

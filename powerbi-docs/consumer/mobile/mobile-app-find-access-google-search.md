@@ -2,17 +2,17 @@
 title: Rechercher du contenu et y accéder avec la recherche Google
 description: Découvrez comment rechercher du contenu et y accéder avec la recherche Google.
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 04/06/2020
-ms.author: painbar
-ms.openlocfilehash: cb6d2d1474ffaeddc98b5019830920f3064e3df2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 2bd49b9578c8c0ba2d24bd74d77251bc663cf7fa
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235147"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414619"
 ---
 # <a name="find-and-access-your-content-with-google-search"></a>Rechercher du contenu et y accéder avec la recherche Google
 
@@ -28,7 +28,7 @@ Si vous souhaitez ouvrir un élément spécifique et que vous ne savez pas où i
 
 ## <a name="search-using-google-search"></a>Utiliser la recherche Google
 
-Dans la zone de recherche Google, tapez ***search for &lt;élément de recherche&gt; in power bi***. Par exemple, **search for sales in power bi**.
+Dans la zone de recherche de Google, tapez ***search for &lt;élément recherché&gt; in power bi** _. Par exemple, _*search for ventes in power bi**.
 
 * Si un seul résultat est retourné, l’application mobile Power BI ouvre l’élément que vous recherchiez.
 * Si plusieurs résultats sont retournés, Power BI s’ouvre sur l’écran de recherche, lequel est filtré en fonction de votre demande.

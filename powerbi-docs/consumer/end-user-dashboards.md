@@ -2,19 +2,19 @@
 title: Qu’est un tableau de bord et comment l’ouvrir ?
 description: Les tableaux de bord sont une fonctionnalité clé du service Power BI.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 08/30/2020
-ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 2e2c4656c5436691df96b86f145e255153ff9f96
-ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
+ms.openlocfilehash: 518310c6b4b0d45f02049c91a493b6394a4a50d2
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89286686"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96400543"
 ---
 # <a name="dashboards-for-business-users-of-the-power-bi-service"></a>Tableaux de bord pour les utilisateurs professionnels du service Power BI
 
@@ -22,11 +22,11 @@ ms.locfileid: "89286686"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Un ***tableau de bord*** Power BI est une page unique, souvent appelée canevas, qui utilise des visualisations pour raconter une histoire. Comme il est limité à une seule page, un tableau de bord bien conçu contient uniquement les éléments les plus importantes de cette histoire.
+Un ***tableau de bord** _ Power BI est une page unique, souvent appelée canevas, qui utilise des visualisations pour raconter une histoire. Comme il est limité à une seule page, un tableau de bord bien conçu contient uniquement les éléments les plus importantes de cette histoire.
 
 ![capture d’écran d’un tableau de bord](media/end-user-dashboards/power-bi-dashboard.png)
 
-Les visualisations que vous voyez dans le tableau de bord sont appelées *vignettes* et sont *épinglées* au tableau de bord par les *concepteurs* de rapports. Dans la plupart des cas, la sélection d’une vignette ouvre la page de rapport où la visualisation a été créée. Si vous êtes novice dans Power BI, vous pouvez acquérir de bonnes bases en lisant [Power BI – Concepts de base](end-user-basic-concepts.md).
+Les visualisations que vous voyez dans le tableau de bord sont appelées _vignettes* et sont *épinglées* au tableau de bord par les *concepteurs* de rapports. Dans la plupart des cas, la sélection d’une vignette ouvre la page de rapport où la visualisation a été créée. Si vous êtes novice dans Power BI, vous pouvez acquérir de bonnes bases en lisant [Power BI – Concepts de base](end-user-basic-concepts.md).
 
 > [!NOTE]
 > Les tableaux de bord peuvent être [affichés et partagés sur des appareils mobiles](mobile/mobile-apps-view-dashboard.md).
@@ -42,8 +42,8 @@ Les tableaux de bord sont un moyen formidable pour surveiller votre activité, p
 
 Un tableau de bord n’est pas seulement une belle image figée, il est aussi interactif, puisque les vignettes sont mises à jour au fur et à mesure que les données sous-jacentes changent.
 
-## <a name="dashboards-versus-reports-for-power-bi-business-users"></a>Tableaux de bord et rapports pour les ***utilisateurs professionnels*** de Power BI
-Les rapports sont souvent confondus avec les tableaux de bord, car il s’agit également de canevas contenant des visualisations. Mais il existe quelques différences majeures pour les *utilisateurs professionnels* de Power BI.
+## <a name="dashboards-versus-reports-for-power-bi-business-users_"></a>Tableaux de bord et rapports pour les ***utilisateurs professionnels** _ de Power BI
+Les rapports sont souvent confondus avec les tableaux de bord, car il s’agit également de canevas contenant des visualisations. Mais il existe quelques différences majeures du point de vue des _utilisateurs professionnels* de Power BI.
 
 | **Fonctionnalité** | **Tableaux de bord** | **Rapports** |
 | --- | --- | --- |
@@ -57,7 +57,7 @@ Les rapports sont souvent confondus avec les tableaux de bord, car il s’agit �
 
 
 ## <a name="dashboard-designers-and-dashboard-business-users"></a>Concepteurs et utilisateurs professionnels de tableaux de bord
-En tant qu’***utilisateur professionnel*** de Power BI, vous recevez des tableaux de bord de la part de *concepteurs*. Continuez à découvrir les tableaux de bord avec les rubriques suivantes :
+En tant qu’**_utilisateur professionnel_* _ de Power BI, vous recevez des tableaux de bord des _concepteurs*. Continuez à découvrir les tableaux de bord avec les rubriques suivantes :
 
 * [Afficher un tableau de bord](end-user-dashboard-open.md)
 * Apprenez-en plus sur les [vignettes du tableau de bord](end-user-tiles.md) et ce qui se produit lorsque vous sélectionnez une.

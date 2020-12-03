@@ -2,20 +2,20 @@
 title: 'Mode Focus et mode plein écran : comment zoomer pour afficher plus de détails'
 description: Documentation pour l’affichage d’un tableau de bord Power BI, d’une vignette de tableau de bord, d’un rapport, ou d’un visuel de rapport en mode focus ou plein écran
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: dtdLul6otYE
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/09/2020
-ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 7ab2500a393751c3013c1f3427173b57b3b5cf07
-ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
+ms.openlocfilehash: 6385d263c47bde156a7dae941fefb101b9b30d18
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89642721"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96400451"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>Afficher du contenu plus en détail : mode Focus et plein écran
 
@@ -56,11 +56,11 @@ Le mode plein écran peut être utile pour les utilisations suivantes :
 
 ## <a name="when-to-use-focus-mode"></a>Quand utiliser le mode Focus ?
 
-Le mode ***Focus*** permet de développer (dans une nouvelle fenêtre) un visuel ou une mosaïque pour afficher plus de détails.  Vous disposez peut-être d’un tableau de bord ou d’un rapport légèrement chargé et vous souhaitez faire un zoom sur un seul élément visuel.  C’est une utilisation parfaite du mode Focus.  
+Le mode ***Focus** _ vous permet de développer (dans une nouvelle fenêtre) un visuel ou une vignette pour voir plus de détails.  Vous disposez peut-être d’un tableau de bord ou d’un rapport légèrement chargé et vous souhaitez faire un zoom sur un seul élément visuel.  C’est une utilisation parfaite du mode Focus.  
 
 ![Mode focus de la vignette de tableau de bord avant et après](media/end-user-focus/power-bi-compare-dash.png)
 
-En mode Focus, un *utilisateur professionnel* de Power BI peut interagir avec tous les filtres qui ont été appliqués lors de la création de ce visuel.  Dans le service Power BI, vous pouvez utiliser le mode Focus sur une mosaïque de tableau de bord ou un visuel de rapport.
+En mode Focus, un _utilisateur professionnel*de Power BI peut interagir avec tous les filtres qui ont été appliqués lors de la création de ce visuel.  Dans le service Power BI, vous pouvez utiliser le mode Focus sur une mosaïque de tableau de bord ou un visuel de rapport.
 
 ## <a name="working-in-full-screen-mode"></a>Utilisation en mode plein écran
 

@@ -2,19 +2,19 @@
 title: Qu’est-ce qu’un utilisateur professionnel Power BI ?
 description: Vue d’ensemble de Power BI pour les utilisateurs professionnels (également appelés « utilisateurs finaux » ou « utilisateurs métier »).
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: overview
 ms.date: 10/11/2020
-ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 7616d84ca93c336e606b3a96e7a362a1b57e6a96
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 133ffefd32008a138c736094dadcfe154211e98c
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91982053"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96391228"
 ---
 # <a name="the-power-bi-service-for-business-users"></a>Le service Power BI, pour les utilisateurs professionnels
 
@@ -28,7 +28,7 @@ Ils vous envoient tous les types de rapports, de feuilles de calcul, d’e-mails
 
 ## <a name="the-power-bi-service-for-business-users"></a>Le service Power BI, pour les *utilisateurs professionnels*
 
-Power BI rend votre travail plus facile tout en lui donnant plus d’impact. Toutes les données sont représentées sous forme de graphiques, qui vous permettent de visualiser vos données. Au lieu de longues listes ou de tableaux de nombres et de mots, vos insights sur les données sont réellement ***beaux*** : ce sont des visuels colorés et convaincants qui représentent les insights de vos données. 
+Power BI rend votre travail plus facile tout en lui donnant plus d’impact. Toutes les données sont représentées sous forme de graphiques, qui vous permettent de visualiser vos données. Au lieu de longues listes ou de tableaux de chiffres et de mots, vos insights sur les données sont réellement ***beaux** _ : ce sont des visuels colorés et convaincants qui représentent les insights de vos données. 
 
 ![Capture d’écran montrant un rapport Power BI avec différents genres de graphiques.](media/end-user-consumer/power-bi-consumer-examples.png)
  
@@ -38,7 +38,7 @@ Il vous suffit d’ouvrir le service Power BI dans un navigateur ou sur un appar
 
 Comme le contenu n’est pas statique, vous pouvez l’explorer, à la recherche de tendances, d’insights et d’autres données décisionnelles. Segmentez le contenu et posez même des questions avec vos propres mots. Vous pouvez aussi ne rien faire et laisser vos données découvrir des insights qui vous intéressent, et vous envoyer des alertes quand des données sont modifiées et des rapports par e-mail selon une planification que vous définissez. Toutes vos données, à tout moment, dans le cloud ou localement, depuis n’importe quel appareil. C’est juste le commencement de tout ce que Power BI peut faire. 
 
-## <a name="am-i-a-power-bi-business-user"></a>Suis-je un *utilisateur professionnel* de Power BI ?
+## <a name="am-i-a-power-bi-_business-user"></a>Suis-je un _utilisateur professionnel* de Power BI ?
 
 La façon dont vous interagissez avec Power BI dépend de votre travail. En tant que consommateur ou qu’*utilisateur professionnel*, vous êtes la personne qui reçoit du contenu (des tableaux de bord, des rapports et des applications) de vos collègues. Vous travaillez dans la version en ligne ou mobile de Power BI, qui est appelée « Service Power BI », examinant et interagissant avec ce contenu, pour prendre des décisions métier. 
    
