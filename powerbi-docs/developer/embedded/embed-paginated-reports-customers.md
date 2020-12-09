@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: 58d1112dfccda798a32b2a3cb95d72c37b7a16ec
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: 02d73a2eb36636091ff6059fd6543bb950082c2a
+ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94668393"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96907299"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers"></a>Tutoriel : Incorporer des rapports paginés Power BI dans une application pour vos clients
 
@@ -40,7 +40,7 @@ Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://az
 
 > [!IMPORTANT]
 > * Vous devez utiliser un **principal de service**. L’utilisateur maître n’est pas pris en charge.
->* [Premium par utilisateur (PPU)](../../admin/service-premium-per-user-faq.md) n’est pas pris en charge. Vous pouvez utiliser PPU pour expérimenter la solution, mais vous ne pourrez pas [passer en production](embed-sample-for-customers.md#move-to-production).
+>* [Premium par utilisateur (PPU)](../../admin/service-premium-per-user-faq.md) n’est pas pris en charge. Vous pouvez utiliser PPU pour expérimenter la solution, mais vous ne pourrez pas [passer en production](move-to-production.md).
 > * Les sources de données qui nécessitent l’authentification unique ne sont pas prises en charge. Pour obtenir la liste des jeux de données pris en charge et leurs méthodes d’authentification, consultez [Sources de données prises en charge pour les rapports paginés Power BI](../../paginated-reports/paginated-reports-data-sources.md). 
 > * Un jeu de données Power BI n’est pas pris en charge comme [source de données](../../connect-data/service-get-data.md).
 
@@ -184,7 +184,7 @@ Pour obtenir la valeur **ApplicationSecret**, effectuez les étapes suivantes :
 
 ### <a name="tenant"></a>Locataire
 
-Dans **tenant**, indiquez votre ID de locataire Azure. Vous pouvez obtenir ces informations à partir du [centre d’administration d’Azure AD](/onedrive/find-your-office-365-tenant-id) quand vous êtes connecté au service Power BI ou en utilisant PowerShell.
+Dans **locataire**, spécifiez votre ID de locataire Azure. Vous pouvez obtenir ces informations à partir du [centre d’administration d’Azure AD](/onedrive/find-your-office-365-tenant-id) quand vous êtes connecté au service Power BI ou en utilisant PowerShell.
 
 ### <a name="run-the-application"></a>Exécuter l’application
 

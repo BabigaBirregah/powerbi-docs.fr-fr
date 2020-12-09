@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/07/2019
-ms.openlocfilehash: ba63b8be32600428075b9304a5a29fef62a9d6c8
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 5b386800c37f80e7b33dc55bb691eed6606c04a1
+ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236847"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96906792"
 ---
 # <a name="connect-a-report-to-a-dataset-using-dynamic-binding"></a>Connecter un rapport à un jeu de données à l’aide de la liaison dynamique 
 
@@ -33,7 +33,7 @@ La liaison dynamique est prise en charge dans les deux scénarios : *Incorporat
 |Scénario  |Propriété des données  |Jeton  |Configuration requise  |
 |---------|---------|---------|---------|
 |*Incorporation pour votre organisation*    |L’utilisateur possède les données         |Jeton d’accès pour les utilisateurs de Power BI         |L’utilisateur dont le jeton Azure AD est utilisé doit avoir les autorisations appropriées pour tous les artefacts.         |
-|*Incorporation pour vos clients*     |L’application possède les données         |Jeton d’accès pour les clients qui n’utilisent pas Power BI         |Doit inclure des autorisations à la fois pour le rapport et le jeu de données lié dynamiquement. Utilisez [l’API pour générer un jeton incorporé pour plusieurs éléments](embed-sample-for-customers.md#multiEmbedToken), afin de générer un jeton d’incorporation qui prend en charge plusieurs artefacts.         |
+|*Incorporation pour vos clients*     |L’application possède les données         |Jeton d’accès pour les clients qui n’utilisent pas Power BI         |Doit inclure des autorisations à la fois pour le rapport et le jeu de données lié dynamiquement. Utilisez [l’API pour générer un jeton incorporé pour plusieurs éléments](/rest/api/power-bi/embedtoken/generatetoken), afin de générer un jeton d’incorporation qui prend en charge plusieurs artefacts.         |
 
 ## <a name="adjusting-the-config-object"></a>Ajustement de l’objet de configuration
 Ajoutez `datasetBinding` à l’objet de configuration. Utilisez l’exemple ci-dessous comme référence.

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: ed8f44e7dd1a7e713a9b2bd75dc33f259cb52f2a
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 377f509248dbd2368b74bb9645f001ff7c6a97c0
+ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916334"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96907276"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Gérer la mutualisation avec l’analytique incorporée Power BI
 
@@ -163,7 +163,7 @@ La fonction multigéographique implique d’acheter une capacité dans les régi
 
 ### <a name="cost"></a>Cost
 
-Les développeurs d’applications utilisant Power BI Embedded doivent [acheter une capacité Power BI Embedded pour accéder à la production](embed-sample-for-customers.md#move-to-production).  Il est important de comprendre l’impact du modèle d’isolation basée sur l’espace de travail et son effet sur les capacités.
+Les développeurs d’applications utilisant Power BI Embedded doivent [acheter une capacité Power BI Embedded pour accéder à la production](move-to-production.md).  Il est important de comprendre l’impact du modèle d’isolation basée sur l’espace de travail et son effet sur les capacités.
 
 Le modèle d’isolation basée sur l’espace de travail convient bien aux capacités pour les raisons suivantes :
 

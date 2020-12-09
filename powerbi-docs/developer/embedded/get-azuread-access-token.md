@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/04/2019
-ms.openlocfilehash: 0743a7ac0d12cba8bbde54464a275a78f7c88eff
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: cb7c874fc68da361971c34879f2ea44006402bf4
+ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396699"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96906931"
 ---
 # <a name="get-an-azure-ad-access-token-for-your-power-bi-application"></a>Obtenir un jeton accès Azure AD pour votre application Power BI
 
@@ -97,7 +97,7 @@ protected void signInButton_Click(object sender, EventArgs e)
 
 ### <a name="get-an-access-token-from-authorization-code"></a>Obtenir un jeton accès à partir du code d’autorisation
 
-Une fois qu’ **Azure AD** vous a redirigé vers votre application web avec un **code d’autorisation** , vous devez utiliser celui-ci pour obtenir un jeton d’accès. Voici un exemple en C# que vous pouvez utiliser dans votre page de redirection et l’événement `Page_Load` de default.aspx.
+Une fois qu’**Azure AD** vous a redirigé vers votre application web avec un **code d’autorisation**, vous devez utiliser celui-ci pour obtenir un jeton d’accès. Voici un exemple en C# que vous pouvez utiliser dans votre page de redirection et l’événement `Page_Load` de default.aspx.
 
 Vous pouvez récupérer l’espace de noms **Microsoft.IdentityModel.Clients.ActiveDirectory** à partir du package NuGet [ADAL (Active Directory Authentication Library)](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
 
@@ -206,6 +206,6 @@ Message d’erreur : « AuthenticationContext' ne contient pas de définition 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Maintenant que vous avez le jeton d’accès, vous pouvez appeler l’API REST Power BI pour incorporer le contenu. Pour plus d’informations, consultez [Guide pratique pour incorporer votre contenu Power BI](embed-sample-for-customers.md#embed-content-within-your-application).
+Maintenant que vous avez le jeton d’accès, vous pouvez appeler l’API REST Power BI pour incorporer le contenu.
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
