@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/25/2020
 ms.custom: seodec18
-ms.openlocfilehash: 433b3d53ccb653e1a945a83176ab9ebc19ccac5d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 1495400a59d8250f407a5f7415a550871501e4e3
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96409237"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96577506"
 ---
 # <a name="add-power-bi-urls-to-your-allow-list"></a>Ajout des URL Power BI à la liste verte
 [//]: # "suparnap, miwehnia et natham sont les contacts pour la gestion de cette liste"
@@ -76,7 +76,7 @@ Pour obtenir des données auprès de sources de données spécifiques, comme One
 | 2 | **Facultatif :** Se connecter et obtenir des données pour les packs de contenu | Dépend des packs de contenu utilisés | Dépend des packs de contenu utilisés |
 | 3 | **Facultatif :** Importation de fichiers à partir de OneDrive - Personnel | Consultez le site [URL et ports nécessaires pour OneDrive](/onedrive/required-urls-and-ports) | N/A |
 | 4 | **Facultatif :** Vidéo du tutoriel Power BI en 60 secondes | *.doubleclick.net <br> *.ggpht.com <br> *.google.com <br> *.googlevideo.com <br> *.youtube.com <br> *.ytimg.com <br> fonts.gstatic.com | TCP 443 |
-| 5 | **Facultatif :** Sources de données de streaming PubNub | Consultez la [documentation de PubNub](https://support.pubnub.com/support/solutions/articles/14000043522) | N/A |
+| 5 | **Facultatif :** Sources de données de streaming PubNub | Consultez la [documentation de PubNub](https://support.pubnub.com/hc/en-us/categories/360004336832-PubNub-101) | N/A |
 | | | |
 
 ## <a name="dashboard-and-report-integration"></a>Intégration des tableaux de bord et des rapports

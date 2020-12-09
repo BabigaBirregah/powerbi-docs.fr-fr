@@ -7,20 +7,20 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/6/2020
+ms.date: 12/06/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3ab587e3467f929ac7b318c2225b4f734a70e1a2
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: a4b9f7d25b9199e924d1b91a3b870730fc068fa3
+ms.sourcegitcommit: 0bf42b6393cab7a37d21a52b934539cf300a08e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96399094"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96781747"
 ---
 # <a name="show-data-with-power-bi-reports"></a>Montrer des données avec des rapports Power BI
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 
 Un visuel Power BI se construit à l’aide des jeux de données sous-jacents. Si vous voulez voir ce qui est sous-jacent, le service Power BI vous permet d’*afficher* les données utilisées pour créer un visuel dans un rapport. Quand vous sélectionnez **Afficher sous forme de tableau**, Power BI affiche les données sous ou à côté du visuel.
 

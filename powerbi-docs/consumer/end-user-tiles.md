@@ -7,24 +7,23 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/06/2020
+ms.date: 12/06/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 67291ca77b161fab289ee0520287d832cce838f8
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 36b1ad58b1ee93f0876de8bf7f7ed7331671abfd
+ms.sourcegitcommit: 0bf42b6393cab7a37d21a52b934539cf300a08e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96389503"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96781892"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Vignettes d’un tableau de bord dans Power BI
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-ynny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Une vignette est une capture instantanée de vos données, épinglée à un tableau de bord par un *concepteur*. Les *concepteurs* peuvent créer des vignettes à partir d’un rapport, d’un jeu de données, d’un tableau de bord, de la zone Questions et réponses, d’Excel et de SSRS (SQL Server Reporting Services), et plus encore.  Cette capture d’écran montre différentes vignettes épinglées à un tableau de bord.
 
-![tableau de bord Power BI](./media/end-user-tiles/power-bi-dash.png)
+![tableau de bord Power BI](./media/end-user-tiles/power-bi-dashboard.png)
 
 
 En plus des vignettes épinglées à partir de rapports, les *concepteurs* peuvent ajouter des vignettes autonomes directement sur le tableau de bord à l’aide de l’option **Ajouter une vignette**. Les vignettes autonomes incluent des zones de texte, des images, des vidéos, des données de streaming et du contenu web.

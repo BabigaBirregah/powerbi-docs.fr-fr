@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/17/2020
+ms.date: 12/03/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: c650b7ea282d928af512ce7948902bc4fd72613f
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 3a1fa1e137cc66fad48102d60869ee8ecd0cba61
+ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96389963"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96613851"
 ---
 # <a name="opt-in-for-power-bi-service-preview-features"></a>Accéder aux fonctionnalités de préversion du service Power BI
 
@@ -24,11 +24,7 @@ ms.locfileid: "96389963"
 ## <a name="what-are-preview-features"></a>Que sont les *fonctionnalités en version préliminaire*?
 Dans le cadre des améliorations que nous apportons à Power BI, nous allons publier certaines nouvelles fonctionnalités sous la forme de *fonctionnalités de préversion*. Vous pouvez activer et désactiver ces dernières afin de les essayer.
 
-Certaines fonctionnalités en préversion peuvent être activées ou désactivées à partir de votre tableau de bord Power BI, de votre page d’accueil ou de votre rapport lui-même. Vous pouvez activer ou désactiver la fonctionnalité d’évaluation **Nouvelle apparence** dans la barre de menus Power BI qui s’affiche au-dessus de l’Accueil, des rapports et des tableaux de bord. 
-
-   ![Bascule Nouvelle apparence](./media/end-user-preview-features/power-bi-toggle.png)
-
-Tandis que d’autres fonctionnalités en préversion sont disponibles à partir de votre menu *Paramètres*. Cet article vous montre comment accéder aux fonctionnalités en préversion via le menu Paramètres.
+Certaines fonctionnalités en préversion peuvent être activées ou désactivées à partir de votre tableau de bord Power BI, de votre page d’accueil ou de votre rapport lui-même. Tandis que d’autres fonctionnalités en préversion sont disponibles à partir de votre menu *Paramètres*. Cet article vous montre comment accéder aux fonctionnalités en préversion via le menu Paramètres.
 
 ## <a name="find-previews-and-turn-them-on-and-off"></a>Trouver des préversions et les activer (ou désactiver)
 1. Ouvrez le menu Paramètres en sélectionnant l’icône en forme de roue dentée située en haut à droite de l’écran Power BI, puis choisissez **Paramètres**.

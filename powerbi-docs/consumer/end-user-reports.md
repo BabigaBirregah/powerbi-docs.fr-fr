@@ -9,18 +9,17 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/09/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 152d3ee87afe93fdfbe19060a42f013ec83f2d2a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 0cf2389b9dafc19519010142079fbb15f6f21711
+ms.sourcegitcommit: 0bf42b6393cab7a37d21a52b934539cf300a08e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96389711"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96781655"
 ---
 # <a name="reports-in-power-bi"></a>Rapports dans Power BI
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yyn.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Un rapport Power BI est un affichage sous plusieurs angles d’un jeu de données, avec des visuels représentant différents résultats et insights de ce jeu de données.  Un rapport peut avoir un seul visuel ou des pages entières de visuels. Selon votre fonction principale, vous pouvez soit *concevoir* des rapports, Vous pouvez également être un *utilisateur métier* qui *consomme* ou utilise des rapports. Cet article est destiné aux *utilisateurs des activités*.
 

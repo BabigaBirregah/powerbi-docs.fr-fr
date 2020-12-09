@@ -7,20 +7,20 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 08/27/2020
+ms.date: 12/03/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7e431b6a94b7cd881adba27597aa9cbfa6a54425
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.custom: video
+ms.openlocfilehash: 9a78ac3aa63ee65ea0e60a384a41ac4a6544c610
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96391205"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96578196"
 ---
 # <a name="view-a-dashboard"></a>Afficher un tableau de bord
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Les *utilisateurs professionnels* de Power BI consacrent beaucoup de temps à la consultation des tableaux de bord. Les tableaux de bord sont conçus pour mettre en évidence des informations spécifiques des rapports et jeux de données sous-jacents. Et les utilisateurs professionnels de Power BI se basent sur ces informations pour le suivi, la surveillance, les réponses aux questions, les tests et bien plus encore, afin de prendre des décisions commerciales pilotées par les données.
 

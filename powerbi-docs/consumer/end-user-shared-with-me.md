@@ -7,20 +7,20 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/09/2020
+ms.date: 12/07/2020
+ms.custom: video-G26dr2PsEpk
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 44f9d26e5f6ebe8723d5f5269bc66a38590a9b36
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 3461fc3cc310e8f714cee48e7c528bda99f3e6f6
+ms.sourcegitcommit: 0bf42b6393cab7a37d21a52b934539cf300a08e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96389595"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96781609"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>Afficher les tableaux de bord et les rapports qui ont été partagés avec moi
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Lorsqu’un collègue partage un tableau de bord ou un rapport avec vous, il apparaît dans votre conteneur **Partagé avec moi**. Quand un collègue partage une application avec vous, l’application s’affiche dans votre conteneur **Applications**, et les rapports et tableaux de bord de l’application s’affichent dans votre conteneur **Partagé avec moi**.   
 

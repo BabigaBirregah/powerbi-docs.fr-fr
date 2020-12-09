@@ -7,14 +7,14 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 11/13/2020
+ms.date: 12/03/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 6c2be9c2c266c489dbb93f5e3f93c3c120cae5c3
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 9df90a41143ddb6d0657aa0d61dc83f25ecbae1a
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96390607"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96578049"
 ---
 # <a name="find-your-dashboards-reports-and-apps"></a>Rechercher des tableaux de bord, des rapports et des applications
 
@@ -42,13 +42,13 @@ Les rubriques suivantes expliquent chaque option de recherche et de consultation
 ## <a name="home-canvas"></a>Canevas Accueil
 Dans le canevas d’accueil, vous pouvez voir tout le contenu que vous êtes autorisé à utiliser. Votre canevas d’accueil est également mis à jour avec le contenu et les ressources de formation recommandés. Au début, votre canevas d’accueil peut ne pas avoir beaucoup de contenus. Toutefois, cela changera dès que vous commencerez à utiliser Power BI avec vos collègues.
 
-![Capture d’écran de l’écran d’accueil d’un nouvel utilisateur du service Power BI.](media/end-user-home/power-bi-home-new-user.png)
+![Capture d’écran de l’écran d’accueil d’un nouvel utilisateur du service Power BI.](media/end-user-home/power-bi-home-new-users.png)
 
 
  
 L’Accueil Power BI se remplit à mesure que vous utilisez le service Power BI, lorsque vous recevez des tableaux de bord, des rapports et des applications de la part de vos collègues. Au bout d’un certain temps, il pourra se présenter ainsi.
 
-![Une capture d’écran de l’écran d’accueil pour le service Power BI.](media/end-user-home/power-bi-experienced-user.png)
+![Une capture d’écran de l’écran d’accueil pour le service Power BI.](media/end-user-home/power-bi-experienced-users.png)
 
  
 Les rubriques suivantes examinent de plus près la page d’accueil d’un utilisateur expérimenté, du haut vers le bas.

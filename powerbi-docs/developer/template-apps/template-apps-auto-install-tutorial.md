@@ -7,12 +7,12 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/23/2020
-ms.openlocfilehash: 0bb2e0c249df668378d62f62184dc044d174ce81
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: 0ddcf3c54a5bb3cf9259f6c0d18d0001b838df60
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95550553"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96577851"
 ---
 # <a name="tutorial-automate-configuration-of-template-app-installation-using-an-azure-function"></a>Tutoriel : Automatiser la configuration de l’installation d’une application modèle en utilisant une fonction Azure
 
@@ -57,7 +57,7 @@ Avant de commencer, vous devez disposer des éléments suivants :
 
 * Un [principal de service (jeton d’application uniquement)](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal) inscrit dans le locataire ci-dessus.
 
-* Une application modèle [paramétrable](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-overview) prête pour l’installation. L’application modèle doit être créée dans le même locataire que celui où vous inscrivez votre application dans Azure Active Directory (Azure AD). Pour plus d’informations, consultez [Conseils pour les applications modèles](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips.md) ou [Créer une application modèle dans Power BI](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create).
+* Une application modèle [paramétrable](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-overview) prête pour l’installation. L’application modèle doit être créée dans le même locataire que celui où vous inscrivez votre application dans Azure Active Directory (Azure AD). Pour plus d’informations, consultez [Conseils pour les applications modèles](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips) ou [Créer une application modèle dans Power BI](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create).
 
 * Une **licence Power BI Pro**. Si vous n’êtes pas inscrit pour Power BI Pro, [inscrivez-vous pour un essai gratuit](https://powerbi.microsoft.com/pricing/) avant de commencer.
 

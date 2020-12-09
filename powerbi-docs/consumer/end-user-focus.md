@@ -8,20 +8,21 @@ featuredvideoid: dtdLul6otYE
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/09/2020
+ms.date: 12/03/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 6385d263c47bde156a7dae941fefb101b9b30d18
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.custom: video-dtdLul6otYE
+ms.openlocfilehash: 611fe62486fbe376bdf1c44aa7ab4d18a7ae5c65
+ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96400451"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96613612"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>Afficher du contenu plus en détail : mode Focus et plein écran
 
 [!INCLUDE [consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]    
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>
 
@@ -41,7 +42,7 @@ Dans l’exemple ci-dessous, nous avons commencé avec un rapport (1), ouvert l�
 
 ## <a name="when-to-use-full-screen-mode"></a>Quand utiliser le mode plein écran ?
 
-![tableau de bord en mode normal et en mode plein écran](media/end-user-focus/power-bi-dashboards-focus.png)
+![tableau de bord en mode normal et en mode plein écran](media/end-user-focus/power-bi-dashboard-focus.png)
 
 Affichez le contenu de votre service Power BI (tableaux de bord, pages de rapport, vignettes et visuels) sans vous laisser distraire par les menus et les volets de navigation.  Vous disposez en permanence d’une vue instantanée complète, et sans fioritures, de votre contenu. Elle est parfois appelée mode TV.   
 
@@ -58,7 +59,7 @@ Le mode plein écran peut être utile pour les utilisations suivantes :
 
 Le mode ***Focus** _ vous permet de développer (dans une nouvelle fenêtre) un visuel ou une vignette pour voir plus de détails.  Vous disposez peut-être d’un tableau de bord ou d’un rapport légèrement chargé et vous souhaitez faire un zoom sur un seul élément visuel.  C’est une utilisation parfaite du mode Focus.  
 
-![Mode focus de la vignette de tableau de bord avant et après](media/end-user-focus/power-bi-compare-dash.png)
+![Mode focus de la vignette de tableau de bord avant et après](media/end-user-focus/power-bi-compare.png)
 
 En mode Focus, un _utilisateur professionnel*de Power BI peut interagir avec tous les filtres qui ont été appliqués lors de la création de ce visuel.  Dans le service Power BI, vous pouvez utiliser le mode Focus sur une mosaïque de tableau de bord ou un visuel de rapport.
 
