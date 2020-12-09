@@ -48,6 +48,8 @@
           href: embed-service-principal.md
         - name: Incorporer en utilisant un principal du service et un certificat
           href: embed-service-principal-certificate.md
+        - name: Déplacer une application incorporée en production
+          href: move-to-production.md
         - name: Incorporer à partir d’une application
           href: embed-from-apps.md
         - name: Exporter le rapport vers un fichier
