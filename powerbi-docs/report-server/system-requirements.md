@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/29/2020
-ms.openlocfilehash: 30e8f1cb1ef8f12d9573d77a70771eef915a2704
-ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
+ms.date: 12/07/2020
+ms.openlocfilehash: 10fb104d1c03ae5d08836b8e865178c347d848ce
+ms.sourcegitcommit: 0bf42b6393cab7a37d21a52b934539cf300a08e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044798"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96781770"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Configurations matérielle et logicielle requises pour l’installation de Power BI Report Server
 
@@ -23,7 +23,7 @@ Cet article mentionne les configurations matérielle et logicielle requises pour
 
 | Composant | Condition requise |
 | --- | --- |
-| .NET Framework |4.8<br><br>Vous pouvez installer manuellement le .NET Framework à partir de la page [Microsoft .NET Framework 4.8 (programme d’installation web) pour Windows](https://support.microsoft.com/en-us/help/4503548/).<br/><br/> Pour obtenir plus d’informations, des recommandations et des instructions sur .NET Framework 4.8, consultez le [guide de déploiement du .NET Framework pour les développeurs](/dotnet/framework/deployment/deployment-guide-for-developers).<br/><br/>Avant l’installation de .NET Framework 4.8, Windows 8.1 et Windows Server 2012 R2 nécessitent la [mise à jour KB2919355](https://support.microsoft.com/kb/2919355). |
+| .NET Framework |4.8<br><br>Si le serveur n’a pas d’accès à Internet, vous pouvez installer manuellement le .NET Framework à partir de la page [Programme d’installation hors connexion Microsoft .NET Framework 4.8 pour Windows](https://support.microsoft.com/en-us/help/4503548/).<br/><br/> Pour obtenir plus d’informations, des recommandations et des instructions sur .NET Framework 4.8, consultez le [guide de déploiement du .NET Framework pour les développeurs](/dotnet/framework/deployment/deployment-guide-for-developers).<br/><br/>Avant l’installation de .NET Framework 4.8, Windows 8.1 et Windows Server 2012 R2 nécessitent la [mise à jour KB2919355](https://support.microsoft.com/kb/2919355). |
 | Disque dur |Power BI Report Server nécessite au minimum 1 Go d’espace disponible sur le disque dur.<br><br>Un espace supplémentaire est requis sur le serveur de base de données hébergeant la base de données du serveur de rapports. |
 | Mémoire |**Minimum :** 1 GB<br/><br/> **Recommandé :** au moins 4 Go |
 | Vitesse du processeur |**Minimum :** processeur x64, 1,4 GHz<br/><br/> **Recommandé :** 2.0 GHz ou plus rapide |

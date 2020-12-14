@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 10/22/2020
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: c83efa55cc1c35bb7e6fa8e62de3bca228553fe3
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 9cbb6bb03d9add4324c3fc57a6426435850a001c
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96409398"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96578173"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -297,7 +297,7 @@ Le paramètre **Publier sur le web** du portail d’administration fournit des o
 
 ![Paramètre Publier sur le web](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
 
-Les administrateurs peuvent définir **Publier sur le web** sur **Activé** et **Choisir le mode de fonctionnement des codes incorporés** sur **Autoriser seulement les codes incorporés existants**. Dans ce cas, les utilisateurs peuvent créer des codes incorporés, mais ils doivent contacter l’administrateur Power BI pour les y autoriser.
+Les administrateurs peuvent définir **Publier sur le web** sur **Activé** et **Choisir le mode de fonctionnement des codes incorporés** sur **Autoriser seulement les codes incorporés existants**. Dans ce cas, les utilisateurs peuvent créer des codes incorporés, mais ils doivent contacter l’administrateur Power BI pour qu’il les y autorise.
 
 ![Invite Publier sur le web](../collaborate-share/media/service-publish-to-web/publish_to_web_admin_prompt.png)
 
@@ -307,7 +307,7 @@ Les options présentées aux utilisateurs dans l’interface utilisateur varient
 |---------|---------|---------|---------|
 |**Publier sur le web** sous le menu **Plus d’options (...)** d’un rapport|Activée pour tous|Non visible pour tous|Visible uniquement par les utilisateurs ou groupes autorisés.|
 |**Gérer les codes d’incorporation** sous **Paramètres**|Activée pour tous|Activée pour tous|Activée pour tous<br><br>Option * **Supprimer** uniquement pour les utilisateurs ou groupes autorisés.<br>* **Obtenir les codes** activé pour tous.|
-|**Codes d’incorporation** au sein du portail d’administration|L’état reflète l’une des options suivantes :<br>* Actif<br>* Non pris en charge<br>* Bloqué|L’état affiche **Désactivé**|L’état reflète l’une des options suivantes :<br>* Actif<br>* Non pris en charge<br>* Bloqué<br><br>Si un utilisateur n’est pas autorisé en fonction du paramètre de locataire, l’état indique **Enfreint**.|
+|**Codes d’incorporation** au sein du portail d’administration|L’état a une des valeurs suivantes :<br>* Actif<br>* Non pris en charge<br>* Bloqué|L’état affiche **Désactivé**|L’état a une des valeurs suivantes :<br>* Actif<br>* Non pris en charge<br>* Bloqué<br><br>Si un utilisateur n’est pas autorisé en fonction du paramètre de locataire, l’état indique **Enfreint**.|
 |Rapports publiés existants|Tout activé|Tout désactivé|Les rapports continuent à être restitués pour tous.|
 
 ### <a name="copy-and-paste-visuals"></a>Copier et coller des visuels
@@ -336,7 +336,7 @@ Les utilisateurs de l’organisation peuvent télécharger des fichiers .pbix e
 
 ### <a name="allow-live-connections"></a>Autoriser les connexions actives
 
-Les utilisateurs de l’organisation peuvent utiliser le service Power BI Live Connect. Cela comprend le service Analyse dans Excel.
+Les utilisateurs de l’organisation peuvent utiliser le service Power BI Live Connect. Le fait d’autoriser les connexions actives permet également aux utilisateurs d’analyser dans Excel.
 
 ![Capture d’écran du paramètre Autoriser les connexions actives.](media/service-admin-portal/powerbi-admin-portal-allow-live-connections-setting.png)
 
@@ -457,7 +457,7 @@ Les utilisateurs de l’organisation peuvent manipuler et partager des visuels c
 
 Les utilisateurs de l’organisation peuvent utiliser l’audit pour surveiller les actions effectuées dans Power BI par d’autres utilisateurs de l’organisation. [En savoir plus](service-admin-auditing.md)
 
-Ce paramètre doit être activé pour pouvoir enregistrer les entrées du journal d’audit. Une fois que vous avez activé l’audit, le délai avant de pouvoir voir les données d’audit peut aller jusqu’à 48 heures. Si vous ne voyez immédiatement les données, consultez les journaux d’audit plus tard. Le délai est sensiblement le même entre le moment où vous obtenez l’autorisation de voir les journaux d’audit et le moment où vous pouvez réellement y accéder.
+Ce paramètre doit être activé pour pouvoir enregistrer les entrées du journal d’audit. Une fois que vous avez activé l’audit, le délai avant de pouvoir voir les données d’audit peut aller jusqu’à 48 heures. Si vous ne voyez immédiatement les données, consultez les journaux d’audit plus tard. Le délai est sensiblement le même entre le moment où vous obtenez l’autorisation de voir les journaux d’audit et le moment où vous pouvez réellement y accéder.
 
 > [!NOTE]
 > Ce paramètre s’applique à toute l’organisation et ne peut pas être limité à des groupes en particulier.
@@ -577,10 +577,11 @@ En tant qu’administrateur, vous pouvez afficher les espaces de travail qui exi
 - consulter les détails relatifs à un espace de travail, y compris son ID, ses utilisateurs et ses rôles, ainsi que ses tableaux de bord, rapports et jeux de données,
 - modifier la liste des personnes qui y ont accès. Cela signifie que vous pouvez supprimer l’espace de travail. Vous pouvez vous ajouter à un espace de travail en tant qu’administrateur, puis ouvrir l’espace de travail et le supprimer.
 - Modifiez les champs Nom et Description.
+- Mettre à niveau les espaces de travail classiques vers l’expérience des nouveaux espaces de travail
 
 ![Liste des espaces de travail](media/service-admin-portal/workspaces-list.png)
 
-Les administrateurs peuvent également contrôler la capacité des utilisateurs à créer de nouveaux espaces de travail, des espaces de travail d’expérience et des espaces de travail classiques. Pour plus d’informations, consultez [Paramètres des espaces de travail](#workspace-settings), dans cet article. 
+Les administrateurs peuvent également contrôler la capacité des utilisateurs à créer de nouveaux espaces de travail, des espaces de travail d’expérience et des espaces de travail classiques. Pour plus d’informations, consultez [Paramètres des espaces de travail](#workspace-settings), dans cet article.
 
 Les colonnes de la table de l’onglet **Espaces de travail** correspondent aux propriétés retournées par l’[API REST administrateur Power BI](/rest/api/power-bi/admin) pour les espaces de travail. Les espaces de travail personnels sont de type **PersonalGroup**, les espaces de travail classiques sont de type **Group**, et les nouveaux espaces de travail modernes sont de type **Workspace**. Pour plus d’informations, consultez [Organiser le travail dans les nouveaux espaces de travail](../collaborate-share/service-new-workspaces.md).
 
@@ -596,6 +597,18 @@ Sous l’onglet **Espaces de travail**, vous voyez l’*état* pour chaque espac
 Les administrateurs peuvent également gérer et récupérer des espaces de travail à l’aide du portail d’administration ou des applets de commande PowerShell. 
 
 ![Liste des espaces de travail](media/service-admin-portal/workspaces-list.png)
+
+Les administrateurs peuvent mettre à niveau les espaces de travail classiques avec l’expérience des nouveaux espaces de travail. Les administrateurs peuvent sélectionner un ou plusieurs espaces de travail de type **Groupe** pour les mettre à niveau. Les mises à niveau sont mises en file d’attente et exécutées de façon asynchrone. Plusieurs minutes à plusieurs jours peuvent être nécessaires pour effectuer toutes les mises à niveau **en attente**, car la cadence globale des mises à niveau lancées par l’administrateur est limitée pour que le service continue de fonctionner correctement. La colonne **État de la mise à niveau de l’espace de travail** aide les administrateurs à suivre la progression des mises à niveau lancées par l’administrateur. Les administrateurs peuvent annuler les mises à niveau lancées par l’administrateur quand elles sont **En attente**. Pour mettre à niveau un espace de travail tout de suite, contactez l’administrateur de l’espace de travail et demandez-lui de lancer la mise à niveau via le volet Paramètres de l’espace de travail. [Découvrez plus d’informations sur la mise à niveau des espaces de travail avant de commencer votre mise à niveau des espaces de travail Power BI lancées par l’administrateur.](../collaborate-share/service-upgrade-workspaces.md).
+
+Le tableau suivant fournit plus de détails sur l’état de la mise à niveau.
+
+|État  |Description  |
+|---------|---------|
+| **(Vide)** | L’espace de travail n’est pas mis à niveau par un administrateur Power BI. |
+| **En attente** | L’espace de travail est mis en file d’attente pour être mis à niveau. La mise à niveau peut être annulée. |
+| **En cours** | L’espace de travail est en cours de mise à niveau. La mise à niveau ne peut pas être annulée. |
+| **Terminé** | L’espace de travail a été mis à niveau au cours des 30 derniers jours par un administrateur Power BI. Un administrateur d’espace de travail peut si nécessaire revenir à l’option classique pendant la période de 30 jours qui suit la mise à niveau de l’espace de travail. |
+
 
 ## <a name="custom-branding"></a>Marque personnalisée
 

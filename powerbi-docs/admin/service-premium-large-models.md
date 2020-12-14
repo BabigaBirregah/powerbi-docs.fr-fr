@@ -1,42 +1,59 @@
 ---
-title: Grands modèles dans Power BI Premium (préversion)
-description: La fonctionnalité des grands modèles permet aux jeux de données dans Power BI Premium d’avoir une taille qui dépasse 10 Go.
+title: Grands jeux de données dans Power BI Premium
+description: La format de stockage des grands jeux de données permet aux jeux de données dans Power BI Premium d’augmenter jusqu’à une taille supérieure à 10 Go.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/11/2020
+ms.date: 12/04/2020
+ms.custom: references_regions
 LocalizationGroup: Premium
-ms.openlocfilehash: 0bb6f7bf46875e0af7c09d221c73ae5e4b70b2df
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 1f9a34b68f465eda5b8921e48576c9bef5d17f36
+ms.sourcegitcommit: 0bf42b6393cab7a37d21a52b934539cf300a08e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412227"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96781693"
 ---
-# <a name="large-models-in-power-bi-premium-preview"></a>Grands modèles dans Power BI Premium (préversion)
+# <a name="large-datasets-in-power-bi-premium"></a>Grands jeux de données dans Power BI Premium
 
-Les jeux de données Power BI peuvent stocker des données dans un cache en mémoire hautement compressé pour que les performances des requêtes optimisées permettent une interactivité entre utilisateurs rapide sur d’importants jeux de données. La fonctionnalité des grands modèles permet aux jeux de données dans Power BI Premium d’avoir une taille qui dépasse 10 Go. La taille du jeu de données est plutôt limitée par la taille de la capacité Power BI Premium, ce qui est similaire à la façon dont Azure Analysis Services fonctionne en termes de limitations de la taille du modèle. Pour plus d’informations sur les tailles de capacité dans Power BI Premium, consultez Nœuds de capacité. Vous pouvez configurer des grands modèles pour toutes les références SKU P Premium et A Embedded, mais ils fonctionnent uniquement avec les [nouveaux espaces de travail](../collaborate-share/service-create-the-new-workspaces.md).
+Les jeux de données Power BI peuvent stocker des données dans un cache en mémoire fortement compressé pour des performances optimisées des requêtes, ce qui permet une interactivité rapide des utilisateurs. Avec les capacités Premium, les grands jeux de données au-delà de la limite par défaut de 10 Go peuvent être activés avec le paramètre **Format de stockage des grands jeux de données**. Quand ce paramètre est activé, la taille des jeux de données est limitée par la taille de la capacité *Premium*.
 
-Les grands modèles n’affectent pas la taille de chargement PBIX, qui est toujours limitée à 10 Go. Au lieu de cela, les jeux de données dépassent 10 Go dans le service lors de l’actualisation. Vous pouvez utiliser l’actualisation incrémentielle pour configurer un jeu de données afin qu’il dépasse 10 Go.
+Les grands jeux de données peuvent être activés pour toutes les références SKU Premium P et A Embedded. La limite de taille des grands jeux de données dans Premium est comparable à celle d’Azure Analysis Services, en termes de limitations de taille des modèles de données.
 
-## <a name="enable-large-models"></a>Activer les grands modèles
+Si l’activation du paramètre Format de stockage des grands jeux de données est nécessaire pour permettre aux jeux de données d’aller au-delà de 10 Go, elle offre aussi d’autres avantages. Si vous prévoyez d’utiliser des outils basés sur un point de terminaison XMLA pour les opérations d’écriture des jeux de données, veillez à activer ce paramètre, même pour les jeux de données que vous ne classeriez pas nécessairement en tant que *grands* jeux de données. Quand ce paramètre est activé, le format de stockage des grands jeux de données peut améliorer les performances des opérations d’écriture de XMLA.
 
-Pour créer un jeu de données qui dépasse 10 Go, procédez comme suit :
+Les grands jeux de données dans le service n’affectent pas la taille de chargement du modèle Power BI Desktop, qui est reste limitée à 10 Go. Au lieu de cela, les jeux de données peuvent dépassent 10 Go dans le service lors de l’actualisation.
 
-1. Créez un jeu de données dans Power BI Desktop et configurez une [actualisation incrémentielle](service-premium-incremental-refresh.md).
+## <a name="enable-large-datasets"></a>Activer les grands jeux de données
 
-1. Publiez le jeu de données sur le service Power BI Premium.
+Les étapes ci-dessous décrivent l’activation des grands jeux de données pour un nouveau modèle publié sur le service. Pour les jeux de données existants, seule l’étape 3 est nécessaire.
 
-1. Activez le jeu de données pour les grands modèles en exécutant les applets de commande PowerShell ci-dessous. Ces cmdlets entrainent le stockage du jeu de données sur Azure Premium Files par Power BI, sans contraindre une limite de 10 Go.
+1. Créez un modèle de données dans Power BI Desktop. Si votre jeu de données va devenir plus grand et consommer progressivement plus de mémoire, veillez à configurer [Actualisation incrémentielle](service-premium-incremental-refresh.md).
 
-1. Appelez une actualisation pour charger les données d’historique en fonction de la stratégie d’actualisation incrémentielle. La première actualisation peut prendre un certain temps pour charger l’historique. Les actualisations suivantes doivent être plus rapides, car elles sont incrémentielles.
+1. Publiez le modèle en tant que jeu de données sur le service.
 
-### <a name="powershell-cmdlets"></a>Applets de commande PowerShell
+1. Dans le service > jeu de données > **Paramètres**, développez **Format de stockage des grands jeux de données**, cliquez sur le curseur pour le placer sur **Activé**, puis cliquez sur **Appliquer**.
 
-Dans la version actuelle des grands modèles, activez le jeu de données pour le stockage de fichiers Premium à l’aide des applets de commande PowerShell. Vous devez disposer de privilèges d’administrateur de capacité et d’administrateur d’espace de travail pour exécuter les applets de commande PowerShell.
+    :::image type="content" source="media/service-premium-large-models/enable-large-dataset.png" alt-text="Activer le curseur pour les grands jeux de données":::
+
+1. Appelez une actualisation pour charger les données d’historique en fonction de la stratégie d’actualisation incrémentielle. La première actualisation peut prendre un certain temps pour charger l’historique. Les actualisations suivantes doivent être plus rapides, selon votre stratégie d’actualisation incrémentielle.
+
+## <a name="set-default-storage-format"></a>Définir le format de stockage par défaut
+
+Tous les nouveaux jeux de données créés dans un espace de travail affecté à la capacité Premium peuvent avoir le format de stockage des grands jeux de données activé par défaut.
+
+1. Dans l’espace de travail, cliquez sur **Paramètres** > **Premium**.
+
+1. Dans **Format de stockage par défaut**, sélectionnez **Format de stockage des grands jeux de données**, puis cliquez sur **Enregistrer**.
+
+    :::image type="content" source="media/service-premium-large-models/default-storage-format.png" alt-text="Activer le format de stockage par défaut":::
+
+### <a name="enable-with-powershell"></a>Activer avec PowerShell
+
+Vous pouvez aussi activer le format de stockage des grands jeux de données en utilisant PowerShell. Vous devez disposer de privilèges d’administrateur de capacité et d’administrateur d’espace de travail pour exécuter les applets de commande PowerShell.
 
 1. Recherchez l’ID de jeu de données (GUID). Sous l’onglet **Jeux de données** de l’espace de travail, sous les paramètres du jeu de données, vous pouvez voir l’ID dans l’URL.
 
@@ -66,7 +83,7 @@ Dans la version actuelle des grands modèles, activez le jeu de données pour le
     <Dataset ID>         Abf
     ```
 
-1. Exécutez les applets de commande suivantes pour définir le mode de stockage sur les fichiers Premium et vérifier l’opération. La conversion en fichiers Premium peut prendre quelques secondes.
+1. Exécutez les applets de commande suivantes pour définir le mode de stockage. La conversion en fichiers Premium peut prendre quelques secondes.
 
     ```powershell
     Set-PowerBIDataset -Id <Dataset ID> -TargetStorageMode PremiumFiles
@@ -112,20 +129,18 @@ SELECT * FROM SYSTEMRESTRICTSCHEMA
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 
-Gardez à l’esprit les restrictions suivantes lors de l’utilisation de grands modèles :
+Gardez à l’esprit les restrictions suivantes lors de l’utilisation de grands jeux de données :
 
-- **Support multigéographique** : les jeux de données activés pour les fichiers Premium échouent sur les capacités où [plusieurs zones géographiques](service-admin-premium-multi-geo.md) sont également activées.
+- **Les nouveaux espaces de travail sont obligatoires** : Les grands jeux de données fonctionnent seulement avec les [nouveaux espaces de travail](../collaborate-share/service-create-the-new-workspaces.md).
 
 - **Télécharger sur Power BI Desktop** : si un jeu de données est stocké dans des fichiers Premium, le [téléchargement en tant que fichier. pbix](../create-reports/service-export-to-pbix.md) échoue.
-- **Régions prises en charge** : Les grands modèles sont pris en charge dans toutes les régions Azure qui prennent en charge le stockage de fichiers Premium. Pour en savoir plus, consultez [Produits disponibles par région](https://azure.microsoft.com/global-infrastructure/services/?products=storage) et consultez le tableau de la section suivante.
+- **Régions prises en charge** : Les grands jeux de données sont pris en charge dans toutes les régions Azure qui prennent en charge le stockage Premium Files. Pour en savoir plus, consultez [Produits disponibles par région](https://azure.microsoft.com/global-infrastructure/services/?products=storage) et consultez le tableau de la section suivante.
 
+## <a name="region-availability"></a>Disponibilité des régions
 
-## <a name="availability-in-regions"></a>Disponibilité dans les régions
+Les grands jeux de données dans Power BI sont disponibles seulement dans certaines régions Azure qui prennent en charge le [stockage Azure Premium Files](/azure/storage/files/storage-files-planning#storage-tiers).
 
-Les modèles volumineux dans Power BI sont disponibles uniquement dans certaines régions Azure qui prennent en charge [le stockage Azure Premium Files](/azure/storage/files/storage-files-planning#storage-tiers).
-
-La liste suivante répertorie les régions où les grands modèles dans Power BI sont disponibles. Les régions qui ne sont pas dans la liste suivante ne sont pas prises en charge pour les modèles volumineux :
-
+La liste suivante contient les régions où les grands jeux de données dans Power BI sont disponibles. Les régions qui ne sont pas dans la liste suivante ne sont pas prises en charge pour les modèles volumineux :
 
 |Région Azure  |Abréviation des régions Azure  |
 |---------|---------|
@@ -149,8 +164,6 @@ La liste suivante répertorie les régions où les grands modèles dans Power BI
 |USA Ouest     | westus        |
 |USA Ouest 2     | westus2        |
 
-
-
 ## <a name="next-steps"></a>Étapes suivantes
 
 Les liens suivants fournissent des informations qui peuvent être utiles pour travailler avec des modèles volumineux :
@@ -160,7 +173,6 @@ Les liens suivants fournissent des informations qui peuvent être utiles pour tr
 * [Apporter vos propres clés de chiffrement pour Power BI](service-encryption-byok.md)
 * [Fonctionnement des capacités](service-premium-what-is.md#how-capacities-function)
 * [Actualisation incrémentielle](service-premium-incremental-refresh.md).
-
 
 Introduite par Power BI, l’offre en préversion Power BI Premium Gen2 apporte les améliorations suivantes à l’expérience Power BI Premium :
 * Performances

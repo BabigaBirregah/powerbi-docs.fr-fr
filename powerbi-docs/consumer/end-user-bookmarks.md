@@ -7,20 +7,19 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 08/26/2020
+ms.date: 12/03/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: ec56f15386aeddafa74d952ce772aa3dcce4f901
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 7aa199547f6cad0b7d4dbfc6b75e9d9e25b2b153
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96391481"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96578334"
 ---
 # <a name="what-are-bookmarks"></a>Qu’est-ce qu’un signet ?
 
 [!INCLUDE[consumer-appliesto-ynnm](../includes/consumer-appliesto-ynnm.md)]
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Les signets capturent la vue actuellement configurée d’une page de rapport, notamment les filtres, les segments et l’état des visuels. Lorsque vous sélectionnez un signet, Power BI vous ramène à cette vue. Il existe deux types de signets : ceux que vous créez et ceux qui sont créés par les *concepteurs* de rapports. Tout utilisateur Power BI peut créer des signets personnels. Toutefois, pour utiliser des signets créés par d’autres personnes, il faut une licence Power BI Pro ou Premium. [Quelle est ma licence ?](end-user-license.md)
 
@@ -30,6 +29,16 @@ Les signets ont de nombreuses utilisations. Imaginons que vous ayez découvert u
 Vous pouvez également créer une collection de signets, les réorganiser dans l’ordre de votre choix, puis parcourir chaque signet dans le cadre d’une présentation, afin de mettre en avant une série d’insights.  
 
 ![Affichez le volet Signets en le sélectionnant dans le ruban.](media/end-user-bookmarks/power-bi-bookmark-icon.png)
+
+Partagez votre rapport avec signets avec des collègues qui disposent également d’un accès en lecture au rapport. La vue avec signet du rapport ne remplace pas le rapport d’origine du concepteur.  Le partage avec des collègues qui ne disposent pas déjà d’un accès en lecture nécessite des autorisations de repartage. Si vous ne parvenez pas à partager votre vue du rapport, contactez le propriétaire du rapport pour demander l’autorisation de repartage.  
+
+
+### <a name="share-changes"></a>Partager les modifications 
+Si vous avez des autorisations de lecture et de repartage, vous pouvez choisir d’inclure vos modifications lorsque vous partagez le rapport.
+
+:::image type="content" source="media/end-user-bookmarks/power-bi-personalize-share-changes.png" alt-text="Partage des modifications":::
+ 
+
 
 ## <a name="open-bookmarks"></a>Ouvrir des signets
 Pour ouvrir le volet Signets, sélectionnez **Signets** > **Afficher d’autres signets** dans la barre de menus. 
@@ -164,17 +173,22 @@ Note that selecting **Ungroup** for any bookmark from a group takes all bookmark
 -->
 
 
+### <a name="reset-all-your-changes-to-a-report"></a>Réinitialiser toutes les modifications dans un rapport
+
+Dans le coin supérieur droit de votre canevas de rapport, sélectionnez **Rétablir les valeurs par défaut**. Cela supprime toutes les modifications que vous avez apportées au rapport et revient au dernier affichage du rapport enregistré par l’auteur.
+
+:::image type="content" source="media/end-user-bookmarks/power-bi-personalize-reset-all.png" alt-text="Réinitialisation de toutes les modifications":::
 
 
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 Pour cette préversion de **signets**, vous devez garder à l’esprit les considérations et limitations suivantes.
 
-* La plupart des visuels Power BI doivent fonctionner correctement avec l’attribution de signets. Si vous rencontrez des problèmes avec l’attribution de signets et un visuel Power BI, contactez le créateur de ce dernier et demandez-lui d’ajouter la prise en charge des signets pour son visuel.
+* La plupart des visuels Power BI doivent fonctionner correctement avec les signets. Si vous rencontrez des problèmes avec les signets et un visuel personnalisé Power BI, contactez le créateur de celui-ci et demandez-lui d’ajouter la prise en charge des signets.    
 * Si vous ajoutez un visuel sur une page de rapport après la création d’un signet, le visuel s’affiche dans son état par défaut. Cela signifie également que si vous introduisez un segment dans une page où vous avez précédemment créé des signets, le segment se comporte avec son état par défaut.
 * En règle générale, vos signets ne sont pas affectés lorsque le *concepteur* met à jour ou republie un rapport. Toutefois, si le concepteur apporte des modifications majeures au rapport, par exemple, s’il supprime des champs utilisés par un signet, vous recevrez un message d’erreur la prochaine fois que vous tenterez d’ouvrir ce signet. 
+* Cette fonctionnalité est prise en charge dans les applications mobiles Power BI pour les tablettes iOS et Android, ainsi que dans l’application Windows Power BI. Elle n’est pas prise en charge dans les applications mobiles Power BI pour les téléphones. Toutefois, les modifications de visuels enregistrées dans un signet personnel au sein du service Power BI sont respectées dans les applications mobiles Power BI.
 
-<!--
-## Next steps
-spotlight?
--->
+
+## <a name="next-steps"></a>Étapes suivantes
+[Personnaliser les visuels dans un rapport](end-user-personalize-visuals.md)

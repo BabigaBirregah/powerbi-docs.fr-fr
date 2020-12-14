@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/05/2020
+ms.date: 12/01/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 4e71580857827a370676c4d05274c4c57b1d56c5
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b238daa82bc2ae039c137c259ca8f63044281e6f
+ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413492"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96613713"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint"></a>Connectivité des jeux de données avec le point de terminaison XMLA
 
@@ -23,7 +23,7 @@ Les espaces de travail et les jeux de données Power BI Premium au niveau de com
 
 ## <a name="whats-an-xmla-endpoint"></a>Qu’est-ce qu’un point de terminaison XMLA ?
 
-Power BI Premium utilise le protocole [XML for Analysis](/analysis-services/xmla/xml-for-analysis-xmla-reference?view=power-bi-premium-current&preserve-view=true) (XMLA) pour les communications entre des applications clientes et le moteur qui gère vos espaces de travail et jeux de données Power BI. Ces communications s’effectuent via ce qui est communément appelé « points de terminaison XMLA ». XMLA est le même protocole de communication que celui utilisé par le moteur Microsoft Analysis Services, qui, sous le capot, exécute la modélisation sémantique, la gouvernance, le cycle de vie et la gestion des données de Power BI.
+Power BI Premium utilise le protocole [XML for Analysis](/analysis-services/xmla/xml-for-analysis-xmla-reference?view=power-bi-premium-current&preserve-view=true) (XMLA) pour les communications entre des applications clientes et le moteur qui gère vos espaces de travail et jeux de données Power BI. Ces communications s’effectuent via ce qui est communément appelé « points de terminaison XMLA ». XMLA est le même protocole de communication que celui utilisé par le moteur Microsoft Analysis Services, qui, sous le capot, exécute la modélisation sémantique, la gouvernance, le cycle de vie et la gestion des données de Power BI. Les données envoyées via le protocole XMLA sont entièrement chiffrées.
 
 Par défaut, la connexion en *lecture seule* à l’aide du point de terminaison est activée pour la **charge de travail des jeux de données** dans une capacité. Avec l’accès en lecture seule, les applications et les outils de visualisation des données peuvent interroger les données, les métadonnées, les événements et le schéma du modèle de jeux de données. Les opérations en *lecture/écriture* utilisant le point de terminaison peuvent être activées pour fournir une gestion, une gouvernance, une modélisation sémantique avancée, un débogage et une surveillance des jeux de données supplémentaires. Avec l’option lecture-écriture activée, les jeux de données Power BI Premium ont plus de parité avec les outils et les processus de modélisation tabulaire de niveau entreprise Azure Analysis Services et SQL Server Analysis Services.
 
@@ -32,7 +32,7 @@ Par défaut, la connexion en *lecture seule* à l’aide du point de terminaison
 
 ## <a name="data-modeling-and-management-tools"></a>Outils de gestion et de modélisation des données
 
-Voici quelques-uns des outils les plus courants utilisés avec Azure Analysis Services et SQL Server Analysis Services, et désormais pris en charge par les jeux de données Power BI Premium :
+Voici quelques-uns des outils les plus courants utilisés avec Azure Analysis Services et SQL Server Analysis Services, et qui sont désormais pris en charge par les jeux de données Power BI Premium :
 
 **Visual Studio avec Analysis Services projets** , également appelé SQL Server Data Tools ou simplement **SSDT**, est un outil de création de modèles de niveau entreprise pour les modèles tabulaires Analysis Services. Les extensions de projets Analysis Services sont prises en charge sur toutes les éditions de Visual Studio 2017 et versions ultérieures, y compris l’édition Communauté gratuite. La version d’extension 2.9.6 ou ultérieure est requise pour déployer des modèles tabulaires dans un espace de travail Premium. Lors du déploiement vers un espace de travail Premium, le modèle doit être au niveau de compatibilité 1500 ou supérieur. La lecture-écriture XMLA est requise sur la charge de travail des jeux de données. Pour en savoir plus, consultez [Outils pour Analysis Services](/analysis-services/tools-and-applications-used-in-analysis-services?view=power-bi-premium-current&preserve-view=true).
 
@@ -50,7 +50,7 @@ Voici quelques-uns des outils les plus courants utilisés avec Azure Analysis Se
 
 **DAX Studio**  : outil Open source pour la création, le diagnostic, le réglage des performances et l’analyse DAX. Les fonctionnalités incluent l’exploration des objets, le traçage intégré, l’analyse de l’exécution de la requête avec des statistiques détaillées, la mise en surbrillance et la mise en forme de la syntaxe DAX. L’accès en lecture seule XMLA est requis pour les opérations de requête. Pour en savoir plus, consultez [daxstudio.org](https://daxstudio.org/).
 
-**ALM Toolkit** : outil de comparaison de schémas Open source pour les jeux de données Power BI, le plus souvent utilisé pour les scénarios de gestion du cycle de vie des applications (ALM). Effectuez le déploiement dans des environnements et conservez les données historiques de l’actualisation incrémentielle. Comparez et fusionnez des fichiers de métadonnées, branches et référentiels. Réutilisez les définitions communes entre les jeux de données. L’accès en lecture seule est requis pour les opérations de requête. L’accès en lecture/écriture est requis pour les opérations de métadonnées. Pour plus d’informations, consultez [alm-toolkit.com](http://alm-toolkit.com/).
+**ALM Toolkit** : outil de comparaison de schémas Open source pour les jeux de données Power BI, le plus souvent utilisé pour les scénarios de gestion du cycle de vie des applications (ALM). Effectuez le déploiement dans des environnements et conservez les données historiques de l’actualisation incrémentielle. Comparez et fusionnez des fichiers de métadonnées, des branches et des dépôts. Réutilisez les définitions communes entre les jeux de données. L’accès en lecture seule est requis pour les opérations de requête. L’accès en lecture/écriture est requis pour les opérations de métadonnées. Pour plus d’informations, consultez [alm-toolkit.com](http://alm-toolkit.com/).
 
 **Microsoft Excel**  : les tableaux croisés dynamiques Excel sont l’un des outils les plus courants utilisés pour résumer, analyser, explorer et présenter des données de synthèse à partir de jeux de données Power BI. L’accès en lecture seule est requis pour les opérations de requête. La version « démarrer en un clic » d’Office 16.0.11326.10000 ou une version ultérieure est requise.
 
@@ -58,7 +58,7 @@ Voici quelques-uns des outils les plus courants utilisés avec Azure Analysis Se
 
 ### <a name="client-libraries"></a>Bibliothèques clientes
 
-Les applications clientes ne communiquent pas directement avec le point de terminaison XMLA. Au lieu de cela, ils utilisent des *bibliothèques clientes* en tant que couche d’abstraction. Il s’agit des mêmes applications de bibliothèques clientes que celles utilisées pour se connecter à Azure Analysis Services et SQL Server Analysis Services. Les applications Microsoft telles que Excel, SQL Server Management Studio (SSMS), ainsi que les extensions de projets Analysis Services pour Visual Studio installent les trois bibliothèques clientes et les mettent à jour avec des mises à jour régulières des applications et des extensions. Les développeurs peuvent également utiliser les bibliothèques clientes pour générer des applications personnalisées. Dans certains cas, en particulier avec les applications tierces, si elles ne sont pas installées avec l’application, vous devrez peut-être installer des versions plus récentes des bibliothèques clientes. Les bibliothèques clientes sont mises à jour tous les mois. Pour en savoir plus, consultez  [Bibliothèques clientes pour se connecter à Analysis Services](/azure/analysis-services/analysis-services-data-providers).
+Les applications clientes ne communiquent pas directement avec le point de terminaison XMLA. Au lieu de cela, ils utilisent des *bibliothèques clientes* en tant que couche d’abstraction. Il s’agit des mêmes applications de bibliothèques de client que celles utilisées pour se connecter à Azure Analysis Services et SQL Server Analysis Services. Les applications Microsoft telles que Excel, SQL Server Management Studio (SSMS), ainsi que les extensions de projets Analysis Services pour Visual Studio installent les trois bibliothèques clientes et les mettent à jour avec des mises à jour régulières des applications et des extensions. Les développeurs peuvent également utiliser les bibliothèques clientes pour générer des applications personnalisées. Dans certains cas, en particulier avec les applications tierces, si elles ne sont pas installées avec l’application, vous devrez peut-être installer des versions plus récentes des bibliothèques clientes. Les bibliothèques clientes sont mises à jour tous les mois. Pour en savoir plus, consultez  [Bibliothèques clientes pour se connecter à Analysis Services](/azure/analysis-services/analysis-services-data-providers).
 
 ## <a name="optimize-datasets-for-write-operations-by-enabling-large-models"></a>Optimiser les jeux de données pour les opérations d’écriture en activant les grands modèles
 
@@ -70,7 +70,7 @@ Par défaut, une capacité Premium a le paramètre de propriété de point de te
 
 ### <a name="to-enable-read-write-for-a-capacity"></a>Pour activer l’accès en lecture/écriture pour une capacité
 
-1. Dans le portail d’administrateur, cliquez sur **Paramètres de capacité** > **Power BI Premium** > nom de la capacité.
+1. Dans le portail d’administration, sélectionnez **Paramètres de capacité** > **Power BI Premium** > Nom de la capacité.
 2. Développez **Charges de travail**. Dans le paramètre **Point de terminaison XMLA**, sélectionnez **Accès en lecture/écriture**.
 
     ![Activer le point de terminaison XMLA](media/service-premium-connect-tools/xmla-endpoint-enable.png)
@@ -80,7 +80,7 @@ Par défaut, une capacité Premium a le paramètre de propriété de point de te
 Les espaces de travail affectés à une capacité ont une chaîne de connexion au format d’URL, comme ceci :  
 `powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name]`.
 
-Les applications se connectant à l’espace de travail utilisent l’URL, comme un nom de serveur Analysis Services. Par exemple,  
+Les applications se connectant à l’espace de travail utilisent l’URL s’il s’agissait d’un nom de serveur Analysis Services. Par exemple,  
 `powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`.
 
 Les utilisateurs avec des UPN dans le même abonné (non B2B) peuvent remplacer le nom de l’abonné par `myorg`. Par exemple,   
@@ -91,7 +91,7 @@ Les utilisateurs B2B doivent spécifier l’UPN de leur organisation dans le nom
 
 ### <a name="to-get-the-workspace-connection-url"></a>Pour accéder à l’URL de connexion de l’espace de travail
 
-Dans **Paramètres** > **Premium** > **Connexion à l’espace de travail** de l’espace de travail, cliquez sur **Copier**.
+Dans **Paramètres d’espace de travail** > **Premium** > **Connexion d’espace de travail**, sélectionnez **Copier**.
 
 ![Chaîne de connexion d’espace de travail](media/service-premium-connect-tools/xmla-endpoint-workspace-connection.png)
 
@@ -99,11 +99,11 @@ Dans **Paramètres** > **Premium** > **Connexion à l’espace de travail** de l
 
 ### <a name="initial-catalog"></a>Catalogue initial
 
-Pour certains outils, comme SQL Server Profiler, vous devrez peut-être spécifier un *Catalogue initial*. Spécifiez un jeu de données (une base de données) dans votre espace de travail. Dans la boîte de dialogue **Se connecter au serveur**, cliquez sur **Options** > **Propriétés de la connexion** > **Se connecter à une base de données**, entrez le nom du jeu de données.
+Pour certains outils, comme SQL Server Profiler, vous devrez peut-être spécifier un *Catalogue initial*. Spécifiez un jeu de données (une base de données) dans votre espace de travail. Dans la boîte de dialogue **Se connecter au serveur**, sélectionnez **Options** > **Propriétés de connexion** > **Connexion à une base de données**, entrez le nom du jeu de données.
 
 ### <a name="duplicate-workspace-names"></a>Noms d’espaces de travail dupliqués
 
-[Nouveaux espaces de travail](../collaborate-share/service-new-workspaces.md) (créés à l’aide de la nouvelle expérience de l’espace de travail) dans Power BI imposent la validation pour interdire la création ou le changement de nom des espaces de travail par des noms dupliqués. Les espaces de travail qui n’ont pas été migrés peuvent entraîner des noms dupliqués. Quand vous vous connectez à un espace de travail portant le même nom qu’un autre espace de travail, l’erreur suivante peut s’afficher :
+Les [nouveaux espaces de travail](../collaborate-share/service-new-workspaces.md) (créés en utilisant la nouvelle expérience d’espace de travail) dans Power BI imposent une validation pour interdire la création ou le renommage des espaces de travail avec des noms en double. Les espaces de travail qui n’ont pas été migrés peuvent entraîner des noms en double. Quand vous vous connectez à un espace de travail portant le même nom qu’un autre espace de travail, l’erreur suivante peut s’afficher :
 
 **Impossible de se connecter à powerbi://api.powerbi.com/v1.0/[nom_locataire]/[nom_espace_de_travail].**
 
@@ -120,7 +120,7 @@ Lors de la connexion à un espace de travail, les changements des jeux de donné
 
 ### <a name="unsupported-datasets"></a>Jeux de données non pris en charge
 
-Les jeux de données suivants ne sont pas accessibles par le point de terminaison XMLA. Ces jeux de données ne s’affichent pas sous l’espace de travail dans SSMS ou dans d’autres outils :
+Les jeux de données suivants ne sont pas accessibles par le point de terminaison XMLA. Ces jeux de données n’apparaissent pas sous l’espace de travail dans SSMS ou dans d’autres outils :
 
 - Jeux de données basés sur une connexion active à un modèle Azure Analysis Services ou SQL Server Analysis Services. 
 - Jeux de données basés sur une connexion active à un jeu de données Power BI dans un autre espace de travail. Pour en savoir plus, consultez [Présentation de jeux de données dans des espaces de travail](../connect-data/service-datasets-across-workspaces.md).
@@ -129,9 +129,15 @@ Les jeux de données suivants ne sont pas accessibles par le point de terminaiso
 
 ## <a name="security"></a>Sécurité
 
-En plus de la propriété de point de terminaison XMLA activée en lecture-écriture par l’administrateur de capacité, le paramètre **Exporter des données** au niveau de l’abonné, dans le portail d’administrateur Power BI, également requis pour l’analyse dans Excel, doit être activé.
+En plus de la propriété de point de terminaison XMLA activée en lecture-écriture par l’administrateur de la capacité, le paramètre de niveau abonné **Autoriser les points de terminaison XMLA et Analyser dans Excel avec les jeux de données locaux** doit être activé dans le portail d’administration. Si vous devez générer des fichiers AIXL qui se connectent au point de terminaison XMLA, le paramètre de niveau locataire **Autoriser les connexions actives** doit également être activé. Ces paramètres sont tous deux activés par défaut.
 
-![Activer les données d’exportation](media/service-premium-connect-tools/xmla-endpoint-export-data.png)
+**Autoriser les points de terminaison XMLA et Analyser dans Excel avec les jeux de données locaux** est un paramètre d’intégration.
+
+:::image type="content" source="media/service-premium-connect-tools/allow-xmla-endpoints.png" alt-text="Les paramètres d’intégration autorisent les points de terminaison XMLA.":::
+
+**Autoriser les connexions actives** est un paramètre d’exportation et de partage.
+
+:::image type="content" source="media/service-premium-connect-tools/allow-live-connections.png" alt-text="Les paramètres d’exportation et de partage autorisent les connexions actives.":::
 
 L’accès via le point de terminaison XMLA respectera l’appartenance au groupe de sécurité définie au niveau de l’espace de travail/application.
 
@@ -184,7 +190,7 @@ Une fois la propriété Serveur de déploiement spécifiée, le projet peut alor
 
 **Lors du premier déploiement**, un jeu de données est créé dans l’espace de travail à l’aide des métadonnées du modèle.bim. Dans le cadre de l’opération de déploiement, une fois le jeu de données créé dans l’espace de travail à partir des métadonnées du modèle, le traitement pour charger des données dans le jeu de données à partir de sources de données échoue.
 
-Le traitement échoue car, contrairement au déploiement sur une instance Azure ou SQL Server Analysis Server, où les informations d’identification de la source de données sont demandées dans le cadre de l’opération de déploiement, lors du déploiement sur un espace de travail Premium, les informations d’identification de la source de données ne peuvent pas être spécifiées dans le cadre de l’opération de déploiement. Au lieu de cela, une fois le déploiement des métadonnées réussi et le jeu de données créé, les informations d’identification de la source de données sont spécifiées dans le service Power BI, dans les paramètres du jeu de données. Dans l’espace de travail, cliquez sur **Jeux de données** > **Paramètres** > **Informations d’identification de la source de données** > **Modifier les informations d’identification**.
+Le traitement échoue car, contrairement au déploiement sur une instance Azure ou SQL Server Analysis Server, où les informations d’identification de la source de données sont demandées dans le cadre de l’opération de déploiement, lors du déploiement sur un espace de travail Premium, les informations d’identification de la source de données ne peuvent pas être spécifiées dans le cadre de l’opération de déploiement. Au lieu de cela, une fois le déploiement des métadonnées réussi et le jeu de données créé, les informations d’identification de la source de données sont spécifiées dans le service Power BI, dans les paramètres du jeu de données. Dans l’espace de travail, sélectionnez **Jeux de données** > **Paramètres** > **Informations d’identification de la source de données** > **Modifier les informations d’identification**.
 
 ![Informations d’identification de la source de données](media/service-premium-connect-tools/xmla-endpoint-datasource-credentials.png)
 
@@ -198,7 +204,7 @@ L’utilisation de SSMS pour se connecter à un espace de travail est similaire 
 
 ### <a name="connect-to-a-workspace-by-using-ssms"></a>Se connecter à un espace de travail à l’aide de SSMS
 
-1. Dans SQL Server Management Studio, cliquez sur **Se connecter** > **Se connecter au serveur**.
+1. Dans SQL Server Management Studio, sélectionnez **Se connecter** > **Se connecter au serveur**.
 
 2. Dans **Type de serveur**, sélectionnez **Analysis Services**. Dans **Nom du serveur**, entrez l’URL de l’espace de travail. Dans **Authentification**, sélectionnez **Active Directory - Universel avec MFA**, puis dans **Nom d’utilisateur**, entrez votre ID d’utilisateur d’organisation.
 

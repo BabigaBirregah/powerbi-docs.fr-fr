@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/02/2020
+ms.date: 12/03/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 004546a941426f602bfb5cacaf938bd55cec452d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 76f45ac7aee01cb907e727bc8cb12a69bd234d72
+ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96406776"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96613874"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publication sur le web à partir de Power BI
 
@@ -198,6 +198,7 @@ La fonctionnalité **Publier sur le web** est prise en charge pour la grande maj
 - Modèles de requêtes de données à authentification unique.
 - Informations confidentielles ou propriétaires sécurisées.
 - La fonctionnalité d’authentification automatique fournie avec l’option **Incorporer** ne fonctionne pas avec l’API JavaScript Power BI. Pour l’API JavaScript Power BI, utilisez l’approche [les données appartiennent à l’utilisateur](../developer/embedded/embed-sample-for-your-organization.md) pour l’incorporation.
+- Les administrateurs peuvent bloquer l’accès Internet public, comme décrit dans [Liaisons privées pour accéder à Power BI](../admin/service-security-private-links.md). Dans ce cas, l’option **Publier sur le web** est grisée pour votre locataire dans le portail d’administration Power BI. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 

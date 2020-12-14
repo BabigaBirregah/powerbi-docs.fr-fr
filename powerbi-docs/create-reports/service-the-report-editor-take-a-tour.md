@@ -8,14 +8,14 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 08/14/2019
+ms.date: 12/01/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 26a98609481ce45a6e432c8006d80f9becdd9f3b
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 560c03865519d1c5d2435dc333954f284ee726e6
+ms.sourcegitcommit: 8993400b32a44f4e7ce9a2db998ddebda18c7698
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96387778"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96536504"
 ---
 # <a name="tour-the-report-editor-in-power-bi"></a>Visite guidée de l’éditeur de rapport de Power BI
 
@@ -33,14 +33,14 @@ Dans le service Power BI, l’éditeur de rapport est uniquement disponible en m
 
 L’éditeur de rapport Power BI est divisé en plusieurs sections principales :  
 
-1. Volet de navigation du haut
+1. Le ruban
 1. Canevas du rapport
 1. Volet Filtres
 1. volet Visualisations
 1. Volet Champs
 
-## <a name="1-the-top-nav-pane"></a>1. Volet de navigation du haut
-Les actions disponibles dans le volet de navigation du haut sont nombreuses, et de nouvelles actions sont constamment ajoutées. Pour plus d’informations sur une action en particulier, utilisez la zone de recherche ou la table des matières de la documentation Power BI.
+## <a name="1-the-ribbon"></a>1. Le ruban
+Les actions disponibles dans le ruban sont nombreuses, et de nouvelles actions sont ajoutées en permanence. Pour plus d’informations sur une action en particulier, utilisez la zone de recherche ou la table des matières de la documentation Power BI.
 
 
 ## <a name="2-the-report-canvas"></a>2. Canevas de rapport
@@ -135,23 +135,7 @@ Dans Power BI Desktop, vous pouvez également afficher ou masquer des champs, a
 
 ## <a name="the-field-icons"></a>Icônes des champs
 
-Power BI utilise différentes icônes pour désigner les types de champs d’un rapport. Le fait de connaître ces icônes vous permet de comprendre comment fonctionnent les champs dans les différents visuels. Voici certaines des icônes les plus courantes.
-
-
-|Icône  |Signification  |
-|---------|---------|
-| ![Dossier](media/service-the-report-editor-take-a-tour/power-bi-field-list-folder.png) | Dossier dans la liste Champs |
-|![Champ numérique](media/service-the-report-editor-take-a-tour/power-bi-field-list-numeric.png) | Champ numérique : Les champs numériques sont des agrégats qui sont utilisés dans le cadre d’additions ou de calculs de moyenne, par exemple. Les agrégats sont importés avec les données et sont définis dans le modèle de données sur lequel votre rapport est basé. Pour plus d’informations, consultez [Agrégats dans des rapports Power BI](service-aggregates.md). |
-|![Colonne calculée non numérique](media/service-the-report-editor-take-a-tour/power-bi-field-list-calculated-column.png) | Colonne calculée avec type de données non numérique : Nouvelle colonne non numérique que vous créez avec une formule DAX (Data Analysis Expressions) qui définit les valeurs de la colonne. En savoir plus sur les [colonnes calculées](../transform-model/desktop-calculated-columns.md) |
-|![Colonne calculée numérique](media/service-the-report-editor-take-a-tour/power-bi-field-list-numeric-calculated-column.png)     |   Colonne calculée numérique : Nouvelle colonne que vous créez avec une formule DAX (Data Analysis Expressions) qui définit les valeurs de la colonne. En savoir plus sur les [colonnes calculées](../transform-model/desktop-calculated-columns.md) |
-|![Mesure](media/service-the-report-editor-take-a-tour/power-bi-field-list-measure.png) |  Mesure : Chaque mesure a sa propre formule codée en dur. Vous ne pouvez pas modifier le calcul ; par exemple, s’il s’agit d’une somme, il peut uniquement être une somme. Les valeurs ne sont pas stockées dans une colonne. Elles sont calculées à la volée, en fonction uniquement de leur emplacement dans le visuel. Pour plus d’informations, lisez [Présentation des mesures](../transform-model/desktop-measures.md). |
-|![Groupe de mesures](media/service-the-report-editor-take-a-tour/power-bi-field-list-measure-group.png)     | Groupe de mesures  |
-|![Icône d’indicateur de performance clé](media/service-the-report-editor-take-a-tour/power-bi-field-list-kpi.png) |      KPI : Indice visuel qui permet de voir la progression réalisée vers un objectif mesurable. En savoir plus sur les visuels d’[indicateur de performance clé (KPI)](../visuals/power-bi-visualization-kpi.md) |
-|![Icône Hiérarchie](media/service-the-report-editor-take-a-tour/power-bi-field-list-hierarchy.png)     |  Hiérarchie des champs : Sélectionnez la flèche pour afficher les champs qui composent la hiérarchie.  Pour plus d’informations, regardez cette vidéo Power BI sur YouTube concernant la [création et l’utilisation des hiérarchies](https://www.youtube.com/watch?v=q8WDUAiTGeU). |
-|![Données géographiques](media/service-the-report-editor-take-a-tour/power-bi-field-list-geo-data.png)     | Données géographiques : Ces champs d’emplacement peuvent être utilisés pour créer des visualisations de cartes. |
-| ![Champ Identité](media/service-the-report-editor-take-a-tour/power-bi-field-list-identity.png)     | Champ Identité : Les champs portant cette icône sont des *champs uniques* qui sont configurés pour afficher toutes les valeurs, y compris les doublons. Par exemple, vos données peuvent comprendre des enregistrements pour deux personnes nommées « Robin Smith », et chaque enregistrement sera traité comme étant unique. Ils ne seront pas additionnés.   |
-|![Paramètre](media/service-the-report-editor-take-a-tour/power-bi-field-list-parameter.png)   | Paramètre : Configurez les paramètres pour que certaines parties de vos rapports et modèles de données (filtre de requête, référence à une source de données, définition de mesure, etc.) dépendent d’une ou de plusieurs valeurs de paramètres. Pour plus d’informations, consultez ce billet de blog Power BI sur les [paramètres de requête](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/). |
-| ![Calendrier](media/service-the-report-editor-take-a-tour/power-bi-field-list-calendar.png) | Champ de date du calendrier avec une table de dates intégrée |
+Power BI utilise différentes icônes pour désigner les types de champs d’un rapport. Le fait de connaître ces icônes vous permet de comprendre comment fonctionnent les champs dans les différents visuels. Pour obtenir la liste complète, consultez la [section Icônes de la liste de champs de la rubrique Utilisation de la liste de champs dans Power BI Desktop](../transform-model/desktop-field-list.md#field-list-changes).
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Créer un rapport](service-report-create-new.md)

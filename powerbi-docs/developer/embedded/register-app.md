@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 04/02/2019
-ms.openlocfilehash: c8d756a80cf6d748f3ff33298b3a243f82197734
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: 845499bc236489932bf1347c43f7a5ba71c21a6b
+ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94668646"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96907322"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Inscrire une application Azure AD à utiliser avec Power BI
 
@@ -32,7 +32,7 @@ Utilisez la solution [Incorporer pour vos clients](embed-sample-for-customers.md
 
 * Un compte **Utilisateur maître** (licence Power BI Pro utilisée pour la connexion à Power BI)
 
-*  [Principal du service](embed-service-principal.md)
+* [Principal du service](embed-service-principal.md)
 
 La solution Incorporer pour vos clients est généralement utilisée par les éditeurs de logiciels indépendants (ISV) et les développeurs qui créent des applications pour un tiers.
 
@@ -115,7 +115,16 @@ Ces étapes décrivent la procédure d’inscription d’une application Azure A
 
 # <a name="manual-registration"></a>[Inscription manuelle](#tab/manual)
 
-Utilisez l’inscription d’application manuelle Azure AD uniquement si vous créez une solution *Incorporer pour votre organisation*. Pour plus d’informations sur la façon d’inscrire les applications dans Azure Active Directory, consultez [Inscrire une application avec Azure Active Directory](/azure/active-directory/develop/quickstart-v2-register-an-app).
+Utilisez l’inscription d’application manuelle Azure AD seulement si vous créez une des solutions suivantes :
+
+* Une application *Incorporer pour votre organisation*.
+
+* Une application *Incorporer pour vos clients* avec un *principal de service*.
+
+    >[!NOTE]
+    >Si vous choisissez cette option, après avoir inscrit votre application Azure AD, vous devrez y [ajouter des autorisations Power BI](#change-your-azure-ad-apps-permissions).
+
+Pour plus d’informations sur la façon d’inscrire les applications dans Azure Active Directory, consultez [Inscrire une application avec Azure Active Directory](/azure/active-directory/develop/quickstart-v2-register-an-app).
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
 
@@ -140,6 +149,9 @@ Utilisez l’inscription d’application manuelle Azure AD uniquement si vous cr
 ## <a name="change-your-azure-ad-apps-permissions"></a>Modifier les autorisations de votre application Azure AD
 
 Après avoir inscrit votre application, vous pouvez apporter des modifications à ses autorisations. Il est possible de modifier les autorisations par programmation ou sur le portail Azure.
+
+>[!NOTE]
+>Les autorisations d’application Azure AD s’appliquent seulement à la solution *Incorporer pour vos clients* avec la méthode d’authentification *utilisateur maître*.
 
 # <a name="azure"></a>[Microsoft Azure](#tab/Azure)
 

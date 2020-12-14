@@ -2,26 +2,26 @@
 title: Afficher le contenu récemment visité dans le service Power BI
 description: documentation pour Récents dans Power BI
 author: mihart
-ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
-ms.subservice: pbi-explore
+ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 09/24/2020
+ms.date: 11/24/2020
+ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: e11b1823c45e681d6a555bd5a4a9a751704419b2
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: ca3ae0974c0ece1f20a104dbeef1be0d89d1b523
+ms.sourcegitcommit: 8993400b32a44f4e7ce9a2db998ddebda18c7698
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96399232"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96536389"
 ---
 # <a name="recent-content-in-the-power-bi-service"></a>Contenus **récents** dans le service Power BI
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-Le contenu **récent** comprend les derniers éléments que vous avez consultés dans le service Power BI. Ceci inclut les tableaux de bord, les rapports, les applications et les classeurs. Lorsque vous sélectionnez **Récent** dans la barre de navigation, Power BI affiche ce contenu par date, dans l’ordre décroissant.  Pour changer l’ordre de tri, sélectionnez l’un des en-têtes, puis choisissez Croissant ou Décroissant.
+Le contenu **récent** comprend les derniers éléments que vous avez consultés dans le service Power BI. Ceci inclut les tableaux de bord, les rapports, les applications, les espaces de travail et les classeurs. Lorsque vous sélectionnez **Récent** dans la barre de navigation, Power BI affiche ce contenu par date, dans l’ordre décroissant.  Pour changer l’ordre de tri, sélectionnez l’un des en-têtes, puis choisissez Croissant ou Décroissant.
 
 
 ![fenêtre Contenu récent](./media/end-user-recent/power-bi-recents.png)

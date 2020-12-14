@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 1166f51c21e765e5710d33ad45a47057ea773bd8
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 348032345a56d538e1e5ffbb6036d411e42b2954
+ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397435"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96907069"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Questions fréquentes sur Power BI Embedded
 
@@ -112,14 +112,14 @@ Power BI vous impose de vous inscrire avec un compte professionnel. Vous ne pouv
 
 ### <a name="can-i-use-apis-to-create-and-manage-azure-capacities"></a>Puis-je utiliser des API pour créer et gérer des capacités Azure ?
 
-Oui, les applets de commande PowerShell et les API REST Azure Resource Manager vous permettent de créer et de gérer des ressources PBIE.
+Oui, des applets de commande PowerShell et des API REST Azure Resource Manager vous permettent de créer et de gérer des ressources PBIE.
 
 * [API REST](/rest/api/power-bi-embedded/) 
 * [Applets de commande PowerShell](/powershell/module/azurerm.powerbiembedded/)
 
 ### <a name="what-is-the-pbi-embedded-capacity-role-in-a-pbi-embedded-solution"></a>Quel est le rôle d’une capacité PBI Embedded dans une solution PBI Embedded ?
 
-Pour [promouvoir votre solution en production](embed-sample-for-customers.md#move-to-production), vous devez affecter le contenu Power BI (espace de travail) que votre application utilise à une capacité Power BI Embedded (référence SKU A).
+Pour [promouvoir votre solution en production](move-to-production.md), vous devez affecter le contenu Power BI (espace de travail) que votre application utilise à une capacité Power BI Embedded (référence SKU A).
 
 ### <a name="in-what-azure-regions-is-pbi-embedded-available"></a>Dans quelles régions Azure PBI Embedded est-il disponible ?
 
@@ -184,7 +184,7 @@ On confond souvent ces deux méthodes, car l’une permet de contrôler ce qu’
 
 Pour la sécurité au niveau des lignes, le développeur ISV contrôle le filtrage des données dans le cadre de la création du modèle et de la génération de jeton d’incorporation. L’utilisateur final voit uniquement ce que l’ISV l’autorise à voir. Dans ce cas, l’utilisateur peut choisir d’en voir moins que ce qui est filtré, mais il ne pourra pas contourner la configuration de sécurité au niveau des lignes et voir plus que ce qui est autorisé.
 
-Pour le filtrage côté client (JavaScript), l’ISV peut décider de ce que l’utilisateur final voit dans la vue initiale, mais il ne peut pas contrôler les changements que l’utilisateur est susceptible d’appliquer à la vue proprement dite. Étant donné que le code client Javascript de l’utilisateur peut déclencher le filtrage des données sur le back-end, il n’est pas considéré comme sécurisé.
+Pour le filtrage côté client (JavaScript), l’ISV peut décider de ce que l’utilisateur final voit dans la vue initiale, mais il ne peut pas contrôler les changements que l’utilisateur est susceptible d’appliquer à la vue proprement dite. Étant donné que le code client JavaScript de l’utilisateur peut déclencher le filtrage des données sur le back-end, il ne peut pas être considéré comme sécurisé.
 
 Pour plus d’informations, consultez [Sécurité au niveau des lignes ou filtres JavaScript](embedded-row-level-security.md#using-rls-vs-javascript-filters).
 
@@ -198,7 +198,7 @@ Ce cas de figure a son importance quand vous ajoutez le principal du service com
 
 ### <a name="when-to-use-an-application-id-vs-a-service-principal-object-id"></a>Quand utiliser un ID d’application ou un ID d’objet de principal du service ?
 
-L’ **[ID d’application](embed-sample-for-customers.md#application-id)** est utilisé pour créer le jeton d’accès lors du passage de l’ID d’application pour l’authentification.
+L’ **[ID d’application](embed-sample-for-customers.md#client-id)** , également appelé *ID de client*, est utilisé pour créer le jeton d’accès lors du passage de l’ID d’application pour l’authentification.
 
 Pour référencer un principal du service pour des opérations ou pour faire des changements, par exemple pour appliquer un principal du service en tant qu’administrateur à un espace de travail, vous utilisez l’ **[ID d’objet de principal du service](embed-service-principal.md)** .
 

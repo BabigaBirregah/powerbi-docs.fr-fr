@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/20/2020
+ms.date: 12/04/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: 6fcbdeef8c7c02656e5637f6103fda76faeb26c9
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 1ab5fb15f910b420781564da8f26cf5cd7ccd7df
+ms.sourcegitcommit: 0bf42b6393cab7a37d21a52b934539cf300a08e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412273"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96781816"
 ---
 # <a name="what-is-power-bi-premium"></a>Qu’est-ce que Power BI Premium ?
 
@@ -50,7 +50,7 @@ Premium Gen2 offre les mises à jour ou expériences améliorées suivantes :
     * Moins de restrictions de mémoire
     * Séparation complète entre l’interaction avec les rapports et les actualisations planifiées
 
-* **Métriques améliorées** avec des données d’utilisation de capacité claires et normalisées, qui dépendent uniquement de la complexité des opérations d’analytique que la capacité effectue (et non de sa taille), du niveau de charge sur le système lors des opérations d’analytique, ainsi que d’autres facteurs. Grâce aux métriques améliorées, l’analyse de l’utilisation, la planification du budget, la facturation interne et le besoin de mise à niveau sont clairement visibles avec les rapports intégrés. Des métriques améliorées seront mises à disposition et améliorées tout au long de la période de préversion.
+* **Métriques améliorées** avec des données d’utilisation de capacité claires et normalisées, qui dépendent seulement de la complexité des opérations d’analytique effectuées par la capacité (et non pas de sa taille), du niveau de la charge sur le système lors des opérations d’analytique ainsi que d’autres facteurs. Grâce aux métriques améliorées, l’analyse de l’utilisation, la planification du budget, la facturation interne et le besoin de mise à niveau sont clairement visibles avec les rapports intégrés. Des métriques améliorées seront mises à disposition et améliorées tout au long de la période de préversion.
 
 * La **mise à l’échelle automatique** permet d’*ajouter automatiquement* 1 vCore à la fois par période de 24 heures, lorsque la charge sur la capacité dépasse les limites, évitant ainsi les ralentissements provoqués par la surcharge. Les vCores sont automatiquement supprimés si une durée d’inactivité est détectée. Des vCores supplémentaires sont facturés à votre abonnement Azure en fonction de l’utilisation. La mise à l’échelle automatique sera disponible au cours de la période de préversion. 
 
@@ -74,9 +74,9 @@ L’image suivante montre comment activer Premium Gen2.
 
 Les limitations connues suivantes s’appliquent actuellement à Premium Gen2 :
 
-1.  L’utilisation de la capacité Premium Gen2 ne peut pas être suivie dans l’application de métriques.
+1.    L’utilisation de la capacité Premium Gen2 ne peut pas être suivie dans l’application de métriques.
 
-2.  Les paramètres de capacité Premium Gen2 pour des charges de travail spécifiques ne sont pas encore visibles dans la page des paramètres de capacité Premium Gen2 du portail d’administration. Pour changer des paramètres, faites passer la capacité à la version d’origine de Premium, changez les paramètres, puis redéfinissez la capacité sur Premium Gen2. Les paramètres d’allocation de mémoire ne s’appliquent pas aux capacités Premium Gen2.
+2.    Les paramètres de capacité Premium Gen2 pour des charges de travail spécifiques ne sont pas encore visibles dans la page des paramètres de capacité Premium Gen2 du portail d’administration. Pour changer des paramètres, faites passer la capacité à la version d’origine de Premium, changez les paramètres, puis redéfinissez la capacité sur Premium Gen2. Les paramètres d’allocation de mémoire ne s’appliquent pas aux capacités Premium Gen2.
 
 3.  Si vous utilisez XMLA sur Premium Gen2, vérifiez que vous utilisez les versions les plus récentes des [outils de modélisation et de gestion de données](service-premium-connect-tools.md#data-modeling-and-management-tools). 
 
@@ -181,7 +181,7 @@ Les opérations de capacité sont soit *interactives*, soit *d’arrière-plan*.
 
 Il est important de comprendre que les opérations interactives ont toujours la priorité sur les opérations d’arrière-plan, et ce, pour garantir la meilleure expérience utilisateur possible. Si les ressources sont insuffisantes, les opérations d’arrière-plan sont ajoutées à une file d’attente jusqu’à ce que des ressources soient libérées. Les opérations d’arrière-plan, comme les actualisations de jeu de données, peuvent être interrompues à mi-parcours par le service Power BI, puis être ajoutées à une file d’attente et réessayées plus tard.
 
-Pour être interrogés ou actualisés, les modèles d’importation doivent être entièrement chargés en mémoire. L’service Power BI utilise des algorithmes sophistiqués pour gérer l’utilisation de la mémoire de façon équitable, mais dans de rares cas, la capacité peut être surchargée s’il n’y a pas suffisamment de ressources pour répondre aux demandes en temps réel des clients. Bien qu’il soit possible pour une capacité de stocker de nombreux modèles d’importation dans un stockage persistant (jusqu’à 100 To par capacité Premium), tous les modèles ne se trouvent pas nécessairement en mémoire en même temps, sinon la taille de leur jeu de données en mémoire peut facilement dépasser la limite de mémoire de la capacité. Outre la mémoire nécessaire pour charger les jeux de données, de la mémoire supplémentaire est nécessaire pour l’exécution des requêtes et les opérations d’actualisation.
+Pour être interrogés ou actualisés, les modèles d’importation doivent être entièrement chargés en mémoire. Le service Power BI utilise des algorithmes sophistiqués pour gérer l’utilisation de la mémoire de façon équitable, mais dans de rares cas, la capacité peut être surchargée s’il n’y a pas suffisamment de ressources pour répondre aux demandes en temps réel des clients. Bien qu’il soit possible pour une capacité de stocker de nombreux modèles d’importation dans un stockage persistant (jusqu’à 100 To par capacité Premium), tous les modèles ne se trouvent pas nécessairement en mémoire en même temps, sinon la taille de leur jeu de données en mémoire peut facilement dépasser la limite de mémoire de la capacité. Outre la mémoire nécessaire pour charger les jeux de données, de la mémoire supplémentaire est nécessaire pour l’exécution des requêtes et les opérations d’actualisation.
 
 Les modèles d’importation sont donc chargés et supprimés de la mémoire en fonction de l’utilisation. Un modèle d’importation est chargé quand il est interrogé (opération interactive) ou s’il doit être actualisé (opération d’arrière-plan).
 
@@ -272,11 +272,13 @@ Le tableau suivant présente les références SKU recommandées pour le chargeme
    |---------|---------|
    |P1    | < 3 Go        |
    |P2    | < 6 Go        |
-   |P3, P4, P5    | jusqu’à 10 Go   |
+   |P3, P4, P5    | jusqu’à 10 Go  |
 
 La référence (SKU) A4 Power BI Embedded est égale à la référence P1, A5 = P2 et A6 = P3.
 
-Si vous autorisez les [modèles volumineux](service-premium-large-models.md) sur un jeu de données, les limitations de taille des fichiers .pbix s’appliquent toujours au chargement ou à la publication des fichiers. Toutefois, quand une actualisation incrémentielle est associée à des modèles volumineux, la taille des jeux de données peut largement dépasser ces limites. Avec des modèles volumineux, la limitation de taille des jeux de données dépend uniquement de la taille de la capacité Power BI Premium.
+### <a name="large-dataset-storage-format"></a>Format de stockage des grands jeux de données
+
+Si vous activez le paramètre [Format de stockage des grands jeux de données](service-premium-large-models.md) pour un jeu de données, les limitations de taille des fichiers .pbix s’appliquent néanmoins toujours au chargement ou à la publication des fichiers. La limite de taille de téléchargement n’est pas affectée par le format de stockage des grands jeux de données. Cependant, lors de la publication sur le service, avec l’actualisation incrémentielle et le format de stockage des grands jeux de données activés, les jeux de données peuvent croître bien au-delà de ces limites. Avec le format de stockage des grands jeux de données, la taille des jeux de données est limitée seulement par la taille de la capacité Power BI Premium.
 
 Vos fichiers .pbix contiennent des données dans un *format fortement compressé*. Les données seront probablement développées lors de leur chargement en mémoire et, dès lors, peuvent être encore développées plusieurs fois au moment de l’actualisation.
 

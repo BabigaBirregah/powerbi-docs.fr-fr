@@ -8,14 +8,14 @@ featuredvideoid: lJKgWnvl6bQ
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/23/2019
+ms.date: 12/03/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5aa34834df49d54be885d94a1a1c06e13891ead1
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: ad3a38fa8aef4f5404196213ebd3c7b26d3fc3b8
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417333"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96578403"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>Épingler une vignette à un tableau de bord Power BI à partir d’un rapport
 
@@ -58,10 +58,12 @@ Une autre option consiste à épingler une page de rapport entière à un tablea
 
 Pour plus d’informations, voir [Épingler une page de rapport entière](service-dashboard-pin-live-tile-from-report.md).
 
-> [!NOTE]
-> Certaines options de mise en forme ne sont pas appliquées aux visuels épinglés à un tableau de bord. Les paramètres de bordure, d’ombre et d’arrière-plan sont ignorés dans la vignette épinglée. En ce qui concerne les visuels de type carte, le texte utilisé pour la valeur apparaît toujours dans les tableaux de bord avec la famille de polices « DIN ». 
-> 
->
+## <a name="limitations"></a>Limites
+Certaines options de mise en forme des rapports ou des thèmes ne sont pas appliquées aux visuels quand vous les épinglez à un tableau de bord.
+- Les paramètres de bordure, d’ombre et d’arrière-plan sont ignorés dans la vignette épinglée.
+- Pour les visuels de type carte, le texte utilisé pour la valeur apparaît dans les tableaux de bord avec la famille de polices « DIN » et le texte en noir. Vous pouvez changer la couleur de texte pour toutes les vignettes d’un tableau de bord en [créant un thème de tableau de bord personnalisé](service-dashboard-themes.md).
+- La mise en forme conditionnelle n’est pas appliquée.
+- Les visuels ajustent leur taille en fonction de la taille de la vignette. Ceci peut entraîner des différences de disposition comme si le visuel avait été redimensionné sur le rapport.
 
 ## <a name="next-steps"></a>Étapes suivantes
 - [Tableau de bord pour les consommateurs du service Power BI](../consumer/end-user-dashboards.md)

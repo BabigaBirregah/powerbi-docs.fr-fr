@@ -10,14 +10,14 @@ ms.topic: reference
 ms.date: 11/16/2020
 ms.custom: licensing support
 LocalizationGroup: consumers
-ms.openlocfilehash: 8e3a32402b3eff202a8e35a2e34fa52271650a64
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e2bd6a752d94bd2a549d0149512707fbd7832319
+ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96390722"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96613782"
 ---
-# <a name="power-bi-feature-list-for-consumers-and-others-with-free-licenses"></a>Liste des fonctionnalités de Power BI pour les *consommateurs* et autres personnes bénéficiant de licences gratuites
+# <a name="power-bi-feature-list-for-business-users-and-others-with-free-licenses"></a>Liste des fonctionnalités Power BI pour les *utilisateurs professionnels* et les autres personnes avec des licences gratuites
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
@@ -58,7 +58,7 @@ Chaque utilisateur du service Power BI a une licence gratuite ou une licence Pro
 
    
 
-## <a name="power-bi-feature-list-for-consumers-and-free-users"></a>Liste des fonctionnalités de Power BI pour les *consommateurs* et les utilisateurs gratuits
+## <a name="power-bi-feature-list-for-business-users-and-free-users"></a>Liste des fonctionnalités Power BI pour les *utilisateurs professionnels* et les utilisateurs gratuits
 Le graphe suivant identifie les tâches pouvant être effectuées par un *utilisateur professionnel* qui interagit avec du contenu situé dans une capacité Premium.    
 
 La première colonne représente un utilisateur gratuit travaillant avec du contenu dans **Mon espace de travail**. Cet utilisateur ne peut pas collaborer avec ses collègues dans le service Power BI. Ses collègues ne peuvent pas partager directement du contenu avec cet utilisateur, et cet utilisateur ne peut pas partager à partir de **Mon espace de travail**. 

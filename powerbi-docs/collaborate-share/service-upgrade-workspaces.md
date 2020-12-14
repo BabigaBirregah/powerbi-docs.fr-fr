@@ -9,12 +9,12 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 09/30/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: d8e53e997aeef24d531cb733adc0b276a8395e57
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f5a76783d91da610a447667a9ea648bbcebbdc8b
+ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411606"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96577621"
 ---
 # <a name="upgrade-classic-workspaces-to-the-new-workspaces-in-power-bi"></a>Mettre à niveau les espaces de travail classiques vers de nouveaux espaces de travail dans Power BI
 
@@ -22,6 +22,10 @@ Cet article explique comment mettre à niveau ou *migrer* un espace de travail c
 
 >[!NOTE]
 >La mise à niveau de l’espace de travail est disponible en préversion publique. 
+
+>[!NOTE]
+>La mise à niveau de l’espace de travail peut être lancée par un administrateur Power BI. Les administrateurs d’espace de travail reçoivent un e-mail quand leur espace de travail a été mis à niveau par leur administrateur Power BI. [En savoir plus](../admin/service-admin-portal.md#workspaces) 
+
 
 ![Mise à niveau réussie](media/service-upgrade-workspaces/power-bi-upgrade-success.png)
 
@@ -68,6 +72,7 @@ Les utilisateurs qui utilisent activement l'espace de travail sont invités à a
 - Le groupe Microsoft 365 pour votre espace de travail classique n'est pas affecté par la mise à niveau de l'espace de travail dans Power BI. Les équipes, sites SharePoint, boîtes aux lettres ou autres ressources gérées par Microsoft 365 ne sont pas modifiés. Ces éléments restent intacts après la mise à niveau de votre espace de travail Power BI. Le groupe Microsoft 365 continue d'exister comme avant.
 - Il existe certains changements dans la façon dont votre espace de travail est sécurisé après la mise à niveau. Consultez la section [Autorisations de l'espace de travail après la mise à niveau](#permissions-after-upgrade) pour plus de détails.
 - Si nécessaire, une option pour **retourner à un espace de travail classique** est fournie. Cependant, elle ne restaure pas complètement certains aspects de votre espace de travail avant sa mise à niveau. Si vous commencez à utiliser des fonctionnalités disponibles uniquement dans le nouvel espace de travail, vous ne pourrez pas revenir en arrière. L'option de retour en arrière est disponible pendant 30 jours après la mise à niveau.
+- Les administrateurs Power BI peuvent lancer la mise à niveau d’un espace de travail. Les administrateurs d’espace de travail reçoivent un e-mail quand leur espace de travail a été mis à niveau par l’administrateur Power BI.
 
 ## <a name="permissions-after-upgrade"></a>Autorisations après la mise à niveau
 
@@ -193,12 +198,14 @@ Lorsque vous revenez à un espace de travail classique, vous ne restaurez pas un
 
 ## <a name="manage-migration-to-the-new-workspaces-for-your-tenant"></a>Gérer la migration vers les nouveaux espaces de travail pour votre locataire 
 
-Certaines organisations souhaitent déplacer une grande partie ou la totalité de leurs espaces de travail vers le nouvel espace de travail. L'outil de mise à niveau de l'espace de travail permet aux administrateurs de l'espace de travail de procéder à la mise à niveau. Les organisations qui souhaitent gérer un tel processus peuvent suivre les étapes ci-dessous.
+Les organisations qui veulent migrer de manière proactive vers la nouvelle expérience d’espace de travail peuvent le faire via le portail d’administration Power BI. L’administrateur Power BI peut sélectionner un ou plusieurs espaces de travail à mettre à niveau. Les mises à niveau d’espace de travail lancées par l’administrateur Power BI sont soumises aux mêmes considérations et limitations que les mises à niveau d’espace de travail lancées par un administrateur d’espace de travail. [En savoir plus](../admin/service-admin-portal.md#workspaces) 
+
+Nous recommandons aux organisations qui veulent gérer un tel processus de procéder selon les étapes suivantes pour garantir une communication claire avec les administrateurs des espaces de travail impactés.
 
 1. La liste des espaces de travail dans le portail d'administration Power BI et l'API correspondante fournissent une liste de tous les espaces de travail disponibles dans Power BI. Les espaces de travail classiques sont affichés en tant que type Groupe dans la liste.
-2. Demandez aux propriétaires de groupes, ou à votre administrateur Microsoft 365, de mettre à niveau les espaces de travail. Si vous voulez mettre à jour l'espace de travail, vous devez devenir propriétaire du groupe.
+2. Collaborez avec les propriétaires des groupes individuels ou votre administrateur Microsoft 365, et informez-les de vos plans de mise à niveau de leurs espaces de travail classiques.
 
-La capacité de mise à niveau de l'espace de travail ne fournit pas d'outils de mise à niveau en masse ou par programmation. Par ailleurs, les nouveaux groupes Microsoft 365 créés dans votre entreprise continueront à apparaître dans Power BI.
+La fonctionnalité de mise à niveau des espace de travail ne fournit pas d’outils pour effectuer un mise à niveau programmatique. Par ailleurs, les nouveaux groupes Microsoft 365 créés dans votre entreprise continueront à apparaître dans Power BI.
    
    
 ## <a name="known-issues"></a>Problèmes connus
@@ -213,4 +220,5 @@ Il se peut que vous rencontriez plusieurs problèmes connus à l’issue de la m
 * [Organiser le travail dans les nouvelles expériences d’espace de travail](service-new-workspaces.md)
 * [Créer de nouveaux espaces de travail](service-create-the-new-workspaces.md)
 * [Créer les espaces de travail classiques](service-create-workspaces.md)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+* [Démarrer une mise à niveau d’espace de travail lancée par l’administrateur Power BI](../admin/service-admin-portal.md#workspaces)
+* Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

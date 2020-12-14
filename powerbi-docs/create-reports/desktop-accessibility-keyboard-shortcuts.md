@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/28/2019
+ms.date: 12/04/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9cfd5f80ac18c05b520fc417c6336dda360b8737
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5b2439af22e32f1e0a8cbd3ce326252d6b28fab1
+ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417586"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96613920"
 ---
 # <a name="keyboard-shortcuts-in-power-bi-desktop"></a>Raccourcis clavier dans Power BI Desktop
 
@@ -92,7 +92,7 @@ Dans nos efforts constants pour améliorer l’accessibilité, les expériences 
 | :------------------- | :------------------- |
 | Déplacer une ligne vers le haut/le bas | **Alt+flèche vers le haut** / **Flèche vers le bas** |
 | Copier une ligne en haut / bas | **Maj+Alt+flèche vers le haut** / **Flèche vers le bas** |
-| Insérer la ligne ci-dessous | **Ctrl+Entrée** |
+| Insérer la ligne ci-dessous | **Maj+Entrée** |
 | Insérer la ligne ci-dessus | **Ctrl+Maj+Entrée** |
 | Sauter au crochet correspondant | **Ctrl+Maj+**  \ |
 | Mettre en retrait la ligne/Prolonger la ligne dans la marge | **Ctrl+]**  /  **[** |
@@ -100,9 +100,13 @@ Dans nos efforts constants pour améliorer l’accessibilité, les expériences 
 | Sélectionner la ligne actuelle | **Ctrl+I** |
 | Sélectionner toutes les occurrences de la sélection actuelle | **Ctrl+Maj+L** |
 | Sélectionner toutes les occurrences du mot actuel | **Ctrl+F2** |
+| Mettre une ligne en commentaire | **Ctrl + /** ou **Ctrl + K + C** |
+| Décommenter une ligne | **Ctrl + /** ou **Ctrl + K + U** |
+| Augmenter la taille de police | **Ctrl + +** ou **Défilement vers le haut** |
+| Diminuer la taille de police | **Ctrl + +** ou **Défilement vers le bas** |
 
 ## <a name="enter-data"></a>Entrer des données
-| Pour effectuer cette action           | Appuyer sur                |
+| Pour effectuer cette action           | Appuyez sur                |
 | :------------------- | :------------------- |
 | Quitter la grille modifiable | **Ctrl+Tab** |
 
@@ -120,9 +124,9 @@ Il existe quelques limitations et problèmes connus concernant les fonctionnalit
 Voici la liste des articles dédiés à l’accessibilité dans Power BI :
 
 * [Vue d’ensemble de l’accessibilité dans Power BI](desktop-accessibility-overview.md) 
-* [Création de rapports Power BI accessibles](desktop-accessibility-creating-reports.md) 
+* [Création de rapports Power BI accessibles](desktop-accessibility-creating-reports.md) 
 * [Consommation des rapports dans Power BI avec les outils d’accessibilité](desktop-accessibility-consuming-tools.md)
-* [Création de rapports Power BI avec les outils d’accessibilité](desktop-accessibility-creating-tools.md)
+* [Création de rapports Power BI avec les outils d’accessibilité](desktop-accessibility-creating-tools.md)
 * [Liste de vérification de l’accessibilité des rapports](desktop-accessibility-creating-reports.md#report-accessibility-checklist)
 
 L’article suivant peut également vous intéresser :

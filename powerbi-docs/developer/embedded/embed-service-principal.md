@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ''
 ms.date: 11/23/2020
-ms.openlocfilehash: 17c0a4d0809aa87f50225e0c59ca3962776bd2b1
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: 41b8cfe8515efbf3cc42794afcb2562f7d0c171a
+ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95514479"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96907092"
 ---
 # <a name="embed-power-bi-content-with-service-principal-and-an-application-secret"></a>Incorporer du contenu Power BI avec un principal de service et un secret d’application
 
@@ -170,7 +170,7 @@ Ajoutez le groupe de sécurité que vous avez créé dans Azure AD sous la sect
 >Pour restreindre l’accès du principal de service à des paramètres d’abonné spécifiques, autorisez l’accès uniquement à des groupes de sécurité spécifiques. Vous pouvez également créer un groupe de sécurité dédié pour les principaux de service et l’exclure des paramètres d’abonné souhaités.
 
 >[!div class="mx-imgBorder"]
->:::image type="content" source="media/embed-service-principal/admin-portal.png" alt-text="Capture d’écran montrant les paramètres de développeur dans les options d’administration dans le portail Power BI.":::
+>:::image type="content" source="media/embed-service-principal/admin-portal.png" alt-text="Capture d’écran montrant les paramètres de développeur dans les options d’administration du service Power BI.":::
 
 ## <a name="step-4---add-the-service-principal-to-your-workspace"></a>Étape 4 - Ajouter le principal de service à votre espace de travail
 
@@ -195,12 +195,9 @@ Pour activer vos artefacts d’accès à l’application Azure AD, tels que les
 
 ## <a name="step-5---embed-your-content"></a>Étape 5 : incorporer votre contenu
 
-Vous pouvez incorporer votre contenu dans un exemple d’application ou dans votre propre application.
+Vous pouvez [incorporer votre contenu dans un exemple d’application](embed-sample-for-customers.md) ou dans votre propre application.
 
-* [Incorporer du contenu en utilisant l’exemple d’application](embed-sample-for-customers.md#embed-content-using-the-sample-application)
-* [Incorporer du contenu dans votre application](embed-sample-for-customers.md#embed-content-within-your-application)
-
-Une fois votre contenu incorporé, vous êtes prêt à [passer à la production](embed-sample-for-customers.md#move-to-production).
+Une fois votre contenu incorporé, vous êtes prêt à [passer à la production](move-to-production.md).
 
 >[!NOTE]
 >Pour sécuriser votre contenu à l’aide d’un certificat, suivez les étapes décrites dans [Incorporer du contenu Power BI avec un principal de service et un certificat](embed-service-principal-certificate.md).
