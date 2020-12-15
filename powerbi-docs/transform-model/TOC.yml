@@ -7,8 +7,6 @@
       items:
         - name: Vue d’ensemble de l’éditeur de requête
           href: desktop-query-overview.md
-        - name: Préparation des données en libre-service avec des dataflows
-          href: ./dataflows/dataflows-introduction-self-service.md
     - name: Tutoriels
       expanded: true
       items:
