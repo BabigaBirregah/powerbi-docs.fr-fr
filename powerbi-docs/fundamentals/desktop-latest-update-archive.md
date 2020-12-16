@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 12/09/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 9bf482f14b197acda93b6411525a98e865706721
-ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
+ms.openlocfilehash: da9a143921c640f6933af572a7ac14fc04c96c47
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96578515"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998504"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Précédentes mises à jour mensuelles de Power BI Desktop
 
@@ -546,13 +546,6 @@ Vous pouvez également télécharger des versions précédentes de Power BI Desk
 * Il ne sera peut-être pas possible d’ouvrir des fichiers créés ou enregistrés dans de nouvelles versions de Power BI Desktop avec des versions précédentes de Power BI Desktop. 
 * Si vous recevez un avertissement lors du chargement d’un rapport enregistré dans une version plus récente de Power BI Desktop et que vous enregistrez ce rapport dans la version précédente, vous perdrez toutes les informations relatives aux nouvelles fonctionnalités.
 * Nous archivons uniquement les versions anglaises de Power BI Desktop.
-
-Sélectionnez les liens suivants pour télécharger cette version antérieure : 
-
-* [Version de Power BI Desktop de mai 2020 - 32 bits](https://download.microsoft.com/download/9/0/3/903DCAE8-44D9-4A7E-856C-40C0754723ED/PBIDesktopRS.msi)
-* [Version de Power BI Desktop de mai 2020 - 64 bits](https://download.microsoft.com/download/9/0/3/903DCAE8-44D9-4A7E-856C-40C0754723ED/PBIDesktopRS_x64.msi)
-
-
 
 
 

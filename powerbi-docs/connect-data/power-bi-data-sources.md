@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/17/2020
-ms.openlocfilehash: 18b7e55d409dc6562fab7cf1f36b83e7edac994b
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/14/2020
+ms.openlocfilehash: 67a0577c906e23fc51182120f1445814bdcd8028
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96392861"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491825"
 ---
 # <a name="power-bi-data-sources"></a>Sources de données Power BI
 
@@ -34,6 +34,7 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 | Azure Data Explorer (Kusto) | Oui | Oui | Oui | Oui | Non | Oui |
 | Azure Data Lake Storage Gen1 | Oui | Oui | Non | Non | Non | Non |
 | Azure Data Lake Storage Gen2 | Oui | Oui | Non | Oui | Non | Oui |
+| Azure Databricks | Oui | Oui | Oui | Oui | Non | Non |
 | Azure DevOps | Oui | Oui | Non | Non | Non | Non |
 | Azure DevOps Server | Oui | Oui | Non | Oui | Oui | Non |
 | Azure HDInsight (HDFS) | Oui | Oui | Non | Non | Non | Non |
@@ -43,7 +44,7 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 | Stockage de table Azure | Oui | Oui | Non | Oui | Non | Oui |
 | Connecteur BI | Oui | Oui | Oui | Oui | Oui | Non |
 | BI360 - Budgets & Rapports financiers | Oui | Oui | Non | Non | Non | Non |
-| Common Data Service | Oui | Oui | Non | Non | Non | Oui |
+| Microsoft Dataverse | Oui | Oui | Non | Non | Non | Oui |
 | Data.World - Obtenir le jeu de données | Oui | Oui | Non | Non | Non | Non |
 | Denodo | Oui | Oui | Oui | Oui | Oui | Non |
 | Dremio | Oui | Oui | Oui | Oui | Oui | Non |

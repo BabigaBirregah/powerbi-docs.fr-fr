@@ -7,14 +7,14 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 10/22/2020
+ms.date: 12/09/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: ec7b24a4d8f2a94680444b4b9adf4612f1f1f474
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5e357b275cd6648721b021f68a9b8496e266e003
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415148"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96999086"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Nouvelle apparence du service Power BI
 
@@ -65,7 +65,7 @@ Nous avons maintenu l’expérience de création similaire à celle de Desktop. 
 
 Les tableaux de bord ont également une barre d’action simplifiée. Cette barre est la même que celle des rapports et des applications, au nom d’une expérience cohérente, mais elle conserve les différences fonctionnelles. Voici une procédure pas à pas des actions dans un tableau de bord.
  
-![Capture d’écran de la barre d’action Tableau de bord dans la nouvelle apparence.](media/service-new-look/power-bi-dashboard-action-bar-new-look.png)
+![Capture d’écran de la barre d’action Tableau de bord dans la nouvelle apparence.](media/service-new-look/power-bi-dashboard-action-bar-new.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
