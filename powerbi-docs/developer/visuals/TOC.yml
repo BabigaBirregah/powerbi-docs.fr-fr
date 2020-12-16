@@ -82,6 +82,8 @@
           href: drill-down-support.md
         - name: Ajouter des couleurs à votre visuel
           href: add-colors-power-bi-visual.md
+        - name: Ajouter une mise en forme conditionnelle
+          href: conditional-format.md
         - name: Mettre en évidence des données dans les visuels
           href: highlight.md
         - name: Ajouter la prise en charge du mode contraste élevé
