@@ -17,6 +17,7 @@
         - name: "Se connecter à des données dans Power\_BI\_Desktop"
           href: desktop-quickstart-connect-to-data.md
     - name: Tutoriels
+      expanded: true
       items:
         - name: Mettre en forme et combiner plusieurs sources de données
           href: desktop-shape-and-combine-data.md
@@ -39,6 +40,7 @@
         - name: Actualiser les données à partir de SQL Server
           href: service-gateway-sql-tutorial.md
     - name: Concepts
+      expanded: true
       items:
         - name: "Sources de données Power\_BI"
           href: power-bi-data-sources.md
@@ -50,6 +52,8 @@
           href: desktop-default-member-multidimensional-models.md
         - name: À propos de l’utilisation de DirectQuery dans Power BI
           href: desktop-directquery-about.md
+        - name: "Utilisation de DirectQuery pour jeux de données Power\_BI et Azure Analysis Services (préversion)"
+          href: desktop-directquery-datasets-azure-analysis-services.md
         - name: Passerelles
           items:
             - name: Conseils de déploiement d’une passerelle de données
@@ -57,6 +61,7 @@
             - name: FAQ Passerelle de données locale
               href: service-gateway-power-bi-faq.md
     - name: Guides pratiques
+      expanded: true
       items:
         - name: Se connecter à la source de données
           href: desktop-connect-to-data.md

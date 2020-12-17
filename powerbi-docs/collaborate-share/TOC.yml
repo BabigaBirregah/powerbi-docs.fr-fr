@@ -57,7 +57,7 @@
               href: service-microsoft-teams-app.md
             - name: Incorporer des rapports dans les onglets Teams
               href: service-embed-report-microsoft-teams.md
-            - name: Partager directement sur Teams
+            - name: Conversation dans Teams directement
               href: service-share-report-teams.md
             - name: Obtenir un aperçu d’un lien dans Teams
               href: service-teams-link-preview.md
