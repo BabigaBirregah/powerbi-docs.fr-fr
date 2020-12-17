@@ -120,6 +120,7 @@
             - name: Meilleures pratiques
               href: deployment-pipelines-best-practices.md
     - name: Guides pratiques
+      expanded: true
       items:
         - name: Rapports Power BI
           items:
@@ -277,7 +278,7 @@
               href: ../visuals/power-bi-visualization-decomposition-tree.md
             - name: Narrations intelligentes
               href: ../visuals/power-bi-visualization-smart-narrative.md
-            - name: Détection des anomalies
+            - name: Détection d’anomalie
               href: ../visuals/power-bi-visualization-anomaly-detection.md
             - name: Graphiques en anneau
               href: ../visuals/power-bi-visualization-doughnut-charts.md
