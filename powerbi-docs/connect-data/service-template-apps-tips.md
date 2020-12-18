@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
-ms.openlocfilehash: bb48b92df81a49ee687376ee9f53428c10171b80
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b20bb007c55f7d7d618b70690475d34d9f53fc06
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410111"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491710"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Conseils pour créer des applications modèles dans Power BI
 
@@ -144,6 +144,10 @@ Après avoir publié l’application modèle sur AppSource, créez un lien de t�
 Pour rediriger un utilisateur vers le lien de téléchargement de l’application dans Power BI, consultez l’exemple de code suivant : [Dépôt GitHub](https://github.com/microsoft/Template-apps-examples).
 
 [![Lien de téléchargement de l’application](media/service-template-apps-tips/service-template-apps-tips-download.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
+
+## <a name="automate-parameter-configuration-during-installation"></a>Automatiser la configuration des paramètres lors de l’installation
+
+Si vous êtes éditeur de logiciels indépendant et que vous distribuez votre application de modèle par le biais de votre service web, vous pouvez créer une automatisation qui configure automatiquement les paramètres de l’application de modèle quand vos clients installent l’application dans leur compte Power BI. Cela rend les choses plus faciles pour vos clients et augmente la probabilité d’une installation réussie, car ils n’ont pas besoin de fournir des détails qu’ils ignorent peut-être. Pour plus d’informations, consultez [Configuration automatisée d’une installation d’application modèle](../developer/template-apps/template-apps-auto-install.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

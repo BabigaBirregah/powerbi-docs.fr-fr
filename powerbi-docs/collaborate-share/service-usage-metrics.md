@@ -1,6 +1,6 @@
 ---
-title: Superviser les métriques d’utilisation de tableaux de bord et de rapports
-description: Guide pratique pour voir, enregistrer, et utiliser des métriques d’utilisation pour des rapports et tableaux de bord Power BI.
+title: Superviser les métriques d’utilisation dans des espaces de travail classiques
+description: Comment voir, enregistrer et utiliser des métriques d’utilisation pour des rapports et tableaux de bord Power BI dans des espace de travail classiques.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,18 +8,18 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 12/15/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e9247e16704ccbbee466a5f85f3a2814bdfc521f
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b7184f00af46ce5f49df2510ea5e676c89a37a7a
+ms.sourcegitcommit: fef29a5c5bf1e0dae663c42c9ce5ae50e29ae9be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411629"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97558490"
 ---
-# <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Superviser les métriques d’utilisation de tableaux de bord et de rapports Power BI
+# <a name="monitor-usage-metrics-in-classic-workspaces"></a>Superviser les métriques d’utilisation dans des espaces de travail classiques
 
-Si vous créez des tableaux de bord et des rapports, des mesures d’utilisation vous aident à comprendre leur impact. Quand vous exécutez des métriques d’utilisation de tableau de bord ou de rapport, vous découvrez comment elles sont utilisées dans votre organisation, qui les utilise et dans quel but.  
+Les métriques d’utilisation vous aident à comprendre l’impact de vos tableaux de bord et rapports. Quand vous exécutez des métriques d’utilisation de tableau de bord ou de rapport, vous découvrez comment elles sont utilisées dans votre organisation, qui les utilise et dans quel but. Cet article décrit les rapports de métriques d’utilisation pour les [espaces de travail classiques](service-create-workspaces.md). Si vos rapports se trouvent dans un des nouveaux espaces de travail, consultez l’article [Superviser les métriques d’utilisation dans la nouvelle expérience d’espace de travail](service-usage-metrics.md).  
 
 Les rapports de métriques d’utilisation sont en lecture seule. Vous pouvez cependant copier un rapport de métriques d’utilisation. Cette opération de copie crée un rapport Power BI standard que vous pouvez modifier. Vous pouvez également créer vos propres rapports dans Power BI Desktop basés sur le jeu de données sous-jacent, qui contient des métriques d’utilisation pour tous les tableaux de bord ou tous les rapports d’un espace de travail. Pour commencer, le rapport copié montre des métriques seulement pour le rapport ou le tableau de bord sélectionné. Vous pouvez supprimer le filtre par défaut et avoir accès au jeu de données sous-jacent, avec toutes les métriques d’utilisation de l’espace de travail sélectionné. Vous pouvez même voir les noms des utilisateurs spécifiques, si votre administrateur l’a autorisé.
 
@@ -55,7 +55,7 @@ Vous pouvez exécuter des rapports de métriques d’utilisation seulement dans 
 
     Les métriques d’utilisation sont un atout important lorsque vous déployez et gérez des rapports et des tableaux de bord Power BI. Vous vous demandez quelles pages de votre rapport sont les plus utiles et quelles sont celles que vous devez éliminer progressivement ? Segmentez les **pages du rapport** pour le savoir. Vous vous demandez si vous devez créer une version mobile de votre tableau de bord ? Segmentez par **plateformes** pour savoir combien d’utilisateurs accèdent à votre contenu via les applications mobiles et via le navigateur web.
 
-5. Vous pouvez également pointer sur une visualisation, puis sélectionner l’icône en forme d’épingle pour ajouter la visualisation à un tableau de bord. Une autre possibilité est de sélectionner **Épingler une page dynamique** dans la barre de menus du haut pour ajouter la page entière à un tableau de bord. Dans le tableau de bord, vous pouvez surveiller plus facilement les métriques d’utilisation ou les partager avec d’autres utilisateurs.
+5. Vous pouvez également pointer sur une visualisation, puis sélectionner l’icône en forme d’épingle pour ajouter la visualisation à un tableau de bord. Une autre possibilité est de sélectionner **Épingler une page dynamique** dans la barre de menus du haut pour ajouter la page entière à un tableau de bord. Dans le tableau de bord, vous pouvez superviser plus facilement les métriques d’utilisation ou les partager avec d’autres utilisateurs.
 
     > [!NOTE]
     > Si vous épinglez une vignette du rapport sur les mesures d’utilisation à un tableau de bord, vous ne pouvez pas ajouter ce tableau de bord à une application.
@@ -70,7 +70,7 @@ Vous pouvez exécuter des rapports de métriques d’utilisation seulement dans 
 
 ## <a name="about-the-usage-metrics-report"></a>À propos du rapport Métriques d’utilisation
 
-Quand vous sélectionnez **Métriques d’utilisation** ou l’icône ![Icône de métriques d’utilisation](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) en regard d’un tableau de bord ou d’un rapport, Power BI génère un rapport prédéfini avec des métriques d’utilisation relatives à ce contenu pour les 90 derniers jours.  Ce rapport est très similaire aux rapports Power BI que vous connaissez déjà. Vous pouvez le segmenter en fonction de la façon dont vos utilisateurs finaux ont reçu leur accès, et s’ils ont accédé au service via le web ou via une application mobile, etc. À mesure que vos tableaux de bord et vos rapports évoluent, votre rapport de métriques d’utilisation évolue lui aussi et se met à jour quotidiennement avec de nouvelles données.  
+Quand vous sélectionnez **Métriques d’utilisation** ou l’icône ![Icône de métriques d’utilisation](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) en regard d’un tableau de bord ou d’un rapport, Power BI génère un rapport prédéfini avec des métriques d’utilisation relatives à ce contenu pour les 90 derniers jours.  Ce rapport est très similaire aux rapports Power BI que vous connaissez déjà. Vous pouvez le segmenter en fonction de la façon dont vos utilisateurs finaux ont reçu leur accès, du mode d’accès qu’ils ont utilisé (via le web ou une application mobile), et ainsi de suite. À mesure que vos tableaux de bord et vos rapports évoluent, votre rapport de métriques d’utilisation évolue lui aussi et se met à jour quotidiennement avec de nouvelles données.  
 
 Les rapports de métriques d’utilisation ne s’affichent pas dans les listes **Récents**, **Espaces de travail**, **Favoris**, ni dans d’autres listes de contenu. Vous ne pouvez pas les ajouter à une application. Si vous épinglez une vignette du rapport sur les mesures d’utilisation à un tableau de bord, vous ne pouvez pas ajouter ce tableau de bord à une application.
 
@@ -87,7 +87,7 @@ Pour explorer les données du rapport ou pour créer vos propres rapports sur le
 | --- | --- | --- | --- |
 | Segment Méthode de distribution |oui |oui |Manière dont les utilisateurs ont eu accès au contenu. Il existe trois méthodes possibles : les utilisateurs peuvent accéder au tableau de bord ou au rapport s’ils sont membres d’un [espace de travail](../consumer/end-user-experience.md), quand du contenu est [partagé avec eux](service-share-dashboards.md) ou en installant une application ou un pack de contenu.  Notez que les vues dans une application sont comptées comme « packs de contenu ». |
 | Segment Plateformes |oui |oui |L’accès au tableau de bord ou au rapport a-t-il eu lieu via le service Power BI (powerbi.com) ou un appareil mobile ? L’accès mobile inclut toutes nos applications iOS, Android et Windows. |
-| Segment Page de rapport |non |oui |Si le rapport comporte plus d’une page, segmentez-le par page(s) visitées(s). Si vous voyez une option de liste « Vide », cela signifie qu’une page de rapport a été ajoutée récemment (dans les 24 heures, le nom réel de la nouvelle page s’affiche dans la liste des segments) et/ou que des pages de rapport ont été supprimées. « Vide » capture ces types de situations. |
+| Segment Page de rapport |non |oui |Si le rapport comporte plus d’une page, segmentez-le par page(s) visitées(s). « Vide » signifie qu’une page de rapport a été ajoutée récemment (dans les 24 heures, le nom réel de la nouvelle page s’affiche dans la liste des segments) ou que des pages de rapport ont été supprimées. « Vide » capture ces types de situations. |
 | Visites par jour |oui |oui |Nombre total de visites par jour : une visite correspond à un chargement de page de rapport ou de tableau de bord par un utilisateur. |
 | Visiteurs uniques par jour |oui |oui |Nombre d’utilisateurs *différents* qui ont consulté le tableau de bord ou le rapport (basé sur le compte d’utilisateur AAD). |
 | Vues par l’utilisateur |oui |oui |Nombre de vues au cours des 90 derniers jours, ventilées par utilisateur. |
@@ -95,7 +95,7 @@ Pour explorer les données du rapport ou pour créer vos propres rapports sur le
 | Nombre total de visites |oui |oui |Nombre de visites au cours des 90 derniers jours. |
 | Nombre total de visiteurs |oui |oui |Nombre de visiteurs uniques au cours des 90 derniers jours. |
 | Nombre total de partages |oui |non |Nombre de fois où que le tableau de bord ou le rapport a été partagé au cours des 90 derniers jours. |
-| Total dans l’organisation |oui |oui |Nombre de tableaux de bord ou de rapports dans toute l’organisation qui ont été consultés au moins une fois au cours des 90 derniers jours.  Utilisé pour calculer le classement. |
+| Total dans l’organisation |oui |Oui |Nombre de tableaux de bord ou de rapports dans toute l’organisation qui ont été consultés au moins une fois au cours des 90 derniers jours.  Utilisé pour calculer le classement. |
 | Classer : Nombre total de vues |oui |oui |Classement de ce tableau de bord ou rapport dans le nombre total de visites de tous les tableaux de bord ou rapports dans l’organisation au cours des 90 derniers jours. |
 | Classer : Nombre total de partages |oui |non |Classement de ce tableau de bord ou rapport dans le nombre total de partages de tous les tableaux de bord ou rapports dans l’organisation au cours des 90 derniers jours. |
 
@@ -103,7 +103,7 @@ Pour explorer les données du rapport ou pour créer vos propres rapports sur le
 
 Utilisez **Enregistrer sous** pour convertir le rapport de métriques d’utilisation en rapport Power BI standard, que vous pouvez personnaliser pour répondre à vos besoins spécifiques. Vous pouvez aussi utiliser Power BI Desktop pour générer des rapports de métriques d’utilisation personnalisés basés sur le jeu de données sous-jacent. Pour plus d’informations, consultez [Établir une connexion à un jeu de données publié](../connect-data/desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset).
 
-Mieux encore, le jeu de données sous-jacent comprend les détails d’utilisation de tous les tableaux de bord ou rapports dans l’espace de travail. Ceci ouvre plus de possibilités. Vous pouvez par exemple créer un rapport qui compare tous les tableaux de bord de votre espace de travail en fonction de leur utilisation. Vous pouvez aussi créer un tableau de bord des métriques d’utilisation pour votre application Power BI en agrégeant l’utilisation de tout le contenu distribué au sein de cette application.  Vous verrez comment supprimer le filtre et [afficher toutes les métriques d’utilisation de l’espace de travail](#see-all-workspace-usage-metrics) plus loin dans cet article.
+Mieux encore, le jeu de données sous-jacent comprend les détails d’utilisation de tous les tableaux de bord ou rapports dans l’espace de travail. Ceci ouvre plus de possibilités. Vous pouvez par exemple créer un rapport qui compare les tableaux de bord de votre espace de travail, en fonction de leur utilisation. Vous pouvez aussi créer un tableau de bord des métriques d’utilisation pour votre application Power BI en agrégeant l’utilisation de tout le contenu distribué au sein de cette application.  Vous verrez comment supprimer le filtre et [afficher toutes les métriques d’utilisation de l’espace de travail](#see-all-workspace-usage-metrics) plus loin dans cet article.
 
 ### <a name="create-a-copy-of-the-usage-report"></a>Créer une copie du rapport d’utilisation
 
@@ -112,7 +112,7 @@ Quand vous créez une copie du rapport d’utilisation prédéfini en lecture se
 1. Dans le rapport des métriques d’utilisation, sélectionnez **Fichier > Enregistrer sous**. Power BI crée un rapport Power BI modifiable, enregistré dans l’espace de travail actuel.
 
     ![Enregistrer sous](media/service-usage-metrics/power-bi-save-as.png)
-2. Ouvrez le rapport en mode Édition, puis [interagissez avec lui comme vous le feriez avec tout autre rapport Power BI](../create-reports/service-interact-with-a-report-in-editing-view.md). Vous pouvez, par exemple, ajouter des pages, générer de nouvelles visualisations, ajouter des filtres, mettre en forme les polices et les couleurs, etc.
+2. Ouvrez le rapport en mode Édition, puis [interagissez avec lui comme vous le feriez avec tout autre rapport Power BI](../create-reports/service-interact-with-a-report-in-editing-view.md). Vous pouvez, par exemple, ajouter des pages, générer de nouvelles visualisations, ajouter des filtres, mettre en forme les polices et les couleurs, et ainsi de suite.
 
     ![Ouvrir un rapport en mode Édition](media/service-usage-metrics/power-vi-editing-view.png)
 3. Le nouveau rapport est enregistré sous l’onglet **Rapports** de l’espace de travail en cours et ajouté à la liste des contenus **Récents**.
@@ -141,24 +141,28 @@ Les rapports de métriques d’utilisation sont une fonctionnalité que l’admi
 
 Par défaut, les données par utilisateur sont activées pour les métriques d’utilisation et les informations des comptes des consommateurs des contenus sont incluses dans le rapport des métriques. Si les administrateurs ne veulent pas exposer ces informations à tout ou partie des utilisateurs, ils peuvent désactiver la fonctionnalité pour des groupes de sécurité spécifiques ou pour l’ensemble de l’organisation. Les informations de compte figurent alors dans le rapport sous l’intitulé *Sans nom*.
 
-Quand les métriques d’utilisation sont désactivées pour toute l’organisation, les administrateurs peuvent utiliser l’option **Supprimer tout le contenu des métriques d’utilisation** pour supprimer toutes les vignettes des rapports et des tableaux de bord existants qui ont été générés en utilisant les rapports de métriques d’utilisation. Cette option supprime tout accès aux données de métriques d’utilisation pour tous les utilisateurs au sein de l’organisation qui peuvent déjà les utiliser. La suppression du contenu de métriques d’utilisation existantes est irréversible.
+Quand les métriques d’utilisation sont désactivées pour toute l’organisation, les administrateurs peuvent utiliser l’option **Supprimer tout le contenu des métriques d’utilisation** pour supprimer toutes les vignettes des rapports et des tableaux de bord existants qui ont été générés en utilisant les rapports de métriques d’utilisation. Cette option supprime l’accès aux données de métriques d’utilisation pour les utilisateurs au sein de l’organisation qui peuvent déjà les utiliser. La suppression du contenu de métriques d’utilisation existantes est irréversible.
 
 Pour plus d’informations sur ces paramètres, consultez [Contrôler les métriques d’utilisation](../admin/service-admin-portal.md#control-usage-metrics) dans l’article sur le portail d’administration. 
 
 ## <a name="usage-metrics-in-national-clouds"></a>Métriques d’utilisation dans les clouds nationaux
 
-Power BI est disponible dans des cloud nationaux distincts. Ces clouds offrent les mêmes niveaux de sécurité, de confidentialité, de conformité et de transparence que la version internationale de Power BI, combinés à un modèle unique pour les réglementations locales sur la fourniture de services, la résidence des données, l’accès et le contrôle. En raison de ce modèle unique adapté aux réglementations locales, les métriques d’utilisation ne sont pas disponibles dans les clouds nationaux. Pour plus d’informations, consultez [Clouds nationaux](https://powerbi.microsoft.com/clouds/).
+Power BI est disponible dans des cloud nationaux distincts. Ces clouds offrent les mêmes niveaux de sécurité, de confidentialité, de conformité et de transparence que la version internationale de Power BI, combinés à un modèle unique pour les réglementations locales sur la livraison de services, la résidence des données, l’accès et le contrôle. En raison de ce modèle unique adapté aux réglementations locales, les métriques d’utilisation ne sont pas disponibles dans les clouds nationaux. Pour plus d’informations, consultez [Clouds nationaux](https://powerbi.microsoft.com/clouds/).
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
 ### <a name="discrepancies-between-audit-logs-and-usage-metrics"></a>Différences entre les journaux d’audit et les métriques d’utilisation
 
-Il est important de savoir que la comparaison entre les journaux d’audit et les métriques d’utilisation peut produire des différences, et de comprendre pourquoi. Les *journaux d’audit* sont collectés à l’aide de données issues du service Power BI alors que les *métriques d’utilisation* sont collectées sur le client. Les compteurs d’activités agrégés dans les journaux d’audit ne correspondent pas toujours aux métriques d’utilisation pour les raisons suivantes :
+Il est important de savoir que la comparaison entre les journaux d’audit et les métriques d’utilisation peut produire des différences, et de comprendre pourquoi. Les *journaux d’audit* sont collectés à l’aide de données issues du service Power BI alors que les *métriques d’utilisation* sont collectées sur le client. Les compteurs d’activités agrégés dans les journaux d’audit ne correspondent pas toujours aux métriques d’utilisation en raison des différences suivantes :
 
 * Il arrive que les métriques d’utilisation sous-estiment les activités en raison de connexions réseau incohérentes, de bloqueurs de publicité ou d’autres problèmes susceptibles de perturber l’envoi d’événements à partir du client.
 * Certains types de vues ne sont pas inclus dans les métriques d’utilisation, comme décrit précédemment dans cet article.
 * Les métriques d’utilisation surestiment parfois les activités, dans les situations où le client actualise la page sans qu’il soit nécessaire de renvoyer une requête au service Power BI.
 * Le partage est désactivé pour le rapport de métriques d’utilisation. Pour pouvoir accorder aux utilisateurs un accès en lecture au rapport, vous devez d’abord leur donner accès à l’espace de travail.
+
+### <a name="discrepancies-between-rest-apis-and-usage-metrics"></a>Différences entre les API REST et les métriques d’utilisation
+
+Les [API REST de rapports](https://docs.microsoft.com/rest/api/power-bi/reports) et les [API REST d’administration](https://docs.microsoft.com/rest/api/power-bi/admin) Power BI utilisent également des données de service Power BI. Pour les raisons décrites dans la section précédente, les décomptes de rapports (nombre de rapports) issue des API peuvent différer des nombres de rapports indiqués dans les métriques d’utilisation. Les décomptes de rapports dérivés des API ne sont pas affectés par les problèmes des clients et doivent être considérés comme précis.
 
 ### <a name="other-considerations"></a>Autres éléments à prendre en compte
 

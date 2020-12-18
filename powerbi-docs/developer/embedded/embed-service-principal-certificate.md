@@ -1,5 +1,5 @@
 ---
-title: Incorporer du contenu Power BI avec un principal de service et un certificat
+title: Incorporer du contenu Power BI dans une application d’analytique incorporée avec un principal de service et un certificat
 description: Découvrez comment s’authentifier pour l’analytique incorporée en utilisant un principal de service d’application Azure Active Directory et un certificat.
 author: KesemSharabi
 ms.author: kesharab
@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ''
 ms.date: 11/23/2020
-ms.openlocfilehash: 990e3787927cb483b37d7bc456a46201876fcbed
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: f36f77ec1b6648bcb9ab45622fd9888366803b11
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95514421"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098395"
 ---
 # <a name="embed-power-bi-content-with-service-principal-and-a-certificate"></a>Incorporer du contenu Power BI avec un principal de service et un certificat
 

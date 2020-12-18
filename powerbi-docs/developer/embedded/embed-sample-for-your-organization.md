@@ -1,5 +1,5 @@
 ---
-title: Incorporer du contenu dans votre application pour votre organisation
+title: Incorporer du contenu dans votre application d’analytique incorporée Power BI pour votre organisation
 description: Découvrez comment intégrer ou incorporer un rapport (Power BI ou Paginé), un tableau de bord ou une vignette dans une application avec les API Power BI dans le cadre de l’analytique incorporée pour votre organisation. Découvrez comment intégrer Power BI dans votre application à l’aide de logiciels et d’outils d’analytique incorporée, ainsi que d’outils d’informatique décisionnelle incorporés.
 author: KesemSharabi
 ms.author: kesharab
@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: f84270d76265da2877ae5d2e16289373235271b6
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: 223495b68f160b637f5bcf40b37f1f1a1365fffd
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94668692"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098165"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Tutoriel : Incorporer du contenu Power BI dans une application pour votre organisation
 

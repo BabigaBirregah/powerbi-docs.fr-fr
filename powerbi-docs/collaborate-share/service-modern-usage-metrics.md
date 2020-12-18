@@ -8,20 +8,20 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 08/31/2020
+ms.date: 12/15/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: c5690492d3a54ae244e0104d0134414f1b6d9c96
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: bf55abf06bf1429776e3d0fd0432e459f91de0a7
+ms.sourcegitcommit: fef29a5c5bf1e0dae663c42c9ce5ae50e29ae9be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407328"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97558513"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience-preview"></a>Superviser les métriques d’utilisation dans la nouvelle expérience d’espace de travail (préversion)
 
-De cette manière, vous pouvez démontrer votre impact et hiérarchiser vos efforts. Vos mesures d’utilisation peuvent indiquer qu’un de vos rapports est utilisé quotidiennement par un segment important de l’organisation ou que vous avez créé un tableau de bord qui n’est pas du tout consulté. Ce type de retour est essentiel car il guide vos efforts de travail.
+De cette manière, vous pouvez démontrer votre impact et hiérarchiser vos efforts. Vos métriques d’utilisation peuvent indiquer que l’un de vos rapports est utilisé quotidiennement par un segment important de l’organisation. Elles peuvent indiquer que personne ne visualise un tableau de bord que vous avez créé. Ce type de retour est essentiel car il guide vos efforts de travail.
 
-Les rapports créés dans des espaces de travail modernes donnent accès à des métriques d’utilisation améliorées qui permettent de découvrir comment et par qui ils sont utilisés dans l’organisation, et d’identifier les problèmes de performances de haut niveau. Ces rapports d’utilisation améliorés remplacent les rapports de métriques d’utilisation existants documentés dans [Monitoring des métriques d’utilisation pour les tableaux de bord et les rapports Power BI](service-usage-metrics.md).
+Si vous créez des rapports dans des espaces de travail modernes, vous avez accès à des rapports de métriques d’utilisation améliorés. Ils vous permettent de découvrir qui utilise ces rapports au sein de votre organisation et comment ils sont utilisés. et d’identifier les problèmes de performances de haut niveau. Ces rapports d’utilisation améliorés remplacent les rapports de métriques d’utilisation existants documentés dans [Monitoring des métriques d’utilisation pour les tableaux de bord et les rapports Power BI](service-usage-metrics.md).
 
 ![Nouveau rapport de métriques d’utilisation](media/service-modern-usage-metrics/power-bi-modern-usage-metrics.png)
 
@@ -57,14 +57,14 @@ Seuls les utilisateurs disposant d’autorisations d’administrateur, de membre
 
 ## <a name="about-the-improved-usage-metrics-report"></a>À propos du rapport de métriques d’utilisation amélioré
 
-Quand vous affichez le rapport de métriques d’utilisation amélioré en suivant la procédure ci-dessus, Power BI génère un rapport prédéfini avec les métriques d’utilisation de ce contenu au cours des 30 derniers jours. Ce rapport est très similaire aux rapports Power BI que vous connaissez déjà. Vous pouvez le segmenter en fonction de la façon dont vos utilisateurs finaux ont reçu leur accès, et s’ils ont accédé au service via le web ou via une application mobile, etc. Le rapport de métriques d’utilisation évolue en même temps que les rapports et se met à jour quotidiennement avec les nouvelles données.
+Quand vous affichez ce rapport de métriques d’utilisation amélioré, Power BI génère un rapport prédéfini. Il contient les métriques d’utilisation de ce contenu pour les 30 derniers jours. Ce rapport est très similaire aux rapports Power BI que vous connaissez déjà. Vous pouvez le segmenter en fonction de la façon dont vos utilisateurs finaux ont reçu leur accès, du mode d’accès qu’ils ont utilisé (via le web ou une application mobile), et ainsi de suite. Le rapport de métriques d’utilisation évolue en même temps que les rapports. Il se met à jour quotidiennement avec les nouvelles données.
 
 > [!NOTE]
 > Les rapports de métriques d’utilisation ne s’affichent pas dans les listes Récents, Espaces de travail, Favoris, ni dans d’autres listes de contenu. Vous ne pouvez pas les ajouter à une application. Si vous épinglez une vignette du rapport sur les mesures d’utilisation à un tableau de bord, vous ne pouvez pas ajouter ce tableau de bord à une application.
 
 ### <a name="usage-metrics-report-dataset"></a>Jeu de données du rapport de métriques d’utilisation
 
-Le rapport de métriques d’utilisation amélioré s’appuie sur un jeu de données de rapport de métriques d’utilisation que Power BI crée automatiquement lors du premier lancement du rapport. Power BI actualise ensuite ce jeu de données tous les jours. S’il n’est pas possible de modifier la planification de l’actualisation, vous pouvez en revanche mettre à jour les informations d’identification utilisées par Power BI pour actualiser les données de métriques d’utilisation. Cela peut être nécessaire pour reprendre l’actualisation planifiée si les informations d’identification ont expiré ou si vous avez supprimé l’utilisateur qui a lancé à l’origine le rapport de métriques d’utilisation à partir de l’espace de travail dans lequel se trouve le jeu de données.
+Quand vous lancez le rapport de métriques d’utilisation amélioré pour la première fois, Power BI crée automatiquement un jeu de données de rapport de métriques d’utilisation. Le rapport de métriques d’utilisation amélioré s’appuie sur ce jeu de données. Power BI actualise ensuite ce jeu de données tous les jours. S’il n’est pas possible de modifier la planification de l’actualisation, vous pouvez en revanche mettre à jour les informations d’identification utilisées par Power BI pour actualiser les données de métriques d’utilisation. Vous devrez peut-être reprendre l’actualisation planifiée si les informations d’identification ont expiré ou si vous avez supprimé l’utilisateur qui a lancé à l’origine le rapport de métriques d’utilisation à partir de l’espace de travail dans lequel se trouve le jeu de données.
 
 > [!NOTE]
 > Bien qu’en préversion, le jeu de données de métriques d’utilisation peut présenter des changements mineurs qui affectent les rapports personnalisés.  
@@ -81,24 +81,47 @@ Le rapport de métriques d’utilisation amélioré comporte les pages suivantes
 
 | **Page** | **Métrique** | **Description** |
 | --- | --- | --- |
-| Utilisation des rapports | Vues de rapport | Une vue de rapport est enregistrée chaque fois qu’un utilisateur ouvre un rapport. Notez que la définition d’une vue diffère de celle des rapports de métriques d’utilisation précédents. Le fait de changer de page n’est plus considéré comme une vue supplémentaire. Certaines activités comme le partage et l’épinglage ne sont plus prises en compte dans les métriques d’utilisation.|
+| Utilisation des rapports | Vues de rapport/Ouvertures de rapport | Une vue de rapport est enregistrée chaque fois qu’un utilisateur ouvre un rapport et représente les arrivées uniques sur le rapport. Elle répond à la question « quelle est la fréquence d’accès au rapport ? ». Cette définition d’une vue de rapport diffère de celle des rapports de métriques d’utilisation précédents. Le fait de changer de page de rapport n’est plus considéré comme une vue de rapport supplémentaire. En effet, ce changement est pris en compte par la métrique suivante, Vues de page de rapport. Certaines activités comme le partage et l’épinglage ne sont plus prises en compte dans les métriques d’utilisation. |
+| Utilisation des rapports | Vues de page de rapport | Une vue de page de rapport est enregistrée chaque fois qu’un utilisateur consulte une page de rapport. Elle représente le nombre total de vues sur toutes les pages. Elle répond à la question « quelle est la fréquence d’accès aux pages de rapport ? ». Le fait de changer de page de rapport est donc pris en compte par la métrique Vues de page de rapport. Consultez [Considérations et limitations](#considerations-and-limitations) pour obtenir des informations importantes. |
 | Utilisation des rapports | Visiteurs uniques | Un visiteur est une personne qui a ouvert le rapport au moins une fois au cours de la période (en fonction du compte d’utilisateur AAD). |
 | Utilisation des rapports | Tendance des vues | La tendance des vues reflète les modifications du nombre de vues au fil du temps. Elle compare la première moitié de la période sélectionnée à la seconde moitié. |
 | Utilisation des rapports | Segment de date | Vous pouvez modifier la période sur la page Utilisation du rapport, par exemple pour calculer les tendances hebdomadaires ou bihebdomadaires. Dans le coin inférieur gauche de la page Utilisation du rapport, vous pouvez déterminer la date la plus ancienne et la plus récente à laquelle les données d’utilisation sont disponibles pour le rapport sélectionné. |
 | Utilisation des rapports | Rank | Selon le nombre de vues, le classement indique la popularité d’un rapport par rapport à tous les autres rapports de l’organisation. Un classement de 1 signifie que le rapport a le plus grand nombre de vues de tous les rapports de l’organisation.   |
-| Utilisation des rapports | Vues du rapport par jour | Nombre total de vues par jour. |
+| Utilisation des rapports | Vues du rapport par jour | Nombre total de vues de rapport par jour. Compté au niveau du rapport, ne tient pas compte des vues de page de rapport. |
 | Utilisation des rapports | Visiteurs du rapport par jour | Nombre total d’utilisateurs différents qui ont consulté le rapport (en fonction du compte d’utilisateur AAD). |
 | Utilisation des rapports | Méthode de distribution | Manière dont les utilisateurs ont obtenu l’accès au rapport, par exemple en tant que membres d’un espace de travail, suite au partage du rapport ou en installant une application. |
 | Utilisation des rapports | Segment de plateforme | Manière dont les utilisateurs ont accédé au rapport, par l’intermédiaire du service Power BI (powerbi.com), de Power BI Embedded ou d’un appareil mobile. |
 | Utilisation des rapports | Utilisateurs avec vues de rapport | Liste des utilisateurs qui ont ouvert le rapport trié par nombre de vues. |
-| Utilisation des rapports | Pages | Si le rapport comporte plus d’une page, segmentez-le par page(s) visitées(s). Si vous voyez une option de liste « Vide », cela signifie qu’une page de rapport a été ajoutée récemment (dans les 24 heures, le nom réel de la nouvelle page s’affiche dans la liste des segments) et/ou que des pages de rapport ont été supprimées. « Vide » capture ces types de situations. |
-| Performance du rapport | Durée d’ouverture type | 50e centile du temps nécessaire à l’ouverture du rapport, soit la durée au-dessous de laquelle 50 % des actions d’ouverture de rapport sont effectuées. La page Performance du rapport décompose également la durée d’ouverture type du rapport par méthode de consommation et type de navigateur. À l’heure actuelle, nous mesurons les performances pour la charge de rapport initiale et la première page affichée. La mesure commence lorsque le rapport est demandé et se termine lorsque le dernier visuel termine le rendu. Les interactions de rapport, telles que le découpage, le filtrage ou la modification des pages, ne sont pas incluses dans les mesures de performances.  |
+| Utilisation des rapports | Pages | Si le rapport comporte plus d’une page, segmentez-le par page(s) visitées(s). « Vide » signifie qu’une page de rapport a été ajoutée dans les 24 heures qui ont suivi l’affichage de la nouvelle page dans la liste des segments ou que des pages de rapport ont été supprimées. « Vide » capture ces types de situations. |
+| Performance du rapport | Durée d’ouverture type | 50e centile du temps nécessaire à l’ouverture du rapport, soit la durée au-dessous de laquelle 50 % des actions d’ouverture de rapport sont effectuées. La page Performance du rapport décompose également la durée d’ouverture type du rapport par méthode de consommation et type de navigateur. À l’heure actuelle, nous mesurons les performances pour la charge de rapport initiale et la première page affichée. La mesure commence lorsque le rapport est demandé et se termine lorsque le dernier visuel termine le rendu. Les interactions de rapport, telles que le découpage, le filtrage ou la modification des pages, ne sont pas incluses dans les métriques de performances.  |
 | Performance du rapport | Tendance de la durée d’ouverture | La tendance de la durée d’ouverture reflète les changements de performance de l’ouverture du rapport dans le temps. Elle compare les durées d’ouverture du rapport sur la première moitié de la période sélectionnée avec celles de la seconde moitié. |
 | Performance du rapport | Segment de date | Vous pouvez modifier la période sur la page Performance du rapport, par exemple pour calculer les tendances hebdomadaires ou bihebdomadaires. En bas à gauche de la page Performance du rapport, vous pouvez déterminer la date la plus ancienne et la plus récente à laquelle les données d’utilisation sont disponibles pour le rapport sélectionné. |
 | Performance du rapport | Performance journalière | Performance pour 10 %, 50 % et 90 % des actions d’ouverture de rapport calculées pour chaque jour. |
-| Performance du rapport | Performance sur 7 jours | Performance pour 10 %, 50 % et 90 % des actions d’ouverture de rapport calculées sur les 7 derniers jours pour chaque date. |
+| Performance du rapport | Performance sur sept jours | Performance pour 10 %, 50 % et 90 % des actions d’ouverture de rapport calculées sur les sept derniers jours pour chaque date. |
 | Performance du rapport | Méthode de consommation | Manière dont les utilisateurs ont ouvert le rapport, par l’intermédiaire du service Power BI (powerbi.com), de Power BI Embedded ou d’un appareil mobile. |
 | Performance du rapport | Browsers | Navigateur utilisé par les utilisateurs pour ouvrir le rapport, par exemple Firefox, Edge ou Chrome. |
+
+### <a name="worked-example-of-view-and-viewer-metrics"></a>Exemple concret de métriques de vue et de visiteur
+
+Supposons que trois utilisateurs accèdent à quatre rapports comme suit :
+
+| **Nom du rapport** | **Modèle d’utilisation** |
+| --- | --- |
+| Rapport d’indicateur de performance clé | <ul><li>L’utilisateur A ouvre le rapport à la page 1. |
+| Rapport RH | <ul><li>L’utilisateur A ouvre le rapport à la page 1, puis affiche la page 2, la page 3 et la page 4. Ensuite, il réaffiche la page 1. |
+| Rapport financier | <ul><li>L’utilisateur A ouvre le rapport à la page 1, puis affiche la page 2.</li><li>L’utilisateur B ouvre le rapport à la page 1.</li><li>L’utilisateur C ouvre le rapport à la page 1, puis affiche la page 3.</li></ul> |
+| Sales Report | <ul><li>L’utilisateur A ouvre le rapport à la page 1, puis affiche la page 2.</li><li>L’utilisateur C ouvre le rapport à la page 2 (par exemple, par le biais d’un signet).</li><li>Plus tard dans la journée, l’utilisateur C ouvre le rapport à la page 1. </li></ul> |
+
+Si toutes les données de télémétrie des clients atteignent Power BI, les métriques obtenues sont les suivantes :
+
+| **Nom du rapport** | **Vues de rapport** | **Vues de page de rapport** | **Utilisateurs** |
+| --- | --- | --- | --- |
+| Rapport d’indicateur de performance clé | 1 | 1 | 1 |
+| Rapport RH | 1 | 5 | 1 | 
+| Rapport financier | 3 | 5 | 3 |
+| Sales Report | 3 | 3 | 2 |
+
+
 
 ## <a name="update-usage-metrics-report-credentials"></a>Mettre à jour les informations d’identification du rapport de métriques d’utilisation
 
@@ -142,11 +165,11 @@ Les rapports de métriques d’utilisation sont une fonctionnalité que l’admi
 
 ## <a name="exclude-user-information-from-usage-metrics-reports"></a>Exclure les informations utilisateur des rapports de métriques d’utilisation
 
-Par défaut, les données par utilisateur sont activées pour les métriques d’utilisation et les informations des comptes des consommateurs des contenus sont incluses dans le rapport des métriques. Si les administrateurs ne souhaitent pas exposer ces informations à certains ou à l’ensemble des utilisateurs, ils peuvent les exclure de leurs rapports d’utilisation en désactivant Données par utilisateur dans les métriques d’utilisation pour les créateurs de contenu dans les paramètres de tenant du portail d’administration Power BI pour les groupes de sécurité spécifiés ou pour l’ensemble de l’organisation.
+Par défaut, les données par utilisateur sont activées pour les métriques d’utilisation. Les informations sur les comptes de consommateur de contenu sont incluses dans le rapport de métriques. Si les administrateurs ne souhaitent pas exposer ces informations pour certains ou l’ensemble des utilisateurs, ils peuvent exclure les informations utilisateur de votre rapport d’utilisation. Dans les paramètres du locataire du portail d’administration Power BI, ils peuvent désactiver les données par utilisateur dans les métriques d’utilisation pour des groupes de sécurité spécifiés ou pour l’ensemble de l’organisation.
 
 1. Dans l’onglet **Paramètres du tenant** du portail d’administration, développez **Données par utilisateur dans les métriques pour les créateurs de contenu** sous **Paramètres d’audit et d’utilisation**, puis sélectionnez **Désactivé**.
 
-2. Choisissez si vous souhaitez **Supprimer toutes les données existantes par utilisateur dans le contenu des métriques d’utilisation actuelles**, puis sélectionnez **Appliquer**.
+2. Choisissez si vous souhaitez **Supprimer toutes les données existantes par utilisateur dans le contenu des métriques d’utilisation actuelles**. Sélectionnez **Appliquer**.
 
     ![Désactiver les métriques par utilisateur](media/service-modern-usage-metrics/power-bi-admin-disable-per-user-metrics.png)
 
@@ -163,7 +186,7 @@ Pour explorer les données du rapport ou créer vos propres rapports sur le jeu 
 
 - **[Faire une copie du rapport](#create-a-copy-of-the-usage-report) dans le service Power BI :**   utilisez **Enregistrer une copie** pour créer une instance distincte du rapport de métriques d’utilisation, que vous pouvez personnaliser en fonction de vos besoins spécifiques.
 - **[Se connecter au jeu de données](#create-a-new-usage-report-in-power-bi-desktop) avec un nouveau rapport :**   pour chaque espace de travail, le jeu de données porte le nom « Rapport de métriques d’utilisation », comme nous l’avons vu dans la section [Jeu de données du rapport de métriques d’utilisation](#usage-metrics-report-dataset). Vous pouvez utiliser Power BI Desktop pour générer des rapports de métriques d’utilisation personnalisés basés sur le jeu de données sous-jacent.
-- **[Utiliser Analyser dans Excel](#analyze-usage-data-in-excel) :**   vous pouvez également tirer parti des tableaux croisés dynamiques, des graphes et des fonctionnalités de segment de Microsoft Excel 2010 SP1 (et versions ultérieures) pour analyser les données d’utilisation de Power BI. [Découvrez la fonctionnalité Analyser dans Excel.](service-analyze-in-excel.md)
+- **[Utiliser Analyser dans Excel](#analyze-usage-data-in-excel) :**   Vous pouvez également analyser les données d’utilisation Power BI dans des tableaux croisés dynamiques, des graphiques et des fonctionnalités de segment de Microsoft Excel. [Découvrez la fonctionnalité Analyser dans Excel.](service-analyze-in-excel.md)
 
 ### <a name="create-a-copy-of-the-usage-report"></a>Créer une copie du rapport d’utilisation
 
@@ -225,7 +248,7 @@ Lorsque vous vous connectez aux données d’utilisation dans Excel, vous pouvez
 
     ![Analyser dans Excel](media/service-modern-usage-metrics/power-bi-export-excel.png)
 
-1. Si la boîte de dialogue **Des mises à jour Excel sont nécessaires** apparaît, sélectionnez **Télécharger** et installez les dernières mises à jour pour la connectivité Power BI, ou sélectionnez **J’ai déjà installé ces mises à jour**.
+1. Si la boîte de dialogue **Vous devez tout d’abord effectuer des mises à jour d’Excel** apparaît, sélectionnez **Télécharger** et installez les dernières mises à jour pour la connectivité Power BI. Sinon, sélectionnez **J’ai déjà installé ces mises à jour**.
 
     ![Mises à jour d’Excel](media/service-modern-usage-metrics/power-bi-excel-updates.png)
 
@@ -246,7 +269,7 @@ Lorsque vous vous connectez aux données d’utilisation dans Excel, vous pouvez
 
 ## <a name="usage-metrics-in-national-clouds"></a>Métriques d’utilisation dans les clouds nationaux
 
-Power BI est disponible dans des cloud nationaux distincts. Ces clouds offrent les mêmes niveaux de sécurité, de confidentialité, de conformité et de transparence que la version internationale de Power BI, combinés à un modèle unique pour les réglementations locales sur la fourniture de services, la résidence des données, l’accès et le contrôle. Les métriques d'utilisation modernes sont actuellement disponibles dans les clouds nationaux suivants : 
+Power BI est disponible dans des cloud nationaux distincts. Ces clouds offrent les mêmes niveaux de sécurité, de confidentialité, de conformité et de transparence que la version internationale de Power BI, combinés à un modèle unique pour les réglementations locales sur la livraison de services, la résidence des données, l’accès et le contrôle. Les métriques d'utilisation modernes sont actuellement disponibles dans les clouds nationaux suivants : 
 
 - Cloud communautaire pour le service public des États-Unis
 - Cloud communautaire pour le service public des États-Unis – High
@@ -257,90 +280,76 @@ Pour plus d’informations, consultez [Clouds nationaux](https://powerbi.microso
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
-Il est important de savoir que le rapport de métriques d’utilisation amélioré peut présenter des différences avec son prédécesseur. En particulier, il se base désormais sur les données d’activité collectées à partir du service Power BI. Les versions précédentes du rapport de métriques d’utilisation s’appuyaient sur la télémétrie des clients, qui ne correspondent pas toujours aux métriques d’utilisation collectées à partir du service. En outre, le rapport de métriques d’utilisation amélioré applique une définition différente du terme « vue ». Une vue est un événement d’ouverture de rapport, enregistré dans le service chaque fois qu’un utilisateur ouvre un rapport. Le fait de changer de page n’est plus considéré comme une vue supplémentaire.
+Il est important de savoir que le rapport de métriques d’utilisation amélioré peut présenter des différences avec son prédécesseur. En particulier, les métriques de vue de rapport se basent désormais sur les données d’activité collectées à partir du service Power BI. Les versions précédentes du rapport de métriques d’utilisation s’appuyaient uniquement sur la télémétrie des clients, qui ne correspondent pas toujours aux métriques d’utilisation collectées à partir du service. En outre, le rapport de métriques d’utilisation amélioré applique une définition différente du terme « vue de rapport ». Une vue de rapport est un événement d’ouverture de rapport, enregistré dans le service chaque fois qu’un utilisateur ouvre un rapport. Le fait de changer de page de rapport n’est plus considéré comme une vue de rapport supplémentaire. Nous incluons maintenant une métrique Vue de page de rapport, qui compte spécifiquement chaque vue de page.
 
 > [!NOTE]
-> Étant donné que le rapport de métriques d’utilisation amélioré s’appuie sur les données d’activité collectées à partir du service Power BI, les métriques d’utilisation correspondent désormais au nombre agrégé d’activités dans les journaux d’audit et les journaux d’activité. La sous-évaluation et la surévaluation du nombre d’activités en raison de connexions réseau incohérentes, de bloqueurs de publicité ou d’autres problèmes côté client ne biaisent plus le nombre de visiteurs et de vues.
+> Étant donné que le rapport de métriques d’utilisation amélioré s’appuie sur les données d’activité collectées à partir du service Power BI, les métriques Vue de rapport correspondent désormais au nombre agrégé d’activités dans les journaux d’audit et les journaux d’activité. La sous-évaluation et la surévaluation du nombre d’activités en raison de connexions réseau incohérentes, de bloqueurs de publicité ou d’autres problèmes côté client ne biaisent plus le nombre de visiteurs et de vues de rapport. Toutefois, les vues de page de rapport reposent toujours sur la télémétrie des clients et peuvent être affectées.
 
 Outre les différences ci-dessus entre la version précédente et la version améliorée du rapport de métriques d’utilisation, notez les limitations suivantes de la préversion :
 
-- Les métriques d’utilisation du tableau de bord s’appuient toujours sur la version précédente des rapports de métriques d’utilisation.
+- Les métriques d’utilisation du tableau de bord s’appuient toujours sur la version précédente des rapports de métriques d’utilisation et ne sont pas encore disponibles dans les métriques d’utilisation modernes.
 - Les rapports de métriques d’utilisation améliorés sont disponibles uniquement pour les rapports des espaces de travail modernes. Les rapports des espaces de travail hérités ne prennent en charge que la version précédente des rapports de métriques d’utilisation.
-- Les métriques de performances des rapports sont basées sur la télémétrie des clients. Certains types de vues ne sont pas inclus dans les mesures de performances. Par exemple, lorsqu’un utilisateur sélectionne un lien vers un rapport dans un message électronique, la vue est comptabilisée dans l’utilisation des rapports, sans qu’il y ait d’événement dans les métriques de performances.
+- Les métriques des données de performances et de vue de page de rapport s’appuient sur le client/l’appareil qui envoie les données à Power BI. Selon la latence du réseau, les bloqueurs de publicités, les pare-feu et les règles de réseau définies par votre organisation, ces données peuvent ne jamais parvenir à Power BI. Ainsi, les données de performances et de vue de page de rapport peuvent ne pas inclure tous les vues ou tous les utilisateurs.
+- Certains types de vues ne sont pas inclus dans les mesures de performances. Par exemple, quand un utilisateur sélectionne un lien vers un rapport dans un e-mail, la vue de rapport est comptabilisée dans l’utilisation des rapports, sans qu’il y ait d’événement dans les métriques de performances.
 - Les métriques de performances des rapports ne sont pas disponibles pour les rapports paginés. L’onglet Pages de la page Utilisation du rapport ainsi que les graphes de la page Performances du rapport n’affichent pas de données pour ces types de rapports.
 - Le masquage des utilisateurs ne fonctionne pas comme prévu avec des groupes imbriqués. Si votre organisation a désactivé Données par utilisateur dans les métriques d’utilisation pour les créateurs de contenu dans les paramètres de tenant du portail d’administration Power BI, seuls les membres du niveau supérieur sont masqués. Les membres des sous-groupes sont toujours visibles.
 - L’initialisation du jeu de données du rapport de métriques d’utilisation peut prendre quelques minutes, ce qui entraîne l’affichage d’un rapport de métriques d’utilisation vide, car l’interface utilisateur de Power BI n’attend pas la fin de l’actualisation. Vérifiez que l’opération d’actualisation a réussi dans l’historique d’actualisation, dans les paramètres du jeu de données du rapport de métriques d’utilisation.
 - L’initialisation du jeu de données du rapport de métriques d’utilisation est susceptible d’échouer en raison d’un délai d’expiration au cours de l’actualisation. Pour résoudre ce problème, consultez la section Dépannage.
 - Le partage est désactivé pour le rapport de métriques d’utilisation. Pour pouvoir accorder aux utilisateurs un accès en lecture au rapport, vous devez d’abord leur donner accès à l’espace de travail.
-- Dans certains scénarios, vous pouvez remarquer que les données de performances sont manquantes. Cela peut se produire si un utilisateur ouvre un rapport et interagit avec lui avant la fin de son chargement ou si une erreur s’est produite lors du chargement du rapport.
-- Les données de performances s’appuient sur le client/l’appareil qui envoie les données à Power BI. Selon la latence du réseau, les bloqueurs de publicités, les pare-feu et les règles de réseau définies par votre organisation, les données de performances peuvent ne jamais parvenir à Power BI. Par conséquent, elles ne peuvent que présenter un exemple et ne peuvent pas inclure ni montrer tous les utilisateurs. 
+- Dans certains scénarios, vous pouvez remarquer que les données de performances sont manquantes. Cela peut se produire si un utilisateur ouvre un rapport et interagit avec lui avant la fin de son chargement ou si une erreur s’est produite lors du chargement du rapport. 
 
 ## <a name="frequently-asked-questions"></a>Forum Aux Questions
 
 Outre les considérations et limitations ci-dessus, les questions et les réponses suivantes, sur les métriques d’utilisation, pourront être utiles aux utilisateurs et aux administrateurs :
 
-**Q :** Je ne parviens pas à exécuter les métriques d’utilisation sur un rapport.
+**Q :** Pourquoi je vois moins de vues de page de rapport que de vues de rapport (et non pas au moins autant) ? 
+**R :** Les vues de rapport reposent sur la télémétrie côté serveur qui est générée quand le rapport est ouvert pour la première fois. Une fois qu’un rapport est ouvert, ses définitions de page sont déjà chargées sur l’appareil de l’utilisateur. Les vues de page de rapport reposent sur les informations d’utilisation de l’appareil de l’utilisateur qui atteignent Power BI. Ces informations peuvent parfois être bloquées, comme décrit dans [Considérations et limitations](#considerations-and-limitations).
 
+**Q :** Je ne parviens pas à exécuter les métriques d’utilisation sur un rapport.
 **R :** Vous ne pouvez voir les métriques d’utilisation que pour les rapports dont vous êtes propriétaire ou que vous avez l’autorisation de modifier.
 
 **Q :** Pourquoi ne puis-je pas voir le Nouveau rapport d’utilisation sur la bascule en haut à droite de mon rapport de métriques d’utilisation existant ?
-
 **R :** Le rapport de métriques d’utilisation amélioré n’est disponible que dans les espaces de travail modernes.
 
 **Q :** Quelle est la période couverte par le rapport ?
-
 **R :** Le rapport d’utilisation se base sur les données d’activité des 30 derniers jours, à l’exception de la date du jour. Il est possible d’affiner la période à l’aide du segment Date sur la page Utilisation du rapport, par exemple pour analyser uniquement les données de la semaine précédente.
 
 **Q :** Quand les dernières données d’activité en date s’affichent-elles ?
-
 **R :** Le rapport d’utilisation comprend les données d’activité jusqu’au dernier jour complet selon le fuseau horaire UTC. Les données affichées dans le rapport dépendent également de l’heure d’actualisation du jeu de données. Power BI l’actualise une fois par jour.
 
 **Q :** Les données ne semblent pas à jour.
-
 **R :** Notez que les nouvelles données d’activité peuvent mettre jusqu’à 24 heures à s’afficher dans le rapport d’utilisation.
 
 **Q :** Quelle est la source des données d’utilisation ?
-
 **R :** Le jeu de données du rapport de métriques d’utilisation importe les données à partir d’un magasin de métriques d’utilisation interne à Power BI à l’aide d’un Connecteur de données de métriques d’utilisation personnalisé. Vous pouvez modifier les informations d’identification de ce connecteur sur la page Paramètres du jeu de données du rapport de métriques d’utilisation.
 
 **Q :** Comment me connecter aux données ? Ou modifier le rapport par défaut ?
-
 **R :** Vous pouvez créer une copie du rapport d’utilisation prédéfini en lecture seule. La copie du rapport se connecte au même jeu de données du rapport de métriques d’utilisation. Vous pouvez ainsi modifier les détails du rapport.
 
 **Q :** Qu’est-ce qu’un « visiteur » et qu’est-ce qu’une « vue » ?
-
 **R :** Un visiteur est une personne qui a ouvert le rapport au moins une fois au cours de la période. Une vue est un événement d’ouverture de rapport. Une vue de rapport est enregistrée chaque fois qu’un utilisateur ouvre un rapport.
-
 Notez que la définition d’une vue diffère de celle des rapports de métriques d’utilisation précédents. Le fait de changer de page n’est plus considéré comme une vue supplémentaire.
 
 **Q :** Comment la « tendance des vues » est-elle calculée ?
-
 **R :** La tendance des vues reflète les modifications du nombre de vues au fil du temps. Elle compare la première moitié de la période sélectionnée à la seconde moitié. Vous pouvez modifier la période à l’aide du segment Date sur la page Utilisation du rapport, par exemple pour calculer les tendances hebdomadaires ou bihebdomadaires.
 
 **Q :** Que signifient « distribution » et « plateforme » ?
-
 **R :** La distribution montre comment les visiteurs ont obtenu l’accès à un rapport : partagé directement, par l’accès à l’espace de travail ou par le biais d’une application.
-
 La plateforme indique la technologie utilisée par le visiteur pour ouvrir le rapport : PowerBI.com, Mobile ou Embedded.
 
 **Q :** Comment le classement des rapports fonctionne-t-il ?
-
 **R :** Selon le nombre de vues, le classement indique la popularité d’un rapport par rapport à tous les autres rapports de l’organisation. Un classement de 1 signifie que le rapport a le plus grand nombre de vues de tous les rapports de l’organisation.
 
 **Q :** À quoi correspondent les « utilisateurs sans nom » ?
-
 **R :** Votre organisation peut décider d’exclure les informations utilisateur de votre rapport d’utilisation. Dans ce cas, le rapport fait référence aux utilisateurs comme Sans nom.
 
 **Q :** Qu’est-ce que la « durée d’ouverture type du rapport » ?
-
 **R :** La durée d’ouverture type du rapport 50e centile du temps nécessaire à l’ouverture du rapport, soit la durée au-dessous de laquelle 50 % des actions d’ouverture de rapport sont effectuées. La page Performance du rapport décompose également la durée d’ouverture type du rapport par méthode de consommation et type de navigateur.
 
 **Q :** Comment la « tendance de la durée d’ouverture » est-elle calculée ?
-
 **R :** La tendance de la durée d’ouverture reflète les changements de performance de l’ouverture du rapport dans le temps. Elle compare les durées d’ouverture du rapport sur la première moitié de la période sélectionnée avec celles de la seconde moitié. Vous pouvez modifier la période à l’aide du segment Date sur la page Performance du rapport, par exemple pour calculer les tendances hebdomadaires ou bihebdomadaires.
 
 **Q :**  Il existe quatre rapports dans la version précédente du rapport de métriques d’utilisation, mais la version améliorée n’en affiche que trois.
-
 **R :**  Le rapport de métriques d’utilisation amélioré inclut uniquement les rapports qui ont été ouverts au cours des 30 derniers jours, tandis que la version précédente couvre les 90 derniers jours. Si un rapport n’apparaît pas dans le rapport de métriques d’utilisation amélioré, c’est probablement parce qu’il n’a pas été utilisé depuis plus de 30 jours.
 
 ## <a name="troubleshoot-delete-the-dataset"></a>Résoudre les problèmes : Supprimer le jeu de données

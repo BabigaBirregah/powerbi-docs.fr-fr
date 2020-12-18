@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
-ms.date: 09/25/2020
+ms.date: 12/10/2020
 LocalizationGroup: Gateways
-ms.openlocfilehash: 045d7df36deefae5c323e88d0ddf3053ea56682e
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: de8d24af0dbaa0ed4b27efca140cf29acda9df76
+ms.sourcegitcommit: 772c65b7b440ab082510bf3f64b871d19139d451
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91634639"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97353408"
 ---
 # <a name="troubleshoot-gateways---power-bi"></a>Résoudre les problèmes liés aux passerelles - Power BI
 
@@ -54,7 +54,7 @@ Cannot open database "AdventureWorks" requested by the login. The login failed. 
 
 Cette erreur peut se produire pour différentes raisons. Veillez à valider que vous pouvez vous connecter à la source de données à partir de l’ordinateur qui héberge la passerelle. Cette situation peut résulter d’une inaccessibilité du serveur.
 
-Le code d’erreur **DM_GWPipeline_UnknownError**apparaît dans **Afficher les détails**.
+Le code d’erreur **DM_GWPipeline_UnknownError** apparaît dans **Afficher les détails**.
 
 Pour plus d’informations, vous pouvez également accéder à **Journaux des événements** > **Journaux des applications et des services** > **Service Passerelle de données locale**.
 
@@ -62,7 +62,7 @@ Pour plus d’informations, vous pouvez également accéder à **Journaux des é
 
 Vous n’avez pas pu vous connecter à la source de données spécifiée. Veillez à valider les informations fournies pour cette source de données.
 
-Le code d’erreur **DM_GWPipeline_Gateway_DataSourceAccessError**apparaît dans **Afficher les détails**.
+Le code d’erreur **DM_GWPipeline_Gateway_DataSourceAccessError** apparaît dans **Afficher les détails**.
 
 Si le message d’erreur sous-jacent est similaire à ce qui suit, cela signifie que le compte que vous utilisez pour la source de données n’est pas un administrateur de serveur pour cette instance Analysis Services. Pour plus d’informations, voir [Accorder des droits d’administrateur de serveur à une instance de Analysis Services](/sql/analysis-services/instances/grant-server-admin-rights-to-an-analysis-services-instance).
 
@@ -238,6 +238,37 @@ Vous recevez le message d’erreur « -10709 Échec de la connexion » si votr
 * Vérifiez que le serveur SAP Hana figure sous l’onglet Délégation dans Active Directory pour le compte de service de la passerelle.
 
    ![Onglet Délégation](media/service-gateway-onprem-tshoot/delegation-in-AD.png)
+
+## <a name="export-logs-for-a-support-ticket"></a>Exporter les journaux pour un ticket de support
+
+Les journaux de la passerelle sont nécessaires pour la résolution des problèmes et la création d’un ticket de support. Suivez les étapes ci-dessous pour extraire ces journaux.
+
+1. Identifier le cluster de passerelle
+
+    Si vous êtes propriétaire d’un jeu de données, vérifiez d’abord le nom du cluster de passerelle associé à votre jeu de données. Dans l’image suivante, *IgniteGateway* est le cluster de passerelle.
+
+    ![Cluster de passerelle](media/service-gateway-onprem-tshoot/gateway-cluster.png)
+
+2. Vérifier les propriétés de la passerelle
+
+    L’administrateur de la passerelle doit ensuite vérifier le nombre de membres de la passerelle dans le cluster et si l’équilibrage de charge est activé.
+
+    Si l’équilibrage de charge est activé, l’étape 3 doit être répétée pour tous les membres de la passerelle. S’il n’est pas activé, l’exportation des journaux sur la passerelle principale est suffisante.
+
+3. Récupérer et exporter les journaux de la passerelle
+
+    Ensuite, l’administrateur de la passerelle, qui est également l’administrateur du système de passerelle, doit effectuer les étapes suivantes :
+
+    a. Connectez-vous à la machine de passerelle, puis lancez l’[application de passerelle de données locale](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-app) pour vous connecter à la passerelle.
+    
+    b. Activez la [journalisation supplémentaire](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-performance#slow-performing-queries).
+    
+    c. Si vous le souhaitez, vous pouvez [activer les fonctionnalités de supervision des performances](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-performance#enable-performance-logging) et inclure les journaux de performances pour fournir des détails supplémentaires en vue de la résolution des problèmes.
+    
+    d. Exécutez le scénario pour lequel vous essayez de capturer les journaux de la passerelle.
+    
+    e. [Exportez les journaux de la passerelle](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
+
 
 ## <a name="refresh-history"></a>Historique des actualisations
 

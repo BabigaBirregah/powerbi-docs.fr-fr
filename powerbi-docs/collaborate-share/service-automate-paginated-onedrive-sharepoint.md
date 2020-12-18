@@ -9,16 +9,17 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 11/17/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 4a0a504db15d78bec112aaafd2a972f066e88193
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 6aaad48fb3e97aa6c1b4fc51834ee593a49a8192
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407673"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97097728"
 ---
 # <a name="save-a-paginated-report-to-onedrive-for-business-or-sharepoint-online"></a>Enregistrer un rapport paginé dans OneDrive Entreprise ou SharePoint Online
 
 Avec [Power Automate](/power-automate/getting-started), vous pouvez automatiser l’exportation et la distribution des rapports paginés Power BI dans divers formats et scénarios pris en charge. Dans cet article, vous allez utiliser Power Automate pour automatiser l’enregistrement d’un rapport paginé Power BI dans OneDrive Entreprise ou dans un dossier SharePoint Online.
+
 
 :::image type="content" source="media/service-automate-paginated-onedrive-sharepoint/paginated-onedrive-flow.png" alt-text="Capture d’écran du flux Power Automate pour enregistrer un rapport paginé dans OneDrive ou SharePoint Online":::
 
@@ -28,7 +29,7 @@ Vous recherchez d’autres modèles Power Automate pour les rapports paginés Po
 
 Pour suivre la procédure, veillez à disposer des éléments suivants :
 
-- Au minimum un espace de travail situé dans votre locataire Power BI et disposant d’une capacité réservée. La capacité en question peut correspondre à n’importe quelle référence SKU A4/P1 – A6/P3. En savoir plus sur les [capacités réservées dans Power BI Premium](../admin/service-premium-what-is.md).
+- Au minimum un espace de travail situé dans votre locataire Power BI et disposant d’une capacité réservée. La capacité en question peut correspondre à n’importe quelle référence SKU A4/P1 – A6/P3. Découvrez-en plus sur [les capacités réservées pour les rapports paginés dans Power BI Premium](../admin/service-premium-what-is.md#paginated-reports).
 - Un accès aux connecteurs standard dans Power Automate, qui sont fournis avec tous les abonnements Office 365.
 
 ## <a name="save-a-paginated-report-to-onedrive-for-business-or-a-sharepoint-online-folder"></a>Enregistrer un rapport paginé dans OneDrive Entreprise ou dans un dossier SharePoint Online 
@@ -57,7 +58,7 @@ Avec l’un de ces modèles, vous allez configurer les exportations récurrentes
 
     :::image type="content" source="media/service-automate-paginated-onedrive-sharepoint/onedrive-template-3-advanced-recurrence.png" alt-text="Périodicité dans les options avancées.":::
 
-1. Dans la zone **Espace de travail**, sélectionnez un espace de travail situé dans une capacité réservée. Dans la zone **Rapport**, sélectionnez le rapport paginé que vous souhaitez exporter vers l’espace de travail sélectionné. Dans la zone **Format d’exportation**, sélectionnez le format d’exportation souhaité. Si vous le souhaitez, vous pouvez spécifier des paramètres pour le rapport paginé. Pour obtenir une description détaillée des paramètres, consultez la [référence sur le connecteur pour l’API REST Power BI](/connectors/powerbi/#export-to-file-for-paginated-reports).  
+1. Dans la zone **Espace de travail**, sélectionnez un espace de travail situé dans une capacité réservée. Dans la zone **Rapport**, sélectionnez le rapport paginé que vous souhaitez exporter vers l’espace de travail sélectionné. Dans la zone **Format d’exportation**, sélectionnez le format d’exportation souhaité. Si vous le souhaitez, vous pouvez spécifier des paramètres pour le rapport paginé. Pour obtenir une description détaillée des paramètres, consultez la [référence sur le connecteur pour l’API REST Power BI](/connectors/powerbi/#export-to-file-for-paginated-reports).  
 
     :::image type="content" source="media/service-automate-paginated-onedrive-sharepoint/onedrive-template-4-export-format.png" alt-text="Sélection du rapport paginé, de l’espace de travail et du format d’exportation.":::
 
@@ -69,7 +70,7 @@ Avec l’un de ces modèles, vous allez configurer les exportations récurrentes
 
 1. Lorsque vous avez terminé, sélectionnez  **Étape suivante**  ou **Enregistrer**. Power Automate crée et évalue le flux, et vous informe s’il trouve des erreurs. 
 
-1. En cas d’erreurs, sélectionnez  **Modifier le flux** pour les corriger. Sinon, vous pouvez sélectionner la flèche **Retour** pour afficher les détails du flux et pour exécuter le nouveau flux. 
+1. En cas d’erreurs, sélectionnez  **Modifier le flux** pour les corriger. Sinon, vous pouvez sélectionner la flèche **Retour** pour afficher les détails du flux et exécuter le nouveau flux. 
 
     Lorsque vous exécutez le flux, Power Automate exporte un rapport paginé au format spécifié vers OneDrive Entreprise ou SharePoint Online.  
 

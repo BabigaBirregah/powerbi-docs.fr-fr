@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/17/2020
+ms.date: 12/14/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 2689597e35801d6829b29790309ea53ad410ff47
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5c69abe925751e8b065f262e151bfee65c487238
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412020"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97492055"
 ---
 # <a name="export-power-bi-paginated-reports-with-power-automate"></a>Exporter des rapports paginés Power BI avec Power Automate
 
@@ -40,7 +40,7 @@ Sélectionnez un modèle dans la liste pour utiliser une procédure pas à pas.
 
 - [Enregistrez un rapport paginé Power BI dans OneDrive Entreprise ou dans un dossier SharePoint Online](service-automate-paginated-onedrive-sharepoint.md).  
 - [Exportez un rapport paginé Power BI pour les éléments d’une liste SharePoint Online ou pour chaque ligne d’un tableau Excel Online.](service-automate-paginated-excel-sharepoint-list.md)
-- Enregistrez un rapport paginé Power BI dans un dossier système local.
+- [Enregistrez un rapport paginé Power BI dans un dossier système local](service-automate-paginated-local-file.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

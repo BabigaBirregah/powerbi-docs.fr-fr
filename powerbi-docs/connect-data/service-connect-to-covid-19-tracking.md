@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 04/05/2020
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 19dc9f5c5adfa5853d98cd6b0ef427c8bccebada
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: fc421f7635a3d6e3b2336d5bce081d7914c0fad5
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410617"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998856"
 ---
 # <a name="connect-to-the-covid-19-us-tracking-report"></a>Se connecter au rapport de suivi du COVID-19 aux États-Unis
 Cet article vous explique comment installer l’application modèle pour le rapport de suivi du COVID-19 et comment se connecter aux sources de données.
@@ -30,7 +30,7 @@ Après avoir installé l’application modèle et établi la connexion aux sourc
 
 1. Une fois dans la page AppSource de l’application, cliquez sur [**OBTENIR MAINTENANT**](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms).
 
-    [![Rapport de suivi du COVID-19 aux États-Unis dans Appsource](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-appsource-icon.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms)
+    [![Rapport de suivi du COVID-19 aux États-Unis dans AppSource](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-appsource-icon.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms)
 
 1. À l’invite, cliquez sur **Installer**. Une fois installée, l’application apparaît dans votre page Applications.
 
@@ -38,11 +38,11 @@ Après avoir installé l’application modèle et établi la connexion aux sourc
 
 ## <a name="connect-to-data-sources"></a>Se connecter à la source de données
 
-1. Cliquez sur l’icône dans votre page Applications pour ouvrir l’application.
+1. Cliquez sur l’icône dans votre page Applications pour ouvrir l’application. L’application s’ouvre et présente des exemples de données.
 
-1. Dans l’écran de démarrage qui apparaît, choisissez **Se connecter**.
+1. Sélectionnez le lien **Connecter vos données** dans la bannière en haut de la page.
 
-   ![Écran de démarrage de l’application modèle](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-splash-screen.png)
+   ![Lien Connecter vos données de l’application GitHub](media/service-connect-to-covid-19-tracking/power-bi-covid-19-connect-data.png)
 
 1. La boîte de dialogue des paramètres s’affiche. Aucun paramètre n’est obligatoire. Cliquez sur **Suivant**.
 

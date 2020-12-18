@@ -1,5 +1,5 @@
 ---
-title: Intégrer des alertes de données à Power Automate
+title: Intégrer des alertes de données Power BI à Power Automate
 description: Découvrez comment créer des flux Power Automate déclenchés par des alertes de données Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,16 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/09/2020
+ms.date: 12/08/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 65c7c00a705ed95c26c32a4fc5bcb9e0c18c13bf
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 8f73bd959691ea8359a8584966e0b83f439d8652
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407167"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97097636"
 ---
-# <a name="integrate-data-alerts-with-power-automate"></a>Intégrer des alertes de données à Power Automate
+# <a name="integrate-power-bi-data-alerts-with-power-automate"></a>Intégrer des alertes de données Power BI à Power Automate
 
 Utilisez [Power Automate](/power-automate/getting-started) pour intégrer Power BI à vos applications et services favoris. Avec Power Automate, vous pouvez créer des workflows automatisés pour obtenir des notifications, synchroniser des fichiers, collecter des données, etc. Dans cet article, vous allez automatiser la génération d’un e-mail provoquée par une alerte de données Power BI.
 
@@ -90,6 +90,5 @@ Dans cette tâche, nous créons un flux simple à partir de zéro, déclenché p
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Bien démarrer avec Power Automate](/power-automate/getting-started/)
-* [Définir des alertes de données dans le service Power BI](../create-reports/service-set-data-alerts.md)
-* [Définir des alertes de données sur votre iPhone](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Exporter et envoyer par e-mail un rapport Power BI avec Power Automate](service-automate-power-bi-report-export.md)
 * D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

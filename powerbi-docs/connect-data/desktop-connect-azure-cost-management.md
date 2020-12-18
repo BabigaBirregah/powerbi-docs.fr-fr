@@ -8,14 +8,14 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/30/2020
+ms.date: 12/10/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fa06b1d561c770c3b9e0535e94789931a74bd9df
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 6d99e91657d0c5f0bbd1e9c665f00d16c34ba24f
+ms.sourcegitcommit: 772c65b7b440ab082510bf3f64b871d19139d451
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411468"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97353240"
 ---
 # <a name="create-visuals-and-reports-with-the-azure-cost-management-connector-in-power-bi-desktop"></a>Créer des visuels et des rapports avec le connecteur Azure Cost Management dans Power BI Desktop
 
@@ -56,7 +56,7 @@ Pour vous connecter avec un compte de **Contrat client Microsoft**, vous pouvez 
 
     ![Capture d’écran montrant les propriétés Azure Cost Management avec l’étendue ID du profil de facturation.](media/desktop-connect-azure-cost-management/azure-cost-management-01a.png)
 
-7.  Lorsque vous y êtes invité, connectez-vous avec votre compte d’utilisateur et votre mot de passe Azure. 
+7.  Lorsque vous y êtes invité, connectez-vous avec votre compte d’utilisateur et votre mot de passe Azure. Vous devez utiliser un propriétaire de compte de facturation pour un accès réussi. 
 
 
 ## <a name="connect-to-an-enterprise-agreement-account"></a>Se connecter à un compte Contrat Entreprise
@@ -71,13 +71,11 @@ Pour vous connecter avec un compte Contrat Entreprise, vous pouvez récupérer v
 
     ![Capture d’écran montrant les propriétés Azure Cost Management avec l’étendue Numéro d’inscription.](media/desktop-connect-azure-cost-management/azure-cost-management-01b.png)
 
-6.  Lorsque vous y êtes invité, connectez-vous avec votre compte d’utilisateur et votre mot de passe Azure. 
+6.  Lorsque vous y êtes invité, connectez-vous avec votre compte d’utilisateur et votre mot de passe Azure. Vous devez utiliser un compte Administrateur Entreprise pour les Contrats Entreprise.
 
 ## <a name="data-available-through-the-connector"></a>Données disponibles par le biais du connecteur
 
 Une fois que vous vous êtes correctement authentifié, une fenêtre de **Navigateur** s’affiche avec les tables de données disponibles suivantes :
-
-
 
 | **Table** | **Description** |
 | --- | --- |

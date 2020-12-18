@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/03/2020
+ms.date: 12/14/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 01ba6c2e01b3e17a3ef9c878890877e0a0b976ea
-ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
+ms.openlocfilehash: 84d60fce95172b419663ed7889d69e22ae1947cd
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96613736"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491986"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>À propos de l’utilisation de DirectQuery dans Power BI
 
@@ -81,7 +81,7 @@ Quand vous vous connectez à SQL Server Analysis Services, vous avez la possibil
 La situation décrite dans le paragraphe précédent s’applique également à la connexion aux sources suivantes, à ceci près qu’il n’existe aucune option pour importer les données :
 
 * Jeux de données Power BI, par exemple, quand vous vous connectez à un jeu de données Power BI précédemment créé et publié sur le service pour générer un nouveau rapport
-* Common Data Services
+* Microsoft Dataverse.
 
 Le comportement des rapports sur SQL Server Analysis Services lors de la publication sur le service Power BI présente les similitudes suivantes avec les rapports DirectQuery :
 
@@ -334,6 +334,9 @@ Le paramètre est uniquement activé quand il existe au moins une source DirectQ
 L’augmentation de la valeur **Nombre maximal de connexions par source de données** permet l’envoi d’un nombre plus élevé de requêtes (jusqu’au nombre maximal spécifié) à la source de données sous-jacente. Cette approche s’avère utile quand de nombreux visuels figurent sur une seule page ou quand de nombreux utilisateurs accèdent à un rapport en même temps. Une fois le nombre maximal de connexions atteint, les requêtes sont mises en file d’attente jusqu’à ce qu’une connexion soit disponible. L’augmentation de cette limite entraîne celle de la charge sur la source sous-jacente, si bien que le paramètre ne garantit pas une amélioration des performances globales.
 
 Une fois qu’un rapport est publié, le nombre maximal de requêtes simultanées envoyées à la source de données sous-jacente dépend également des limites fixées. Ces limites dépendent de l’environnement cible dans lequel le rapport est publié. Chaque environnement (par exemple Power BI, Power BI Premium ou Power BI Report Server) peut imposer des limites différentes.
+
+> [!NOTE]
+> Le paramètre du nombre maximal de connexions DirectQuery s’applique à toutes les sources DirectQuery quand les [métadonnées améliorées](desktop-enhanced-dataset-metadata.md) sont activées, ce qui correspond au paramétrage par défaut pour tous les modèles créés dans Power BI Desktop à partir d’octobre 2020. 
 
 ### <a name="diagnosing-performance-issues"></a>Diagnostic des problèmes de performances
 

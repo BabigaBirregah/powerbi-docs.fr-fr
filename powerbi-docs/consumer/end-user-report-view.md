@@ -9,12 +9,12 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/27/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: ea537e19eb7c3ab2a155f417af92e45841031f89
-ms.sourcegitcommit: 0bf42b6393cab7a37d21a52b934539cf300a08e2
+ms.openlocfilehash: 79658c2296ac2ae189680c9d8c778046778a882e
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96781632"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998550"
 ---
 # <a name="change-the-display-of-a-report-page"></a>Changer l’affichage d’une page de rapport
 
@@ -58,7 +58,7 @@ Quand vous quittez le rapport, les **paramètres d’affichage** ne sont pas enr
 
 Les contrôles de zoom de votre navigateur permettent d’augmenter et de diminuer la zone de dessin disponible. La diminution du zoom augmente la taille de la zone de dessin, et vice versa. 
 
-![petite vidéo présentant les contrôles de zoom du navigateur](media/end-user-report-view/power-bi-zoom.png)
+![Contrôles de zoom du navigateur](media/end-user-report-view/power-bi-zoom.png)
 
 Le redimensionnement de l’ensemble du navigateur est une autre façon de changer la taille d’affichage de votre rapport. 
 

@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 12/04/2020
+ms.date: 12/10/2020
 ms.custom: references_regions
 LocalizationGroup: Premium
-ms.openlocfilehash: 1f9a34b68f465eda5b8921e48576c9bef5d17f36
-ms.sourcegitcommit: 0bf42b6393cab7a37d21a52b934539cf300a08e2
+ms.openlocfilehash: 7256e17f561aa79d63b7fefd268df560903de6b2
+ms.sourcegitcommit: 772c65b7b440ab082510bf3f64b871d19139d451
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96781693"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97353102"
 ---
 # <a name="large-datasets-in-power-bi-premium"></a>Grands jeux de données dans Power BI Premium
 
-Les jeux de données Power BI peuvent stocker des données dans un cache en mémoire fortement compressé pour des performances optimisées des requêtes, ce qui permet une interactivité rapide des utilisateurs. Avec les capacités Premium, les grands jeux de données au-delà de la limite par défaut de 10 Go peuvent être activés avec le paramètre **Format de stockage des grands jeux de données**. Quand ce paramètre est activé, la taille des jeux de données est limitée par la taille de la capacité *Premium*.
+Les jeux de données Power BI peuvent stocker des données dans un cache en mémoire fortement compressé pour des performances optimisées des requêtes, ce qui permet une interactivité rapide des utilisateurs. Avec les capacités Premium, les grands jeux de données au-delà de la limite par défaut de 10 Go peuvent être activés avec le paramètre **Format de stockage des grands jeux de données**. Quand ce paramètre est activé, la taille du jeu de données est limitée par la taille de *capacité* Premium ou la taille maximale définie par l’administrateur.
 
 Les grands jeux de données peuvent être activés pour toutes les références SKU Premium P et A Embedded. La limite de taille des grands jeux de données dans Premium est comparable à celle d’Azure Analysis Services, en termes de limitations de taille des modèles de données.
 
@@ -136,6 +136,8 @@ Gardez à l’esprit les restrictions suivantes lors de l’utilisation de grand
 - **Télécharger sur Power BI Desktop** : si un jeu de données est stocké dans des fichiers Premium, le [téléchargement en tant que fichier. pbix](../create-reports/service-export-to-pbix.md) échoue.
 - **Régions prises en charge** : Les grands jeux de données sont pris en charge dans toutes les régions Azure qui prennent en charge le stockage Premium Files. Pour en savoir plus, consultez [Produits disponibles par région](https://azure.microsoft.com/global-infrastructure/services/?products=storage) et consultez le tableau de la section suivante.
 
+- **Définition de la taille maximale du jeu de données** : la taille maximale du jeu de données peut être définie par les administrateurs. La valeur maximale peut être définie entre 0,1 Go et la capacité maximale de la référence SKU.
+
 ## <a name="region-availability"></a>Disponibilité des régions
 
 Les grands jeux de données dans Power BI sont disponibles seulement dans certaines régions Azure qui prennent en charge le [stockage Azure Premium Files](/azure/storage/files/storage-files-planning#storage-tiers).
@@ -146,6 +148,9 @@ La liste suivante contient les régions où les grands jeux de données dans Pow
 |---------|---------|
 |Australie Est     | australiaeast        |
 |Australie Sud-Est     | australiasoutheast        |
+|Est du Canada     | canadaeast        |
+|Centre du Canada     | canadacentral        |
+|Inde Centre     | centralindia        |
 |USA Centre     | centralus        |
 |Asie Est     | eastasia        |
 |USA Est     | eastus        |
@@ -161,6 +166,7 @@ La liste suivante contient les régions où les grands jeux de données dans Pow
 |Sud du Royaume-Uni     | uksouth        |
 |Ouest du Royaume-Uni     | ukwest        |
 |Europe Ouest     | westeurope        |
+|Inde Ouest     | westindia        |
 |USA Ouest     | westus        |
 |USA Ouest 2     | westus2        |
 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/17/2020
+ms.date: 12/08/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 74d61d40c4447f2649f5cce5fbcdcba68cd31afe
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 7a48a9a594364de4261aa66de48c1a4262392364
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407995"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97097843"
 ---
 # <a name="export-a-paginated-report-for-each-row-in-an-excel-online-table-or-sharepoint-list"></a>Exporter un rapport paginé pour chaque ligne d’un tableau Excel Online ou d’une liste SharePoint
 
@@ -30,7 +30,7 @@ Vous recherchez d’autres modèles Power Automate pour les rapports paginés Po
 
 Pour suivre la procédure, veillez à disposer des éléments suivants :
 
-- Au minimum un espace de travail situé dans votre locataire Power BI et disposant d’une capacité réservée. La capacité en question peut correspondre à n’importe quelle référence SKU A4/P1 – A6/P3. En savoir plus sur les [capacités réservées dans Power BI Premium](../admin/service-premium-what-is.md).
+- Au minimum un espace de travail situé dans votre locataire Power BI et disposant d’une capacité réservée. La capacité en question peut correspondre à n’importe quelle référence SKU A4/P1 – A6/P3. Découvrez-en plus sur [les capacités réservées pour les rapports paginés dans Power BI Premium](../admin/service-premium-what-is.md#paginated-reports).
 - Un accès aux connecteurs standard dans Power Automate, qui sont fournis avec tous les abonnements Office 365.
 - Si vous utilisez un tableau Excel Online, celui-ci doit être converti au format tableau dans Excel. Pour savoir comment procéder, consultez [Créer un tableau](https://support.microsoft.com/office/create-a-table-in-excel-bf0ce08b-d012-42ec-8ecf-a2259c9faf3f).
 
@@ -73,7 +73,7 @@ Pour suivre la procédure, veillez à disposer des éléments suivants :
 
 1. Dans **Appliquer à chacun**, la zone **Sélectionner une sortie de l’étape précédente** est définie sur **Valeur** par défaut. Ce paramètre itère au sein des actions contenues dans **Appliquer à chacun** pour chaque ligne de votre tableau Excel Online ou de votre liste SharePoint Online.  
 
-1. Dans la zone **Espace de travail**, sélectionnez un espace de travail situé dans une capacité dédiée. Dans la zone **Rapport**, sélectionnez le rapport paginé que vous souhaitez exporter vers l’espace de travail sélectionné. Si vous sélectionnez **Entrer une valeur personnalisée** dans la liste déroulante, vous pouvez définir **Espace de travail** et **Rapport** comme des colonnes de votre tableau Excel Online ou de votre liste SharePoint Online. Ces colonnes doivent contenir respectivement les ID d’espace de travail et les ID de rapport.  
+1. Dans la zone **Espace de travail**, sélectionnez un espace de travail situé dans une capacité réservée. Dans la zone **Rapport**, sélectionnez le rapport paginé que vous souhaitez exporter vers l’espace de travail sélectionné. Si vous sélectionnez **Entrer une valeur personnalisée** dans la liste déroulante, vous pouvez définir **Espace de travail** et **Rapport** comme des colonnes de votre tableau Excel Online ou de votre liste SharePoint Online. Ces colonnes doivent contenir respectivement les ID d’espace de travail et les ID de rapport.  
 
 1. Sélectionnez un **Format d’exportation** dans la liste déroulante ou définissez-le sur une colonne de votre tableau Excel Online qui contient les formats d’exportation souhaités, par exemple, PDF, DOCX ou PPTX. Si vous le souhaitez, vous pouvez spécifier des paramètres pour le rapport paginé. Pour obtenir une description détaillée des paramètres, consultez la [référence sur le connecteur pour l’API REST Power BI](/connectors/powerbi/#export-to-file-for-paginated-reports).
 

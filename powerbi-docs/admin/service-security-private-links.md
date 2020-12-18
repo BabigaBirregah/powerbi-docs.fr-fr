@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 11/12/2020
+ms.date: 12/14/2020
 ms.custom: ''
 LocalizationGroup: Administration
-ms.openlocfilehash: 446c3620cf3b2a7435897108cfcd9c8972ad8bb4
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: da5ee837345b6f26dd6636bc93f6b38c1e0f5ea7
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412158"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491848"
 ---
 # <a name="private-links-for-accessing-power-bi"></a>Liaisons privées pour accéder à Power BI
 
@@ -118,9 +118,9 @@ L’étape suivante consiste à créer un réseau virtuel et un sous-réseau. Re
 | ```<resource-group-name>```   | myResourceGroup |
 | ```<virtual-network-name>```  | myVirtualNetwork |
 | ```<region-name>```   | USA Centre  |
-| ```<IPv4-address-space>```    | 10.1.0.0/16 |
+| ```<IPv4-address-space>```    | 10.5.0.0/16 |
 | ```<subnet-name>```   | mySubnet |
-| ```<subnet-address-range>```  | 10.1.0.0/24 |
+| ```<subnet-address-range>```  | 10.5.0.0/24 |
 
 1. En haut à gauche de l’écran, sélectionnez **Créer une ressource > Réseau > Réseau virtuel**, ou recherchez **Réseau virtuel** à partir de la zone de recherche.
 2. Dans **Créer un réseau virtuel**, entrez ou sélectionnez les informations suivantes sous l’onglet **Général** :
@@ -166,7 +166,6 @@ Après avoir terminé ces étapes, vous pouvez créer une machine virtuelle comm
 
 ## <a name="create-a-virtual-machine-vm"></a>Créer une machine virtuelle
 
-
 L’étape suivante consiste à créer un réseau virtuel et le sous-réseau où sera hébergée la machine virtuelle.
 
 1. En haut à gauche de l’écran dans le portail Azure, sélectionnez **Créer une ressource > Calcul > Machine virtuelle**.
@@ -200,8 +199,8 @@ L’étape suivante consiste à créer un réseau virtuel et le sous-réseau où
     |Paramètres | Valeur |
     |-------------------|---------|
     |Réseau virtuel|   Conservez la valeur par défaut **MyVirtualNetwork**|
-    |Espace d’adressage| Conservez la valeur par défaut **10.1.0.0/24**|
-    |Subnet |Conservez la valeur par défaut **mySubnet (10.1.0.0/24)**|
+    |Espace d’adressage| Conservez la valeur par défaut **10.5.0.0/24**|
+    |Subnet |Conservez la valeur par défaut **mySubnet (10.5.0.0/24)**|
     |Adresse IP publique| Conservez la valeur par défaut **(new) myVm-ip**|
     |Aucun port d’entrée public|  Sélectionnez **Autoriser les ports sélectionnés**|
     |Sélectionner des ports d’entrée|  Sélectionnez **RDP**|
@@ -289,7 +288,7 @@ L’étape suivante consiste à accéder à Power BI en mode privé, à partir d
     
     Non-authoritative answer:
     Name:    52d40f65ad6d48c3906f1ccf598612d4-api.privatelink.analysis.windows.net
-    Address:  10.1.0.4
+    Address:  10.5.0.4
     ```
 
 4. Ouvrez le navigateur et connectez-vous à app.powerbi.com pour accéder à Power BI en mode privé.
@@ -306,12 +305,10 @@ Vous avez terminé ces étapes. Votre organisation a maintenant accès à Power 
 
 Il y a plusieurs points à prendre en compte si vous utilisez des liaisons privées dans Power BI :
 
-* Il n’est pas possible d’utiliser des images ou thèmes externes dans un environnement de liaison privée, et cela peut impacter les visuels personnalisés
-* Les services d’exportation, comme Exporter en PDF, l’exportation vers Excel à partir d’un rapport et d’autres services d’exportation ne fonctionnent pas dans un environnement de liaison privée
-* Les rapports SQL Server Reporting Services, communément appelés fichiers RDL (fichiers au format *.rdl), ne peuvent pas être visualisés dans les environnements de liaison privée
-* Si l’accès à Internet est désactivé et que le jeu de données ou le flux de données se connecte à un jeu de données ou à un flux de données Power BI comme source de données, la connexion échoue.
-* Les métriques d’utilisation *ne fonctionnent pas* quand des liaisons privées sont activées
-* La publication sur le web est grisée (ce qui signifie qu’elle n’est pas prise en charge) quand vous activez **Bloquer l’accès Internet public** dans Power BI
+* Il n’est pas possible d’utiliser des images ou thèmes externes dans un environnement de liaison privée, et cela peut impacter les visuels personnalisés.
+* Si l’accès à Internet est désactivé et que le jeu de données ou le dataflow se connecte à un jeu de données ou à un dataflow Power BI comme source de données, la connexion échoue.
+* Les métriques d’utilisation *ne fonctionnent pas* quand des liaisons privées sont activées.
+* La publication sur le web est grisée (ce qui signifie qu’elle n’est pas prise en charge) quand vous activez **Bloquer l’accès Internet public** dans Power BI.
 
 
 ## <a name="next-steps"></a>Étapes suivantes

@@ -9,12 +9,12 @@ ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 06/10/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a3654bc77ebdbd41ef608378157bf0d24bb94c88
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f4128939bd90f0b6514a792a60d583b830bea0d2
+ms.sourcegitcommit: 772c65b7b440ab082510bf3f64b871d19139d451
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416114"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97353447"
 ---
 # <a name="use-ai-insights-in-power-bi-desktop"></a>Utiliser Insights IA dans Power BI Desktop
 
@@ -223,7 +223,7 @@ Les considérations et limitations suivantes s'appliquent à Azure ML dans Power
 
 Cet article donne une vue d’ensemble de l’intégration de Machine Learning dans Power BI Desktop. Les articles suivants pourraient également être intéressants et utiles pour vous.
 
-- [Tutoriel : Appeler un modèle Machine Learning Studio (classique) dans Power BI](../connect-data/service-tutorial-invoke-machine-learning-model.md)
+- [Tutoriel : Consommer des modèles Azure Machine Learning dans Power BI](../connect-data/service-aml-integrate.md)
 - [Tutoriel : Utilisation de Cognitive Services dans Power BI](../connect-data/service-tutorial-use-cognitive-services.md)
 - [Cognitive Services dans Power BI](./dataflows/dataflows-machine-learning-integration.md)
 - [Intégration d’Azure Machine Learning dans Power BI](./dataflows/dataflows-machine-learning-integration.md)

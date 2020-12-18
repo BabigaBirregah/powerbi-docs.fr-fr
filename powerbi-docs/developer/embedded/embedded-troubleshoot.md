@@ -1,5 +1,5 @@
 ---
-title: Résolution des problèmes de votre application incorporée
+title: Résolution des problèmes de votre application d’analytique incorporée Power BI
 description: Cet article décrit certains problèmes courants que vous pouvez rencontrer lors de l’incorporation de contenu à partir de Power BI.
 author: KesemSharabi
 ms.author: kesharab
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
 ms.date: 02/05/2019
-ms.openlocfilehash: 3016cce1e4dd8fb1be5b5ab95ebcc73bdcb56ac1
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: f46bdf5aec254763257fa4b121b4b8c135a0d58a
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749066"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098073"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Résoudre les problèmes de votre application incorporée
 
@@ -101,7 +101,7 @@ HTTP/1.1 403 Forbidden
 
 ### <a name="authentication-failed-with-aadsts90002-tenant-authorize-not-found"></a>L’authentification a échoué avec AADSTS90002 : « authorize » introuvable pour le locataire
 
- Si vous recevez des messages pendant la connexion du type ***erreur : invalid_request, error_description : AADSTS90002 : « authorize » introuvable pour le locataire***, c’est parce que la bibliothèque ADAL 4.x ne prend pas en charge « https://login.microsoftonline.com/{Tenant}/oauth2/authorize/  » comme URL d’autorité.
+ Si vous recevez des messages pendant la connexion du type ***erreur : invalid_request, error_description : AADSTS90002 : « authorize » introuvable pour le locataire** _, c’est parce que la bibliothèque ADAL 4.x ne prend pas en charge « https://login.microsoftonline.com/{Tenant}/oauth2/authorize/  » comme URL d’autorité.
  
 Pour résoudre ce problème, vous devez supprimer « oauth2/authorize » à la fin de votre URL d’autorité, consultez les [exemples des développeurs Power BI](https://github.com/Microsoft/PowerBI-Developer-Samples) pour référence.
 
@@ -109,15 +109,15 @@ Pour résoudre ce problème, vous devez supprimer « oauth2/authorize » à la
 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Échec de l’authentification avec AADSTS70002 ou AADSTS50053
 
-**_(AADSTS70002 : Erreur de validation des informations d’identification. AADSTS50053 : Vous avez essayé de vous connecter un trop grand nombre de fois avec un ID d’utilisateur ou un mot de passe incorrect)_**
+_*_ (AADSTS70002 : Erreur de validation des informations d’identification. AADSTS50053 : Vous avez essayé de vous connecter un trop grand nombre de fois avec un ID d’utilisateur ou un mot de passe incorrect)_**
 
-Si vous utilisez à la fois Power BI Embedded et l’authentification directe Azure AD et qu’au moment de vous connecter, vous recevez des messages tels que ***error:unauthorized_client, error_description:AADSTS70002 : Erreur de validation des informations d’identification. AADSTS50053 : Vous avez essayé de vous connecter un trop grand nombre de fois avec un ID d’utilisateur ou un mot de passe incorrect***, cela est dû au fait que l’authentification directe n’est plus utilisée depuis le 14 juin 2018 par défaut.
+Si vous utilisez à la fois Power BI Embedded et l’authentification directe Azure AD et qu’au moment de vous connecter, vous recevez des messages tels que **_error:unauthorized_client, error_description:AADSTS70002 : Erreur de validation des informations d’identification. AADSTS50053 : Vous avez essayé de vous connecter un trop grand nombre de fois avec un ID d’utilisateur ou un mot de passe incorrect_* _, cela est dû au fait que l’authentification directe n’est plus utilisée depuis le 14 juin 2018 par défaut.
 
 Il existe un moyen de la réactiver en utilisant une [stratégie Azure AD](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) dont la portée peut être limitée à l’organisation ou à un [principal du service](/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
 Nous vous recommandons d’activer cette stratégie uniquement en fonction de chaque application.
 
-Pour créer cette stratégie, vous devez être **administrateur général** de l’annuaire dans lequel vous créez et affectez la stratégie. Voici un exemple de script qui vous montre comment créer la stratégie et l’affecter au principal du service de l’application :
+Pour créer cette stratégie, vous devez être _ *administrateur général** de l’annuaire dans lequel vous créez et affectez la stratégie. Voici un exemple de script qui vous montre comment créer la stratégie et l’affecter au principal du service de l’application :
 
 1. Installez le [module PowerShell Azure AD (Préversion)](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 

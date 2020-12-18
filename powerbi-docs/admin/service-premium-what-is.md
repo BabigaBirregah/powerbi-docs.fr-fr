@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 12/04/2020
+ms.date: 12/09/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: 1ab5fb15f910b420781564da8f26cf5cd7ccd7df
-ms.sourcegitcommit: 0bf42b6393cab7a37d21a52b934539cf300a08e2
+ms.openlocfilehash: 62df55257864069a1e3a03f8378869fe76052120
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96781816"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97491963"
 ---
 # <a name="what-is-power-bi-premium"></a>Qu’est-ce que Power BI Premium ?
 
@@ -50,7 +50,7 @@ Premium Gen2 offre les mises à jour ou expériences améliorées suivantes :
     * Moins de restrictions de mémoire
     * Séparation complète entre l’interaction avec les rapports et les actualisations planifiées
 
-* **Métriques améliorées** avec des données d’utilisation de capacité claires et normalisées, qui dépendent seulement de la complexité des opérations d’analytique effectuées par la capacité (et non pas de sa taille), du niveau de la charge sur le système lors des opérations d’analytique ainsi que d’autres facteurs. Grâce aux métriques améliorées, l’analyse de l’utilisation, la planification du budget, la facturation interne et le besoin de mise à niveau sont clairement visibles avec les rapports intégrés. Des métriques améliorées seront mises à disposition et améliorées tout au long de la période de préversion.
+* **Métriques améliorées** avec des données d’utilisation de capacité claires et normalisées, qui dépendent seulement de la complexité des opérations d’analytique effectuées par la capacité (et non pas de sa taille), du niveau de la charge sur le système lors des opérations d’analytique ainsi que d’autres facteurs. Grâce aux métriques améliorées, l’analyse de l’utilisation, la planification du budget, la facturation interne et le besoin de mise à niveau sont clairement visibles avec les rapports intégrés. Des métriques améliorées seront mises à disposition ultérieurement au cours de la période de préversion. Les clients qui recherchent un accès aux métriques d’utilisation pour les 7 derniers jours peuvent, à cette fin, contacter le support technique. 
 
 * La **mise à l’échelle automatique** permet d’*ajouter automatiquement* 1 vCore à la fois par période de 24 heures, lorsque la charge sur la capacité dépasse les limites, évitant ainsi les ralentissements provoqués par la surcharge. Les vCores sont automatiquement supprimés si une durée d’inactivité est détectée. Des vCores supplémentaires sont facturés à votre abonnement Azure en fonction de l’utilisation. La mise à l’échelle automatique sera disponible au cours de la période de préversion. 
 
@@ -247,7 +247,8 @@ Dans le tableau de bord de l’application, vous pouvez cliquer sur la cellule d
 Pour plus d’informations sur la supervision des capacités, consultez [Supervision dans le portail d’administration Power BI](service-admin-premium-monitor-portal.md) et [Supervision à l’aide de l’application Métriques de capacité Power BI Premium](service-admin-premium-monitor-capacity.md).
 
 #### <a name="updates-for-premium-gen2-preview"></a>Mises à jour pour Premium Gen2 (préversion)
-Les capacités **Premium Gen2** n’utilisent pas l’application Métriques, mais elles utilisent l’application Utilisation de la capacité, qui sera rendue disponible pendant la période de préversion. Vous pouvez lancer l’application Utilisation de la capacité à partir de votre page de gestion de la capacité dans le **portail d’administration** pour chaque capacité.
+Les capacités **Premium Gen2** n’utilisent pas l’application Métriques, mais elles utilisent l’application Utilisation de la capacité, qui sera rendue disponible pendant la période de préversion. Les clients souhaitant passer en revue leur utilisation peuvent obtenir auprès du support technique une copie de leur rapport d’utilisation des 7 derniers jours. Le rapport est communiqué dans un délai de 72 heures après la demande. Vous lancez l’application Utilisation de la capacité à partir de votre page de gestion de la capacité dans le **portail d’administration** pour chaque capacité. L’analyse obtenue porte sur au moins 30 jours de données.
+
 
 
 ### <a name="optimizing-capacities"></a>Optimisation des capacités
@@ -279,6 +280,8 @@ La référence (SKU) A4 Power BI Embedded est égale à la référence P1, A5 
 ### <a name="large-dataset-storage-format"></a>Format de stockage des grands jeux de données
 
 Si vous activez le paramètre [Format de stockage des grands jeux de données](service-premium-large-models.md) pour un jeu de données, les limitations de taille des fichiers .pbix s’appliquent néanmoins toujours au chargement ou à la publication des fichiers. La limite de taille de téléchargement n’est pas affectée par le format de stockage des grands jeux de données. Cependant, lors de la publication sur le service, avec l’actualisation incrémentielle et le format de stockage des grands jeux de données activés, les jeux de données peuvent croître bien au-delà de ces limites. Avec le format de stockage des grands jeux de données, la taille des jeux de données est limitée seulement par la taille de la capacité Power BI Premium.
+
+Les jeux de données Power BI peuvent stocker des données dans un cache en mémoire hautement compressé pour optimiser les performances des requêtes et permettre ainsi une interactivité entre utilisateurs rapide sur d’importants jeux de données. Avant, les jeux de données dans Power BI Premium étaient limités à 10 Go après compression. Avec les grands modèles, la limitation est supprimée et les tailles des jeux de données sont limitées uniquement par la taille de la capacité ou par une taille maximale définie par l’administrateur. La prise en charge de ces grandes tailles de jeux de données permet aux tailles de jeux de données Power BI de mieux s’aligner sur les tailles de modèle Azure Analysis Services.
 
 Vos fichiers .pbix contiennent des données dans un *format fortement compressé*. Les données seront probablement développées lors de leur chargement en mémoire et, dès lors, peuvent être encore développées plusieurs fois au moment de l’actualisation.
 

@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 06/18/2020
+ms.date: 12/14/2020
 ms.custom: contperfq4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 424f3cc7412813cb9ea9f401d6edd22257e8d14a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5b26f8fe04c7aaf6847de50398c54db6a3870844
+ms.sourcegitcommit: b5365df7fc32b7c49f8a2bf2cf75b5edd6bda9b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411790"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97513778"
 ---
 # <a name="ways-to-collaborate-and-share-in-power-bi"></a>Façons de collaborer et partager dans Power BI
 
@@ -27,22 +27,22 @@ Vous avez créé des tableaux de bord et des rapports. Vous voudrez peut-être c
 
 **Collaborer**
 
-- Collaborer avec des collègues pour créer des rapports et tableaux de bord dans des *espaces de travail*.
-- Collaborez dans *Microsoft Teams*.
+- [Collaborez avec des collègues pour créer des rapports et tableaux de bord dans des *espaces de travail*](#collaborate-in-a-workspace).
+- [Collaborez dans *Microsoft Teams*](#collaborate-in-microsoft-teams).
 
 **Distribuer ou partager des tableaux de bord et des rapports**
 
-- *Partagez des tableaux de bord ou des rapports* à partir de Mon espace de travail ou d’un autre espace de travail.
-- Annoter et partager à partir des *applications mobiles* Power BI.
-- Regrouper les tableaux de bord et rapports des espaces de travail dans des *applications*, et les distribuer à un groupe plus important ou à toute l’organisation.
-- Incorporer des rapports dans des *portails sécurisés* ou des *sites web publics*.
-- Imprimer des rapports
-- Créer une *application modèle* que vous pouvez distribuer aux utilisateurs Power BI externes, par le biais de Microsoft AppSource
+- [*Partagez des tableaux de bord ou des rapports*](#share-dashboards-and-reports) à partir de Mon espace de travail ou d’un autre espace de travail.
+- Annotez et [partagez à partir des *applications mobiles* Power BI](#annotate-and-share-from-the-power-bi-mobile-apps).
+- Regroupez les tableaux de bord et rapports des espaces de travail dans des *applications*, et [distribuez vos applications](#distribute-insights-in-an-app) à un groupe plus important ou à toute l’organisation.
+- [Incorporez des rapports](#embed-reports-in-secure-portals-or-public-web-sites) dans des *portails sécurisés* ou des *sites web publics*.
+- [Imprimez des rapports](#print-or-save-as-pdf-or-other-static-file).
+- [Créez une *application modèle*](#create-and-deploy-template-apps) que vous pouvez distribuer aux utilisateurs Power BI externes, par le biais de Microsoft AppSource.
  
 **Partager les données**
 
-- Créer des *jeux de données partagés* que vos collègues peuvent utiliser comme base pour leurs propres rapports, dans leur propre espace de travail.
-- Créez des *dataflows* comme moyen de partager une source de données commune.
+- [Créez des *jeux de données partagés*](#share-a-dataset) que vos collègues peuvent utiliser comme base pour leurs propres rapports, dans leur propre espace de travail.
+- [Créez des *dataflows*](#create-dataflows) comme moyen de partager une source de données commune.
 
 Quelle que soit l’option choisie, pour partager du contenu, vous avez besoin d’une [licence Power BI Pro](../fundamentals/service-features-license-type.md). Sinon, le contenu doit se trouver dans une [capacité Premium](../admin/service-premium-what-is.md). Les besoins en licence varient pour les collègues qui consultent votre contenu, et dépendent de l’option que vous choisissez. Les sections suivantes offrent des informations détaillées. 
 
@@ -67,7 +67,7 @@ Découvrez-en plus sur la manière de [créer les nouveaux espaces de travail](s
 
 ## <a name="collaborate-in-microsoft-teams"></a>Collaborer dans Microsoft Teams
 
-Augmentez la collaboration pilotée par les données au sein de votre organisation en incorporant vos rapports Power BI et vos rapports paginés Power BI dans Microsoft Teams. Le service Power BI dispose d’un bouton **Partager dans Teams** pour les rapports. Vous pouvez ajouter des onglets Power BI distincts pour chaque rapport individuel et attribuer à chaque onglet le nom du rapport ou un autre nom quelconque. 
+Augmentez la collaboration pilotée par les données au sein de votre organisation en incorporant vos rapports Power BI et vos rapports paginés Power BI dans Microsoft Teams. Le service Power BI dispose d’un bouton **Discuter dans Teams** pour les rapports. Vous pouvez ajouter des onglets Power BI distincts pour chaque rapport individuel et attribuer à chaque onglet le nom du rapport ou un autre nom quelconque. 
 
 Quand vous ajoutez un onglet de rapport Power BI dans Microsoft Teams, Teams crée automatiquement un onglet de conversation pour le rapport. Tout le monde dans ce canal Microsoft Teams peut voir le rapport et en discuter dans la conversation. 
 
@@ -77,7 +77,7 @@ En savoir plus sur la [collaboration dans Microsoft Teams avec Power BI](service
 
 ## <a name="share-dashboards-and-reports"></a>Partager des tableaux de bord et rapports
 
-Supposons que vous avez finalisé un rapport dans Power BI Desktop et que vous souhaitez que d’autres utilisateurs y aient accès. Une des options est de le *partager* avec eux dans le service Power BI. Vous le publiez dans votre propre espace de travail ou dans un autre espace de travail. Vous avez peut-être créé un tableau de bord associé et vous êtes prêt.
+Supposons que votre rapport dans Power BI Desktop soit prêt et que vous souhaitez que d’autres utilisateurs y aient accès. Une des options est de le *partager* avec eux dans le service Power BI. Vous le publiez dans votre propre espace de travail ou dans un autre espace de travail. Vous avez peut-être créé un tableau de bord associé et vous êtes prêt.
 
 ![Partager un rapport](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-report.png)
 
@@ -118,14 +118,14 @@ Vous pouvez également publier des applications pour des personnes extérieures 
 ### <a name="embed-in-secure-portals"></a>Incorporer des rapports dans les portails sécurisés
 
 Vous pouvez incorporer des rapports Power BI dans des portails ou des sites web où les utilisateurs s’attendent à les voir.  
-Avec les options **Incorporer dans SharePoint Online** et **Incorporer** du service Power BI, vous pouvez incorporer des rapports pour vos utilisateurs internes de manière sécurisée. Quelle que soit l’option choisie, Power BI applique l’ensemble des autorisations et de la sécurité des données avant que les utilisateurs ne puissent voir le contenu. La personne qui consulte le rapport doit avoir la licence appropriée.  
+Avec les options **Incorporer dans SharePoint Online** et **Incorporer** du service Power BI, vous pouvez incorporer des rapports pour vos utilisateurs internes de manière sécurisée. Quelle que soit l’option choisie, Power BI applique l’ensemble des autorisations et de la sécurité des données avant que les utilisateurs ne voient le contenu. La personne qui consulte le rapport doit avoir la licence appropriée.  
 
 - **Incorporer dans SharePoint Online** fonctionne avec le composant WebPart Power BI pour SharePoint Online. Il fournit une expérience d’authentification unique et permet de contrôler la façon dont le rapport est incorporé. En savoir plus sur l’[Incorporation dans SharePoint Online](service-embed-report-spo.md).
 - L’option **Incorporer** fonctionne avec n’importe quel portail ou site web qui prend en charge l’incorporation de contenu à l’aide d’une URL ou d’un iFrame. En savoir plus sur l’option [Incorporer](service-embed-secure.md).
 
 ### <a name="publish-to-public-web-sites"></a>Publier sur des sites web publics
 
-Avec **Publier sur le web**, vous pouvez publier des rapports Power BI sur le web en incorporant des visualisations dans les billets de blog, les sites web, les réseaux sociaux et d’autres supports de communication en ligne. Tous les utilisateurs d’Internet peuvent afficher vos rapports et vous n’avez aucun contrôle sur les personnes qui peuvent voir ce que vous avez publié. Celles-ci n’ont pas besoin d’une licence Power BI. La fonction de publication sur le web n’est disponible que pour les rapports que vous pouvez modifier. Vous ne pouvez pas publier des rapports sur le web s’ils sont partagés avec vous ou s’ils figurent dans une application. En savoir plus sur la [publication sur le web](service-publish-to-web.md).
+**Publier sur le web** vous permet de publier des rapports Power BI sur le web en incorporant des visualisations dans les billets de blog, les sites web, les réseaux sociaux et d’autres supports de communication en ligne. Tous les utilisateurs d’Internet peuvent afficher vos rapports et vous n’avez aucun contrôle sur les personnes qui voient ce que vous avez publié. Celles-ci n’ont pas besoin d’une licence Power BI. La fonction de publication sur le web n’est disponible que pour les rapports que vous pouvez modifier. Vous ne pouvez pas publier des rapports sur le web s’ils sont partagés avec vous ou s’ils figurent dans une application. En savoir plus sur la [publication sur le web](service-publish-to-web.md).
 
 >[!Warning]
 >Utilisez [Publier sur le web](service-publish-to-web.md) seulement pour partager du contenu publiquement, mais pas pour un partage en interne.

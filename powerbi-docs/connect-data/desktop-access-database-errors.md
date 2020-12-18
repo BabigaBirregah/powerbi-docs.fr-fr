@@ -8,14 +8,14 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/21/2019
+ms.date: 12/09/2020
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: f8d24c672fa3e9d5cda007e061eac8c4ea9c6d4c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b144412ee322aa9bec0a35bb3876a949abcd3f13
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96406040"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998895"
 ---
 # <a name="troubleshoot-importing-access-and-excel-xls-files-in-power-bi-desktop"></a>Résoudre les problèmes liés à l’importation de fichiers Access et .xls Excel dans Power BI Desktop
 
@@ -24,6 +24,8 @@ Dans Power BI Desktop, les bases de données Access et les premières versions
 ## <a name="situation-1-no-access-database-engine-is-installed"></a>Situation 1 : aucun moteur de base de données Access n’est installé.
 
 Si le message d’erreur de Power BI Desktop indique que le moteur de base de données Access n’est pas installé, vous devez installer la version 32 bits ou 64 bits du moteur de base de données Access correspondant à votre version de Power BI Desktop. Vous pouvez installer le moteur de base de données Access à partir de la [page des téléchargements](https://www.microsoft.com/download/details.aspx?id=13255).
+
+Si vous utilisez des dataflows et une passerelle pour vous connecter aux données, vous devez installer le moteur de base de données Access sur l’ordinateur qui exécute la passerelle. 
 
 >[!NOTE]
 >Si la version (32 bits ou 64 bits) du moteur de base de données Access installé diffère de celle de votre installation Microsoft Office, les applications Office ne pourront pas utiliser le moteur de base de données Access.

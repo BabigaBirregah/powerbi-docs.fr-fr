@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/19/2020
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e92afdbad41f212ac93245583430ae44fe0abaf9
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f0d756b7909043a644ab8220cd71a9fca9b1c0e0
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410640"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998702"
 ---
 # <a name="connect-to-github-with-power-bi"></a>Se connecter à GitHub avec Power BI
 Cet article vous guide tout au long de l’extraction de vos données à partir de votre compte GitHub à l’aide d’une application de modèle Power BI. L’application de modèle génère un espace de travail avec un tableau de bord, un ensemble de rapports et un jeu de données pour vous permettre d’explorer vos données GitHub. L’application GitHub pour Power BI vous montre un aperçu de votre référentiel GitHub (ou repo) avec des données relatives à des contributions, des problèmes, des requêtes d’extraction et des utilisateurs actifs.
@@ -41,7 +41,7 @@ Vous pouvez également essayer le [didacticiel de GitHub](service-tutorial-conne
 
 1. Sélectionnez **Installer**. 
 
-    ![Installer l’application modèle GitHub](media/service-connect-to-github/service-regional-emergency-response-select-install.png)
+    ![Installer l’application modèle GitHub](media/service-connect-to-github/power-bi-github-install-dialog.png)
 
     Une fois l’application installée, elle apparaît dans votre page Applications.
 
@@ -51,30 +51,23 @@ Vous pouvez également essayer le [didacticiel de GitHub](service-tutorial-conne
 
 1. Sélectionnez l’icône dans votre page Applications pour ouvrir l’application.
 
-1. Dans l’écran de démarrage, sélectionnez **Explorer l’application**.
-
-   ![Écran de démarrage de l’application modèle](media/service-connect-to-github/service-github-app-splash-screen.png)
-
    L’application s’ouvre et présente des exemples de données.
 
 1. Sélectionnez le lien **Connecter vos données** dans la bannière en haut de la page.
 
    ![Lien Connecter vos données de l’application GitHub](media/service-connect-to-github/service-github-app-connect-data.png)
 
-1. Dans la boîte de dialogue qui s’affiche, entrez le nom du dépôt et le propriétaire du dépôt. Consultez les détails sur la [recherche de ces paramètres](#FindingParams) ci-dessous. Quand vous avez terminé, cliquez sur **Suivant**.
+1. La boîte de dialogue Paramètres s’ouvre. Vous pouvez y modifier la source de données en remplaçant l’exemple de données par votre propre source de données (cf. [limitations connues](service-template-apps-overview.md#known-limitations)). Ensuite vient la boîte de dialogue Méthode d’authentification. Vous devrez peut-être redéfinir les valeurs indiquées dans ces boîtes de dialogue.
 
-   ![Nom du dépôt GitHub - Power BI](media/service-connect-to-github/power-bi-github-app-tutorial-connect.png)
+   ![Capture d’écran des boîtes de dialogue de connexion aux données](media/service-connect-to-github/power-bi-template-app-connect-to-data-dialogs.png)
 
-1. Dans la boîte de dialogue suivante qui apparaît, vérifiez que la méthode d’authentification est définie sur **OAuth2**. Vous n’avez rien à changer pour le paramètre de confidentialité. Quand vous êtes prêt, cliquez sur **Se connecter**.
-
-   ![Méthode d’authentification GitHub Power BI](media/service-connect-to-github/power-bi-github-authentication.png)
 
 1. Entrez vos informations d’identification GitHub et suivez le processus d’authentification de GitHub (cette étape peut être ignorée si vous êtes déjà connecté avec votre navigateur).
 
    ![Processus d’authentification GitHub Power BI](media/service-connect-to-github/power-bi-github-authenticate-process.png)
 
 
-Une fois que vous êtes connecté, le rapport se connecte aux sources de données et est renseigné avec les dernières données disponibles. Pendant ce temps, le moniteur d’activité tourne.
+Une fois que vous avez fini de renseigner les boîtes de dialogue de connexion et que vous vous êtes connecté à GitHub, le processus de connexion démarre. Une bannière vous informe que les données sont en cours d’actualisation et qu’en attendant, vous voyez des exemples de données.
 
 ![Actualisation de l’application GitHub Power BI en cours](media/service-connect-to-github/service-github-app-refresh-monitor.png)
 

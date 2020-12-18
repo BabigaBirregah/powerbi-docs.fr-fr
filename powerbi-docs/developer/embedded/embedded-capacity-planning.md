@@ -1,5 +1,5 @@
 ---
-title: Planification d’une capacité d’analytique incorporée
+title: Planification d’une capacité d’analytique incorporée de Power BI
 description: Planification d’une capacité dans l’analytique incorporée de Power BI.
 author: KesemSharabi
 ms.author: kesharab
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/03/2020
-ms.openlocfilehash: 23f58c047eeb47fce24ad38ae54d8f4d7a1c57e7
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: b172b48517ccc8c55821fa8e8217d5e2df398b2d
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91983042"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098349"
 ---
 # <a name="capacity-planning-in-power-bi-embedded-analytics"></a>Planification d’une capacité dans l’analytique incorporée de Power BI
 

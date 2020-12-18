@@ -1,5 +1,5 @@
 ---
-title: Partage direct dans Microsoft Teams à partir du service Power BI
+title: Discuter dans Microsoft Teams directement à partir du service Power BI
 description: Vous pouvez partager des tableaux de bord et des rapports Power BI directement dans Microsoft Teams à partir du service Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,37 +9,35 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 07/31/2020
-ms.openlocfilehash: 0a6f73c14c8dd8ebb48f856f3079ec8f5922ef9e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/14/2020
+ms.openlocfilehash: af1fac127d1a20f13bc99fc2d05510491a01be5a
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411560"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97492032"
 ---
-# <a name="share-directly-to-microsoft-teams-from-the-power-bi-service"></a>Partage direct dans Microsoft Teams à partir du service Power BI
+# <a name="chat-in-microsoft-teams-directly-from-the-power-bi-service"></a>Discuter dans Microsoft Teams directement à partir du service Power BI
 
-Vous pouvez partager des tableaux de bord, des rapports et des visuels Power BI directement dans Microsoft Teams à partir du service Power BI. Utilisez la fonctionnalité **Partager dans Teams** pour démarrer rapidement des conversations quand vous consultez des rapports et des tableaux de bord dans le service Power BI.
+Vous pouvez discuter des tableaux de bord, des rapports et des visuels Power BI directement dans Microsoft Teams à partir du service Power BI. Utilisez la fonctionnalité **Discuter dans Teams** pour démarrer rapidement des conversations quand vous consultez des rapports et des tableaux de bord dans le service Power BI.
 
 ## <a name="requirements"></a>Configuration requise
 
-Pour utiliser la fonctionnalité **Partager dans Teams** dans Power BI, vérifiez le paramétrage suivant :
-
-- Les administrateurs Power BI n’ont pas désactivé le paramètre de locataire **Partager dans Teams** dans le portail d’administration Power BI. Ce paramètre permet aux organisations de masquer les boutons **Partager dans Teams**. Consultez l’article sur le [portail d’administration Power BI](../admin/service-admin-portal.md#share-to-teams) pour plus d’informations.
+Pour utiliser la fonctionnalité **Discuter dans Teams** dans Power BI, vérifiez que votre administrateur Power BI n’a pas désactivé le paramètre de locataire **Partager dans Teams** dans le portail d’administration Power BI. Ce paramètre permet aux organisations de masquer les boutons **Discuter dans Teams**. Consultez l’article sur le [portail d’administration Power BI](../admin/service-admin-portal.md#share-to-teams) pour plus d’informations.
 
 Pour plus d’informations sur l’interaction entre Power BI et Microsoft Teams, et notamment pour connaître d’autres conditions à remplir, consultez [Collaboration dans Microsoft Teams avec Power BI](service-collaborate-microsoft-teams.md).
 
-## <a name="share-power-bi-content-to-microsoft-teams"></a>Partage de contenu Power BI dans Microsoft Teams
+## <a name="chat-about-power-bi-content-in-microsoft-teams"></a>Discuter au sujet d’un contenu Power BI dans Microsoft Teams
 
-Suivez ces étapes pour partager des liens vers des rapports, des tableaux de bord et des visuels dans le service Power BI dans les conversations et canaux Microsoft Teams.
+Suivez ces étapes pour partager des liens vers des rapports, des tableaux de bord et des visuels dans le service Power BI et discutez d’un contenu par le biais de conversations et de canaux Microsoft Teams.
 
 1. Sélectionnez une de ces options :
 
-   * **Partager dans Teams** dans la barre d’action d’un tableau de bord ou d’un rapport :
+   * **Discuter dans Teams** dans la barre d’action d’un tableau de bord ou d’un rapport :
 
        ![Capture d’écran du bouton Partager dans Teams dans la barre d’action](media/service-share-report-teams/service-teams-share-to-teams-action-bar-button.png)
     
-   * **Partager dans Teams** dans le menu contextuel d’un visuel spécifique :
+   * **Discuter dans Teams** dans le menu contextuel d’un visuel spécifique :
     
       ![Capture d’écran du bouton Partager dans Teams dans le menu contextuel d’un visuel](media/service-share-report-teams/service-teams-share-to-teams-visual-context-menu.png)
 
@@ -63,10 +61,10 @@ Suivez ces étapes pour partager des liens vers des rapports, des tableaux de bo
 ## <a name="known-issues-and-limitations"></a>Problèmes connus et limitations
 
 - Un utilisateur sans licence Power BI ni autorisation d’accès pour le rapport voit un message « Ce contenu n’est pas disponible ».
-- Les boutons **Partager dans Teams** peuvent ne pas fonctionner si votre navigateur utilise des paramètres de confidentialité stricts. Utilisez l’option **Vous avez une difficulté ? Essayer d’ouvrir dans une nouvelle fenêtre** si la boîte de dialogue ne s’ouvre pas correctement.
-- **Partager dans Teams** n’inclut pas d’aperçu de lien.
-- Les aperçus de lien et les boutons **Partager dans Teams** n’accordent pas aux utilisateurs l’autorisation d’afficher l’élément. Les autorisations doivent être gérées séparément.
-- Le bouton **Partager dans Teams** n’est pas disponible dans les menus contextuels visuels quand un auteur de rapport définit **Plus d’options** sur **Désactiver** pour le visuel.
+- Les boutons **Discuter dans Teams** peuvent ne pas fonctionner si votre navigateur utilise des paramètres de confidentialité stricts. Utilisez l’option **Vous avez une difficulté ? Essayer d’ouvrir dans une nouvelle fenêtre** si la boîte de dialogue ne s’ouvre pas correctement.
+- **Discuter dans Teams** n’inclut pas d’aperçu de lien.
+- Les aperçus de lien et les boutons **Discuter dans Teams** n’accordent pas aux utilisateurs l’autorisation d’afficher l’élément. Les autorisations doivent être gérées séparément.
+- Le bouton **Discuter dans Teams** n’est pas disponible dans les menus contextuels visuels quand un auteur de rapport définit **Plus d’options** sur **Désactiver** pour le visuel.
 - Pour d’autres problèmes, consultez la section [Problèmes connus et limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) de l’article « Collaborer dans Microsoft Teams ».
 
 ## <a name="next-steps"></a>Étapes suivantes

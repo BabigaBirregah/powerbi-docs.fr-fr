@@ -7,17 +7,19 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/18/2019
-ms.openlocfilehash: b8be5b68603f818e26e7f731e4f163bc626b5053
-ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
+ms.date: 12/13/2020
+ms.openlocfilehash: 3dc94a24e5e6a84992745775b1639b7a186ed19d
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94483693"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97492078"
 ---
 # <a name="fetch-more-data-from-power-bi"></a>Extraire davantage de données de Power BI
 
-Cet article explique comment charger davantage de données pour contourner la limite fixe d’un point de données de 30 Ko à l’aide de la méthode `fetchMoreData`. Cette approche fournit les données en bloc. Pour améliorer les performances, vous pouvez configurer une taille de lot adaptée aux besoins de votre cas d’usage.
+L’API `fetchMoreData` permet aux visuels Power BI de contourner la limite inconditionnelle de 30 000 lignes pour une vue de données. Avec la nouvelle version d’API 3.4, les fonctionnalités de l’API `fetchMoreData` sont étendues pour prendre en charge une nouvelle approche du chargement des blocs de données. En plus de l’approche existante, qui regroupe tous les blocs demandés, l’API prend en charge le chargement des blocs de données incrémentiels uniquement.
+
+La nouvelle approche offre davantage de flexibilité dans la façon de charger des blocs de données supplémentaires dans le visuel. Pour améliorer les performances, vous pouvez configurer une taille de lot adaptée aux besoins de votre cas d’usage.
 
 ## <a name="limitations-of-fetchmoredata"></a>Limitations de fetchMoreData
 

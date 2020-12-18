@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 09/15/2020
-ms.openlocfilehash: bcd7d94e4fd3d50277ddd2a33c1d10407b9400de
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/14/2020
+ms.openlocfilehash: 80aa8097ce38a9b1bac228ea61dcc959e4aba60d
+ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411997"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97492009"
 ---
 # <a name="collaborate-in-microsoft-teams-with-power-bi"></a>Collaborer dans Microsoft Teams avec Power BI
 
@@ -23,7 +23,7 @@ ms.locfileid: "96411997"
 
 - Avec l’onglet **Power BI** pour Microsoft Teams, vous pouvez [incorporer des rapports interactifs dans les canaux et les conversations Microsoft Teams](service-embed-report-microsoft-teams.md). L’onglet Power BI aide vos collègues à trouver les données de votre équipe et à discuter des données dans les canaux de votre équipe. 
 - Créez un [aperçu de lien](service-teams-link-preview.md) quand vous collez un lien vers vos rapports, tableaux de bord et applications dans la boîte de message Microsoft Teams. L’aperçu de lien montre des informations sur le lien. 
-- Utilisez [Partager dans Microsoft Teams](service-share-report-teams.md) quand vous consultez des rapports et des tableaux de bord dans le service Power BI pour lancer rapidement des conversations dans Microsoft Teams.
+- Utilisez [Discuter dans Microsoft Teams](service-share-report-teams.md) quand vous consultez des rapports et des tableaux de bord dans le service Power BI pour lancer rapidement des conversations dans Microsoft Teams.
 - Utilisez l’application [Power BI dans Microsoft Teams](service-microsoft-teams-app.md) pour ajouter à Microsoft Teams toute l’expérience du service Power BI de base.
  
 :::image type="content" source="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png" alt-text="Capture d’écran d’un rapport Power BI incorporé dans un canal Microsoft Teams":::
@@ -70,6 +70,6 @@ Les autres applications Microsoft Power Platform s’intègrent également à Mi
 
 - [Incorporer du contenu Power BI dans Microsoft Teams](service-embed-report-microsoft-teams.md)
 - [Obtenir un aperçu de lien Power BI dans Microsoft Teams](service-teams-link-preview.md)
-- [Partage direct dans Microsoft Teams à partir du service Power BI](service-share-report-teams.md)
+- [Discuter dans Microsoft Teams directement à partir du service Power BI](service-share-report-teams.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

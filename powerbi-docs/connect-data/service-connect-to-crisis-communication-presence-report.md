@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 04/06/2020
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7cce4f9e78fce27fedf795a4a0016593580f061a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e9fd1179dc15776cef701476d38b18823f3a8deb
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96403165"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998794"
 ---
 # <a name="connect-to-the-crisis-communication-presence-report"></a>Se connecter au Rapport de présence dans les communications de crise
 
@@ -57,9 +57,6 @@ Quand vous installez l’exemple de communication de crise, prenez note [du chem
 
 1. Sélectionnez l’icône dans votre page Applications pour ouvrir l’application.
 
-1. Dans l’écran de démarrage, sélectionnez **Explorer**.
-
-   ![Écran de démarrage de l’application modèle](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-splash-screen.png)
 
    L’application s’ouvre et présente des exemples de données.
 
@@ -103,6 +100,6 @@ Pour plus d’informations, consultez [Personnaliser et partager l’application
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Configurer et découvrir l’exemple de modèle de communication de crise dans Power Apps](/powerapps/maker/canvas-apps/sample-crisis-communication-app)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+* Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 * [Que sont les applications modèles Power BI ?](../connect-data/service-template-apps-overview.md)
 * [Installer et distribuer des applications modèles dans votre organisation](../connect-data/service-template-apps-install-distribute.md)

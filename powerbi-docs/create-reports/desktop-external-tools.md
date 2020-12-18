@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 07/29/2020
+ms.date: 12/10/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8742a65f662433eb4330a9dedbca54f4445e992b
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 98e27491147fa0e7ed7028925671d40a84fd9e6e
+ms.sourcegitcommit: 772c65b7b440ab082510bf3f64b871d19139d451
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412963"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97353378"
 ---
 # <a name="using-external-tools-in-power-bi-desktop-preview"></a>Utilisation d’outils externes dans Power BI Desktop (préversion)
 
@@ -32,6 +32,9 @@ Ces outils externes proposés sont les suivants, avec des liens vers leur emplac
 
 
 Les sections suivantes indiquent les opérations qui sont prises en charge par les outils externes, la liste des outils qui sont proposés dans Power BI Desktop, ainsi que la procédure à suivre pour inscrire des outils supplémentaires.
+
+> [!NOTE]
+> Les outils externes ne peuvent pas être utilisés avec la version Power BI Report Server de Power BI Desktop.
 
 ## <a name="supported-write-operations"></a>Opérations d'écriture prise en charge
 

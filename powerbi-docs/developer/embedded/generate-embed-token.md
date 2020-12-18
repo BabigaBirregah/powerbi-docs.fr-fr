@@ -1,5 +1,5 @@
 ---
-title: Points à prendre en considération pour générer un jeton d’incorporation
+title: Considérations relatives à la génération d’un jeton incorporé dans l’analytique incorporée Power BI
 description: En savoir plus sur les considérations, les limitations et les autorisations requises pour la génération d’un jeton incorporé
 author: KesemSharabi
 ms.author: kesharab
@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/15/2020
-ms.openlocfilehash: cea97f16cf06e80b7b16ef7740fcf3103b2f1eb4
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: 45a88d93e7ac5a63b269350451f39991ba153dd5
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95513777"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098027"
 ---
 # <a name="considerations-when-generating-an-embed-token"></a>Considérations relatives à la génération d’un jeton incorporé
 

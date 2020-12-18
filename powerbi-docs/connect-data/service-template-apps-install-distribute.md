@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 09/17/2020
-ms.openlocfilehash: b60728978a3429249d7376fdfe1477bf67ef293a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e6499d9e4547f1bd2b8cf4ac29fbc375af871f8a
+ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96401992"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96998635"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization"></a>Installer et distribuer des applications modèles dans votre organisation
 
@@ -64,10 +64,6 @@ Pour installer, personnaliser et distribuer une application modèle, vous avez b
 ## <a name="connect-to-data"></a>Se connecter aux données
 
 1. Sélectionnez **Accéder à l’application**.
-
-1. Dans la fenêtre **Démarrer avec votre nouvelle application**, sélectionnez **Explorer**.
-
-   ![Écran de démarrage de l’application modèle](media/service-template-apps-install-distribute/power-bi-template-app-get-started.png)
 
    L’application s’ouvre et présente des exemples de données.
 
@@ -138,6 +134,20 @@ Si vous avez initialement téléchargé l’application à partir d’AppSource,
 
 >[!IMPORTANT]
 >N’oubliez pas de [mettre à jour l’application](#customize-and-share-the-app) après le remplacement afin d’appliquer les modifications apportées aux rapports et aux tableaux de bord pour les utilisateurs de votre application d’organisation.
+
+## <a name="delete-a-template-app"></a>Supprimer une application modèle
+
+Une application modèle installée se compose de l’application et de l’espace de travail qui lui est associé. Si vous souhaitez supprimer l’application modèle, vous avez deux options :
+* **Supprimer complètement l’application et l’espace de travail qui lui est associé** : pour supprimer complètement l’application modèle et l’espace de travail qui lui est associé, accédez à la vignette de l’application dans la page Applications, sélectionnez l’icône de la corbeille, puis cliquez sur **Supprimer** dans la boîte de dialogue qui s’affiche.
+* **Annuler la publication de l’application** : Cette option supprime l’application, mais conserve l’espace de travail qui lui est associé. Cette option est utile si, par exemple, il existe des personnalisations que vous souhaitez conserver.
+
+    Pour annuler la publication de l’application :
+    1. Ouvrez l’application.
+    1. Cliquez sur l’icône en forme de crayon permettant de modifier l’application afin d’ouvrir l’espace de travail de l’application modèle.
+    1. Dans l’espace de travail de l’application modèle, sélectionnez **Autre option (...)** , puis choisissez **Annuler la publication de l’application**.
+
+        ![Capture d’écran de l’option Annuler la publication de l’application](media/service-template-apps-install-distribute/power-bi-template-app-unpublish.png)
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 

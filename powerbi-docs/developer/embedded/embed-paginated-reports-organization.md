@@ -1,5 +1,5 @@
 ---
-title: Incorporer des rapports paginés Power BI dans votre application pour votre organisation
+title: Incorporer des rapports paginés Power BI dans votre application d’analytique incorporée Power BI pour votre organisation
 description: Dans ce tutoriel, découvrez comment intégrer ou incorporer un rapport paginé Power BI dans une application à l’aide des API Power BI.
 author: KesemSharabi
 ms.author: kesharab
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 06/25/2020
-ms.openlocfilehash: 447fad076d9d171a2bdcb8e9f5aafe9c63555d79
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: cb739ab6fee67f08184f8c160c13c58be15d649c
+ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94668669"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098441"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-organization"></a>Tutoriel : Incorporer des rapports paginés Power BI dans une application pour votre organisation
 
