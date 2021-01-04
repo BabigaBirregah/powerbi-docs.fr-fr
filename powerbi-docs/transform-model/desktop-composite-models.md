@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 12/16/2020
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 078596c91f86f635cb69f543ee0ea828e5cef62d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: c29728641560502e19486f47e3ec06e370399640
+ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415861"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97600527"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Utiliser des modèles composites dans Power BI Desktop
 
@@ -188,3 +188,4 @@ Pour plus d’informations sur les modèles composites et DirectQuery, consultez
 * [Mode de stockage dans Power BI Desktop](desktop-storage-mode.md)
 * [Utiliser DirectQuery dans Power BI](../connect-data/desktop-directquery-about.md)
 * [Sources de données prises en charge par DirectQuery dans Power BI](../connect-data/power-bi-data-sources.md)
+* [Utilisation de DirectQuery pour jeux de données Power BI et Azure Analysis Services (préversion)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)

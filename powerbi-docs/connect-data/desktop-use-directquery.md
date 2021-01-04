@@ -9,12 +9,12 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 12/14/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a3ab606733e47dec06837cfc1840da09732f7019
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.openlocfilehash: 60805ba0977b3b603ace0d50f7b080bd62d54ec7
+ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97491227"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97600297"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Utilisation de DirectQuery dans Power BI Desktop
 Avec *Power BI Desktop*, quand vous vous connectez à une source de données, vous pouvez toujours importer une copie des données dans Power BI Desktop. Pour certaines sources de données, une autre approche est possible : vous connecter directement à la source de données à l’aide de DirectQuery.
@@ -108,3 +108,4 @@ Pour plus d’informations sur DirectQuery, consultez les ressources suivantes 
 - [DirectQuery et SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md)
 - [DirectQuery et SAP HANA](desktop-directquery-sap-hana.md)
 - [Qu’est-ce qu’une passerelle de données locale ?](service-gateway-onprem.md)
+- [Utilisation de DirectQuery pour jeux de données Power BI et Azure Analysis Services (préversion)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)

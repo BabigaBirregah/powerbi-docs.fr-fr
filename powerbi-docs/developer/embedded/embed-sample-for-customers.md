@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 12/02/2020
-ms.openlocfilehash: e79a73880b50a0edb5e507726cb0c995ba13cd77
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.date: 12/22/2020
+ms.openlocfilehash: 5417266658a493bc81da882761431aa3db072dbe
+ms.sourcegitcommit: 1691ce556ab5b22e6f9d06086a054d165d482809
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098418"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97745113"
 ---
 # <a name="tutorial-embed-power-bi-content-using-a-sample-embed-for-your-customers-application"></a>Tutoriel : Incorporer du contenu Power BI en utilisant un exemple d’application *Incorporer pour vos clients*
 
@@ -192,7 +192,7 @@ L’étape suivante consiste à créer un rapport et à le charger dans votre es
 
 Pour télécharger un exemple de rapport et le publier dans votre espace de travail, effectuez les étapes suivantes :
 
-1. Ouvrez le dossier GitHub des [exemples Power BI Desktop](https://github.com/microsoft/PowerBI-Developer-Samples).
+1. Ouvrez le dossier GitHub des [exemples Power BI Desktop](https://github.com/Microsoft/PowerBI-Desktop-Samples).
 
 2. Sélectionnez **Code**, puis sélectionnez **Download zip** (Télécharger le fichier zip).
 
