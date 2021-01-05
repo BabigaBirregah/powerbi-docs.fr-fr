@@ -124,7 +124,9 @@
       items:
         - name: Rapports Power BI
           items:
-            - name: Créer un rapport dans le service
+            - name: Créer des rapports rapides dans le service
+              href: service-quick-create-report.md
+            - name: Créer un rapport dans le service à partir d’Excel
               href: service-report-create-new.md
             - name: Activer l’actualisation automatique des pages
               href: desktop-automatic-page-refresh.md

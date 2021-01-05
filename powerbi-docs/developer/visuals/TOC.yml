@@ -26,7 +26,7 @@
       items:
         - name: "Structure de projet des visuels Power\_BI"
           href: visual-project-structure.md
-        - name: " Intégration du système de visuels Power\_BI"
+        - name: "Intégration du système de visuels Power\_BI"
           href: power-bi-visuals-concept.md
         - name: "Visuels pour les organisations dans Power\_BI"
           href: power-bi-custom-visuals-organization.md
@@ -42,7 +42,7 @@
           href: dataview-mappings.md
         - name: Objets et propriétés
           href: objects-properties.md
-        - name: Mode d’édition avancé
+        - name: Mode Édition avancé
           href: advanced-edit-mode.md
         - name: fonctionnalité supportsKeyboardFocus
           href: supportskeyboardfocus-feature.md
@@ -78,7 +78,7 @@
           href: bookmarks-support.md
         - name: Ajouter une prise en charge des menus contextuels
           href: context-menu.md
-        - name: Ajouter la prise en charge de l’exploration
+        - name: Ajouter prise en charge du zoom avant
           href: drill-down-support.md
         - name: Ajouter des couleurs à votre visuel
           href: add-colors-power-bi-visual.md
