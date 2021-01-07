@@ -7,14 +7,14 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/10/2020
+ms.date: 12/21/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 450c14d05f9a7855d51d7aa2f073e48a0b016013
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 140ca42dc34e98133beac5fff671cf1ef244501c
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96400957"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721429"
 ---
 # <a name="buttons-in-the-power-bi-service"></a>Boutons dans le service Power BI
 Dans les rapports que vous recevez de vos collègues, vous avez peut-être remarqué des boutons et vous vous demandez comment les utiliser. Certains comportent des mots, d’autres des flèches, des graphiques et même des menus déroulants. Cet article va vous apprendre à reconnaître un bouton et à déterminer comment l’utiliser.
@@ -59,7 +59,7 @@ Les boutons d’extraction peuvent avoir plusieurs prérequis. Pour qu’un bout
 
 Voici un bouton d’extraction qui nous permet d’accéder à la page *Store details*. Quand nous pointons sur le bouton, une info-bulle nous indique que nous devons sélectionner un magasin et un produit. Vous devez alors sélectionner un magasin et un produit pour que le bouton devienne actif.
 
-![Capture d’écran du bouton Extraire avec une info-bulle activée par pointage.](media/end-user-buttons/power-bi-drill-two-selections.png)
+![Capture d’écran du bouton d’extraction avec info-bulle activée par pointage.](media/end-user-buttons/power-bi-drill-two-selections.png)
 
 Maintenant que nous avons sélectionné un produit (**Word**) et un magasin (**Leo**), le bouton change de couleur pour nous indiquer qu’il est actif.
 

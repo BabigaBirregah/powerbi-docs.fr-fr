@@ -1,5 +1,5 @@
 ---
-title: Découverte de jeux de données à l’aide du hub de jeux de données
+title: Découverte de jeux de données à l’aide du hub de jeux de données (préversion)
 description: Découvrez comment vous pouvez rechercher, explorer et utiliser les jeux de données de votre organisation et les rapports qui y sont associés.
 author: paulinbar
 ms.author: painbar
@@ -8,14 +8,14 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 12/14/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: c6b7170df78b6d544f7eb97ec62516577f9267b6
-ms.sourcegitcommit: b5365df7fc32b7c49f8a2bf2cf75b5edd6bda9b6
+ms.openlocfilehash: 4e09eb9e0b44fbddf8787f474fe1a93b0b4c2d71
+ms.sourcegitcommit: a92a3570eb14793a758a32e8fa1a756ec5d83f8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97513801"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97707970"
 ---
-# <a name="datasets-discovery-using-the-datasets-hub"></a>Découverte de jeux de données à l’aide du hub de jeux de données
+# <a name="datasets-discovery-using-the-datasets-hub-preview"></a>Découverte de jeux de données à l’aide du hub de jeux de données (préversion)
 
 Le hub de jeux de données facilite la recherche, l’exploration et l’utilisation des jeux de données dans votre organisation. Il fournit des informations sur les jeux de données ainsi que des points d’entrée pour créer des rapports en plus de ces jeux de données ou pour utiliser ces jeux de données avec la fonction Analyser dans Excel.
 

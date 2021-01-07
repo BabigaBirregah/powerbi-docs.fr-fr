@@ -10,12 +10,12 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
 ms.date: 12/14/2020
-ms.openlocfilehash: af1fac127d1a20f13bc99fc2d05510491a01be5a
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.openlocfilehash: fde06eaa3b2dd44b91e8a47981ac4e9fecba5af3
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97492032"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721406"
 ---
 # <a name="chat-in-microsoft-teams-directly-from-the-power-bi-service"></a>Discuter dans Microsoft Teams directement à partir du service Power BI
 
@@ -35,11 +35,11 @@ Suivez ces étapes pour partager des liens vers des rapports, des tableaux de bo
 
    * **Discuter dans Teams** dans la barre d’action d’un tableau de bord ou d’un rapport :
 
-       ![Capture d’écran du bouton Partager dans Teams dans la barre d’action](media/service-share-report-teams/service-teams-share-to-teams-action-bar-button.png)
+       ![Capture d’écran du bouton Converser dans Teams dans la barre d’action.](media/service-share-report-teams/service-teams-share-to-teams-action-bar-button.png)
     
    * **Discuter dans Teams** dans le menu contextuel d’un visuel spécifique :
     
-      ![Capture d’écran du bouton Partager dans Teams dans le menu contextuel d’un visuel](media/service-share-report-teams/service-teams-share-to-teams-visual-context-menu.png)
+      ![Capture d’écran du bouton Converser dans Teams dans le menu contextuel d’un visuel.](media/service-share-report-teams/service-teams-share-to-teams-visual-context-menu.png)
 
 1. Dans la boîte de dialogue **Partager dans Microsoft Teams**, sélectionnez l’équipe ou le canal qui doit recevoir le lien. Vous pouvez entrer un message si vous le souhaitez. Vous serez peut-être invité à vous connecter au préalable à Microsoft Teams.
 

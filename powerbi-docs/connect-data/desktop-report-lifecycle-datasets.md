@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/13/2020
+ms.date: 12/16/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e177eb9e124a26e62d392b7dd97562c11c8f9d5a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 432db58636866afe0dfda9e77e989f8469b66e34
+ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411031"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97600412"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Se connecter à des jeux de données dans le service Power BI à partir de Power BI Desktop
 
@@ -107,7 +107,7 @@ Il y a quelques considérations et limitations à garder à l’esprit concernan
 
 * Seuls les utilisateurs disposant de l’autorisation de génération pour un jeu de données peuvent se connecter à un jeu de données publié à l’aide de la connexion active du service Power BI.
 * Les utilisateurs de la version gratuite voient uniquement les jeux de données de leur **espace de travail personnel** et des espaces de travail Premium.
-* Étant donné qu’il s’agit d’une connexion active, la navigation vers la gauche et la modélisation sont désactivées. Vous ne pouvez vous connecter qu’à un seul jeu de données dans chaque rapport, comme avec *SQL Server Analysis Services*.
+* Étant donné qu’il s’agit d’une connexion active, la navigation vers la gauche et la modélisation sont désactivées. Vous ne pouvez vous connecter qu’à un seul jeu de données dans chaque rapport, comme avec *SQL Server Analysis Services*. Toutefois, l’article suivant décrit comment une nouvelle fonctionnalité de Power BI est désormais possible : voir [Utilisation de DirectQuery pour jeux de données Power BI et Azure Analysis Services (préversion)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
 * Étant donné qu’il s’agit d’une connexion active, la Sécurité au niveau des lignes (SNL) et d’autres comportements de connexion de ce type sont appliqués, comme avec SQL Server Analysis Services.
 * Si le propriétaire modifie le fichier *.pbix* partagé d’origine, le jeu de données et le rapport partagé dans le service Power BI sont remplacés. Les rapports basés sur ce jeu de données ne sont pas remplacés, mais toutes les modifications apportées au jeu de données sont répercutées dans le rapport.
 * Les membres d’un espace de travail ne peuvent pas remplacer le rapport partagé d’origine. Sinon, un avertissement vous invite à renommer le fichier et à le publier.
@@ -116,3 +116,18 @@ Il y a quelques considérations et limitations à garder à l’esprit concernan
 * En ce qui concerne les packs de contenu issus de *Mon organisation*, il n’est pas possible de remplacer le rapport créé sur le service ou dans le cadre de la copie du pack de contenu par une connexion active une fois la copie effectuée. Sinon, un avertissement vous invite à renommer le fichier et à le publier. Dans ce cas, vous pouvez uniquement remplacer des rapports publiés connectés en direct.
 * Quand vous supprimez un jeu de données partagé dans le service Power BI, personne ne peut plus y accéder à partir de Power BI Desktop.
 * Les rapports qui partagent un jeu de données sur le service Power BI ne prennent pas en charge les déploiements automatisés avec l’API REST de Power BI.
+
+## <a name="next-steps"></a>Étapes suivantes
+Pour plus d’informations sur DirectQuery et d’autres fonctionnalités de connexion de données Power BI, consultez les ressources suivantes :
+
+- [Utilisation de DirectQuery dans Power BI](desktop-directquery-about.md)
+- [Sources de données prises en charge par DirectQuery](power-bi-data-sources.md)
+- [Utilisation de DirectQuery pour jeux de données Power BI et Azure Analysis Services (préversion)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
+
+Voici quelques liens supplémentaires pour obtenir plus d’informations sur Power BI :
+
+* [Qu’est-ce que Power BI Desktop ?](../fundamentals/desktop-what-is-desktop.md)
+* [Vue d’ensemble des requêtes dans Power BI Desktop](../transform-model/desktop-query-overview.md)
+* [Types de données dans Power BI Desktop](desktop-data-types.md)
+* [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Tâches courantes relatives aux requêtes dans Power BI Desktop](../transform-model/desktop-common-query-tasks.md)

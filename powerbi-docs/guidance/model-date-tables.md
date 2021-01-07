@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 06/24/2020
-ms.openlocfilehash: 9040fb54e51dfeecad853e5ba980f423ab48e908
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: a2616b5f77a03056de03b213369d55e9b590b1b6
+ms.sourcegitcommit: 7599622381f35a161bfc54726675ed3c9cf13816
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417839"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97827569"
 ---
 # <a name="create-date-tables-in-power-bi-desktop"></a>Création de tables de dates dans Power BI Desktop
 
@@ -54,10 +54,7 @@ Si vous développez un modèle DirectQuery et que votre source de données n’i
 
 ## <a name="generate-with-power-query"></a>Génération avec Power Query
 
-Il est possible de générer une table de dates à l’aide de Power Query. Voici deux entrées de blog qui expliquent comment faire :
-
-- [Creating a Date Dimension with a Power Query Script](https://www.mattmasson.com/2014/02/creating-a-date-dimension-with-a-power-query-script/) de Matt Masson (en anglais)
-- [Generating A Date Dimension Table In Power Query](https://blog.crossjoin.co.uk/2013/11/19/generating-a-date-dimension-table-in-power-query/) de Chris Webb (en anglais)
+Il est possible de générer une table de dates à l’aide de Power Query. Pour plus d’informations, consultez l’entrée de blog de Chris Webb, [Generating A Date Dimension Table In Power Query](https://blog.crossjoin.co.uk/2013/11/19/generating-a-date-dimension-table-in-power-query/).
 
 > [!TIP]
 > Si vous ne disposez pas d’un entrepôt de données ou d’une autre définition cohérente du temps dans votre organisation, envisagez d’utiliser Power Query pour publier un [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md). Ensuite, demandez à tous les concepteurs de données de se connecter au dataflow pour ajouter des tables de dates à leurs modèles. Ainsi, votre modèle devient la seule source de vérité pour le temps dans votre organisation.

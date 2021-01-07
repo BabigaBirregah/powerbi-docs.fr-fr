@@ -7,16 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 10/10/2019
+ms.date: 12/16/2020
 LocalizationGroup: Gateways
-ms.openlocfilehash: eb65741a0fd65ed7df73e3012d7f07fdbeb527f1
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3f50b174e8293d75a0077e1799cb64ff4fdcd696
+ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235773"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97675117"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-to-sap-hana"></a>Utiliser Kerberos pour l’authentification unique avec SAP HANA
+
+> [!IMPORTANT]
+> Étant donné que [SAP ne prend plus en charge OpenSSL](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.05/en-US/de15ffb1bb5710148386ffdfd857482a.html), Microsoft a également mis fin à son support. Les connexions existantes continueront de fonctionner, mais vous ne pourrez pas créer de nouvelles connexions à compter de février 2021. À l’avenir, utilisez plutôt CommonCryptoLib.
 
 Cet article explique comment configurer votre source de données SAP HANA pour activer l’authentification unique à partir du service Power BI.
 

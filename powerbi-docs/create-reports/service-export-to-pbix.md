@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/14/2020
+ms.date: 11/14/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: c83b7d1e52a0d443c52348bec91f935e288830d4
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 1a196d149a6519f9bcad6bd70ef02d62ef16f69b
+ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96388675"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97600665"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Télécharger un rapport du service Power BI dans Power BI Desktop (préversion)
       
@@ -54,7 +54,7 @@ Voici les points importants et les limitations à prendre en compte pour le tél
 * Le rapport doit avoir été créé avec Power BI Desktop et avoir été *publié* sur le service Power BI. Sinon, le fichier .pbix doit avoir été *chargé* dans le service Power BI.
 * Les rapports doivent être publiés ou mis à jour après le 23 novembre 2016. Les rapports publiés avant cette date ne sont pas téléchargeables.
 * Cette fonctionnalité ne fonctionne pas avec les rapports et les packs de contenu créés à l’origine dans le service Power BI.
-* Vous devez toujours utiliser la dernière version de Power BI Desktop lorsque vous ouvrez des fichiers téléchargés. Il se peut que les fichiers .pbix téléchargés ne s’ouvrent pas dans les anciennes versions de Power BI Desktop.
+* Vous devez toujours utiliser la dernière version de Power BI Desktop lorsque vous ouvrez des fichiers téléchargés. Il se peut que les fichiers .pbix téléchargés ne s’ouvrent pas dans les anciennes versions de Power BI Desktop. Par exemple, vous ne pouvez pas ouvrir les fichiers .pbix téléchargés à l’aide d’une version de Desktop qui ne prend pas en charge la protection des informations.
 * Si votre administrateur a désactivé la possibilité de télécharger des données, cette fonctionnalité ne sera pas visible dans le service Power BI.
 * Les jeux de données avec actualisation incrémentielle ne peuvent pas être téléchargés dans un fichier .pbix.
 * Les jeux de données activés pour les [grands modèles](../admin/service-premium-large-models.md) ne sont pas téléchargeables dans un fichier .pbix.

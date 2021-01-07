@@ -9,19 +9,19 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/14/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 806198b783785a06562411b53f7bd6f644b16918
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: a971e0d0b35b0a3988a1c10ea2b7b801830229d6
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96388192"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721544"
 ---
 # <a name="create-a-report-from-an-excel-file-in-the-power-bi-service"></a>Créer un rapport à partir d’un fichier Excel dans le service Power BI
 Vous avez lu [apports dans Power BI](../consumer/end-user-reports.md) et vous souhaitez maintenant créer vos propres rapports. Il existe différentes façons de créer un rapport : Dans cet article, nous commençons par créer un rapport de base dans le service Power BI à partir d’un fichier Excel. Lorsque vous aurez compris les principes fondamentaux de la création d’un rapport, examinez les [étapes suivantes](#next-steps) plus bas pour accéder à des rubriques plus avancées concernant les rapports.  
 
 ## <a name="prerequisites"></a>Conditions préalables
 - [S’inscrire au service Power BI](../fundamentals/service-self-service-signup-for-power-bi.md). 
-- [Téléchargez l’exemple de fichier Excel Analyse de la vente au détail](https://go.microsoft.com/fwlink/?LinkId=529778) et enregistrez-le dans OneDrive Entreprise ou localement.
+- [Téléchargez l’exemple de fichier Excel Analyse de la vente au détail](https://go.microsoft.com/fwlink/?LinkId=529778) et enregistrez-le sur votre ordinateur ou dans OneDrive Entreprise.
 
 ## <a name="import-the-excel-file"></a>Importer le fichier Excel
 Cette méthode de création d’un rapport démarre avec un fichier et un canevas de rapport vide. Vous pouvez suivre l’exemple de fichier Excel Analyse de la vente au détail.

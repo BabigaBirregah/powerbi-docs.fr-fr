@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 07/30/2020
+ms.date: 12/14/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: 99f562ee315a74c9de6765308272e5e33153c4f0
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: a3ee3ac5cd23942878395f942a32dbe573cb0798
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96388859"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721590"
 ---
 # <a name="tutorial-from-excel-workbook-to-a-report-in-the-power-bi-service-to-microsoft-teams"></a>Tutoriel : Générer un rapport à partir d’un classeur Excel dans le service Power BI vers Microsoft Teams
-Votre responsable souhaite voir un rapport sur vos derniers chiffres de ventes et bénéfices d’ici la fin de la journée. Toutefois, vos données les plus récentes sont stockées dans différents fichiers et systèmes tiers sur votre ordinateur portable. Auparavant, plusieurs heures étaient nécessaires pour créer des visuels et mettre en forme un rapport. Vous êtes donc inquiet.
+Votre responsable souhaite voir un rapport sur vos derniers chiffres de ventes et bénéfices d’ici la fin de la journée. Toutefois, les données les plus récentes se trouvent dans des fichiers sur votre ordinateur portable. Auparavant, plusieurs heures étaient nécessaires pour créer un rapport. Vous êtes donc inquiet.
 
 Tout va bien de passer. Avec Power BI, vous pouvez créer un rapport exceptionnel et le partager avec Microsoft Teams en un rien de temps !
 
@@ -32,6 +32,11 @@ Dans ce tutoriel, vous allez charger un fichier Excel, créer un rapport et le p
 > * Épingler les visuels de rapport à un tableau de bord.
 > * Partager un lien vers le tableau de bord.
 > * Partager le tableau de bord dans Microsoft teams.
+
+## <a name="prerequisites"></a>Conditions préalables
+- [S’inscrire au service Power BI](../fundamentals/service-self-service-signup-for-power-bi.md). 
+- Téléchargez le [classeur d’exemples financiers](https://go.microsoft.com/fwlink/?LinkID=521962) et enregistrez-le sur votre ordinateur ou sur OneDrive Entreprise.
+
 
 ## <a name="prepare-data-in-excel"></a>Préparer les données dans Excel
 Prenons un simple fichier Excel comme exemple. 
@@ -49,10 +54,7 @@ Prenons un simple fichier Excel comme exemple.
    ![Capture d’écran des données sous forme de tableau.](media/service-from-excel-to-stunning-report/pbi_excel_table.png)
 
 ## <a name="upload-your-excel-file-to-the-power-bi-service"></a>Charger un fichier Excel dans le service Power BI
-Le service Power BI se connecte à de nombreuses sources de données, y compris des fichiers Excel stockés sur votre ordinateur. 
-
- > [!NOTE] 
- > Pour suivre le reste de ce tutoriel, téléchargez le [classeur Financial Sample](https://go.microsoft.com/fwlink/?LinkID=521962).
+Le service Power BI se connecte à de nombreuses sources de données, y compris des fichiers Excel stockés sur votre ordinateur.
 
 1. Pour commencer, connectez-vous au service Power BI. Si vous n’êtes pas encore inscrit, [vous pouvez le faire gratuitement](https://powerbi.com).
 1. Dans **Mon espace de travail**, sélectionnez **Nouveau** > **Charger un fichier**.
@@ -190,9 +192,9 @@ Il est maintenant temps de partager votre tableau de bord avec votre responsable
 
 Vous pouvez également partager des rapports et des tableaux de bord directement avec vos collègues dans Microsoft Teams.
 
-1. Pour partager dans Teams, en haut du tableau de bord, sélectionnez **Partager dans Teams**.
+1. Pour partager dans Teams, en haut du tableau de bord, sélectionnez **Converser dans Teams**.
 
-   ![Capture d’écran de l’option Partager dans Teams.](media/service-from-excel-to-stunning-report/power-bi-share-teams.png)
+   ![Capture d’écran de l’option Converser dans Teams.](media/service-from-excel-to-stunning-report/power-bi-share-teams.png)
 
 2. Power BI affiche la boîte de dialogue **Partager dans Teams**. Entrez le nom d’une personne, d’un groupe ou d’un canal, puis sélectionnez **Partager**. 
    

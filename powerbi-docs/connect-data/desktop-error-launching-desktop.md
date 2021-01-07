@@ -7,20 +7,30 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 01/14/2020
+ms.date: 11/14/2020
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 8d33973f1a11050d104399c98866fdae0ffb1f8a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 62b3c9bb10cb47df0d21eb05e381c5c4784b3106
+ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96404890"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97600228"
 ---
 # <a name="troubleshoot-opening-power-bi-desktop"></a>Résoudre les problèmes liés à l’ouverture de Power BI Desktop
 
-Dans Power BI Desktop, les utilisateurs ayant installé et exécuté des versions précédentes de la *passerelle de données locale Power BI* peuvent se retrouver dans l’impossibilité d’ouvrir Power BI Desktop. Cela est dû aux restrictions de stratégie d’administration placées par la passerelle de données locale sur les canaux nommés de l’ordinateur local.
+Cet article décrit et fournit une solution pour un certain nombre de cas où Power BI ne peut pas s’ouvrir. 
+
+## <a name="resolve-issues-with-opening-encrypted-pbix-files"></a>Résoudre les problèmes liés à l’ouverture de fichiers PBIX chiffrés
+
+Vous ne pouvez pas ouvrir les fichiers PBIX chiffrés à l’aide d’une version de Power BI Desktop qui ne prend pas en charge la protection des informations.
+
+Si vous devez continuer à utiliser Power BI Desktop, la solution recommandée consiste à effectuer une mise à jour vers une version qui prend en charge la protection des informations. Vous pouvez télécharger la [dernière version de Power BI Desktop](https://www.microsoft.com/download/confirmation.aspx?id=58494) (ce lien est un lien de téléchargement direct vers le fichier exécutable d’installation). La dernière version de Power BI Desktop prend en charge la protection des informations et peut déchiffrer et ouvrir n’importe quel fichier PBIX chiffré.
+
+###
 
 ## <a name="resolve-issues-with-the-on-premises-data-gateway-and-power-bi-desktop"></a>Résoudre les problèmes avec la passerelle de données locale et Power BI Desktop
+
+Dans Power BI Desktop, les utilisateurs ayant installé et exécuté des versions précédentes de la *passerelle de données locale Power BI* peuvent se retrouver dans l’impossibilité d’ouvrir Power BI Desktop. Cela est dû aux restrictions de stratégie d’administration placées par la passerelle de données locale sur les canaux nommés de l’ordinateur local.
 
 Vous disposez de trois options pour résoudre le problème lié à la passerelle de données locale et permettre à Power BI Desktop de s’ouvrir :
 

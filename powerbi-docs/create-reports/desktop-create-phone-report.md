@@ -4,23 +4,24 @@ description: Découvrez comment optimiser les pages de rapport pour les applicat
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
-ms.custom: contperfq4
+ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/15/2020
+ms.date: 12/22/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0780b11cb1e95578be144f65f8adb1bf641d1c1c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 1bfbbcb1b722bbb2504307815860b977a6ab0709
+ms.sourcegitcommit: 2adb60a70bfc29c5fdc49cf6defb905e580288ab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414320"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97760737"
 ---
 # <a name="optimize-power-bi-reports-for-the-mobile-app"></a>Optimiser les rapports Power BI pour l’application mobile
+
 Les utilisateurs mobiles peuvent afficher une page de rapport Power BI en orientation paysage. Toutefois, les auteurs de rapports peuvent créer une vue supplémentaire qui est optimisée pour les appareils mobiles et qui s’affiche en orientation portrait. Cette option de conception, disponible à la fois dans Power BI Desktop et dans le service Power BI, permet aux auteurs de sélectionner et de réorganiser uniquement les objets visuels qui ont un sens pour les utilisateurs mobiles en déplacement.
 
-![Rapport optimisé pour les appareils mobiles](media/desktop-create-phone-report/desktop-mobile-optimized-report.png).
+![Capture d’écran de rapports optimisés pour les appareils mobiles en orientation portrait et paysage.](media/desktop-create-phone-report/desktop-mobile-optimized-report.png)
 
 Power BI fournit un certain nombre de fonctionnalités pour vous aider à créer des versions optimisées pour les appareils mobiles de vos rapports :
 * Une vue de disposition mobile dans laquelle vous pouvez créer un rapport optimisé pour les appareils mobiles en faisant glisser des objets visuels sur un canevas d’émulateur de téléphone.
@@ -30,18 +31,18 @@ Ces fonctionnalités permettent de concevoir et de créer des rapports interacti
 
 ## <a name="create-a-mobile-optimized-portrait-version-of-a-report-page"></a>Créer une version portrait optimisée pour les appareils mobiles d’une page de rapport
 
-La première étape consiste à concevoir et à créer le rapport en vue web normale. Après avoir créé un rapport, vous pouvez l’optimiser pour les téléphones et les tablettes.
+**Prérequis** : La première étape consiste à concevoir et à créer le rapport en vue web normale. Après avoir créé un rapport, vous pouvez l’optimiser pour les téléphones et les tablettes.
 
-Pour créer la vue optimisée pour les appareils mobiles, ouvrez la vue de disposition pour mobile :
+Pour créer la vue optimisée pour les appareils mobiles, ouvrez le rapport dans Power BI Desktop ou dans le service Power BI. Lorsque le rapport est ouvert, passez en mode mobile :
    * Dans Power BI Desktop, sélectionnez le ruban **Affichage** et choisissez **Disposition mobile**.
-   * Dans le service Power BI, choisissez **Plus d’options (...) > Modifier le rapport > Disposition mobile**.
+   * Dans le service Power BI, choisissez **Modifier le rapport > Disposition mobile**. Si l’option Modifier n’est pas visible, recherchez-la dans **Plus d’options (...)** .
 
    Vous voyez un canevas avec défilement en forme de téléphone et un volet **Visualisations** qui répertorie tous les objets visuels de la page de rapport d’origine.
 
-   ![Vue de disposition pour mobile](media/desktop-create-phone-report/desktop-mobile-layout.png).
-
 * Chaque objet visuel du volet **Visualisations** s’affiche avec son nom pour faciliter son identification.
 * Chaque objet visuel possède également un indicateur de visibilité. L’indicateur de visibilité d’un objet visuel change en fonction de l’état de visibilité de l’objet visuel dans l’état actuel de la vue de rapport web. L’indicateur de visibilité est utile lorsque vous utilisez des signets.
+
+   ![Vue de disposition pour mobile](media/desktop-create-phone-report/desktop-mobile-layout.png)
 
 ## <a name="add-visuals-to-the-mobile-layout-canvas"></a>Ajouter des objets visuels au canevas de disposition mobile
 Pour ajouter un objet visuel à une disposition mobile, faites-le glisser du volet **Visualisations** vers le canevas téléphone. Lorsque vous faites glisser l’objet visuel sur le canevas, il est aligné sur la grille. Vous pouvez également double-cliquer sur l’objet visuel dans le volet Visualisation, et l’objet visuel sera ajouté au canevas.
@@ -51,7 +52,7 @@ Vous pouvez ajouter une partie ou la totalité des objets visuels de la page de 
 >[!NOTE]
 > Vous pouvez glisser-déplacer des objets visuels masqués sur le canevas. Ils seront placés, mais pas affichés, à moins que leur état de visibilité ne change dans la vue de rapport web actuelle.
 
-Les objets visuels peuvent être superposés les uns au-dessus des autres pour créer des rapports interactifs à l’aide de signets ou des rapports attrayants en superposant des objets visuels sur des images.
+Les objets visuels peuvent être superposés les uns au-dessus des autres pour créer des rapports interactifs à l’aide de signets ou des rapports attrayants en superposant des objets visuels sur des images. Vous pouvez modifier l’ordre de superposition des visuels dans le [volet Sélection](#set-the-layering-order-of-visuals-on-the-mobile-layout-canvas).
 
 Une fois que vous avez placé un objet visuel sur le canevas, vous pouvez le redimensionner en faisant glisser les poignées qui apparaissent autour du bord de l’objet visuel quand vous le sélectionnez. Pour conserver les proportions de l’objet visuel lors du redimensionnement, appuyez sur la touche **Maj** tout en faisant glisser les poignées de redimensionnement.
 
@@ -60,6 +61,18 @@ L’image ci-dessous illustre le glissement et la suppression d’objets visuels
    ![Glisser-déplacer, redimensionner et superposer des objets visuels](media/desktop-create-phone-report/desktop-mobile-layout-overlay-resize.gif)
 
 La grille du rapport sur téléphone s’adapte aux téléphones de différentes tailles. Le rapport s’affiche correctement aussi bien sur les petits que les grands écrans.
+
+## <a name="set-the-layering-order-of-visuals-on-the-mobile-layout-canvas"></a>Définir l’ordre de superposition des visuels sur le canevas de la disposition mobile
+
+Chaque fois que vous faites glisser un visuel sur le canevas, il est ajouté à sa propre couche sur tous les autres visuels déjà présents sur le canevas. Le volet **Sélection** vous permet de modifier l’ordre de superposition.
+
+Pour ouvrir le volet **Sélection**, cliquez sur le bouton **Sélection** dans la section **Afficher les volets** de l’onglet **Affichage**. 
+
+Le volet **Sélection** répertorie tous les visuels sur le canevas. L’ordre de la liste reflète l’ordre des couches sur le canevas : le premier visuel répertorié se trouve sur la couche supérieure, et le dernier visuel répertorié apparaît sur la couche inférieure. Pour modifier l’ordre, vous pouvez glisser-déplacer un visuel à un autre endroit de la liste, ou sélectionner un visuel et utiliser les boutons fléchés pour le déplacer vers le haut ou vers le bas.
+
+Le volet **Sélection** comporte également une indication de visibilité pour chaque visuel de la liste, mais il n’est pas possible de modifier la visibilité dans l’affichage en mode mobile : cette opération doit être effectuée en mode Web normal.
+
+![Capture d’écran montrant le volet Sélection et comment l’ouvrir.](media/desktop-create-phone-report/selection-pane-mobile-layout.png)
 
 ## <a name="remove-visuals-from-the-mobile-layout-canvas"></a>Supprimer des objets visuels du canevas de disposition mobile
 Pour supprimer un objet visuel de la disposition mobile, cliquez sur le **X** dans le coin supérieur droit de l’objet visuel sur le canevas du téléphone, ou sélectionnez l’objet visuel et appuyez sur **Supprimer**.
