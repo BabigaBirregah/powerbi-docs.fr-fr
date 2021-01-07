@@ -1,28 +1,28 @@
 ---
 title: Bien démarrer avec la mise en forme des visualisations Power BI
-description: Personnaliser le titre, l’arrière-plan et la légende d’une visualisation
+description: Personnalisez les titres, les arrière-plans, les étiquettes et les légendes des visualisations.
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
-featuredvideoid: IkJda4O7oGs
+featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 03/06/2020
+ms.date: 12/18/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c974161e4cc7d52bf412ea14800bf720a297cd25
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 2a8c125a37e0d70ea735d9f1962f64deb69061c8
+ms.sourcegitcommit: 1691ce556ab5b22e6f9d06086a054d165d482809
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96409812"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97745136"
 ---
-# <a name="customize-visualization-titles-backgrounds-and-legends"></a>Personnaliser les titres, les arrière-plans et les légendes des visualisations
+# <a name="customize-visualization-titles-backgrounds-labels-and-legends"></a>Personnalisation des titres, des arrière-plans, des étiquettes et des légendes des visualisations
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 
-Ce tutoriel présente quelques façons de personnaliser vos visualisations. Il existe autant d’options permettant de personnaliser vos visualisations. La meilleure façon de les découvrir toutes consiste à Explorer le volet **Mise en forme** (sélectionnez l’icône rouleau de peinture). Pour vous aider à commencer, cet article explique comment personnaliser le titre, la légende et l’arrière-plan d’une visualisation, et comment ajouter un thème.
+Ce tutoriel présente quelques façons de personnaliser vos visualisations. Il existe autant d’options permettant de personnaliser vos visualisations. La meilleure façon de les découvrir toutes consiste à Explorer le volet **Mise en forme** (sélectionnez l’icône rouleau de peinture). Pour vous aider à commencer, cet article vous montre comment personnaliser le titre, la légende, l’arrière-plan et l’étiquette d’une visualisation. Il explique également comment ajouter un thème.
 
 Vous ne pouvez pas personnaliser toutes les visualisations. Consultez le [la liste complète](#visualization-types-that-you-can-customize) des visualisations pour plus d’informations.
 
@@ -41,7 +41,7 @@ Vous ne pouvez pas personnaliser toutes les visualisations. Consultez le [la lis
 Pour poursuivre, connectez-vous à Power BI Desktop, puis ouvrez le rapport [Exemple Analyse de la vente au détail](../create-reports/sample-datasets.md).
 
 > [!NOTE]
-> Quand vous épinglez une visualisation à un tableau de bord, elle prend la forme d’une vignette de tableau de bord. Vous pouvez également personnaliser les vignettes proprement dites [en modifiant leurs titres et sous-titres, en leur ajoutant des liens hypertexte et en les redimensionnant](../create-reports/service-dashboard-edit-tile.md).
+> Quand vous épinglez une visualisation à un tableau de bord, elle prend la forme d’une vignette de tableau de bord. Vous pouvez également personnaliser les vignettes proprement dites [en modifiant leur titre et leur sous-titre, en y ajoutant des liens hypertextes et en les redimensionnant](../create-reports/service-dashboard-edit-tile.md).
 
 1. Accédez à la page **New Stores** du rapport **Exemple Analyse de la vente**.
 
@@ -126,6 +126,29 @@ Enregistrez les modifications que vous avez apportées, puis passez à la sectio
 
 Si vous devez annuler toutes les modifications, sélectionnez **Rétablir les valeurs par défaut** en bas du volet de personnalisation **Légende**.
 
+## <a name="customize-total-labels-for-stacked-visuals"></a>Personnalisation des étiquettes de total des visuels empilés
+Les visuels empilés peuvent présenter des étiquettes de données et des étiquettes de total. Sur un histogramme empilé, les étiquettes de données identifient la valeur de chaque partie d’une colonne. Les étiquettes de total indiquent la valeur totale de la colonne agrégée. 
+
+Regardez comment ajouter des étiquettes de total à un histogramme empilé, puis suivez la procédure ci-dessous pour essayer par vous-même.
+
+> [!VIDEO https://www.youtube.com/embed/OgjX-pFGgfM]
+
+1. Ouvrez la page de rapport **Vue d’ensemble** et sélectionnez l’histogramme **Average selling area size by chain and store type** (Taille moyenne de la zone de vente par chaîne et par type de magasin).
+
+1. Dans l’onglet **Visualisation**, sélectionnez ![Icône d’histogramme empilé](media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-bar.png) pour convertir cet histogramme en histogramme empilé. Comme vous pouvez le constater, le visuel conserve ses étiquettes de données. 
+
+    ![Capture d’écran du nouvel histogramme empilé.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-chart.png)
+
+1. Dans l’onglet **Visualisation**, sélectionnez l’icône en forme de rouleau pour ouvrir le volet Mise en forme.
+
+1. Déplacez le curseur **Étiquettes de total** sur **Activé**. 
+
+    ![Capture d’écran montrant le curseur Étiquettes de total défini sur Activé.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-totals.png)
+
+1. Si vous le souhaitez, mettez en forme les étiquettes de total. Dans cet exemple, nous avons changé la couleur en noir, augmenté la taille de police et choisi d’afficher les valeurs en **Milliers**.
+
+    ![Capture d’écran du nouvel histogramme empilé avec les étiquettes de total.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-bar-totals.png)
+
 ## <a name="customize-colors-using-a-theme"></a>Personnaliser les couleurs à l’aide d’un thème
 
 Avec les thèmes de rapport, vous pouvez appliquer des changements de conception à l’ensemble de votre rapport, par exemple en utilisant les couleurs de votre entreprise, en changeant des jeux d’icônes ou en appliquant une nouvelle mise en forme visuelle par défaut. Quand vous appliquez un thème de rapport, tous les visuels du rapport utilisent les couleurs et la mise en forme du thème sélectionné.
@@ -139,32 +162,32 @@ Pour appliquer un thème à votre rapport, sélectionnez **Changer de thème** d
 
 Voici une liste des visualisations et des options de personnalisation respectivement disponibles :
 
-| Visualisation | Titre | Arrière-plan | Légende |
-|:--- |:--- |:--- |:--- |
-| Zone | oui | oui |oui |
-| Barres | oui | oui |oui |
-| Carte | oui | oui |n/a |
-| Carte à plusieurs lignes | oui | oui | n/a |
-| Colonne | oui | oui | oui |
-| Combiné | oui | oui | oui |
-| Graphique en anneau | oui | oui | oui |
-| Carte choroplèthe | oui | oui | oui |
-| Entonnoir | oui | oui | n/a |
-| Jauge | oui | oui | n/a |
-| Influenceur clé | oui | oui | n/a |
-| KPI | oui | oui | n/a |
-| Ligne | oui | oui | oui |
-| Carte | oui | oui | oui |
-| Matrice | oui | oui | n/a |
-| Secteurs | oui | oui | oui |
-| Questions et réponses | oui | oui | n/a |
-| Nuage de points | oui | oui | oui |
-| Forme | oui | oui | oui |
-| Segment | oui | oui | n/a |
-| Table | oui | oui | n/a |
-| Zone de texte | non | oui | n/a |
-| Treemap | oui | oui | oui |
-| Cascade | oui | oui | oui |
+| Visualisation | Titre | Arrière-plan | Légende | Étiquettes de total
+|:--- |:--- |:--- |:--- |:--- |
+| Zone | oui | oui |oui | oui  |
+| Barres | oui | oui |Oui | oui |
+| Carte | oui | oui |n/a | n/a |
+| Carte à plusieurs lignes | oui | oui | n/a | n/a |
+| Colonne | oui | oui | Oui |  oui |
+| Combiné | oui | Oui | Oui | oui |
+| Graphique en anneau | oui | Oui | oui | n/a |
+| Carte choroplèthe | oui | oui | oui |n/a |
+| Entonnoir | oui | oui | n/a |n/a |
+| Jauge | oui | oui | n/a |n/a |
+| Influenceur clé | oui | oui | n/a |n/a |
+| KPI | oui | oui | n/a |n/a |
+| Ligne | oui | oui | oui |n/a |
+| Carte | oui | Oui | oui |n/a |
+| Matrice | oui | oui | n/a |oui |
+| Secteurs | oui | oui | oui |n/a |
+| Questions et réponses | oui | oui | n/a |n/a |
+| Nuage de points | oui | Oui | oui |n/a |
+| Forme | oui | Oui | oui |n/a |
+| Segment | oui | oui | n/a |n/a |
+| Table | oui | oui | n/a |Oui |
+| Zone de texte | non | oui | n/a |n/a |
+| Treemap | oui | Oui | oui |n/a |
+| Cascade | oui | Oui | oui |n/a |
 
 ## <a name="next-steps"></a>Étapes suivantes
 

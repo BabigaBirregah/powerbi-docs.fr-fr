@@ -6,14 +6,14 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 08/10/2020
+ms.date: 12/09/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: eb2afe2e7fa21bc0583185cfc8a160b20f56236c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 1732c1b6b8b748c4f3a820b31c4e4fe050a66fcd
+ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412112"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97600320"
 ---
 # <a name="enable-sensitivity-labels-in-power-bi"></a>Activer les étiquettes de sensibilité dans Power BI
 
@@ -21,27 +21,37 @@ Pour que [les étiquettes de sensibilité de Microsoft Information Protection](/
 
 Quand les étiquettes de sensibilité sont activées :
 
-* Des utilisateurs et des groupes de sécurité spécifiés d’une organisation peuvent classifier et [appliquer des étiquettes de sensibilité](./service-security-apply-data-sensitivity-labels.md) à leurs tableaux de bord, rapports, jeux de données et dataflows Power BI.
-* Tous les membres de l’organisation peuvent voir ces étiquettes.
+* Des utilisateurs et des groupes de sécurité spécifiés de l’organisation peuvent classer leur contenu Power BI et y [appliquer des étiquettes de confidentialité](./service-security-apply-data-sensitivity-labels.md). Dans le service Power BI, cela correspond à leurs rapports, tableaux de bord, jeux de données et flux de données. Dans Power BI Desktop, il s’agit de leurs fichiers .pbix.
+* Dans le service, tous les membres de l’organisation pourront voir ces étiquettes. Dans Desktop, seuls pourront les voir ceux pour lesquels elles sont publiées.
 
 L’activation des étiquettes de sensibilité nécessite une licence Azure Information Protection. Pour plus d’informations, consultez [Licences et configuration requise](#licensing-and-requirements).
+
+>[!NOTE]
+>Pendant 48 heures après avoir choisi la fonctionnalité en préversion Information Protection, **les utilisateurs sont susceptibles de rencontrer des problèmes avec les fichiers .pbix sur lesquels des étiquettes de confidentialité ont été appliquées (par exemple pour publier ces fichiers dans le service ou les télécharger à partir du service)** . Ce type de problème est attendu et sera résolu automatiquement dans un délai de 48 heures.
 
 ## <a name="licensing-and-requirements"></a>Licences et configuration requise
 
 * Une licence Azure Information Protection Premium P1 ou Premium P2 est requise pour appliquer ou afficher des étiquettes de confidentialité Microsoft Information Protection dans Power BI. Vous pouvez acheter Azure Information Protection en autonome ou par le biais de l’une des suites de licences Microsoft. Pour plus d’informations, consultez les [tarifs Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection/).
 
-* Pour pouvoir appliquer des étiquettes à du contenu Power BI, un utilisateur doit disposer d’une licence Power BI Pro en plus d’une des licences Azure Information Protection mentionnées ci-dessus.
+    >[!NOTE]
+    > Si votre organisation utilise des étiquettes de sensibilité Azure Information Protection, vous devez les migrer vers la plateforme d’étiquetage unifiée de Microsoft Information Protection afin qu’elles soient utilisées dans Power BI. [En savoir plus sur la migration des étiquettes de sensibilité](/azure/information-protection/configure-policy-migrate-labels).
+
+* Pour pouvoir appliquer des étiquettes à du contenu et à des fichiers Power BI, un utilisateur doit disposer d’une licence Power BI Pro en plus d’une des licences Azure Information Protection mentionnées ci-dessus.
 
 * Les applications Office disposent de leurs propres [conditions de licence requises pour afficher et appliquer des étiquettes de sensibilité]( https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels ).
 
 * Avant d’activer des étiquettes de confidentialité sur votre abonné, assurez-vous qu’elles sont bien définies et publiées pour les utilisateurs et les groupes appropriés. Consultez [Créer et configurer des étiquettes de sensibilité et leurs stratégies](/microsoft-365/compliance/create-sensitivity-labels) pour plus d’informations.
 
->[!NOTE]
-> Si votre organisation utilise des étiquettes de sensibilité Azure Information Protection, vous devez les migrer vers la plateforme d’étiquetage unifiée de Microsoft Information Protection afin qu’elles soient utilisées dans Power BI. [En savoir plus sur la migration des étiquettes de sensibilité](/azure/information-protection/configure-policy-migrate-labels).
+* La version de décembre 2020 (ou une version ultérieure) de Desktop est nécessaire pour utiliser les étiquettes de confidentialité dans Desktop.
+
+    >[!NOTE]
+    > Si vous essayez d’ouvrir un fichier .pbix protégé avec une version de Desktop antérieure à celle de décembre 2020, le processus échouera, et il vous sera demandé de mettre à niveau votre version de Desktop.
 
 ## <a name="enable-sensitivity-labels"></a>Activer les étiquettes de sensibilité
 
-Accédez au **Portail d’administration** de Power BI, ouvrez le volet **Paramètres du client** et recherchez la section **Information Protection**.
+Les étiquettes de confidentialité doivent être activées sur le locataire pour pouvoir être utilisées à la fois dans le service et dans Desktop. Cette section explique comment les activer dans les paramètres du locataire. Pour plus d’informations sur Desktop, consultez [Désactivation des étiquettes de confidentialité dans Desktop dans toute l’organisation](#disable-sensitivity-labels-in-desktop-across-your-org) ci-dessous. 
+
+Pour activer les étiquettes de confidentialité sur le locataire, accédez au **Portail d’administration** Power BI, ouvrez le volet **Paramètres du locataire** et recherchez la section **Information Protection**.
 
 ![Rechercher la section Information Protection](media/service-security-enable-data-sensitivity-labels/enable-data-sensitivity-labels-01.png)
 
@@ -60,6 +70,18 @@ Dans la section **Information Protection**, effectuez les étapes suivantes :
 
 > [!IMPORTANT]
 > Seuls les utilisateurs Power BI Pro qui disposent d’autorisations *créer* et *modifier* sur la ressource et qui font partie du groupe de sécurité approprié défini dans cette section peuvent définir et modifier les étiquettes de sensibilité. Les utilisateurs qui ne font pas partie de ce groupe ne peuvent pas définir ou modifier l’étiquette.  
+
+## <a name="disable-sensitivity-labels-in-desktop-across-your-org"></a>Désactivation des étiquettes de confidentialité dans Desktop dans toute l’organisation
+
+Dans les organisations qui souhaitent que les fichiers .pbix ne fonctionnent **pas** avec des étiquettes de confidentialité, l’administrateur Power BI peut créer une stratégie de groupe selon laquelle Power BI empêche les utilisateurs de classer les fichiers .pbix, de les protéger et d’ouvrir les fichiers auxquels une protection a déjà été appliquée. Pour créer une stratégie de ce type, procédez comme suit :
+
+1. Ouvrez l’[Éditeur du Registre](https://support.microsoft.com/windows/how-to-open-registry-editor-in-windows-10-deab38e6-91d6-e0aa-4b7c-8878d9e07b11).
+
+1. Recherchez la clé **HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop**.
+
+1. Recherchez le nom de valeur **EnableInformationProtection** et donnez-lui la valeur **false**.
+
+Pour plus d’informations sur les étiquettes de confidentialité dans Power BI Desktop et leurs limitations, consultez la page [Vue d’ensemble des étiquettes de confidentialité](./service-security-sensitivity-label-overview.md#limitations).
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 

@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment
-ms.custom: contperfq1
-ms.date: 10/21/2020
-ms.openlocfilehash: c9ae23a88bd557681ca89e541f082a69d449ed8c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.custom: contperf-fy21q1
+ms.date: 12/28/2020
+ms.openlocfilehash: 4bb709e41698bc0dc32341f517593717f64f9b6d
+ms.sourcegitcommit: a465a0c80ffc0f24ba6b8331f88420a0d21ac0b2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415010"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97805208"
 ---
 # <a name="understand-the-deployment-process"></a>Comprendre le processus de déploiement
 
@@ -149,13 +149,21 @@ Les propriétés de jeu de données suivantes ne sont pas copiées non plus lors
 
 * Paramètres d’approbation
 
-## <a name="incremental-refresh"></a>Actualisation incrémentielle
+## <a name="supported-dataset-features"></a>Fonctionnalités de jeux de données prises en charge
+
+Les pipelines de déploiement prennent en charge de nombreuses fonctionnalités de jeux de données Power BI. Dans cette section en sont présentées deux, qui peuvent améliorer votre expérience avec les pipelines de déploiement :
+
+* [Actualisation incrémentielle](#incremental-refresh)
+
+* [Modèles composites](#composite-models)
+
+### <a name="incremental-refresh"></a>Actualisation incrémentielle
 
 Les pipelines de déploiement prennent en charge [l’actualisation incrémentielle](../admin/service-premium-incremental-refresh.md), une fonctionnalité qui offre aux jeux de données volumineux des actualisations plus rapides et plus fiables, avec une consommation plus faible.
 
 Avec les pipelines de déploiement, vous pouvez apporter des mises à jour à un jeu de données avec actualisation incrémentielle tout en conservant les données et les partitions. Lorsque vous déployez le jeu de données, la stratégie est copiée également.
 
-### <a name="activating-incremental-refresh-in-a-pipeline"></a>Activation de l’actualisation incrémentielle dans un pipeline
+#### <a name="activating-incremental-refresh-in-a-pipeline"></a>Activation de l’actualisation incrémentielle dans un pipeline
 
 [Activez l’actualisation incrémentielle dans Power BI Desktop](../admin/service-premium-incremental-refresh.md#configure-incremental-refresh), puis publiez votre jeu de données. Après publication, la stratégie d’actualisation incrémentielle est similaire dans tout le pipeline. Elle ne peut être créée que dans Power BI Desktop.
 
@@ -169,7 +177,7 @@ Une fois votre pipeline configuré avec l’actualisation incrémentielle, nous 
 
 4. Vérifiez les modifications que vous avez apportées à la phase de *test*, puis effectuez le déploiement à la phase de *production*.
 
-### <a name="usage-examples"></a>Exemples d'utilisation
+#### <a name="usage-examples"></a>Exemples d'utilisation
 
 Voici quelques exemples d’intégrations possibles de l’actualisation incrémentielle avec des pipelines de déploiement.
 
@@ -181,7 +189,7 @@ Voici quelques exemples d’intégrations possibles de l’actualisation incrém
 
 * Publiez un jeu de données qui utilise l’actualisation incrémentielle dans un espace de travail faisant partie d’un pipeline existant.
 
-### <a name="limitations-and-considerations"></a>Considérations et limitations
+#### <a name="limitations-and-considerations"></a>Considérations et limitations
 
 Pour l’actualisation incrémentielle, les pipelines de déploiement ne prennent en charge que les jeux de données qui utilisent les [métadonnées de jeu de données avancées](../connect-data/desktop-enhanced-dataset-metadata.md). À partir de la version de septembre 2020 de Power BI Desktop, tous les jeux de données créés ou modifiés avec Power BI Desktop implémentent automatiquement les métadonnées de jeu de données avancées.
 
@@ -194,6 +202,24 @@ En cas de republication d’un jeu de données dans un pipeline actif sur lequel
 * Attribution d’un nouveau nom à des colonnes non calculées dans une table sur laquelle l’actualisation incrémentielle est activée
 
 D’autres modifications, comme l’ajout ou la suppression d’une colonne, ou l’attribution d’un nouveau nom à une colonne calculée, sont autorisées. Toutefois, si elles affectent l’affichage, une actualisation est nécessaire pour qu’elles deviennent visibles.
+
+### <a name="composite-models"></a>Modèles composites
+
+Les [modèles composites](../transform-model/desktop-composite-models.md) permettent de configurer un rapport avec plusieurs connexions de données.
+
+Vous pouvez utiliser la fonctionnalité de modèles composites pour connecter un jeu de données Power BI à un jeu de données externe comme Azure Analysis Services. Pour plus d’informations, consultez [Utilisation de DirectQuery pour les jeux de données Power BI et Azure Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md).
+
+Dans un pipeline de déploiement, vous pouvez utiliser des modèles composites pour connecter un jeu de données à un autre jeu de données Power BI extérieur au pipeline.  
+
+#### <a name="limitations"></a>Limites
+
+Les connexions de modèles composites suivantes ne sont pas prises en charge :
+
+* Entre jeux de données qui se trouvent dans le même espace de travail
+
+* Entre jeux de données qui se trouvent dans des pipelines distincts
+
+* Entre jeux de données qui se trouvent dans le même pipeline 
 
 ## <a name="deploying-power-bi-apps"></a>Déploiement d’applications Power BI
 

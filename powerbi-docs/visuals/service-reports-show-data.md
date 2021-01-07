@@ -9,12 +9,12 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 12/4/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 960a3dec2276acba994190e73de671f2b071bc50
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 7aa15bae7ab94619a9f652aa20da9222e3d4af41
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96409720"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721636"
 ---
 # <a name="display-a-visualizations-underlying-data"></a>Afficher les données sous-jacentes d’une visualisation
 
@@ -52,7 +52,7 @@ Vous pouvez également exporter les données utilisées pour créer la visualisa
 6. Pour masquer les données, désélectionnez **Explorer** > **Afficher les données**.
 
 ## <a name="using-show-records"></a>Utiliser Afficher les enregistrements
-Vous pouvez également vous concentrer sur un enregistrement de données et explorer les données qui se trouvent derrière. 
+Vous pouvez également vous concentrer sur un enregistrement de données dans une visualisation et explorer les détails sous-jacents. 
 
 1. Pour utiliser **Afficher les enregistrements**, sélectionnez une visualisation pour l’activer. 
 

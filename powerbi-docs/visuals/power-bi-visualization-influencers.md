@@ -10,12 +10,12 @@ ms.custom: video-fDb5zZ3xmxU
 ms.topic: how-to
 ms.date: 01/10/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f76203e00bb691abe9a4d212c930595d180798d8
-ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
+ms.openlocfilehash: 4b41ea6310cb644aeae92db17f52680734f68803
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96999125"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721567"
 ---
 # <a name="create-key-influencers-visualizations"></a>Créer des visualisations des influenceurs clés
 
@@ -167,7 +167,7 @@ Top des segments montre initialement une vue d’ensemble de tous les segments d
 
 ![Sélectionner l’onglet Top des segments](media/power-bi-visualization-influencers/power-bi-top-segments-tab.png)
 
-La sélection d’une bulle permet d’explorer les détails de ce segment. Si vous sélectionnez par exemple le segment 1, vous observez qu’il est constitué de clients relativement anciens. Ils sont clients depuis plus de 29 mois et ont plus de quatre tickets de support. Pour finir, il ne s’agit pas d’éditeurs (ils sont donc consommateurs ou administrateurs). 
+Sélectionnez une bulle pour afficher les détails de ce segment. Si vous sélectionnez par exemple le segment 1, vous observez qu’il est constitué de clients relativement anciens. Ils sont clients depuis plus de 29 mois et ont plus de quatre tickets de support. Pour finir, il ne s’agit pas d’éditeurs (ils sont donc consommateurs ou administrateurs). 
  
 Dans ce groupe, 74,3 % des clients ont attribué une évaluation faible. Le client moyen attribue une évaluation faible 11,7 % du temps. Ce segment a donc une proportion nettement plus élevée d’évaluations faibles (63 points de pourcentage en plus). Le segment 1 contient également environ 2,2 % des données. Il représente donc une partie de la population pouvant être identifiée et ciblée. 
 
@@ -260,7 +260,7 @@ Regardez à quoi ressemble la visualisation une fois que nous ajoutons **ID** à
 
 ![Capture d’écran montrant la visualisation des prix des maisons sur la base des trois colonnes abordées dans cette section.](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
 
-Si vous voulez en savoir plus sur la façon dont vous pouvez analyser des mesures avec la visualisation des influenceurs clés, regardez le tutoriel suivant.
+Pour savoir comment analyser des mesures avec la visualisation de type facteurs clés, regardez la vidéo suivante. Pour savoir comment Power BI utilise ML.NET en arrière-plan pour analyser les données et mettre au jour des insights de façon naturelle, consultez [Power BI identifie les facteurs clés avec ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet/customers/power-bi).
 
 <iframe width="1167" height="631" src="https://www.youtube.com/embed/2X1cW8oPtc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -410,3 +410,4 @@ Pour que vous puissiez partager votre rapport avec un collègue Power BI, il fau
 ## <a name="next-steps"></a>Étapes suivantes
 - [Graphiques en entonnoir dans Power BI](power-bi-visualization-combo-chart.md)
 - [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Comment Power BI utilise ML.NET pour identifier les facteurs clés](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet/customers/power-bi)

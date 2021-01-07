@@ -10,12 +10,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 08/13/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3f68a056e6e31acaf5432c4e323ba8a293ee09ce
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: eb572c17705f06b989f15323322c0da11b1d85ac
+ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414412"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97600688"
 ---
 # <a name="automatic-page-refresh-in-power-bi"></a>Actualisation automatique des pages dans Power BI
 
@@ -33,11 +33,11 @@ Ce type d’actualisation vous permet de mettre à jour tous les visuels d’une
 
 ### <a name="change-detection"></a>Détection des changements
 
-Ce type d’actualisation vous permet d’actualiser des visuels sur une page en fonction de la détection des changements apportés aux données plutôt qu’à un intervalle d’actualisation spécifique. Plus précisément, cette mesure interroge les modifications apportées à votre [source DirectQuery](../connect-data/desktop-directquery-about.md). Outre la définition de la mesure, vous devez également sélectionner la fréquence à laquelle Power BI Desktop vérifiera les changements. Lors de la publication sur le service, ce type d’actualisation est uniquement pris en charge dans les espaces de travail qui font partie d’une capacité Premium.
+Ce type d’actualisation vous permet d’actualiser des visuels sur une page en fonction de la détection des changements apportés aux données plutôt qu’à un intervalle d’actualisation spécifique. Plus précisément, cette mesure interroge les modifications apportées à votre [source DirectQuery](../connect-data/desktop-directquery-about.md). Outre la définition de la mesure, vous devez également sélectionner la fréquence à laquelle Power BI Desktop vérifiera les changements. Lors de la publication sur le service, ce type d’actualisation est uniquement pris en charge dans les espaces de travail qui font partie d’une capacité Premium. Les sources Live Connect comme les jeux de données Analysis Services et Power BI ne sont pas prises en charge.
 
 ## <a name="authoring-reports-with-automatic-page-refresh-in-power-bi-desktop"></a>Création de rapports avec actualisation automatique des pages dans Power BI Desktop
 
-L’actualisation automatique des pages n’est disponible que pour les [sources de DirectQuery](../connect-data/desktop-directquery-about.md), et donc uniquement si vous vous connectez à une source de données DirectQuery. Cette restriction s’applique aux deux types d’actualisation automatique des pages.
+L’actualisation automatique des pages est disponible pour les [sources DirectQuery](../connect-data/desktop-directquery-about.md) et certains scénarios Live Connect. Vous n’y avez donc accès que si vous vous connectez à une source de données prise en charge. Cette restriction s’applique aux deux types d’actualisation automatique des pages.
 
 Pour utiliser l’actualisation automatique de la page dans Power BI, sélectionnez la page de rapport pour laquelle vous souhaitez activer l’actualisation automatique des pages. Dans le volet **Visualisations**, sélectionnez le bouton **Mise en forme** (un rouleau de peinture) et recherchez la section **Actualisation de la page** en bas du volet.
 
@@ -160,7 +160,7 @@ Power BI Desktop n’a aucune restriction pour l’intervalle d’actualisation,
 
 ### <a name="restrictions-on-refresh-intervals"></a>Restrictions sur les intervalles d’actualisation
 
-Dans le service Power BI, des restrictions d’actualisation automatique de la page s’appliquent en fonction de l’espace de travail dans lequel le rapport est publié, si vous utilisez ou non les services Premium, et les paramètres d’administration de capacité Premium.
+Dans le service Power BI, des restrictions s’appliquent à l’actualisation automatique des pages en fonction de l’espace de travail dans lequel le rapport est publié, de l’éventuel recours aux services Premium, des paramètres d’administration de la capacité Premium et du type de source de données.
 
 Pour clarifier le fonctionnement de ces restrictions, commençons par des informations générales sur les capacités et les espaces de travail.
 
@@ -182,32 +182,35 @@ Voici quelques détails sur les deux scénarios d’espace de travail :
 
  - **Intervalle d'exécution minimal**. Lors de l’activation de la détection des changements, votre administrateur de capacité doit configurer un intervalle d’exécution minimal (la valeur par défaut est de cinq secondes). Si votre intervalle est inférieur au minimum, le service Power BI remplace votre intervalle pour respecter l’intervalle minimal défini par votre administrateur de capacité.
 
+> [!WARNING]
+> Lorsqu’elle est activée dans votre jeu de données, la mesure de détection des modifications ouvre une connexion à votre source de données DirectQuery pour calculer la mesure et interroger les modifications. Cette connexion est différente des connexions d’actualisation à faible priorité que Power BI effectue déjà.
+
 ![Paramètres d’actualisation automatique des pages dans le portail d’administration de la capacité](media/desktop-automatic-page-refresh/automatic-page-refresh-09.png)
 
 Ce tableau décrit de façon plus détaillée où cette fonctionnalité est disponible, et les limites de chaque type de capacité et du [mode de stockage](../connect-data/service-dataset-modes-understand.md) :
 
-| Mode de stockage | Capacité dédiée | Capacité partagée |
-| --- | --- | --- |
-| DirectQuery | **FI prise en charge** : Oui <br>**CD prise en charge** : Oui <br>**Minimum** : 1 seconde <br>**Remplacement par l’administrateur** : Oui | **FI prise en charge** : Oui <br>**CD prise en charge** : Non <br>**Minimum** : 30 minutes <br>**Remplacement par l’administrateur** : Non |
-| Importer | **FI prise en charge** : Non <br>**CD prise en charge** : Non <br>**Minimum** : N/A <br>**Remplacement par l’administrateur** : N/A | **FI prise en charge** : Non <br>**CD prise en charge** : Non <br>**Minimum** : N/A <br>**Remplacement par l’administrateur** : N/A |
-| Mode mixte (DirectQuery + autres sources de données) | **FI prise en charge** : Oui <br>**CD prise en charge** : Oui <br>**Minimum** : 1 seconde <br>**Remplacement par l’administrateur** : Oui | **FI prise en charge** : Oui <br>**CD prise en charge** : Non <br>**Minimum** : 30 minutes <br>**Remplacement par l’administrateur** : Non |
-| Live Connect AS | **FI prise en charge** : Non <br>**CD prise en charge** : Non <br>**Minimum** : N/A <br>**Remplacement par l’administrateur** : N/A | **FI prise en charge** : Non <br>**CD prise en charge** : Non <br>**Minimum** : N/A <br>**Remplacement par l’administrateur** : N/A |
-| Live Connect PBI | **FI prise en charge** : Non <br>**CD prise en charge** : Non <br>**Minimum** : N/A <br>**Remplacement par l’administrateur** : N/A | **FI prise en charge** : Non <br>**CD prise en charge** : Non <br>**Minimum** : N/A <br>**Remplacement par l’administrateur** : N/A |
+| Mode de stockage                                  | Capacité dédiée                                                                                     | Capacité partagée                                                                                       |
+|-----------------------------------------------|--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| DirectQuery                                   | **FI prise en charge** : Oui <br>**CD prise en charge** : Oui <br>**Minimum** : 1 seconde <br>**Remplacement par l’administrateur** : Oui  | **FI prise en charge** : Oui <br>**CD prise en charge** : Non <br>**Minimum** : 30 minutes <br>**Remplacement par l’administrateur** : Non |
+| Importer                                        | **FI prise en charge** : Non <br>**CD prise en charge** : Non <br>**Minimum** : N/A <br>**Remplacement par l’administrateur** : N/A         | **FI prise en charge** : Non <br>**CD prise en charge** : Non <br>**Minimum** : N/A <br>**Remplacement par l’administrateur** : N/A        |
+| Mode mixte (DirectQuery + autres sources de données) | **FI prise en charge** : Oui <br>**CD prise en charge** : Oui <br>**Minimum** : 1 seconde <br>**Remplacement par l’administrateur** : Oui  | **FI prise en charge** : Oui <br>**CD prise en charge** : Non <br>**Minimum** : 30 minutes <br>**Remplacement par l’administrateur** : Non |
+| Azure Analysis Services (Azure et local)     | **FI prise en charge** : Oui <br>**CD prise en charge** : Non <br>**Minimum** : 30 minutes <br>**Remplacement par l’administrateur** : Oui | **FI prise en charge** : Oui <br>**CD prise en charge** : Non <br>**Minimum** : 30 minutes <br>**Remplacement par l’administrateur** : Non |
+| Jeux de données Power BI (avec source DirectQuery)   | **FI prise en charge** : Oui <br>**CD prise en charge** : Non <br>**Minimum** : 1 seconde <br>**Remplacement par l’administrateur** : Oui  | **FI prise en charge** : Oui <br>**CD prise en charge** : Non <br>**Minimum** : 30 minutes <br>**Remplacement par l’administrateur** : Non |
+| Jeux de données Push Power BI                        | **FI prise en charge** : Oui <br>**CD prise en charge** : Non <br>**Minimum** : 30 minutes <br>**Remplacement par l’administrateur** : Oui | **FI prise en charge** : Oui <br>**CD prise en charge** : Non <br>**Minimum** : 30 minutes <br>**Remplacement par l’administrateur** : Non        |
 
 *Légende du tableau :*
 1. *FI : Intervalle fixe*
 2. *CD : Détection des changements*
 
 > [!WARNING]
-> Lorsqu’elle est activée dans votre jeu de données, la mesure de détection des modifications ouvre une connexion à votre source de données DirectQuery pour calculer la mesure et interroger les modifications. Cette connexion est différente des connexions d’actualisation à faible priorité que Power BI effectue déjà.
+> Il existe un problème connu en cas de connexion à des jeux de données Analysis Services ou Power BI à partir de Power BI Desktop, si l’intervalle d’actualisation est de 30 minutes ou plus. Il peut arriver que les visuels d’une page de rapport affichent une erreur au bout de 30 minutes.
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
 Il y a quelques éléments à prendre en compte lors de l’utilisation de l’actualisation automatique de la page, dans Power BI Desktop ou dans le service Power BI :
 
-* Les modes de stockage Importer, Connexion active et Push ne sont pas pris en charge pour l’actualisation automatique de la page.  
+* Le mode de stockage d’importation n’est pas pris en charge pour l’actualisation automatique des pages.  
 * Les modèles composites qui ont au moins une source de données DirectQuery sont pris en charge.
-* Power BI Desktop n’a aucune restriction pour les intervalles d’actualisation. L’intervalle peut être aussi fréquent que chaque seconde pour les types d’actualisation à intervalle fixe et de détection des changements. Lorsque les rapports sont publiés sur le service Power BI, certaines restrictions s’appliquent, comme décrit [précédemment](#restrictions-on-refresh-intervals) dans cet article.
 * Vous ne pouvez avoir qu’une seule mesure de détection des changements par jeu de données.
 * Il ne peut y avoir qu’un maximum de 10 modèles avec une mesure de détection des changements dans un locataire Power BI.
 
@@ -277,6 +280,10 @@ Si vous remarquez que la capacité est surchargée avec des requêtes de faible 
 * Vérifiez que vous avez téléchargé sur un espace de travail avec une capacité Premium attachée. Dans le cas contraire, la détection des changements ne fonctionnera pas.
 * Si votre rapport se trouve dans un espace de travail Premium, demandez à votre administrateur si cette fonctionnalité est activée pour la capacité attachée. En outre, assurez-vous que l’intervalle d’exécution minimal pour la capacité est inférieur ou égal à l’intervalle de votre rapport.
 * Si vous avez vérifié tous les éléments mentionnés précédemment, regardez dans Power BI Desktop ou en mode édition si la mesure change en premier lieu. Pour ce faire, faites-la glisser dans la zone de dessin et vérifiez si la valeur change. Si ce n’est pas le cas, la mesure peut ne pas être un bon choix pour interroger les changements de la source de données.
+
+**Après connexion à Analysis Services, je ne vois pas le bouton bascule APR**
+
+* Vérifiez que votre modèle Analysis Services est en mode [DirectQuery](https://docs.microsoft.com/analysis-services/tabular-models/directquery-mode-ssas-tabular).
 
 
 ## <a name="next-steps"></a>Étapes suivantes

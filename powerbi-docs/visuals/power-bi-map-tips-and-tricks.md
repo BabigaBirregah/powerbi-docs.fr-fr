@@ -11,12 +11,12 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 05/05/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3e0d944f8058ddc5dfb64c8f960bd354571bb23c
-ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
+ms.openlocfilehash: 24ad57ca976fa7a7a859b1c0d07523895236787e
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96999056"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721613"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Trucs et astuces pour les visualisations de carte Power BI
 
@@ -90,7 +90,7 @@ Lors d’une exploration à l’aide de hiérarchies géographiques, il est impo
 
 * Le bouton d’exploration tout à fait à droite, appelé mode Exploration ![Icône Mode Exploration](media/power-bi-map-tips-and-tricks/power-bi-drill-down.png) , permet de sélectionner un emplacement sur la carte et d’explorer celui-ci un niveau à la fois. Par exemple, si vous activez Descendre dans la hiérarchie et cliquez sur Amérique du Nord, vous descendez dans la hiérarchie pour accéder au niveau suivant, à savoir celui des États d’Amérique du Nord. Pour le géocodage, Power BI envoie à Bing Cartes des données de pays et d’état uniquement pour l’Amérique du Nord.  
 * À gauche, figurent 2 autres options d’exploration. La première option, ![première icône d’exploration](media/power-bi-map-tips-and-tricks/power-bi-drill-down2.png) , descend au niveau suivant de la hiérarchie pour tous les emplacements à la fois. Par exemple, si vous examinez actuellement les pays, puis utilisez cette option pour passer au niveau suivant, celui des états, Power BI affiche les données d’état pour tous les pays. Pour le géocodage, Power BI envoie des données d’état (non les données de pays) de Bing Cartes pour toutes les localisations. Cette option est utile si chaque niveau de votre hiérarchie est sans relation avec le niveau supérieur. 
-* La deuxième option, ![Exploration hiérarchique avec des cartes](./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png) , est similaire à l’option Exploration hiérarchique, sauf que vous n’avez pas besoin de cliquer sur la carte.  Elle développe le niveau suivant de la hiérarchie, en mémorisant le contexte du niveau actuel. Par exemple, si vous examinez actuellement les pays, puis sélectionnez cette icône, vous descendez dans la hiérarchie au niveau suivant, celui des états. Pour le géocodage, Power BI envoie des données sur chaque état et le pays correspondant, afin d’aider Bing Cartes à géocoder de façon plus précise. Dans la plupart des cartes, vous utilisez cette option ou l’option Descendre dans la hiérarchie tout à fait à droite, pour pouvoir envoyer à Bing un maximum de données afin obtenir des informations de localisation précises. 
+* La deuxième option, ![Descendre dans la hiérarchie des cartes](./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png) , est similaire à l’option Descendre dans la hiérarchie, à ceci près qu’il n’est pas nécessaire de cliquer sur la carte.  Elle développe le niveau suivant de la hiérarchie, en mémorisant le contexte du niveau actuel. Par exemple, si vous examinez actuellement les pays, puis sélectionnez cette icône, vous descendez dans la hiérarchie au niveau suivant, celui des états. Pour le géocodage, Power BI envoie des données sur chaque état et le pays correspondant, afin d’aider Bing Cartes à géocoder de façon plus précise. Dans la plupart des cartes, on utilise cette option ou l’option Descendre dans la hiérarchie tout à droite pour pouvoir envoyer à Bing un maximum de données et ainsi obtenir des informations de localisation précises. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Descendre dans la hiérarchie d’une visualisation Power BI](../consumer/end-user-drill.md)

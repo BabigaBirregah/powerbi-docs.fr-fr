@@ -9,12 +9,12 @@ ms.subservice: pbi-visuals
 ms.topic: conceptual
 ms.date: 06/18/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 33e0ee83815c739d8201fad995d84c7ee397bc6c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 401d8905c4fe2ca0f27a8f0c58bd756c87a10456
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96398059"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721498"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Créer des visualisations de matrice dans Power BI
 
@@ -65,13 +65,13 @@ L’état de développement de la matrice sera enregistré avec le rapport. Une 
 > Si vous créez un rapport en plus d’un modèle multidimensionnel Analysis Services, des considérations spécifiques doivent être prises en compte pour développer/réduire si le modèle utilise la fonctionnalité de membre par défaut. Pour plus d’informations, consultez [Utiliser des modèles multidimensionnels dans Power BI](../connect-data/desktop-default-member-multidimensional-models.md)
 
 ## <a name="using-drill-down-with-the-matrix-visual"></a>Utilisation de la descente dans la hiérarchie avec le visuel de matrice
-Le visuel de la matrice vous permet d’effectuer toutes sortes d’opérations intéressantes de descente dans la hiérarchie qui n’étaient pas possibles avant. Vous pouvez notamment descendre dans la hiérarchie en utilisant les lignes, les colonnes, voire des sections et cellules individuelles. Voyons comment ces opérations fonctionnent.
+Le visuel de type matrice vous permet d’effectuer toutes sortes d’opérations intéressantes de zoom avant qui n’étaient pas possibles avant. Vous pouvez notamment descendre dans la hiérarchie en utilisant les lignes, les colonnes, voire des sections et cellules individuelles. Voyons comment ces opérations fonctionnent.
 
 ### <a name="drill-down-on-row-headers"></a>Descendre dans la hiérarchie sur des en-têtes de ligne
 
 Dans le volet Visualisations, lorsque vous ajoutez plusieurs champs à la section **Lignes** du puits **Champs**, vous permettez la descente dans la hiérarchie sur les lignes du visuel Matrice. Cette opération est similaire à la création d’une hiérarchie, qui vous permet de descendre (et remonter) dans cette hiérarchie et d’analyser les données à chaque niveau.
 
-Dans l’image suivante, la section **Lignes** contient les éléments *Étape de vente* et *Taille de l’opportunité*, qui créent un regroupement (ou une hiérarchie) dans les lignes, à partir duquel nous pouvons extraire.
+Dans l’image suivante, la section **Lignes** contient les éléments *Étape de vente* et *Taille de l’opportunité*, qui créent un regroupement (ou une hiérarchie) dans les lignes. Il est possible de descendre dans la hiérarchie pour afficher des détails.
 
 ![Carte de filtres montrant les lignes choisies](media/desktop-matrix-visual/power-bi-rows-matrix.png)
 
@@ -79,7 +79,7 @@ Lorsque le visuel comporte un regroupement créé dans la section **Lignes**, le
 
 ![matrice avec contrôles d’exploration mis en avant](media/desktop-matrix-visual/power-bi-matrix-drilldown.png)
 
-À l’instar du comportement des fonctions Explorer et Développer dans d’autres visuels, ces boutons permettent de descendre (ou remonter) dans la hiérarchie. Dans ce cas, nous pouvons descendre dans la hiérarchie d’*Étape de vente* à *Taille de l’opportunité*, comme l’illustre l’image suivante, où l’icône Descendre d’un niveau dans la hiérarchie (en forme de fourche) a été sélectionnée.
+À l’instar du comportement des fonctions Explorer et Développer dans d’autres visuels, ces boutons permettent de descendre (ou remonter) dans la hiérarchie. Dans ce cas, nous pouvons descendre dans la hiérarchie *d’Étape de vente* à *Taille de l’opportunité* (cf. image suivante), où l’icône **Descendre d’un niveau dans la hiérarchie** (en forme de fourche) a été sélectionnée.
 
 ![matrice avec hiérarchie forme de fourche](media/desktop-matrix-visual/power-bi-matrix-drill3.png)
 

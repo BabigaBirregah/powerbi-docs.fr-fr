@@ -4,18 +4,18 @@ description: Exportez des données à partir d’un élément visuel de rapport 
 author: mihart
 ms.author: mihart
 ms.reviewer: cmfinlan
-featuredvideoid: jtlLGRKBvXY
+featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 12/21/2020
 LocalizationGroup: Consumers
-ms.openlocfilehash: d8b9f11abe639d2892bc199a9f65400e5488dedc
-ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
+ms.openlocfilehash: cd07004149afd2525c5830e04e5c2490eeebcb3c
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96578111"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721383"
 ---
 # <a name="export-data-from-a-visual"></a>Exporter des données à partir d’un élément visuel
 
@@ -40,7 +40,7 @@ L’exportation de données requiert une licence Power BI Pro, ou que le tableau
 
 3. Sélectionnez **Exporter au format .csv**.
 
-4. Ce qui se passe ensuite dépend du navigateur que vous utilisez. Vous pouvez être invité à enregistrer le fichier ou voir un lien vers le fichier exporté en bas du navigateur. 
+4. Ce qui se passe ensuite dépend du navigateur que vous utilisez. Vous pouvez être invité à enregistrer le fichier ou voir un lien vers le fichier exporté en bas du navigateur. Par défaut, votre exportation est enregistrée dans votre dossier Téléchargements local. 
 
     ![Navigateur Chrome avec lien du fichier exporté](media/end-user-export/power-bi-dashboards-export.png)
 
@@ -79,7 +79,7 @@ Vous pouvez exporter des données à partir d’un élément visuel dans un rapp
 
     ![Menu dans lequel vous choisissez sous-jacent ou résumé](media/end-user-export/power-bi-export-underlying.png)
 
-5. Ce qui se passe ensuite dépend du navigateur que vous utilisez. Vous pouvez être invité à enregistrer le fichier ou vous pouvez voir un lien vers le fichier exporté en bas du navigateur. 
+5. Ce qui se passe ensuite dépend du navigateur que vous utilisez. Vous pouvez être invité à enregistrer le fichier ou vous pouvez voir un lien vers le fichier exporté en bas du navigateur. Si vous utilisez l’application Power BI dans Microsoft Teams, votre fichier exporté est enregistré dans votre dossier Téléchargements local. 
 
     ![Affichage des fichiers exportés dans le navigateur Microsoft Edge](media/end-user-export/power-bi-export-edge-screen.png)
 

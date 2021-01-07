@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/18/2020
-ms.openlocfilehash: 2331785b14cd8cbcf9aec1232293cb601b1e2dc6
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/16/2020
+ms.openlocfilehash: c292e1ccaa03904ee0bfa4825a539430fed71867
+ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418115"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97621875"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Journal des modifications pour Power BI Report Server
 
@@ -40,8 +40,12 @@ Pour plus d’informations sur les nouvelles fonctionnalités, consultez [Nouvea
             - Correction du problème lié à l’exportation des rapports dont le nom comporte des points.
             - Résolution des problèmes de lecteur d’écran dans un tableau matriciel.
             - Correction du problème lors duquel les fichiers journaux étaient vides dans certains cas.
-            - Correction du problème lié à la boîte de dialogue « Se connecter à Power BI »
-            - Mise à jour du convertisseur MHTML pour utiliser un DOCTYPE HTML plus récent
+            - Correction du problème de remplacement du fichier Excel lors du chargement.
+            - Correction du problème de la méthode de l’API REST Model.UpdateCacheSnapshot.
+            - Correction du problème des connexions de la source de données SAP BW avec XMLA.
+            - Correction du problème de la boîte de dialogue « Se connecter à Power BI » qui ne se fermait pas.
+            - Correction du problème de la valeur par défaut de la fonction avancée CustomHeaders.
+            - Mise à jour du convertisseur MHTML pour utiliser un DOCTYPE HTML plus récent.
 
 - **Power BI Desktop optimisé pour Power BI Report Server**
    - *Version : 2.86.961.0 (octobre 2020), Date de publication : 27 octobre 2020* (nouvelle build et nouvelle version)

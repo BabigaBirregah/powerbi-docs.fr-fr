@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/09/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: 62df55257864069a1e3a03f8378869fe76052120
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.openlocfilehash: 2265559b9b978681b2f7b210a15f7200fbba7971
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97491963"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721452"
 ---
 # <a name="what-is-power-bi-premium"></a>Qu’est-ce que Power BI Premium ?
 
@@ -240,7 +240,7 @@ L’application **Métriques de capacité Power BI Premium** fournit des inform
 
 ![Tableau de bord de l’application de métriques](media/service-admin-premium-monitor-capacity/app-dashboard.png)
 
-Dans le tableau de bord de l’application, vous pouvez cliquer sur la cellule d’une métrique pour ouvrir un rapport détaillé. Les rapports fournissent des métriques détaillées que vous pouvez filtrer pour n’afficher que les informations les plus importantes, et ainsi, aider au bon fonctionnement de vos capacités.
+Dans le tableau de bord de l’application, vous pouvez cliquer sur la cellule d’une métrique pour ouvrir un rapport détaillé. Les rapports fournissent des métriques détaillées que vous pouvez filtrer pour explorer au niveau du détail les informations les plus importantes qu’il vous faut pour aider au bon fonctionnement de vos capacités.
 
 ![Les pics périodiques d’attente de requêtes indiquent une possible saturation du processeur.](media/service-premium-capacity-scenarios/peak-query-wait-times.png)
 

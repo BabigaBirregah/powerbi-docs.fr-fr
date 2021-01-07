@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/12/2020
-ms.openlocfilehash: 5d361a749f947f8d45b052a8a2b6455007745d20
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/17/2020
+ms.openlocfilehash: 944f840133fd2ae8fee558e26d44fa31456bd565
+ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413078"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97675389"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorer des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -155,6 +155,29 @@ Quand une vue de signet d’un rapport est ouverte, le nom du signet apparaît e
 ![vue de signet](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
 
 [Découvrez-en plus sur les signets dans le service Power BI](../end-user-bookmarks.md).
+
+## <a name="investigate-anomalies-in-time-series-data"></a>Examen des anomalies dans les données de série chronologique
+
+La [détection d’anomalie](https://powerbi.microsoft.com/blog/anomaly-detection-preview/) est une fonctionnalité Power BI qui détecte automatiquement les anomalies (c’est-à-dire les valeurs qui se trouvent en dehors des plages attendues) sur les graphiques en courbes comportant des données de série chronologique. En outre, elle fournit des explications possibles, classées par force explicative, de la cause des valeurs anormales. Elle est disponible si elle a été activée sur le graphique par le créateur du rapport. 
+
+Lorsque vous affichez un rapport dans lequel la détection d’anomalie est activée sur un graphique comportant des données de série chronologique, les anomalies sont indiquées sur le graphique comme dans le service Power BI et dans Power BI Desktop. 
+
+![Capture d’écran d’un graphique en courbes contenant des indications d’anomalie.](media/mobile-reports-in-the-mobile-apps/mobile-detected-anomalies.png)
+
+Pour afficher des informations supplémentaires et les explications, vous devez ouvrir le panneau Anomalies. Il existe plusieurs façons de procéder :
+* Appuyez sur l’indication d’anomalie sur le graphique. 
+* Appuyez sur **Plus d’options (…)** et choisissez **Afficher les anomalies** dans le menu qui s’affiche.    
+* Appuyez sur le point de données pour afficher une info-bulle, puis choisissez **Anomalies**.
+
+L’image ci-dessous illustre les trois façons d’ouvrir le panneau Anomalies.
+
+![Captures d’écran montrant comment ouvrir le panneau Anomalies.](media/mobile-reports-in-the-mobile-apps/mobile-opening-anomalies-panel.png)
+
+Dans le panneau Anomalies figure une explication en langage naturel de l’anomalie détectée, ainsi que les facteurs associés triés par force explicative. Balayez l’écran de droite à gauche pour afficher tous les facteurs pertinents et leur force.
+
+![Capture d’écran montrant le balayage de droite à gauche pour afficher les explications des anomalies.](media/mobile-reports-in-the-mobile-apps/mobile-swipe-to-see-explanations.png)
+
+Lorsque le panneau Anomalies est visible, il reste possible de faire défiler le rapport mobile qui se trouve dessous. Vous pouvez ainsi continuer à interagir avec votre rapport et décortiquer vos données pour mieux comprendre les anomalies qui s’y trouvent. À chaque interaction, Power BI réexécute la détection d’anomalie dans les données examinées. 
 
 ## <a name="refresh-your-data"></a>Actualiser vos données
 

@@ -6,17 +6,18 @@ ms.author: mihart
 manager: kvivek
 ms.reviewer: tessa
 featuredvideoid: jtlLGRKBvXY
+ms.custom: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/09/2020
+ms.date: 12/21/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b7aae0e05c74209e66503612d3c89bb430cb5185
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: bf388f28b83ad67fd246d23ba7113e74f0630a0e
+ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414780"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721475"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Exporter les données utilisées pour créer une visualisation
 
@@ -105,7 +106,7 @@ Sélectionnez l’option pour _ *Données résumées** si vous voulez exporter l
 
     ![Capture d’écran d’Exporter des donnés avec les options Données résumées, xlsx et Exporter.](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 
-1. Lorsque vous sélectionnez **Exporter**, votre navigateur vous invite à enregistrer le fichier. Lorsque c’est fait, ouvrez le fichier dans Excel.
+1. Lorsque vous sélectionnez **Exporter**, votre navigateur vous invite à enregistrer le fichier. Lorsque c’est fait, ouvrez le fichier dans Excel. Si vous utilisez l’application Power BI dans Microsoft Teams, vous ne recevrez peut-être pas les mêmes invites. Votre fichier exporté est enregistré dans votre dossier Téléchargements local. 
 
     ![Capture d’écran de la sortie Excel.](media/power-bi-visualization-export-data/power-bi-export-data9.png)
 
@@ -144,7 +145,7 @@ Lorsque vous sélectionnez **Exporter**, Power BI exporte les données sont dans
 
     ![Capture d’écran de la capture d’écran Exporter des données avec les données sous-jacentes appelées.](media/power-bi-visualization-export-data/power-bi-underlying.png)
 
-1. Lorsque vous sélectionnez **Exporter**, votre navigateur vous invite à enregistrer le fichier. Lorsque c’est fait, ouvrez le fichier dans Excel.
+1. Lorsque vous sélectionnez **Exporter**, votre navigateur vous invite à enregistrer le fichier. Lorsque c’est fait, ouvrez le fichier dans Excel.  Si vous utilisez l’application Power BI dans Microsoft Teams, vous ne recevrez peut-être pas les mêmes invites. Votre fichier exporté est enregistré dans votre dossier Téléchargements local. 
 
     ![Capture d’écran du fichier .xlsx avec les données exportées affichées.](media/power-bi-visualization-export-data/power-bi-excel.png)
     

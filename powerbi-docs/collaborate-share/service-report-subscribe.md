@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/01/2020
+ms.date: 12/18/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 9d9d628ea2d478eb6a09ae8ca53b98837349a224
-ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
+ms.openlocfilehash: 4a8234176dd44fd265ff2d4a6af8e1b5568a642c
+ms.sourcegitcommit: b8e4dd67c59db079fdfa82a8a01c2a28fd1673ca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96613812"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97699269"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports et tableaux de bord dans le service Power BI
 
@@ -25,10 +25,10 @@ Vous pouvez vous abonner vous et vos collègues aux pages de rapport, tableaux d
 - Choisir l’heure à laquelle vous voulez recevoir l’e-mail, si vous choisissez une fois par jour, une fois par semaine, une fois par heure ou une fois par mois.
 - Configurer 24 abonnements différents par rapport ou tableau de bord Power BI.  Le nombre d’abonnements que vous pouvez configurer pour les rapports paginés est illimité.
 - Définir l’envoi d’un e-mail contenant une image du rapport et un lien vers le rapport dans le service.  Sur les appareils mobiles où des applications Power BI sont installées, la sélection de ce lien lance l’application Power BI au lieu d’ouvrir le rapport ou le tableau de bord sur le site web Power BI.
-- Inclure une pièce jointe de l’intégralité du rapport, si vous vous abonnez à un rapport paginé.
+- Ajouter le rapport complet en pièce jointe.
 - Envoyer un e-mail aux utilisateurs en dehors de votre locataire si votre contenu Power BI est hébergé dans une capacité Premium.  Les administrateurs peuvent contrôler l’accès aux personnes qui peuvent envoyer des abonnements par e-mail à des utilisateurs externes en tirant parti des paramètres de contrôle de partage externe existants dans le centre d’administration Power BI.
 
-![capture instantanée d’un e-mail sur le tableau de bord](media/service-report-subscribe/power-bi-dashboard-email-new.jpg)
+![capture instantanée d’un e-mail sur le tableau de bord](media/service-report-subscribe/power-bi-subscriptions-email.png)
 
 ## <a name="requirements"></a>Configuration requise
 
@@ -54,7 +54,7 @@ L’abonnement aux rapports paginés est un peu différent. Consultez [Vous abon
 
 1. Utilisez le curseur jaune pour activer ou désactiver l’abonnement. Positionner le curseur sur **Désactivé** ne supprime pas l’abonnement. Pour supprimer l’abonnement, sélectionnez l’icône Corbeille.
 
-2. Votre adresse e-mail se trouve déjà dans la zone **S’abonner**. Vous pouvez également ajouter d’autres adresses e-mail du même domaine à l’abonnement. Si le rapport ou le tableau de bord est hébergé dans une [capacité Premium](../admin/service-premium-what-is.md), vous pouvez abonner d’autres adresses e-mail individuelles et à des alias de groupe, qu’ils se trouvent, ou non, dans votre domaine. Si le rapport ou le tableau de bord n’est pas hébergé dans une capacité Premium, vous pouvez abonner d’autres utilisateurs, mais ils doivent eux aussi disposer de licences Power BI Pro. Consultez [Considérations et résolution des problèmes](#considerations-and-troubleshooting) ci-dessous pour plus d’informations.
+2. Votre adresse e-mail est déjà indiquée dans la zone **S’abonner**. Vous pouvez également ajouter d’autres adresses e-mail du même domaine à l’abonnement. Si le rapport ou le tableau de bord est hébergé dans une [capacité Premium](../admin/service-premium-what-is.md), vous pouvez abonner d’autres adresses e-mail individuelles et à des alias de groupe, qu’ils se trouvent, ou non, dans votre domaine. Si le rapport ou le tableau de bord n’est pas hébergé dans une capacité Premium, vous pouvez abonner d’autres utilisateurs, mais ils doivent eux aussi disposer de licences Power BI Pro. Consultez [Considérations et résolution des problèmes](#considerations-and-troubleshooting) ci-dessous pour plus d’informations.
 
 3. Renseignez les informations **Objet** et **Message** de l’e-mail.
 
@@ -64,16 +64,21 @@ L’abonnement aux rapports paginés est un peu différent. Consultez [Vous abon
 
 6. Par défaut, la date de début de votre abonnement est la date de sa création. Vous pouvez sélectionner une date de fin. Si vous ne définissez pas de date de fin, la date de fin est automatiquement un an après la date de début. Vous pouvez la remplacer par n’importe quelle date dans le futur (jusqu’à l’année 9999) à tout moment avant la fin de l’abonnement. Quand un abonnement atteint une date de fin, il s’arrête jusqu’à ce que vous le réactiviez. Vous recevez des notifications avant la date de fin planifiée pour savoir si vous voulez la prolonger.
 
-    Dans la capture d’écran ci-dessous, vous voyez que quand vous vous abonnez à un rapport, vous vous abonnez en fait à une _page_ de rapport. Pour vous abonner à plusieurs pages d’un rapport, sélectionnez **Ajouter un autre abonnement**, puis sélectionnez une autre page.
+    Dans la capture d’écran ci-dessous, vous voyez que quand vous vous abonnez à un rapport, vous vous abonnez en fait à une _page_ de rapport. Pour vous abonner à plusieurs pages d’un rapport, vous pouvez sélectionner **Rapport complet en pièce jointe** ou configurer un nouvel abonnement en sélectionnant **Ajouter un autre abonnement**.
 
-    ![Volet S’abonner](media/service-report-subscribe/power-bi-subscribe-pane.png)
+    ![Volet S’abonner](media/service-report-subscribe/power-bi-email.png)
 
 1. (Facultatif) Spécifiez s’il faut inclure un lien pour revenir au contenu dans Power BI et s’il faut autoriser les utilisateurs à accéder au contenu auquel vous les abonnez.  Si vous choisissez d’inclure un lien, pour une expérience optimale, vérifiez que tous les utilisateurs ont accès au rapport.
-2. Sélectionnez **Enregistrer et fermer**. Les abonnés reçoivent un e-mail et un instantané du tableau de bord ou de la page de rapport à la fréquence et à l’heure que vous avez sélectionnées. Vous pouvez créer jusqu’à 24 abonnements en tout par rapport ou tableau de bord, et vous pouvez fournir des destinataires, des heures et des fréquences différents pour chaque abonnement. Tous les abonnements définis sur **Après l’actualisation des données** pour votre tableau de bord ou votre rapport envoient un e-mail seulement après la première actualisation planifiée.
+
+1. (Facultatif) Indiquez si vous souhaitez ajouter le _rapport complet_ en pièce jointe plutôt qu’une seule page de rapport. Choisissez PDF ou PowerPoint. La taille de la pièce jointe est limitée à 20 pages et à 25 Mo. La pièce jointe respecte toutes les étiquettes de confidentialité du rapport.
+
+1. Sélectionnez **Enregistrer et fermer**. Les abonnés reçoivent un e-mail et un instantané du tableau de bord ou de la page de rapport à la fréquence et à l’heure que vous avez sélectionnées. Vous pouvez créer jusqu’à 24 abonnements en tout par rapport ou tableau de bord, et vous pouvez fournir des destinataires, des heures et des fréquences différents pour chaque abonnement. Tous les abonnements définis sur **Après l’actualisation des données** pour votre tableau de bord ou votre rapport envoient un e-mail seulement après la première actualisation planifiée.
 
     > [!NOTE]
     > Si vous modifiez l’abonnement après avoir enregistré et fermé, le choix de donner aux utilisateurs l’accès au contenu auquel vous vous abonnez prend effet, quelles que soient vos sélections précédentes.
     >
+
+
 
     > [!TIP]
     > Vous souhaitez envoyer l’e-mail d’un abonnement dès maintenant, ou ultérieurement à la demande ? Sélectionnez **Exécuter maintenant** pour les abonnements associés au tableau de bord ou au rapport que vous voulez envoyer. Vous voyez une notification indiquant qu’un e-mail est envoyé à tous les utilisateurs de cet abonnement. Cette action n’est pas comptabilisée dans la limite des 24 exécutions d’abonnement planifiées par jour et par rapport ou tableau de bord. Cette opération ne déclenche PAS l’actualisation des données dans le jeu de données sous-jacent.
@@ -147,10 +152,8 @@ Les administrateurs Power BI peuvent utiliser les journaux d’audit Power BI 
     - La taille du fichier joint est inférieure à 25 Mo.
     - Le rapport contient moins de 20 pages. 
     
-    Si le rapport ne respecte pas ces trois conditions, vous ne pouvez pas créer d’abonnements avec des rapports complets en tant que pièces jointes. Tous les abonnements existants avec des rapports complets en pièces jointes sont désactivés et vous recevez un e-mail expliquant l’erreur :
+    Si le rapport ne respecte pas ces trois conditions, vous ne pouvez pas créer d’abonnements avec des rapports complets en tant que pièces jointes. Tous les abonnements existants comportant des rapports complets en pièce jointe sont désactivés. Vous recevez un e-mail expliquant l’erreur.
     
-    :::image type="content" source="media/service-report-subscribe/full-report-attachment-error-email.png" alt-text="E-mail avec l’erreur liée à un rapport complet en pièce jointe.":::
-
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Rapports paginés dans le service Power BI : Inscrire vous-même et d’autres utilisateurs](../consumer/paginated-reports-subscriptions.md)

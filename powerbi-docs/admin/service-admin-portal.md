@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 10/22/2020
+ms.date: 12/18/2020
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 9cbb6bb03d9add4324c3fc57a6426435850a001c
-ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
+ms.openlocfilehash: 2e89dc43f467aec8edcefaa4ecdbd2fc6cbf6dea
+ms.sourcegitcommit: b8e4dd67c59db079fdfa82a8a01c2a28fd1673ca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96578173"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97699465"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
-Le portail d’administration vous permet de gérer les paramètres Power BI pour votre organisation. Le portail comprend notamment des métriques d’utilisation, un accès au Centre d’administration Microsoft 365 et des paramètres de l’abonné.
+Le portail d’administration vous permet de gérer les paramètres Power BI pour votre organisation. Le portail comprend notamment des métriques d’utilisation, un accès au Centre d’administration Microsoft 365 et des paramètres qui régissent Power BI pour tous les utilisateurs.
 
 Le portail d’administration complet est accessible par les administrateurs généraux et les utilisateurs qui ont le rôle d’Administrateur de service Power BI. Si vous n’appartenez pas à l’un de ces rôles, seuls les **Paramètres de capacité** s’affichent sur le portail. Pour plus d’informations sur le rôle d’administrateur de Service Power BI, voir [Présentation du rôle d’administrateur Power BI](service-admin-role.md).
 
@@ -31,14 +31,15 @@ Vous devez être administrateur général ou administrateur de service Power BI 
 
 1. Dans l’en-tête de page, sélectionnez **Paramètres** > **Portail Administrateur**.
 
-    ![Paramètres du portail d’administration](media/service-admin-portal/powerbi-admin-settings.png)
+   :::image type="content" source="media/service-admin-portal/settings-portal.png" alt-text="Menu Paramètres avec Portail d’administration sélectionné.":::
 
 Le portail d’administration contient plusieurs sections. Le reste de cet article fournit des informations sur chacune de ces sections.
 
-![Navigation dans le portail d’administration](media/service-admin-portal/powerbi-admin-landing-page.png)
+   :::image type="content" source="media/service-admin-portal/portal-menu.png" alt-text="Menu Portail d’administration.":::
 
 * [Métriques d’utilisation](#usage-metrics)
 * [Utilisateurs](#users)
+* [Premium par utilisateur (préversion)](#premium-per-user-preview)
 * [Journaux d’audit](#audit-logs)
 * [Paramètres du locataire](#tenant-settings)
 * [Paramètres de capacité](#capacity-settings)
@@ -125,6 +126,14 @@ Soyez prudent, car la suppression du contenu de métriques existantes d’utilis
 Les utilisateurs, les groupes et les administrateurs Power BI sont gérés dans le Centre d’administration Microsoft 365. L’onglet **Utilisateurs** contient un lien qui donne accès au Centre Administrateur.
 
 ![Accéder au Centre d’administration Microsoft 365](media/service-admin-portal/powerbi-admin-manage-users.png)
+
+## <a name="premium-per-user-preview"></a>Premium par utilisateur (préversion)
+
+Le modèle Premium par utilisateur est une nouvelle façon d’octroyer des licences pour des fonctionnalités Premium par utilisateur. Actuellement, cette fonctionnalité est uniquement disponible en tant que version préliminaire. Une fois qu’au moins un utilisateur dispose d’une licence Premium par utilisateur, les fonctionnalités associées peuvent être activées dans n’importe quel espace de travail. Les administrateurs ont la possibilité de gérer les paramètres d’actualisation automatique et de charge de travail du jeu de données proposés aux utilisateurs ainsi que leur valeur par défaut. Par exemple, l’accès au point de terminaison XMLA peut être désactivé, défini en lecture seule ou en lecture et en écriture.
+
+   :::image type="content" source="media/service-admin-portal/premium-per-user-options.png" alt-text="Paramètres Premium par utilisateur.":::
+
+Pour plus d’informations sur ce modèle de licence, consultez [FAQ Power BI Premium par utilisateur (préversion)](service-premium-per-user-faq.md).
 
 ## <a name="audit-logs"></a>Journaux d'audit
 

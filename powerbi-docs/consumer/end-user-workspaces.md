@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/09/2020
+ms.date: 12/14/2020
 ms.custom: licensing support
 LocalizationGroup: Consumers
-ms.openlocfilehash: 2341306672da4c1923dc5bc97f0d1537604a1a7c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: bc8c3147efc9037fef7207f62856f3f9a0b1b5a8
+ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96398703"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97674933"
 ---
 # <a name="collaborate-in-workspaces"></a>Collaborer dans des espaces de travail
 
@@ -49,7 +49,7 @@ Pour obtenir une liste détaillée de ce que vous pouvez faire en tant qu’*uti
 
 ### <a name="workspace-permissions-and-roles"></a>Autorisations et rôles de l’espace de travail
 
-Voici les fonctionnalités des quatre rôles : Administrateurs, membres, contributeurs et lecteurs. Toutes ces fonctionnalités, à l’exception de l’affichage et de l’interaction, nécessitent une licence Power BI Pro.
+Voici les fonctionnalités des quatre rôles : Administrateurs, membres, contributeurs et lecteurs. Une licence Power BI Pro est nécessaire pour toutes ces fonctionnalités, à l’exception de la fonctionnalité *Affichage d’un élément et interaction*.
 
 [!INCLUDE[power-bi-workspace-roles-table](../includes/power-bi-workspace-roles-table.md)]
 
