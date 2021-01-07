@@ -9,12 +9,12 @@ ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 05/14/2020
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 879f931797786ee1bb9f12a56323c50642716afb
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 806869b10b52ff7c161484f3e8d38fbc61b85f60
+ms.sourcegitcommit: c700e78dfedc34f5a74b23bbefdaef77e2a87f8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96398588"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97961267"
 ---
 # <a name="power-bi-security-whitepaper"></a>Livre blanc sur la sécurité dans Power BI
 
@@ -33,7 +33,7 @@ ms.locfileid: "96398588"
 
 **Power BI** est une offre de service logiciel en ligne (_SaaS_, ou Software as a Service) de Microsoft qui vous permet de créer facilement et rapidement des tableaux de bord, des rapports, des jeux de données et des visualisations de décisionnel en libre-service. Avec Power BI, vous pouvez vous connecter à de nombreuses sources de données différentes, combiner et mettre en forme les données à partir de ces connexions, puis créer des rapports et des tableaux de bord partageables.
 
-Le service Power BI est régi par les [Conditions d’utilisation de Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) et la [Déclaration de confidentialité de Microsoft Enterprise](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Pour l’emplacement du traitement des données, consultez les modalités relatives à l’emplacement de traitement des données dans les Conditions d’utilisation de Microsoft Online Services. Pour les informations sur la conformité, le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trustcenter) est la ressource principale pour Power BI. L’équipe Power BI travaille sans relâche pour proposer à ses clients les dernières innovations et une meilleure productivité. Power BI se trouve actuellement dans le niveau D de l’infrastructure de conformité Microsoft 365. En savoir plus sur la conformité dans le centre de gestion de la [confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview).
+Le service Power BI est régi par les [Conditions d’utilisation de Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) et la [Déclaration de confidentialité de Microsoft Enterprise](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Pour l’emplacement du traitement des données, consultez les modalités relatives à l’emplacement de traitement des données dans les Conditions d’utilisation de Microsoft Online Services. Pour les informations sur la conformité, le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/product-overview) est la ressource principale pour Power BI. L’équipe Power BI travaille sans relâche pour proposer à ses clients les dernières innovations et une meilleure productivité. Power BI se trouve actuellement dans le niveau D de l’infrastructure de conformité Microsoft 365. En savoir plus sur la conformité dans le centre de gestion de la [confidentialité Microsoft](https://docs.microsoft.com/compliance/regulatory/offering-home).
 
 Cet article décrit la sécurité Power BI en fournissant une explication de l’architecture de Power BI, en expliquant comment les utilisateurs s’authentifient auprès de Power BI et comment sont établies les connexions de données, puis en décrivant comment Power BI stocke et déplace les données dans le service. La dernière section est consacrée aux questions liées à la sécurité.
 
@@ -119,13 +119,13 @@ Les liens suivants fournissent des informations supplémentaires sur les centres
 - [Régions Azure](https://azure.microsoft.com/regions/) : informations sur les emplacements et la présence mondiale d’Azure
 - [Services Azure par région](https://azure.microsoft.com/regions/#services) : liste complète des services Azure (services d’infrastructure et services de plateforme) disponibles auprès de Microsoft dans chaque région.
 
-Actuellement, les service Power BI sont disponibles dans des régions spécifiques, servies par les centres de donnés, comme décrit dans le centre de gestion de la [confidentialité Microsoft](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). Le lien suivant affiche une carte des centres de données Power BI. Vous pouvez pointer sur une région pour voir les centres de données qui s’y trouvent :
+Actuellement, les service Power BI sont disponibles dans des régions spécifiques, servies par les centres de donnés, comme décrit dans le centre de gestion de la [confidentialité Microsoft](https://www.microsoft.com/trust-center/product-overview). Le lien suivant affiche une carte des centres de données Power BI. Vous pouvez pointer sur une région pour voir les centres de données qui s’y trouvent :
 
 * [Centres de données Power BI](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)
 
 Microsoft fournit également des centres de données pour des souverainetés. Pour plus d’informations sur la disponibilité du service Power BI pour les clouds nationaux, consultez [Clouds nationaux Power BI](https://powerbi.microsoft.com/clouds/).
 
-Pour plus d’informations sur l’emplacement où sont stockées vos données et sur la façon dont elles sont utilisées, consultez le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Les engagements concernant l’emplacement des données des clients au repos sont spécifiés dans les **modalités relatives au traitement des données** dans les [Conditions d’utilisation de Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31).
+Pour plus d’informations sur l’emplacement où sont stockées vos données et sur la façon dont elles sont utilisées, consultez le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/product-overview). Les engagements concernant l’emplacement des données des clients au repos sont spécifiés dans les **modalités relatives au traitement des données** dans les [Conditions d’utilisation de Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31).
 
 ## <a name="user-authentication"></a>Authentification des utilisateurs
 
@@ -199,7 +199,7 @@ Les clés de chiffrement de passerelle basées sur la clé de récupération ne 
 
 Pour les sources de données basées sur le cloud, le rôle Déplacement de données chiffre les clés de chiffrement à l’aide de méthodes [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine). Apprenez-en davantage sur la [fonctionnalité de base de données Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine).
 
-#### <a name="datasets"></a>Jeux de données
+#### <a name="datasets"></a>Groupes de données
 
 1. Métadonnées (tables, colonnes, mesures, calculs, chaînes de connexion, etc.)
 
@@ -290,7 +290,7 @@ Les données visuelles sont mises en cache dans différents emplacements selon q
 
 Les appareils non volatiles sont des appareils dont la mémoire persiste sans puissance constante. La section suivante décrit les données qui sont stockées de manière transitoire sur des appareils non volatiles. 
 
-#### <a name="datasets"></a>Jeux de données
+#### <a name="datasets"></a>Groupes de données
 
 1. Métadonnées (tables, colonnes, mesures, calculs, chaînes de connexion, etc.)
 
