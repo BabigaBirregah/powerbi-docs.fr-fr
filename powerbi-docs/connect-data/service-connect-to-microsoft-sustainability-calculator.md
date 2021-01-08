@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 12/22/2020
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 88d508e5a71fec2574104356d77aaa0fb79bb0bc
-ms.sourcegitcommit: 1691ce556ab5b22e6f9d06086a054d165d482809
+ms.openlocfilehash: 730a997a6d1d304fe868dd5bdd5bfbed6e359d91
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97745182"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97927163"
 ---
 # <a name="microsoft-sustainability-calculator-support-page"></a>Page de support de Microsoft Sustainability Calculator
 
@@ -29,6 +29,7 @@ Pour accéder à Microsoft Sustainability Calculator, vous devez demander les in
 - ID client
 - Clé d’accès
 - Numéro d’inscription
+- Seuls les rôles Administrateur Azure peuvent s’authentifier et connecter la calculatrice aux données de l’entreprise. (**Uniquement pour la préversion de décembre 2020**)
 
 Pour trouver le numéro d’inscription de votre entreprise, procédez comme suit :
 
@@ -134,7 +135,7 @@ Vous aurez besoin de votre numéro d’inscription Azure. Si vous ne le connaiss
 - [Guide pratique vidéo](https://go.microsoft.com/fwlink/?linkid=2151608)
 - [Les avantages du cloud computing en matière de carbone : Étude de Microsoft Cloud en partenariat avec WSP](https://download.microsoft.com/download/7/3/9/739BC4AD-A855-436E-961D-9C95EB51DAF9/Microsoft_Cloud_Carbon_Study_2018.pdf)
 
-### <a name="faq"></a>Questions fréquentes (FAQ)
+### <a name="faq"></a>Forum Aux Questions
 
 #### <a name="app-setup"></a>Configuration de l’application
 

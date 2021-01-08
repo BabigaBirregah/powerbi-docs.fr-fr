@@ -1,18 +1,18 @@
 ---
-title: Exporter des rapports d’analytique incorporée Power BI à l’aide d’une API
-description: Découvrez comment exporter un rapport Power BI incorporé pour améliorer votre expérience d’analytique incorporée Power BI Embedded.
+title: Exportation de l’API de rapports d’analytique incorporée Power BI pour de meilleurs insights décisionnels incorporés
+description: Découvrez comment exporter un rapport Power BI incorporé pour améliorer votre expérience d’analytique incorporée Power BI Embedded. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 12/28/2020
-ms.openlocfilehash: da0f5f155552a8a53b53789f3bfb6ebe839367c5
-ms.sourcegitcommit: a465a0c80ffc0f24ba6b8331f88420a0d21ac0b2
+ms.openlocfilehash: acd9d98b55697e8ca3729cad65a1ead8f01f6e62
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97805139"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887014"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Exporter un rapport Power BI vers un fichier (préversion)
 
@@ -73,7 +73,7 @@ Pour exporter un rapport filtré, insérez dans [ExportFilter](/rest/api/power-b
 
 Le tableau ci-dessous contient quelques exemples de syntaxe de chaînes que vous pouvez passer à `ExportFilter`.
 
-|Filtrer    |Syntaxe    |Exemple    |
+|Filtrer    |Syntaxe    | Exemple    |
 |---|----|----|----|
 |Valeur dans un champ    |Table/Champ eq ’valeur’    |Store/Territory eq ’NC’    |
 |Plusieurs valeurs dans un champ    |Table/Champ in (’valeur1’, ’valeur2’)     |Store/Territory in (’NC’, ’TN’)    |

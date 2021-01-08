@@ -1,6 +1,6 @@
 ---
-title: Incorporer du contenu Power BI dans une application d’analytique incorporée avec un principal de service et un secret d’application
-description: Découvrez comment s’authentifier pour de l’analytique incorporée en utilisant un principal de service d’application Azure Active Directory et un secret d’application.
+title: Incorporation de contenu Power BI dans une application d’analytique incorporée avec un principal de service et un secret d’application pour de meilleurs insights décisionnels incorporés
+description: Découvrez comment s’authentifier pour de l’analytique incorporée en utilisant un principal de service d’application Azure Active Directory et un secret d’application. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ''
 ms.date: 11/23/2020
-ms.openlocfilehash: 8cf7b46687491f446d4e17fc96b020dbc08de5fc
-ms.sourcegitcommit: a92a3570eb14793a758a32e8fa1a756ec5d83f8c
+ms.openlocfilehash: 35bdaa8af06187767975126daa1f2445908fed9f
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97708062"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886784"
 ---
 # <a name="embed-power-bi-content-with-service-principal-and-an-application-secret"></a>Incorporer du contenu Power BI avec un principal de service et un secret d’application
 

@@ -1,6 +1,6 @@
 ---
-title: Configuration de votre environnement pour développer un visuel Power BI
-description: Cet article explique comment configurer votre environnement pour pouvoir développer un visuel Power BI
+title: Configuration d’un environnement de développement d’un visuel Power BI dans l’analytique incorporée Power BI pour de meilleures insights décisionnels incorporés
+description: Cet article explique comment configurer un environnement pour pouvoir développer un visuel Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 09/02/2020
-ms.openlocfilehash: e5b176ac9e8d334b6dec9af70c189d2767bace1c
-ms.sourcegitcommit: a465a0c80ffc0f24ba6b8331f88420a0d21ac0b2
+ms.openlocfilehash: 43c5a636a7e3d0396210370df4427e1e13494551
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97805231"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885887"
 ---
 # <a name="set-up-your-environment-for-developing-a-power-bi-visual"></a>Configurer votre environnement pour développer un visuel Power BI
 

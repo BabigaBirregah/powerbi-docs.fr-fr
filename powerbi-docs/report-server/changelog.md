@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 12/16/2020
-ms.openlocfilehash: c292e1ccaa03904ee0bfa4825a539430fed71867
-ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
+ms.date: 12/31/2020
+ms.openlocfilehash: 7c1df405c80f50b7b98803b68ae2d3887013a623
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97621875"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886186"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Journal des modifications pour Power BI Report Server
 
@@ -48,6 +48,8 @@ Pour plus d’informations sur les nouvelles fonctionnalités, consultez [Nouvea
             - Mise à jour du convertisseur MHTML pour utiliser un DOCTYPE HTML plus récent.
 
 - **Power BI Desktop optimisé pour Power BI Report Server**
+   - *Version : 2.86.1321.0 (octobre 2020), Date de publication : 18 novembre 2020*
+        - Correctifs de bogues
    - *Version : 2.86.961.0 (octobre 2020), Date de publication : 27 octobre 2020* (nouvelle build et nouvelle version)
         - Contient les changements nécessaires pour la connexion à Power BI Report Server (octobre 2020)        
    
