@@ -143,6 +143,6 @@
         - name: "Exemples de visuels Power\_BI"
           href: samples.md
         - name: Dépôt Git de visuels personnalisés
-          href: 'https://go.microsoft.com/fwlink/?linkid=848277'
+          href: 'https://github.com/PowerBi-Projects/PowerBI-visuals/'
         - name: Création du certificat SSL
           href: create-ssl-certificate.md
