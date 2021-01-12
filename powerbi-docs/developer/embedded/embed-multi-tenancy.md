@@ -1,6 +1,6 @@
 ---
-title: Gérer la mutualisation avec l’analytique incorporée Power BI
-description: Concevez une application multi-locataire avec l’analytique incorporée.
+title: Gérer la multilocation avec l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Concevez une application multilocataire avec l’analytique incorporée Power BI pour offrir de meilleurs insights à vos clients via la BI incorporée.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 377f509248dbd2368b74bb9645f001ff7c6a97c0
-ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
+ms.openlocfilehash: 39256b3b57a43804478371606ca7336c484c7813
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96907276"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97884829"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Gérer la mutualisation avec l’analytique incorporée Power BI
 

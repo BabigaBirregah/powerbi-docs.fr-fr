@@ -7,25 +7,26 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/02/2018
+ms.date: 01/05/2021
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ec0b384efb4b43afad76e18feb1b5a53d5f3738c
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5ae148feaa294c8779a7140ef450c832bd3376d8
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96395207"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97927172"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Épingler une vignette à un tableau de bord à partir de Questions et réponses
-## <a name="how-to-pin-a-tile-from-qa"></a>Épingler une vignette à partir de Q&R
-Q&R est l’outil de génération de rapports ad hoc de Power BI. Vous avez besoin de données spécifiques ? Posez une question à propos de vos données et recevez une réponse sous la forme d’une visualisation.
 
-Dans cette procédure, nous allons utiliser le service Power BI (app.powerbi.com) pour ouvrir un tableau de bord, poser une question en langage naturel pour créer une visualisation et épingler cette visualisation à un tableau de bord. Les tableaux de bord ne sont pas disponibles dans Power BI Desktop. Pour plus d’informations sur l’utilisation de Questions et réponses avec d’autres outils et contenu Power BI, consultez la [présentation de Questions et réponses dans Power BI](../consumer/end-user-q-and-a.md). 
+Questions et réponses est un outil Power BI qui vous permet d’explorer vos données en langage naturel. Vous avez besoin de données spécifiques ? Posez une question à propos de vos données et recevez une réponse sous la forme d’une visualisation.
+
+Dans cet article pratique, nous ouvrons un [ tableau de bord](../consumer/end-user-dashboards.md) dans le service Power BI (app.powerbi.com), nous posons une question en langage naturel pour créer une visualisation, puis nous épinglons cette dernière au tableau de bord. Les tableaux de bord ne sont pas disponibles dans Power BI Desktop. Pour plus d’informations sur l’utilisation de Questions et réponses avec d’autres outils et contenu Power BI, consultez la [présentation de Questions et réponses dans Power BI](../consumer/end-user-q-and-a.md). 
 
 Pour suivre la procédure, ouvrez le tableau de bord [Exemple Analyse de la vente au détail](sample-retail-analysis.md).
 
+## <a name="how-to-pin-a-tile-from-qa"></a>Épingler une vignette à partir de Q&R
 
-1. Ouvrez un [tableau de bord](../consumer/end-user-dashboards.md) sur lequel au moins une vignette est épinglée à partir d’un rapport. Lorsque vous posez une question, Power BI cherche la réponse dans un jeu de données dont une vignette est épinglée à ce tableau de bord.  Pour plus d’informations, voir [obtenir des données](../connect-data/service-get-data.md).
+1. Ouvrez un tableau de bord sur lequel au moins une vignette est épinglée à partir d’un rapport. Lorsque vous posez une question, Power BI cherche la réponse dans un jeu de données dont une vignette est épinglée à ce tableau de bord.
 2. En haut de votre tableau de bord, dans la zone de question, commencez à taper ce que vous voulez savoir sur vos données.  
    ![zone Questions et réponses](media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png)
 3. Par exemple, quand vous tapez « ventes de l’année dernière par mois et par secteur »…  
@@ -62,5 +63,5 @@ Pour suivre la procédure, ouvrez le tableau de bord [Exemple Analyse de la vent
 ## <a name="next-steps"></a>Étapes suivantes
 [Renommer, redimensionner, ajouter un lien hypertexte, repositionner la vignette et bien plus encore](service-dashboard-edit-tile.md)    
 [Afficher la vignette de votre tableau de bord en mode Focus](../consumer/end-user-focus.md)     
-[Revenir à Q&R dans Power BI](../consumer/end-user-q-and-a.md)  
+[Vue d’ensemble de Questions et réponses dans Power BI](../consumer/end-user-q-and-a.md)  
 D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

@@ -1,6 +1,6 @@
 ---
-title: Résolution des problèmes de votre application d’analytique incorporée Power BI
-description: Cet article décrit certains problèmes courants que vous pouvez rencontrer lors de l’incorporation de contenu à partir de Power BI.
+title: Résolution des problèmes liés à votre application d’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Cet article décrit certains problèmes courants que vous pouvez rencontrer lors de l’incorporation de contenu à partir de Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
 ms.date: 02/05/2019
-ms.openlocfilehash: f46bdf5aec254763257fa4b121b4b8c135a0d58a
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: db2ae20436eddc4cb06287b6266488b65588dcb5
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098073"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887198"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Résoudre les problèmes de votre application incorporée
 
@@ -119,7 +119,7 @@ Nous vous recommandons d’activer cette stratégie uniquement en fonction de ch
 
 Pour créer cette stratégie, vous devez être _ *administrateur général** de l’annuaire dans lequel vous créez et affectez la stratégie. Voici un exemple de script qui vous montre comment créer la stratégie et l’affecter au principal du service de l’application :
 
-1. Installez le [module PowerShell Azure AD (Préversion)](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+1. Installez le [module PowerShell Azure AD (Préversion)](/powershell/azure/active-directory/install-adv2).
 
 2. Exécutez les commandes PowerShell ci-dessous ligne par ligne (en veillant à ce que la variable $sp n’ait pas plus d’une application en résultat).
 

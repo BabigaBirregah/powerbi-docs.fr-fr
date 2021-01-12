@@ -1,6 +1,6 @@
 ---
-title: Introduction aux tests unitaires pour les projets de visuels Power BI
-description: Cet article explique comment écrire des tests unitaires pour des projets de visuels Power BI.
+title: Introduction aux tests unitaires pour les projets visuels Power BI dans l’analytique incorporée Power BI en vue d’obtenir de meilleurs insights via la BI incorporée
+description: Cet article explique comment écrire des tests unitaires pour des projets visuels Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: 996e409e634292ca0767f34c49931cfbcdcd4b94
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ee7ed48043a902a9b5ebd3c548ebec7505e76ab1
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79379534"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887911"
 ---
 # <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Tutoriel : Ajouter des tests unitaires pour des projets de visuels Power BI
 
@@ -251,23 +251,23 @@ Si nécessaire, vous pouvez modifier cette configuration.
 
 Le code dans *karma.conf.js* contient la variable suivante :
 
-* `recursivePathToTests` : localise le code de test
+* `recursivePathToTests` : localise le code de test
 
-* `srcRecursivePath` : localise le code JavaScript de sortie après la compilation
+* `srcRecursivePath` : localise le code JavaScript de sortie après la compilation
 
-* `srcCssRecursivePath` : localise le CSS de sortie après la compilation d’un fichier avec des styles
+* `srcCssRecursivePath` : localise le CSS de sortie après la compilation d’un fichier avec des styles
 
-* `srcOriginalRecursivePath` : localise le code source de votre visuel
+* `srcOriginalRecursivePath` : localise le code source de votre visuel
 
-* `coverageFolder` : détermine l’emplacement de création du rapport de couverture
+* `coverageFolder` : détermine l’emplacement de création du rapport de couverture
 
 Le fichier de configuration comprend les propriétés suivantes :
 
-* `singleRun: true` : les tests sont exécutés sur un système d’intégration continue (CI), ou peuvent être exécutés une seule fois. Vous pouvez remplacer la valeur du paramètre par *false* pour déboguer vos tests. Karma maintient le navigateur en cours d’exécution afin que vous puissiez utiliser la console pour le débogage.
+* `singleRun: true` : les tests sont exécutés sur un système d’intégration continue (CI), ou peuvent être exécutés une seule fois. Vous pouvez remplacer la valeur du paramètre par *false* pour déboguer vos tests. Karma maintient le navigateur en cours d’exécution afin que vous puissiez utiliser la console pour le débogage.
 
-* `files: [...]` : dans ce tableau, vous pouvez spécifier les fichiers à charger dans le navigateur. En règle générale, il existe des fichiers sources, des cas de test, des bibliothèques (Jasmine, utilitaires de test). Vous pouvez ajouter des fichiers supplémentaires à la liste, si nécessaire.
+* `files: [...]` : dans ce tableau, vous pouvez spécifier les fichiers à charger dans le navigateur. En règle générale, il existe des fichiers sources, des cas de test, des bibliothèques (Jasmine, utilitaires de test). Vous pouvez ajouter des fichiers supplémentaires à la liste, si nécessaire.
 
-* `preprocessors` : dans cette section, vous configurez les actions qui s’exécutent avant l’exécution des tests unitaires. Elles précompilent le code TypeScript vers JavaScript, préparent les fichiers de mappage sources et génèrent le rapport de couverture du code. Vous pouvez désactiver `coverage` quand vous déboguez vos tests. La couverture génère du code supplémentaire pour vérifier le code pour la couverture de test, ce qui complique le débogage des tests.
+* `preprocessors` : dans cette section, vous configurez les actions qui s’exécutent avant l’exécution des tests unitaires. Elles précompilent le code TypeScript vers JavaScript, préparent les fichiers de mappage sources et génèrent le rapport de couverture du code. Vous pouvez désactiver `coverage` quand vous déboguez vos tests. La couverture génère du code supplémentaire pour vérifier le code pour la couverture de test, ce qui complique le débogage des tests.
 
 Pour obtenir une description de toutes les configurations Karma, accédez à la page sur le [fichier de configuration Karma](https://karma-runner.github.io/1.0/config/configuration-file.html).
 
@@ -361,13 +361,13 @@ Plusieurs méthodes sont appelées :
 
 * [`describe`](https://jasmine.github.io/api/2.6/global.html#describe) : décrit un cas de test. Dans le contexte du framework Jasmine, cela décrit souvent une suite ou un groupe de spécifications.
 
-* `beforeEach` : est appelée avant chaque appel de la méthode `it`, qui est définie dans la méthode [`describe`](https://jasmine.github.io/api/2.6/global.html#beforeEach).
+* `beforeEach` : est appelée avant chaque appel de la méthode `it`, qui est définie dans la méthode [`describe`](https://jasmine.github.io/api/2.6/global.html#beforeEach).
 
 * [`it`](https://jasmine.github.io/api/2.6/global.html#it) : définit une spécification unique. La méthode `it` doit contenir un ou plusieurs `expectations`.
 
 * [`expect`](https://jasmine.github.io/api/2.6/global.html#expect) : crée une attente pour une spécification. Une spécification réussit si toutes les attentes réussissent sans aucun échec.
 
-* `toBeInDOM` : l’une des méthodes *matchers*. Pour plus d’informations sur les matchers, consultez [Jasmine Namespace: matchers](https://jasmine.github.io/api/2.6/matchers.html).
+* `toBeInDOM` : l’une des méthodes *matchers*. Pour plus d’informations sur les matchers, consultez [Jasmine Namespace: matchers](https://jasmine.github.io/api/2.6/matchers.html).
 
 Pour plus d’informations sur Jasmine, consultez la page de [documentation du framework Jasmine](https://jasmine.github.io/).
 

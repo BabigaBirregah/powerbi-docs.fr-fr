@@ -1,6 +1,6 @@
 ---
-title: Informations de référence sur l’API REST de Power BI
-description: Informations de référence sur l’API REST de Power BI
+title: Informations de référence sur les API REST Power BI dans l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Informations de référence sur les API REST Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,19 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
 ms.date: 05/25/2018
-ms.openlocfilehash: 9624195458c965a652b889089ce7ef8521281c95
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 8aed384befc1f4bdfad0c5339644ad002d609583
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748928"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887566"
 ---
 # <a name="power-bi-rest-api-reference"></a>Informations de référence sur l’API REST de Power BI
 
 Power BI est un service cloud que vous pouvez utiliser pour créer des applications de tableau de bord personnalisées. L’API REST de Power BI est une API basée sur l’architecture REST qui fournit un accès programmatique à tous les artefacts que le service utilise, tels que ceux-ci :
-* Datasets
+* Groupes de données
 * Tableaux de bord
-* Reports
+* Rapports
 * Passerelles
 
 L’API REST de Power BI permet d’effectuer les opérations suivantes :

@@ -1,6 +1,6 @@
 ---
-title: Objets et propriétés des visuels Power BI
-description: Cet article décrit les propriétés personnalisables des visuels Power BI.
+title: Objets et propriétés des visuels Power BI dans l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Cet article décrit les propriétés personnalisables des visuels Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: ae548abd0d579414a69b0d970213ff9d69ff2f08
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: 4596465fcd9f59768b18282ec3ad39d2531b7768
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96120195"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885956"
 ---
 # <a name="objects-and-properties-of-power-bi-visuals"></a>Objets et propriétés des visuels Power BI
 
@@ -30,7 +30,7 @@ Les objets décrivent des propriétés personnalisables associées à un visuel.
 }
 ```
 
-## <a name="display-name"></a>Nom complet
+## <a name="display-name"></a>Nom d’affichage
 
 `displayName` est le nom qui sera affiché dans le volet des propriétés.
 
@@ -50,7 +50,7 @@ Les objets décrivent des propriétés personnalisables associées à un visuel.
 > [!NOTE]
 > `show` est une propriété spéciale qui permet à un commutateur de basculer l’objet.
 
-Exemple :
+Exemple :
 
 ```json
 "properties": {
@@ -210,7 +210,7 @@ Cet objet est lié aux métadonnées `dataviews[index].metadata.objects`, comme 
 selector: null
 ```
 
-#### <a name="columns"></a>columns
+#### <a name="columns"></a>colonnes
 
 Cet objet est lié aux colonnes avec le `QueryName` correspondant.
 
@@ -241,7 +241,7 @@ selector: {
 }
 ```
 
-##### <a name="example"></a>Exemple
+##### <a name="example"></a> Exemple
 
 L’exemple suivant montre à quoi ressemblerait un objectEnumeration pour un objet customColor avec une propriété *fill*. Nous souhaitons que cet objet soit lié de manière statique à `dataViews[index].metadata.objects`, comme illustré :
 

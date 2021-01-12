@@ -1,6 +1,6 @@
 ---
-title: Extraits de code pour migrer du contenu à partir de Power BI Embedded
-description: Voici quelques extraits de code pour les opérations de base nécessaires à la migration de contenu
+title: Extraits de code pour migrer du contenu d’une collection d’espaces de travail vers la solution d’analytique incorporée Power BI Embedded et obtenir de meilleurs insights via la BI incorporée
+description: Voici quelques extraits de code des opérations de base requises pour la migration de contenu. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,22 +8,22 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 02/05/2019
-ms.openlocfilehash: 9ed021ce95fd1e978916c188c93ca77fa88ccdb6
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: f6b6023ac77d007b07662e200d6f165d56d67628
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416505"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888716"
 ---
-# <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Extraits de code pour migrer du contenu à partir d’une collection d’espaces de travail Power BI
+# <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Extraits de code pour la migration de contenu à partir d’une collection d’espaces de travail Power BI
 
-Voici quelques extraits de code pour les opérations de base nécessaires à la migration de contenu. Pour découvrir les flux liés à certains types de rapports, consultez [Comment migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded](migrate-from-powerbi-embedded.md#content-migration).
+Voici quelques extraits de code des opérations de base requises pour la migration de contenu. Pour découvrir les flux liés à certains types de rapports, consultez [Comment migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded](migrate-from-powerbi-embedded.md#content-migration).
 
 Un **outil de migration** est à votre disposition pour vous aider à copier le contenu de Power BI Embedded (PaaS) vers le service Power BI (SaaS). Celui-ci est particulièrement utile si votre contenu est volumineux. Pour plus d’informations, consultez [Outil de migration Power BI Embedded](migrate-tool.md).
 
-Le code ci-dessous est un exemple utilisant C# et le [Kit de développement logiciel Power BI .NET](https://www.nuget.org/profiles/powerbi).
+Le code ci-après représente des exemples en C# et à l’aide du [Kit de développement logiciel (SDK) .NET Power BI](https://www.nuget.org/profiles/powerbi).
 
-Utilisez bien les espaces de noms suivants pour exécuter les extraits de code ci-dessous.
+Prenez soin d’utiliser les espaces de noms ci-après pour exécuter les extraits de code ci-dessous.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -127,7 +127,7 @@ Ceci sert à mettre à jour le PBIX après la migration vers SaaS.
 
 ## <a name="set-directquery-credentials-in-saas-workspace"></a>Définir les informations d’identification de DirectQuery dans l’espace de travail SaaS
 
-Dans cet extrait de code, nous utilisons des informations d’identification non chiffrées par souci de simplicité. Il est possible d’envoyer des informations d’identification chiffrées.
+Dans cet extrait de code, nous utilisons des informations d’identification non chiffrées par souci de simplicité, mais l’envoi d’informations d’identification chiffrées est également pris en charge.
 
 ```csharp
     public class ConnectionString
@@ -164,9 +164,9 @@ Dans cet extrait de code, nous utilisons des informations d’identification non
 
 ## <a name="push-dataset-and-report"></a>Transmettre (push) un jeu de données et un rapport
 
-Vous devez régénérer le rapport pour le jeu de données créé.
+Vous devrez régénérer le rapport pour le jeu de données créé.
 
-Dans cet extrait de code, nous supposons que le jeu de données utilisant le service push est déjà dans un espace de travail dans l’environnement SaaS. Pour plus d’informations sur l’API push, consultez [Transmission de données à un jeu de données Power BI](../automation/walkthrough-push-data.md).
+Dans cet extrait de code, nous supposons que le jeu de données utilisant le service push est déjà dans un espace de travail dans l’environnement SaaS. Pour plus d’informations sur l’API Push, consultez l’article [Transmission de données à un jeu de données Power BI](../automation/walkthrough-push-data.md).
 
 ```csharp
     var credentials = new TokenCredentials(<Your WSC access key>, "AppKey");

@@ -1,6 +1,6 @@
 ---
-title: Outil de migration Power BI Embedded
-description: Vous pouvez utiliser cet outil de migration pour copier vos rapports du service Azure Power BI Embedded (PaaS) vers le service Power BI (SaaS).
+title: Outil de migration des collections d’espaces de travail vers la solution d’analytique incorporée Power BI Embedded pour de meilleurs insights via la BI incorporée
+description: Vous pouvez utiliser cet outil de migration pour copier vos rapports du service Azure Power BI Embedded (PaaS) vers le service Power BI (SaaS). Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/30/2018
-ms.openlocfilehash: 60e80311ff12da2bc79b7f844c81c7b5c8f4c3ac
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 7156d0e414a4469cb4e0cba5ea5958e02e4e2e43
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354866"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885271"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Outil de migration Power BI Embedded
 

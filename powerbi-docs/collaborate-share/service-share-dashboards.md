@@ -8,21 +8,21 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 06/26/2020
+ms.date: 01/04/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7a85021ee1931b2d5f7c247d7caa4c2813f86a8c
-ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
+ms.openlocfilehash: 1069a000daf3f46055f45118f4442e4b19037234
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97621599"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97926741"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Partager des rapports et des tableaux de bord Power BI avec des collègues et d’autres utilisateurs
 Le *partage* est le moyen le plus simple de donner accès à vos tableaux de bord et rapports dans le service Power BI. Vous pouvez les partager avec des membres de votre organisation ou des personnes extérieures.
 
 Quand vous partagez un tableau de bord ou un rapport avec des utilisateurs, ces derniers peuvent l’afficher et interagir avec, mais pas le modifier. Ils voient les mêmes données que vous dans le tableaux de bord et les rapports, et ont accès à la totalité du jeu de données sous-jacent, sauf si la sécurité au niveau des lignes est appliquée au jeu de données sous-jacent.  Ils peuvent également le partager avec leurs collègues, si vous les y autorisez. Les personnes qui ne font pas partie de votre organisation peuvent consulter le tableau de bord ou le rapport, et interagir avec lui, mais pas le partager. 
 
-![Icône Partager dans une liste des tableaux de bord](media/service-share-dashboards/power-bi-share-new-look.png)
+![Icône Partager pour un rapport](media/service-share-dashboards/power-bi-share-new-look.png)
 
 Il est possible de partager des tableaux de bord et des rapports en de nombreux endroits du service Power BI : Favoris, Récemment utilisés, Mon espace de travail. Vous pouvez également partager à partir d’autres espaces de travail, si vous avez le [rôle Administrateur, Membre ou Contributeur](service-new-workspaces.md#roles-in-the-new-workspaces) dans l’espace de travail. De même, vous pouvez partager des tableaux de bord et des rapports dans Partagés avec moi, si le propriétaire l’autorise. 
 

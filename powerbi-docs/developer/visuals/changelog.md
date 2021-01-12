@@ -1,6 +1,6 @@
 ---
-title: Journal des modifications de l’API de visuels Power BI
-description: Cet article décrit les principales modifications apportées aux différentes versions de l’API de visuels Power BI
+title: Journal des modifications de l’API de visuels Power BI dans l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Cet article décrit les principales modifications apportées aux différentes versions de l’API de visuels Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 03/13/2019
-ms.openlocfilehash: c43542bc6c2bb0699403062f68024f9718bbbb60
-ms.sourcegitcommit: 54e571a10b0fdde5cd6036017eac9ef228de5116
+ms.openlocfilehash: 4ed42f8c9c3acf740b68bf6c28aaa201efb0d5ba
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92501946"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97927128"
 ---
 # <a name="power-bi-visuals-api-changelog"></a>Journal des modifications de l’API de visuels Power BI
 Cette page contient un récapitulatif rapide des versions de l’API. Les versions répertoriées ici sont considérées comme stables et ne changeront pas.
@@ -43,6 +43,7 @@ Cette page contient un récapitulatif rapide des versions de l’API. Les versio
 ## <a name="api-v220"></a>API v2.2.0
   * Prend en charge la **[Restauration du filtre JSON à partir de DataView](./filter-api.md#restore-the-json-filter-from-the-data-view)**
   * **[API ContextMenu](./context-menu.md)**
+  * Prend en charge la fonctionnalité **[Extraire](../../create-reports/desktop-drillthrough.md)**
 
 ## <a name="api-v210"></a>API v2.1.0
   * Amélioration des performances :

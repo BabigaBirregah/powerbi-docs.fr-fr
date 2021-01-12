@@ -1,6 +1,6 @@
 ---
-title: Inscrire une application pour incorporer du contenu Power BI dans une application d’analytique incorporée
-description: Découvrez comment inscrire une application dans Azure Active Directory afin de l’utiliser avec l’incorporation de contenu Power BI.
+title: Inscrire une application pour incorporer du contenu Power BI dans une application d’analytique incorporée Power Bi et obtenir de meilleurs insights via la BI incorporée
+description: Découvrez comment inscrire une application dans Azure Active Directory afin de l’utiliser avec l’incorporation de contenu Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 04/02/2019
-ms.openlocfilehash: 98956beb3e5a106b885ecbca187521f85917f25e
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: c30b8f7ebe403e38fa59fa248aacc4b3086bf9ed
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098211"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885864"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Inscrire une application Azure AD à utiliser avec Power BI
 

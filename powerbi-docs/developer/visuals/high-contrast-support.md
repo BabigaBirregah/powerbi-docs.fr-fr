@@ -1,19 +1,19 @@
 ---
-title: Prise en charge du mode Contraste élevé dans les visuels Power BI
-description: Cet article décrit comment ajouter la prise en charge du mode Contraste élevé dans les visuels Power BI.
+title: Prise en charge du mode Contraste élevé dans les visuels Power BI de l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Cet article décrit comment ajouter la prise en charge du mode Contraste élevé dans les visuels Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 9372187ae1fdfac27f6b3e7267a1c0622c063464
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f55427511a76fc65b3ae6b3933dca68ef742039c
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114333"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889199"
 ---
 # <a name="high-contrast-mode-support-in-power-bi-visuals"></a>Prise en charge du mode Contraste élevé dans les visuels Power BI
 
@@ -109,7 +109,7 @@ for (let i = 0, len = Math.max(category.values.length, dataValue.values.length);
 }
 ```
 
-### <a name="after"></a>Après
+### <a name="after"></a>After
 
 ```typescript
 for (let i = 0, len = Math.max(category.values.length, dataValue.values.length); i < len; i++) {

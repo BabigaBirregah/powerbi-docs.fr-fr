@@ -1,6 +1,6 @@
 ---
-title: Incorporer du contenu dans votre application d’analytique incorporée Power BI pour un cloud national et du secteur public
-description: Découvrez comment intégrer ou incorporer un rapport, un tableau de bord ou une vignette dans une application avec les API Power BI dans le cadre de l’analytique incorporée pour vos clients. Découvrez comment intégrer Power BI dans votre application à l’aide de logiciels et d’outils d’analytique incorporée ainsi que d’outils d’informatique décisionnelle incorporés pour les clouds nationaux et du secteur public.
+title: Incorporer du contenu dans votre application d’analytique incorporée Power BI pour offrir de meilleurs insights dans les clouds nationaux et du secteur public via la BI incorporée
+description: Découvrez comment intégrer Power BI dans votre application à l’aide de logiciels et d’outils d’analytique incorporée ainsi que d’outils d’informatique décisionnelle incorporés pour les clouds nationaux et du secteur public. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18, devx-track-js
 ms.date: 02/05/2019
-ms.openlocfilehash: 9aa49e9f9df048b5c71b644c40a414159341c321
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: e1a6b5f82145df86668b92b1894789b7a48ef149
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098142"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888854"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Tutoriel : Incorporer du contenu Power BI dans votre application pour des clouds nationaux
 

@@ -1,6 +1,6 @@
 ---
-title: Ajout de bibliothèques externes aux visuels Power BI
-description: Cet article décrit comment utiliser des bibliothèques externes dans les visuels Power BI.
+title: Ajout de bibliothèques externes aux visuels Power BI dans l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Cet article décrit comment utiliser des bibliothèques externes dans les visuels Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 02/24/2020
-ms.openlocfilehash: 9df111e7545c43fe9b75784b1a95df4f37fd01e7
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: b9a443040384e4d38bd7440eae0a5582cc422836
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114126"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889176"
 ---
-# <a name="adding-external-libraries"></a>Utiliser des bibliothèques externes
+# <a name="adding-external-libraries"></a>Ajout de bibliothèques externes
 
 Cet article décrit comment utiliser des bibliothèques externes dans les visuels Power BI. Il contient des informations sur l’installation, l’importation et l’appel de bibliothèques externes à partir du code du visuel Power BI.
 

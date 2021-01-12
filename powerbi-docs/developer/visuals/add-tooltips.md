@@ -1,6 +1,6 @@
 ---
-title: Info-bulles dans les visuels Power BI
-description: Cet article explique comment afficher des info-bulles dans les visuels Power BI.
+title: Info-bulles dans les visuels Power BI de l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Cet article explique comment afficher des info-bulles dans les visuels Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 04/09/2020
-ms.openlocfilehash: 60933d1a44cbf83f719c808b658b06009217ff53
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e3f5486faec033b48ba59b7076d5835035458584
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239963"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889222"
 ---
 # <a name="tooltips-in-power-bi-visuals"></a>Info-bulles dans les visuels Power BI
 
@@ -211,11 +211,11 @@ Vous pouvez définir des info-bulles de page de rapport dans le volet **Format**
 
 ![Info-bulle de page de rapport](media/add-tooltips/report-page-tooltips.png)
 
-* `supportedTypes` : configuration des info-bulles qui est prise en charge par le visuel et reflétée également dans les champs. 
-   * `default` : spécifie si la liaison « automatique » des info-bulles par le biais du champ de données est prise en charge. 
-   * `canvas` : spécifie si les info-bulles de page de rapport sont prises en charge.
+* `supportedTypes` : configuration des info-bulles qui est prise en charge par le visuel et reflétée également dans les champs. 
+   * `default` : spécifie si la liaison « automatique » des info-bulles par le biais du champ de données est prise en charge. 
+   * `canvas` : spécifie si les info-bulles de page de rapport sont prises en charge.
 
-* `roles` : (facultatif) quand cet élément est défini, il détermine les rôles de données qui sont liés à l’option d’info-bulle sélectionnée également dans les champs.
+* `roles` : (facultatif) quand cet élément est défini, il détermine les rôles de données qui sont liés à l’option d’info-bulle sélectionnée également dans les champs.
 
 Pour plus d’informations, consultez les [conseils d’utilisation des info-bulles de page de rapport](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips).
 

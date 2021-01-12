@@ -1,6 +1,6 @@
 ---
-title: Présentation du mappage des vues de données dans les visuels Power BI
-description: Cet article explique comment Power BI transforme les données avant de les transmettre dans des visuels.
+title: Comprendre le mappage des vues de données dans les visuels Power BI de l’analytique incorporée Power BI pour obtenir de meilleurs insights via la BI incorporée
+description: Cet article explique comment Power BI transforme les données avant de les transmettre dans des visuels. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 86572383e2e88f5a1efcf5126828e3365933cbc2
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 063750445f3c8ef1fb50f77535ccf01295bd45ec
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635950"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885657"
 ---
 # <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Présentation du mappage des vues de données dans les visuels Power BI
 

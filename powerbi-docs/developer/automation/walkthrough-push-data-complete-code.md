@@ -1,6 +1,6 @@
 ---
-title: Listing du code complet
-description: 'Procédure pas à pas pour transmettre des données : listing du code complet'
+title: Liste de code complet dans l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Procédure pas à pas pour envoyer (push) des données – Liste de code complet. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: madia
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: f2e421297eb942e6e9a622c91e9d5a074cb042ba
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: d478c742112c15c80657ec424f5a4d6739a3c6d7
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746490"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887474"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Listing du code complet de la transmission de données à un jeu de données
 
@@ -224,11 +224,11 @@ Après avoir suivi les étapes 2 à 5 de **Transmettre des données à un jeu de
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [Transmettre des données à un jeu de données Power BI](walkthrough-push-data.md)
+* [Transmission de données à un jeu de données Power BI](walkthrough-push-data.md)
 * [Inscrire une application auprès d’Azure AD](../embedded/register-app.md)  
 * [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md)  
 * [Créer un jeu de données dans Power BI](walkthrough-push-data-create-dataset.md)  
-* [Obtenir un jeu de données pour ajouter des lignes à une table Power BI](walkthrough-push-data-get-datasets.md)  
+* [Obtenir un jeu de données pour ajouter des lignes à une table Power BI](walkthrough-push-data-get-datasets.md)  
 * [Ajouter des lignes à une table Power BI](walkthrough-push-data-add-rows.md)  
 * [Référence de l’API REST de Power BI](/rest/api/power-bi/)  
 * [Vue d’ensemble de l’API REST Power BI](overview-of-power-bi-rest-api.md)  

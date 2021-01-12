@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 12/24/2019
-ms.openlocfilehash: 53c0af04a76d4cf8cfacd49002434ecbc246fbe8
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e4ddc487f81835edfdc5ad8a4074a91204ee0336
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96394379"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97884783"
 ---
 # <a name="composite-model-guidance-in-power-bi-desktop"></a>Aide sur les modèles composites dans Power BI Desktop
 
@@ -54,8 +54,8 @@ Dans un modèle composite, vous pouvez configurer le mode de stockage pour chaqu
 Plusieurs scénarios sont possibles lorsque Power BI interroge un modèle composite :
 
 - **Interroge uniquement une ou plusieurs tables d’importation ou tables doubles** : toutes les données sont récupérées à partir du cache de modèle. Ce scénario offre les performances les plus rapides possibles. Il est courant pour les tables de type dimension interrogées par des filtres ou des visuels de segment.
-- **Interroge une ou plusieurs tables doubles ou tables DirectQuery à partir de la même source** : toutes les données sont récupérées en envoyant une ou plusieurs requêtes natives à la source DirectQuery. Ce scénario offre les performances les plus rapides possibles, en particulier lorsque les tables sources comportent des index appropriés. Il est courant pour les requêtes qui associent des tables de type dimension et des tables de type fait DirectQuery. Ces requêtes étant _intra-îlots_, toutes les relations un-à-un ou un-à-plusieurs sont évaluées comme des [relations régulières](../transform-model/desktop-relationships-understand.md#regular-relationships).
-- **Toutes les autres requêtes** : ces requêtes impliquent des relations entre îlots, soit parce qu’une table d’importation est associée à une table DirectQuery, soit parce qu’une table double est associée à une table DirectQuery à partir d’une autre source, auquel cas elle se comporte comme une table d’importation. Toutes les relations sont évaluées comme des [relations limitées](../transform-model/desktop-relationships-understand.md#limited-relationships). Cela signifie également que les regroupements appliqués aux tables non DirectQuery doivent être envoyés à la source DirectQuery en tant que table virtuelle. Dans ce cas, la requête native peut être inefficace, en particulier pour les jeux de regroupement volumineux. Elle risque par ailleurs d’exposer des données sensibles.
+- **Interroge une ou plusieurs tables doubles ou tables DirectQuery à partir de la même source** : toutes les données sont récupérées en envoyant une ou plusieurs requêtes natives à la source DirectQuery. Ce scénario offre les performances les plus rapides possibles, en particulier lorsque les tables sources comportent des index appropriés. Il est courant pour les requêtes qui associent des tables de type dimension et des tables de type fait DirectQuery. Ces requêtes étant de type _groupe intrasource_, toutes les relations un-à-un ou un-à-plusieurs sont évaluées comme étant des [relations régulières](../transform-model/desktop-relationships-understand.md#regular-relationships).
+- **Toutes les autres requêtes** : ces requêtes impliquent des relations de groupe intersource, soit parce qu’une table d’importation est associée à une table DirectQuery, soit parce qu’une table double est associée à une table DirectQuery à partir d’une autre source, auquel cas elle se comporte comme une table d’importation. Toutes les relations sont évaluées comme des [relations limitées](../transform-model/desktop-relationships-understand.md#limited-relationships). Cela signifie également que les regroupements appliqués aux tables non DirectQuery doivent être envoyés à la source DirectQuery en tant que table virtuelle. Dans ce cas, la requête native peut être inefficace, en particulier pour les jeux de regroupement volumineux. Elle risque par ailleurs d’exposer des données sensibles.
 
 Suivez par conséquent les recommandations suivantes :
 

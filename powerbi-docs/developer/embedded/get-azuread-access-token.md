@@ -1,6 +1,6 @@
 ---
-title: Authentifier les utilisateurs et obtenir un jeton d’accès Azure AD pour votre application
-description: Découvrez comment inscrire une application dans Azure Active Directory afin de l’utiliser avec l’incorporation de contenu Power BI.
+title: Authentifier les utilisateurs et obtenir un jeton d’accès Azure AD pour votre application d’analytique incorporée Power BI afin d’améliorer l’expérience client de la BI incorporée
+description: Découvrez comment inscrire une application dans Azure Active Directory afin de l’utiliser avec l’incorporation de contenu Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/04/2019
-ms.openlocfilehash: cb7c874fc68da361971c34879f2ea44006402bf4
-ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
+ms.openlocfilehash: 8001dd0e15ef713fa67256a45f645b0d7a0890c0
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96906931"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888440"
 ---
-# <a name="get-an-azure-ad-access-token-for-your-power-bi-application"></a>Obtenir un jeton accès Azure AD pour votre application Power BI
+# <a name="get-an-azure-ad-access-token-for-your-power-bi-application"></a>Obtenir un jeton d’accès Azure AD pour votre application Power BI
 
 Cet article explique comment authentifier les utilisateurs dans votre application Power BI et récupérer un jeton d’accès à utiliser avec l’[API REST Power BI](/rest/api/power-bi/).
 
@@ -198,7 +198,7 @@ var authenticationContext = new AuthenticationContext(AuthorityUrl);
 m_tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
 ```
 
-## <a name="troubleshoot"></a>Dépannage
+## <a name="troubleshoot"></a>Dépanner
 
 Message d’erreur : « AuthenticationContext' ne contient pas de définition pour 'AcquireToken', et aucun 'AcquireToken' accessible qui accepte un premier argument de type 'AuthenticationContext' n’a été trouvé (peut-être vous manque-t-il une directive using ou une référence d’assembly ?) ».
 

@@ -1,6 +1,6 @@
 ---
-title: Introduction à l’utilisation des couleurs dans un visuel Power BI
-description: Cet article explique comment utiliser les utilitaires pour les couleurs afin de simplifier l’application de thèmes et de palettes sur des points de données des visuels Power BI
+title: Introduction à l’utilisation des utilitaires pour les couleurs dans les visuels Power BI de l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Cet article explique comment utiliser les utilitaires pour les couleurs afin de simplifier l’application de thèmes et de palettes sur des points de données des visuels Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,17 +8,17 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 02/14/2020
-ms.openlocfilehash: 8de530871739a18c1afc72cee3e0da5fc70ebb16
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: cc75188d806d653766860b2fada9028477a75f71
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79379349"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887842"
 ---
 # <a name="color-utils"></a>Utilitaires pour les couleurs
 Cet article va vous aider à installer, à importer et à utiliser les utilitaires pour les couleurs. Cet article explique comment utiliser les utilitaires pour les couleurs afin de simplifier l’application de thèmes et de palettes sur des points de données des visuels Power BI.
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 Pour utiliser le package, vous avez besoin de ce qui suit :
 * [node.js](https://nodejs.org) (nous vous recommandons de télécharger la version la plus récente de LTS)
 * [npm](https://www.npmjs.com/) (la version la plus ancienne prise en charge est 3.0.0)
@@ -26,14 +26,14 @@ Pour utiliser le package, vous avez besoin de ce qui suit :
 
 ## <a name="installation"></a>Installation
 
-Pour installer le package, vous devez exécuter la commande suivante dans le répertoire avec votre visuel actuel :
+Pour installer le package, vous devez exécuter la commande suivante dans le répertoire contenant votre visuel actuel :
 
 ```bash
 npm install powerbi-visuals-utils-colorutils --save
 ```
 Cette commande installe le package et ajoute un package comme dépendance á votre ```package.json```
 
-## <a name="usage"></a>Utilisation
+## <a name="usage"></a>Usage
 
 Pour les utilitaires d’interactivité de l’utilisateur, vous devez importer le composant requis dans le code source du visuel.
 ```typescript
@@ -56,7 +56,7 @@ Cette méthode obtient la couleur pour la valeur de série donnée. Si aucune co
 ```typescript
 getColorForSeriesValue(objects: IDataViewObjects, value: PrimitiveValue, themeColorName?: ThemeColorName): string;
 ```
-#### <a name="example"></a>Exemple
+#### <a name="example"></a> Exemple
 ```typescript
 import powerbi from "powerbi-visuals-api";
 import { ColorHelper } from "powerbi-visuals-utils-colorutils";
@@ -109,7 +109,7 @@ Cette méthode obtient la couleur pour la mesure donnée.
 ```typescript
  getColorForMeasure(objects: IDataViewObjects, measureKey: any, themeColorName?: ThemeColorName): string;
 ```
-#### <a name="example"></a>Exemple
+#### <a name="example"></a> Exemple
 ```typescript
 import powerbi from "powerbi-visuals-api";
 import { ColorHelper } from "powerbi-visuals-utils-colorutils";
@@ -153,7 +153,7 @@ Cette méthode retourne le sélecteur normalisé
 ```typescript
 static normalizeSelector(selector: Selector, isSingleSeries?: boolean): Selector;
 ```
-#### <a name="example"></a>Exemple
+#### <a name="example"></a> Exemple
 ```typescript
 import ISelectionId = powerbi.visuals.ISelectionId;
 import { ColorHelper } from "powerbi-visuals-utils-colorutils";
@@ -226,7 +226,7 @@ Convertit la couleur hexadécimale en chaîne RVB.
 function hexToRGBString(hex: string, transparency?: number): string
 ```
 
-#### <a name="example"></a>Exemple
+#### <a name="example"></a> Exemple
 
 ```typescript
 import  { hexToRGBString } from "powerbi-visuals-utils-colorutils";
@@ -243,7 +243,7 @@ Fait pivoter la couleur RVB.
 function rotate(rgbString: string, rotateFactor: number): string
 ```
 
-#### <a name="example"></a>Exemple
+#### <a name="example"></a> Exemple
 
 ```typescript
 import { rotate } from "powerbi-visuals-utils-colorutils";
@@ -258,7 +258,7 @@ Analyse toute chaîne de couleur au format RVB.
 function parseColorString(color: string): RgbColor
 ```
 
-#### <a name="example"></a>Exemple
+#### <a name="example"></a> Exemple
 
 ```typescript
 import { parseColorString } from "powerbi-visuals-utils-colorutils";
@@ -277,7 +277,7 @@ Calcule la couleur de surbrillance à partir de rgbColor en fonction de lumiance
 function calculateHighlightColor(rgbColor: RgbColor, lumianceThreshold: number, delta: number): string
 ```
 
-#### <a name="example"></a>Exemple
+#### <a name="example"></a> Exemple
 
 ```typescript
 import { calculateHighlightColor } from "powerbi-visuals-utils-colorutils";
@@ -297,7 +297,7 @@ Retourne une échelle de couleurs linéaire pour un domaine de nombres donné.
 function createLinearColorScale(domain: number[], range: string[], clamp: boolean): LinearColorScale
 ```
 
-#### <a name="example"></a>Exemple
+#### <a name="example"></a> Exemple
 
 ```typescript
 import { createLinearColorScale } from "powerbi-visuals-utils-colorutils";
@@ -319,7 +319,7 @@ Applique un pourcentage pour chaque canal et retourne la valeur hexadécimale so
 function shadeColor(color: string, percent: number): string
 ```
 
-#### <a name="example"></a>Exemple
+#### <a name="example"></a> Exemple
 
 ```typescript
 import { shadeColor } from "powerbi-visuals-utils-colorutils";
@@ -337,7 +337,7 @@ Superpose une couleur avec opacité sur une couleur d’arrière-plan. Tout cana
 function rgbBlend(foreColor: RgbColor, opacity: number, backColor: RgbColor): RgbColor
 ```
 
-#### <a name="example"></a>Exemple
+#### <a name="example"></a> Exemple
 
 ```typescript
 import { rgbBlend} from "powerbi-visuals-utils-colorutils";
@@ -354,7 +354,7 @@ Fusionne un canal unique pour deux couleurs.
 function channelBlend(foreChannel: number, opacity: number, backChannel: number): number
 ```
 
-#### <a name="example"></a>Exemple
+#### <a name="example"></a> Exemple
 
 ```typescript
 import { channelBlend} from "powerbi-visuals-utils-colorutils";

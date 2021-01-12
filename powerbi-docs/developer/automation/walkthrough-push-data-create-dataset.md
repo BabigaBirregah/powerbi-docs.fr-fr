@@ -1,6 +1,6 @@
 ---
-title: Créer un jeu de données
-description: Procédure pas à pas - Transmettre des données à un jeu de données - Créer un jeu de données dans Power BI
+title: Créer un jeu de données dans l’analytique incorporée Power BI pour obtenir de meilleurs insights via la BI incorporée
+description: Procédure pas à pas – Envoyer (push) des données à un jeu de données – Créer un jeu de données dans Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: madia
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 02/05/2019
-ms.openlocfilehash: d782ee1d7a3fd137624054ee9e2bca0247ddb5ea
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: e2f1bbd1503ca4adeac626d02fc7bf3e41baa9b5
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748882"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887497"
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>Étape 3 : Créer un jeu de données dans Power BI
 Cet article fait partie d’une procédure pas à pas pour [transmettre des données à un jeu de données](walkthrough-push-data.md).

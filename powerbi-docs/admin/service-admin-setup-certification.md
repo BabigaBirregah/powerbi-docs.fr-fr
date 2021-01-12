@@ -8,12 +8,12 @@ ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 10/26/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 17fc02131f13fe7fe7d8fb17af4380f6a013b9e7
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 520a3673d34019c6045988cd5d501e187849a5c6
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413515"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97927056"
 ---
 # <a name="enable-content-certification"></a>Activer la certification de contenu
 
@@ -39,7 +39,7 @@ La certification fait partie de la fonctionnalité d’*approbation* de Power BI
 
 1. Définissez le bouton bascule sur **Activé**.
 1. Si votre organisation dispose d’une stratégie de certification publiée, indiquez son URL ici. Cette URL va devenir le lien **En savoir plus** dans la section Certification de la [boîte de dialogue des paramètres d’approbation](../collaborate-share/service-endorse-content.md#request-content-certification). Si vous n’indiquez pas de lien, les utilisateurs qui veulent demander la certification de leur contenu sont invités à contacter leur administrateur Power BI.
-1. Spécifiez un ou plusieurs groupes de sécurité dont les membres sont autorisés à certifier du contenu. Ces certificateurs autorisés pourront utiliser le bouton Certification de la section Certification de la [boîte de dialogue des paramètres d’approbation](../collaborate-share/service-endorse-content.md#certify-content).
+1. Spécifiez un ou plusieurs groupes de sécurité dont les membres sont autorisés à certifier du contenu. Ces certificateurs autorisés pourront utiliser le bouton Certification de la section Certification de la [boîte de dialogue des paramètres d’approbation](../collaborate-share/service-endorse-content.md#certify-content). Ce champ accepte uniquement les groupes de sécurité. Vous ne pouvez pas entrer d’utilisateurs nommés.
     
     Si un groupe de sécurité contient des sous-groupes de sécurité auxquels vous ne voulez pas accorder de droits de certification, vous pouvez cocher la case **À l’exception de groupes de sécurité spécifiques** et entrer le nom de ces groupes dans la zone de texte qui s’affiche.
 1. Cliquez sur **Appliquer**.

@@ -9,12 +9,12 @@ ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 04/14/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: 71ed2610ea77900fe51542b2257f4795f201694f
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: aac8eac050a3c864833d16a12016a1cc0ae398b7
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96394954"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888348"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
 Consultez cette page pour obtenir des informations sur les problèmes connus et les nouvelles fonctionnalités du **service Power BI**. Pour plus d’informations sur les nouveautés, consultez :
@@ -55,13 +55,13 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 * Nouvelle API de journal d’activité permettant aux administrateurs de service Power BI d’effectuer le suivi des activités des utilisateurs et des administrateurs au sein de leur locataire.
 
 ### <a name="november-2019"></a>Novembre 2019
-* Préversion publique des [grands modèles dans Power BI Premium](../admin/service-premium-large-models.md].
+* Préversion publique des [modèles volumineux dans Power BI Premium](../admin/service-premium-large-models.md).
 * Préversion publique des contrôles Microsoft Cloud App Security dans Power BI.
 
 ### <a name="october-2019"></a>Octobre 2019
 * Nouvelle action Power Automate pour actualiser les jeux de données Power BI.
 * [Liste de contacts](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) pour les rapports et les tableaux de bord dans le service Power BI.
-* Disponibilité générale du [Machine Learning automatisé](../transform-model/service-machine-learning-automated
+* Disponibilité générale du [Machine Learning automatisé](../transform-model/service-machine-learning-automated.md)
 * Préversion publique de la vue de traçabilité des données Power BI.
 
 ### <a name="september-2019"></a>Septembre 2019

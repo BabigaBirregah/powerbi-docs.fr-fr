@@ -1,6 +1,6 @@
 ---
-title: Questions fréquentes sur l’analytique incorporée Power BI
-description: Parcourir une liste de questions fréquentes et de réponses sur Power BI Embedded.
+title: Questions fréquentes sur l’analytique incorporée Power BI et sur la possibilité d’obtenir de meilleurs insights via la BI incorporée
+description: Parcourez une liste de questions fréquentes et les réponses associées sur l’analytique incorporée Power BI qui améliore les insights des clients via la BI incorporée.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 5d402a32571f70f3a5a3b5686e3fc40ef07126c9
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: 4d8096793c4663cbed71c3149bde11305ebee71e
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098326"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886692"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Questions fréquentes sur Power BI Embedded
 

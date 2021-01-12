@@ -1,6 +1,6 @@
 ---
-title: Options de tri pour les visuels Power BI
-description: Cet article décrit le comportement de tri par défaut pour les visuels Power BI.
+title: Options de tri pour les visuels Power BI dans l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Cet article décrit le comportement de tri par défaut pour les visuels Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: 3cb8f5af63960667dc46cab1d818ba48943fd582
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 0d24719b486608c283ec73f0188092a1ece3155e
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79378068"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889245"
 ---
 # <a name="sorting-options-for-power-bi-visuals"></a>Options de tri pour les visuels Power BI
 
@@ -39,8 +39,8 @@ Le tri implicite est un tri avec le paramètre de tableau `clauses`, qui décrit
 
 Les paramètres `clauses` peuvent contenir plusieurs objets avec deux paramètres :
 
-- `role` : détermine `DataMapping` pour le tri.
-- `direction` : détermine le sens du tri (1 = croissant, 2 = décroissant).
+- `role` : détermine `DataMapping` pour le tri.
+- `direction` : détermine le sens du tri (1 = croissant, 2 = décroissant).
 
 ```json
     "sorting": {

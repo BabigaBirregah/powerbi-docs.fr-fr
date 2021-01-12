@@ -1,6 +1,6 @@
 ---
-title: Obtenir un jeu de données pour ajouter des lignes
-description: 'Procédure pas à pas pour transmettre des données : obtenir un jeu de données pour ajouter des lignes à une table Power BI'
+title: Obtenir un jeu de données pour ajouter des lignes dans l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Procédure pas à pas pour envoyer (push) des données – Obtenir un jeu de données pour ajouter des lignes à une table Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: madia
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 02/05/2019
-ms.openlocfilehash: a150666eafd8dc11b573150455775d2ecf6f7f1b
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: e1be761f68dfcd58de8623618acd859694b95bde
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748307"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887451"
 ---
 # <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>Étape 4 : Obtenir un jeu de données pour ajouter des lignes à une table Power BI
 
@@ -27,9 +27,9 @@ Voici comment obtenir un jeu de données.
 
 ## <a name="get-a-power-bi-dataset"></a>Obtenir un jeu de données Power BI
 
-> **REMARQUE** : Avant de commencer, veillez à suivre les étapes précédentes de la procédure pas à pas [Transmettre des données à un jeu de données](walkthrough-push-data.md).
+> **REMARQUE** : avant de commencer, veillez à suivre les étapes précédentes de la procédure pas à pas intitulée [Transmettre des données à un jeu de données](walkthrough-push-data.md).
 
-1. Dans le projet Application console que vous avez créé à l’étape 2 de la procédure pas à pas pour transmettre des données, [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md), installez le package NuGet Newtonsoft.Json. Voici comment installer le package :
+1. Dans le projet Application console que vous avez créé à l’étape 2 de la procédure pas à pas pour transmettre des données, [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md), installez le package NuGet Newtonsoft.Json. Voici comment installer le package :
 
      a. Dans Visual Studio 2015, choisissez **Outils** > **Gestionnaire de package NuGet** > **Console du Gestionnaire de package**.
 
@@ -266,7 +266,7 @@ namespace walkthrough_push_data
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [Ajouter des lignes à une table Power BI](walkthrough-push-data-add-rows.md)  
+* [Ajouter des lignes à une table Power BI](walkthrough-push-data-add-rows.md)  
 * [Newtonsoft.Json](https://www.newtonsoft.com/json)  
 * [Obtenir des jeux de données](/rest/api/power-bi/datasets/getdatasets)  
 * [Transmettre des données à Power BI](walkthrough-push-data.md)  

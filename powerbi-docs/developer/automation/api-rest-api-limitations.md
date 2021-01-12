@@ -1,6 +1,6 @@
 ---
-title: Limites de l’API REST de Power BI
-description: L’API REST de Power BI présente les limites suivantes
+title: Limitations des API REST Power BI dans l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: L’API REST de Power BI présente les limites suivantes. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: de9fd241959b679a0da7926cd6b2254689afbfd2
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 1196917f0223ccde012d203d75c4e96fbc3b9dcf
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747272"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887658"
 ---
 # <a name="power-bi-rest-api-limitations"></a>Limites de l’API REST de Power BI  
   

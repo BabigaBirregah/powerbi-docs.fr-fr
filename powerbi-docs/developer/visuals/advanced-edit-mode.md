@@ -1,6 +1,6 @@
 ---
-title: Mode d’édition avancé dans les visuels Power BI
-description: Cet article explique comment définir des contrôles d’interface utilisateur avancés dans les visuels Power BI.
+title: Mode d’édition avancée dans les visuels Power BI de l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Cet article explique comment définir des contrôles d’interface utilisateur avancés dans les visuels Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 97242883fe90c8f5e115818a24e4bb1c49f69b77
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 02f02f23d3dfd7ec514e17d1bab17be715e9cd7d
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79380552"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889130"
 ---
 # <a name="advanced-edit-mode-in-power-bi-visuals"></a>Mode d’édition avancé dans les visuels Power BI
 
@@ -21,7 +21,7 @@ Si vous souhaitez inclure des contrôles d’interface utilisateur avancés dans
 
 Par défaut, le visuel ne prend pas en charge le mode d’édition avancé. Si un comportement différent est requis, vous pouvez le spécifier explicitement dans le fichier *capabilities.json* du visuel, en définissant la propriété `advancedEditModeSupport`.
 
-Valeurs possibles :
+Les valeurs possibles sont les suivantes :
 
 - `0` - NotSupported
 
@@ -43,8 +43,8 @@ Si la propriété `advancedEditModeSupport` n’est pas spécifiée dans le fich
 
 Quand vous sélectionnez **Modifier**, le visuel obtient un appel update() où EditMode est défini sur `Advanced`. Selon la valeur qui est définie dans le fichier *capabilities.json*, les actions suivantes se produisent :
 
-* `SupportedNoAction` : aucune action supplémentaire n’est requise par l’hôte.
-* `SupportedInFocus` : l’hôte affiche le visuel en mode Focus.
+* `SupportedNoAction` : aucune action supplémentaire n’est requise par l’hôte.
+* `SupportedInFocus` : l’hôte affiche le visuel en mode Focus.
 
 ## <a name="exit-advanced-edit-mode"></a>Quitter le mode d’édition avancé
 

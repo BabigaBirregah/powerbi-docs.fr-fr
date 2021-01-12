@@ -1,21 +1,21 @@
 ---
 title: Power BI for les clients du gouvernement des États-Unis – Vue d’ensemble
-description: Les clients du gouvernement des États-Unis peuvent ajouter un abonnement Power BI Pro à leur offre Microsoft 365 Secteur Public. Découvrez comment vous inscrire, vous connecter et connaître la disponibilité des fonctionnalités dans cette description du service.
+description: Les clients du gouvernement des États-Unis peuvent ajouter un abonnement Power BI à leur offre Microsoft 365 Secteur Public. Découvrez comment vous inscrire, vous connecter et connaître la disponibilité des fonctionnalités dans cette description du service.
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/17/2020
-ms.custom: licensing support
+ms.date: 01/05/2021
+ms.custom: gcc
 LocalizationGroup: Get started
-ms.openlocfilehash: e8cf03d90165463fd1e59bf4c4394c1da94e995e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 9b52e0698f6b9c1ae779bf21738acee30db7447d
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407857"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97927094"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI pour les clients du gouvernement des États-Unis
 
@@ -113,9 +113,14 @@ Pour configurer des pare-feu pour les bases de données SQL, consultez [Créer e
 
 ## <a name="power-bi-feature-availability"></a>Disponibilité des fonctionnalités de Power BI
 
-Pour répondre aux besoins des clients du cloud pour le secteur public, il existe quelques différences entre les offres pour le gouvernement et les offres commerciales. Notre objectif est de rendre toutes les fonctionnalités disponibles dans les clouds du secteur public dans un délai de 30 jours de disponibilité générale. Dans certains cas, les dépendances sous-jacentes nous empêchent de rendre une fonctionnalité disponible.
+Pour répondre aux besoins des clients du cloud pour le secteur public, il existe quelques différences entre les offres pour le gouvernement et les offres commerciales. Notre objectif est de rendre toutes les fonctionnalités disponibles dans les clouds du secteur public dans un délai de 30 jours de disponibilité générale. Dans certains cas, les dépendances sous-jacentes nous empêchent de rendre une fonctionnalité disponible. La liste ci-dessous présente les fonctionnalités qui ne sont pas encore disponibles dans un environnement de secteur public particulier ou qui sont disponibles avec des fonctionnalités limitées. La liste utilise la clé suivante :
 
-Le tableau suivant liste les fonctionnalités qui ne sont pas disponibles dans un environnement de secteur public déterminé. Nous incluons la période de mise à disposition estimée en cas de lancement prévu :
+|Clé |Description|
+|-----|------|
+|![disponible](../media/yes.png)|La fonctionnalité est disponible dans l’environnement, hormis les exceptions définies dans les notes de bas de page.|
+|![non disponible](../media/no.png)| La fonctionnalité n’est pas disponible dans l’environnement et nous n’avons pas de date de mise à disposition à communiquer pour le moment.|
+
+En cas de lancement prévu pour un environnement donné, nous indiquons le trimestre auquel elle devrait être mise à disposition.
 
 |Caractéristique |GCC |GCC High |DoD|
 |------|------|------|------|
@@ -123,13 +128,13 @@ Le tableau suivant liste les fonctionnalités qui ne sont pas disponibles dans u
 |[Incorporation dans SharePoint Online à l’aide du composant WebPart Power BI](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![disponible](../media/yes.png)|![Disponible](../media/yes.png)|![non disponible](../media/no.png)|
 |[Connectivité Power Automate pour les alertes de données](../connect-data/power-bi-data-sources.md)|![disponible](../media/yes.png)|![disponible](../media/yes.png)|![non disponible](../media/no.png)|
 |[Onglet Power BI dans Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>2</sup>|![disponible](../media/yes.png)|![non disponible](../media/no.png)|![non disponible](../media/no.png)|
-|[Grands modèles](service-premium-large-models.md) | T4 2020 |T4 2020| ![non disponible](../media/no.png) |
-|[Dataflows - Optimisation du moteur de calcul SQL](../transform-model/dataflows/dataflows-premium-features.md) | T4 2020 |T4 2020| ![non disponible](../media/no.png) |
-|[Dataflows - Requête directe](../transform-model/dataflows/dataflows-configure-consume.md) | T4 2020 |T4 2020|![non disponible](../media/no.png)|
-|[Protection des données (étiquettes MIP)](service-security-sensitivity-label-overview.md)|T4 2020|T4 2020 |T4 2020|
-|[Applications modèles](../connect-data/service-template-apps-overview.md)<sup>3</sup>|T4 2020 |T4 2020| T4 2020|
-|[Visuels personnalisés](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|T4 2020 |T4 2020| T4 2020|
-|[Azure Stream Analytics](/azure/stream-analytics/stream-analytics-power-bi-dashboard)| T4 2020|T4 2020|T4 2020|
+|[Grands modèles](service-premium-large-models.md) | ![non disponible](../media/no.png) |![non disponible](../media/no.png)| ![non disponible](../media/no.png) |
+|[Dataflows - Optimisation du moteur de calcul SQL](../transform-model/dataflows/dataflows-premium-features.md) | ![non disponible](../media/no.png) |![non disponible](../media/no.png)| ![non disponible](../media/no.png) |
+|[Dataflows - Requête directe](../transform-model/dataflows/dataflows-configure-consume.md) | ![non disponible](../media/no.png) |![non disponible](../media/no.png)|![non disponible](../media/no.png)|
+|[Protection des données (étiquettes MIP)](service-security-sensitivity-label-overview.md)|![non disponible](../media/no.png)|![non disponible](../media/no.png) |![non disponible](../media/no.png)|
+|[Applications modèles](../connect-data/service-template-apps-overview.md)<sup>3</sup>|![non disponible](../media/no.png) |![non disponible](../media/no.png)| ![non disponible](../media/no.png)|
+|[Visuels personnalisés](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|![non disponible](../media/no.png) |![non disponible](../media/no.png)| ![non disponible](../media/no.png)|
+|[Azure Stream Analytics](/azure/stream-analytics/stream-analytics-power-bi-dashboard)| ![non disponible](../media/no.png)|![non disponible](../media/no.png)|![non disponible](../media/no.png)|
 |[Connecteur de données de qualité d’appel](/microsoftteams/cqd-power-bi-connector)|![non disponible](../media/no.png)|![non disponible](../media/no.png)|![non disponible](../media/no.png)|
 |[Apportez votre propre stockage (Azure Data Lake Gen2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![non disponible](../media/no.png)|![non disponible](../media/no.png)|![non disponible](../media/no.png)|
 |[Génération d’un code QR](../create-reports/service-create-qr-code-for-tile.md)|![non disponible](../media/no.png)|![non disponible](../media/no.png)|![non disponible](../media/no.png)|

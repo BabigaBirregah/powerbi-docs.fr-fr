@@ -1,6 +1,6 @@
 ---
-title: Obtenir un jeton d’accès d’authentification
-description: Procédure pas à pas pour envoyer (push) des données - Obtenir un jeton d’accès d’authentification
+title: Obtenir un jeton d’accès d’authentification dans l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Procédure pas à pas pour envoyer (push) des données – Obtenir un jeton d’accès d’authentification. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: madia
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/29/2019
-ms.openlocfilehash: b66c87d88e08a4c1f9ee4f9aebdbf44516d9cb43
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 22d30e14256a2e58e05e17207380842392fe0c23
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746513"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887405"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Étape 2 : Obtenir un jeton d’accès d’authentification
 
@@ -31,7 +31,7 @@ Cette procédure nécessite Visual Studio 2015 ou version ultérieure.
 
 2. Installez le [package NuGet Bibliothèque d’authentification Azure AD pour .NET](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727). Votre application .NET a besoin de ce package pour obtenir un jeton de sécurité d’authentification. 
 
-     a. Sélectionnez **Outils** > **Gestionnaire de package NuGet** > **Console du Gestionnaire de package**.
+     a. Cliquez sur **Outils** > **Gestionnaire de package NuGet** > **Console du Gestionnaire de package**.
 
      b. Entrez **Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612**.
 

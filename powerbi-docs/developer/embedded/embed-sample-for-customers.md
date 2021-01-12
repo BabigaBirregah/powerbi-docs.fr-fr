@@ -1,6 +1,6 @@
 ---
-title: Incorporer du contenu dans votre application d’analytique incorporée Power BI pour vos clients
-description: Découvrez comment incorporer un rapport, un tableau de bord ou une vignette dans un exemple d’analytique incorporée dans Power BI.
+title: Incorporer du contenu dans votre application d’analytique incorporée Power BI pour offrir de meilleurs insights à vos clients via la BI incorporée
+description: Découvrez comment incorporer un rapport, un tableau de bord ou une vignette dans un exemple d’analytique incorporée dans Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/22/2020
-ms.openlocfilehash: 5417266658a493bc81da882761431aa3db072dbe
-ms.sourcegitcommit: 1691ce556ab5b22e6f9d06086a054d165d482809
+ms.openlocfilehash: f6ca898bafff0b3375df65b63f913eb81d8dc006
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97745113"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888946"
 ---
 # <a name="tutorial-embed-power-bi-content-using-a-sample-embed-for-your-customers-application"></a>Tutoriel : Incorporer du contenu Power BI en utilisant un exemple d’application *Incorporer pour vos clients*
 

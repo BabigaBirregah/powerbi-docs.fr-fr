@@ -1,6 +1,6 @@
 ---
-title: Journalisation des diagnostics pour le service Power BI Embedded dans Azure | Microsoft Docs
-description: En savoir plus sur la configuration de la journalisation des diagnostics pour le service Power BI Embedded dans Azure.
+title: Journalisation des diagnostics pour le service Power BI Embedded dans Azure pour votre solution de BI incorporée avec l’analytique incorporée Power BI
+description: Découvrez comment configurer la journalisation des diagnostics pour le service Power BI Embedded dans Azure, pour votre solution de BI incorporée avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: 4ab6a0d6135fcd2428df03e84596eebf6bba6704
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: c98fbf4aa05a634a6755a77f79c8189226c12eed
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417356"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887381"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Journalisation des diagnostics pour Power BI Embedded dans Azure
 

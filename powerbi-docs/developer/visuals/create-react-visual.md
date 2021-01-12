@@ -1,6 +1,6 @@
 ---
-title: 'Tutoriel : Créer un visuel basé sur React pour Power BI'
-description: Ce didacticiel montre comment créer un visuel Power BI à l’aide de React. Il affiche une valeur dans un cercle. La taille et les paramètres adaptatifs vous permettent de le personnaliser.
+title: Créer un visuel basé sur React pour Power BI dans l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Ce didacticiel montre comment créer un visuel Power BI à l’aide de React. Il affiche une valeur dans un cercle. La taille et les paramètres adaptatifs vous permettent de le personnaliser. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/30/2020
-ms.openlocfilehash: d8e7b5dca207aef1a4f119bf324662dbcaa1bbab
-ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
+ms.openlocfilehash: 04c73d88d4051aa024a2bf3a56f3bdaf02b9dc1e
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94513318"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889011"
 ---
 # <a name="tutorial-create-a-react-based-visual"></a>Tutoriel : Créer des visuels basés sur React
 

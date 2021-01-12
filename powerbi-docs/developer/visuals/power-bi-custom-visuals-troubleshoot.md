@@ -1,6 +1,6 @@
 ---
-title: Résolution des problèmes de développement des visuels Power BI
-description: Cet article décrit certains problèmes courants que vous pouvez rencontrer quand vous développez ou créez un visuel Power BI personnalisé.
+title: Résolution des problèmes liés au développement de visuels Power BI dans l’analytique incorporée Power BI pour obtenir de meilleurs insights via la BI incorporée
+description: Cet article décrit certains problèmes courants que vous pouvez rencontrer quand vous développez ou créez un visuel Power BI personnalisé. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: troubleshooting
 ms.date: 11/06/2018
-ms.openlocfilehash: fda4bbddb2f0b1a878e0ddf85f31795405c66331
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 440bb6648dca1eaa85b697a10e9fd41180c66d7e
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417149"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888095"
 ---
-# <a name="troubleshoot-power-bi-visuals"></a>Résoudre les problèmes de visuels Power BI
+# <a name="troubleshoot-power-bi-visuals"></a>Résoudre les problèmes de visuels Power BI
 
-## <a name="debug"></a>Déboguer
+## <a name="debug"></a>Débogage
 
 **Commande Pbiviz introuvable (ou erreurs similaires)**
 
@@ -34,7 +34,7 @@ Si vous ne le voyez pas, assurez-vous que vous l’avez activé dans les paramè
 > [!NOTE]
 > L’élément visuel de débogage est actuellement disponible uniquement dans le service Power BI, pas dans Power BI Desktop ou dans l’application mobile. L’élément visuel empaqueté fonctionne partout.
 
-**Impossible de contacter le serveur de visuels**
+**Impossible de contacter le serveur d’éléments visuels**
 
 Exécutez le serveur de visuels avec la commande `pbiviz start` dans la ligne de commande de votre terminal à partir de la racine de votre projet de visuel. Si le serveur n’est pas en cours d’exécution, vos certificats SSL n’ont probablement pas été correctement installés.
 

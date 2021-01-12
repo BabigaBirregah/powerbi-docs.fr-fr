@@ -1,6 +1,6 @@
 ---
-title: Marche à suivre pour les visuels Power BI
-description: Découvrez comment publier votre visuel personnalisé sur Microsoft AppSource pour que d’autres utilisateurs puissent le trouver et l’utiliser après l’avoir acheté.
+title: Recommandations pour les visuels Power BI dans l’analytique incorporée Power BI pour obtenir de meilleurs insights via la BI incorporée
+description: Découvrez comment publier votre visuel personnalisé sur Microsoft AppSource pour que d’autres utilisateurs puissent le trouver et l’utiliser après l’avoir acheté. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 08/12/2020
-ms.openlocfilehash: 427fba66b34fefb0b7ca9d70a29b08ebe7d743cb
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 67875f9b571e0a0376046a3cb080551d23e579e4
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416137"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889291"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Marche à suivre pour les visuels Power BI
 Avant de [publier](office-store.md) votre visuel Power BI sur Microsoft AppSource pour que d’autres utilisateurs puissent le découvrir et l’utiliser, veillez à suivre les instructions pour créer une expérience de qualité pour vos utilisateurs.

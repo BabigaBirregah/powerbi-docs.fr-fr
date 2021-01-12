@@ -7,19 +7,19 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/01/2020
-ms.openlocfilehash: be552df28bebb5876d24da8bbecf66ea503fdb04
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 01/04/2021
+ms.openlocfilehash: 67efe0e7abd23792f46561f78b0b048b431561a4
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415240"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888003"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports paginés dans le service Power BI 
 
 Vous pouvez maintenant configurer des abonnements par e-mail pour vous-même et d’autres personnes à des rapports paginés dans le service Power BI. En général, le processus est le même que pour un [abonnement aux rapports et tableaux de bord du service Power BI](end-user-subscribe.md). Cet article énumère les différences et considérations. 
 
-Lors de la configuration des abonnements, vous choisissez la fréquence à laquelle vous voulez recevoir des e-mails : quotidienne, hebdomadaire, mensuelle ou toutes les heures. Vous pouvez également choisir la ou les heures auxquelles l’abonnement doit être exécuté. Vous pouvez définir en tout jusqu’à 24 abonnements différents pour chaque rapport. 
+Lors de la configuration des abonnements, vous choisissez la fréquence à laquelle vous voulez recevoir des e-mails : quotidienne, hebdomadaire, mensuelle ou toutes les heures. Vous pouvez également choisir la ou les heures auxquelles l’abonnement doit être exécuté. Le nombre d’abonnements que vous pouvez configurer pour chaque rapport est illimité. 
 
 ## <a name="considerations-for-paginated-report-subscriptions"></a>Considérations sur les abonnements aux rapports paginés 
 

@@ -1,6 +1,6 @@
 ---
-title: Questions et réponses dans Power BI Embedded
-description: Power BI Embedded vous permet d’incorporer Questions et réponses dans une application et permet aux utilisateurs de poser des questions en utilisant un langage naturel.
+title: Questions et réponses dans l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: L’analytique incorporée Power BI vous permet d’incorporer des questions et réponses dans une application, ce qui permet à vos utilisateurs de poser des questions en langage naturel. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 11/20/2017
-ms.openlocfilehash: 0106cc9ddb0e82a7b40e362342fce5196ef655c5
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 43e886e6472c6d95b900ccdb5c2e73b8dca3d4a0
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749273"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886600"
 ---
-# <a name="qa-in-power-bi-embedded"></a>Questions et réponses dans Power BI Embedded
+# <a name="qa-in-power-bi-embedded-analytics"></a>Questions et réponses dans l’analytique incorporée Power BI
 
-Power BI Embedded vous permet d’incorporer Questions et réponses dans une application et permet aux utilisateurs de poser des questions en utilisant un langage naturel, ainsi que de recevoir des réponses immédiates sous forme de visuels, par exemple des graphiques.
+L’analytique incorporée Power BI vous permet d’incorporer des questions et réponses dans une application, ce qui permet à vos utilisateurs de poser des questions en langage naturel et de recevoir des réponses immédiates sous forme de visuels, par exemple des graphiques.
 
 ![Question Interactive Questions et réponses dans une image incorporée](media/qanda/embedded-qanda.gif)
 

@@ -1,6 +1,6 @@
 ---
-title: Présentation de l’utilisation des utilitaires de mise en forme dans un visuel Power BI
-description: Cet article explique comment utiliser les utilitaires de mise en forme pour mettre en forme des valeurs et appliquer la localisation à des valeurs dans un visuel Power BI
+title: Introduction à l’utilisation des utilitaires de mise en forme dans les visuels Power BI de l’analytique incorporée Power BI pour obtenir de meilleurs insights via la BI incorporée
+description: Cet article explique comment utiliser les utilitaires de mise en forme pour mettre en forme les valeurs et appliquer la localisation à des valeurs dans un visuel Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: dc2d036ab1e3e3dab551269163ced2f066a71626
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 564f6587ff361e3b2860bafb4ae43bc19ad8c2ba
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79378021"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887796"
 ---
 # <a name="formatting-utils"></a>Utilitaires de mise en forme
 
@@ -48,7 +48,7 @@ Cette fonction mesure la largeur du texte avec les propriétés de texte SVG don
 function measureSvgTextWidth(textProperties: TextProperties, text?: string): number;
 ```
 
-Exemple d’utilisation d’`measureSvgTextWidth` :
+Exemple d’utilisation de `measureSvgTextWidth` :
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -74,7 +74,7 @@ Cette fonction retourne un rectangle avec les propriétés de texte SVG données
 function measureSvgTextRect(textProperties: TextProperties, text?: string): SVGRect;
 ```
 
-Exemple d’utilisation d’`measureSvgTextRect` :
+Exemple d’utilisation de `measureSvgTextRect` :
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -100,7 +100,7 @@ Cette fonction mesure la hauteur du texte avec les propriétés de texte SVG don
 function measureSvgTextHeight(textProperties: TextProperties, text?: string): number;
 ```
 
-Exemple d’utilisation d’`measureSvgTextHeight` :
+Exemple d’utilisation de `measureSvgTextHeight` :
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -127,7 +127,7 @@ Cette fonction retourne une base de référence des propriétés de texte SVG do
 function estimateSvgTextBaselineDelta(textProperties: TextProperties): number;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -153,7 +153,7 @@ Cette fonction estime la hauteur du texte avec les propriétés de texte SVG don
 function estimateSvgTextHeight(textProperties: TextProperties, tightFightForNumeric?: boolean): number;
 ```
 
-Exemple d’utilisation d’`estimateSvgTextHeight` :
+Exemple d’utilisation de `estimateSvgTextHeight` :
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -215,7 +215,7 @@ Cette fonction extrait les propriétés de mesure du texte de l’élément DOM 
 function getMeasurementProperties(element: Element): TextProperties;
 ```
 
-Exemple d’utilisation d’`getMeasurementProperties` :
+Exemple d’utilisation de `getMeasurementProperties` :
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -256,7 +256,7 @@ Cette fonction extrait les propriétés de mesure du texte de l’élément de t
 function getSvgMeasurementProperties(svgElement: SVGTextElement): TextProperties;
 ```
 
-Exemple d’utilisation d’`getSvgMeasurementProperties` :
+Exemple d’utilisation de `getSvgMeasurementProperties` :
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -296,7 +296,7 @@ Cette fonction retourne la largeur d’un élément div.
 function getDivElementWidth(element: JQuery): string;
 ```
 
-Exemple d’utilisation d’`getDivElementWidth` :
+Exemple d’utilisation de `getDivElementWidth` :
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -323,7 +323,7 @@ Compare la taille de texte des étiquettes à la taille disponible et affiche de
 function getTailoredTextOrDefault(textProperties: TextProperties, maxWidth: number): string;
 ```
 
-Exemple d’utilisation d’`getTailoredTextOrDefault` :
+Exemple d’utilisation de `getTailoredTextOrDefault` :
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -353,7 +353,7 @@ Cette fonction vérifie si une chaîne se termine par une sous-chaîne.
 function endsWith(str: string, suffix: string): boolean;
 ```
 
-Exemple d’utilisation d’`endsWith` :
+Exemple d’utilisation de `endsWith` :
 
 ```typescript
 import { stringExtensions } from "powerbi-visuals-utils-formattingutils";
@@ -372,7 +372,7 @@ Cette fonction compare les chaînes en ignorant la casse.
 function equalIgnoreCase(a: string, b: string): boolean;
 ```
 
-Exemple d’utilisation d’`equalIgnoreCase` :
+Exemple d’utilisation de `equalIgnoreCase` :
 
 ```typescript
 import { stringExtensions } from "powerbi-visuals-utils-formattingutils";
@@ -391,7 +391,7 @@ Cette fonction vérifie si une chaîne commence par une sous-chaîne.
 function startsWith(a: string, b: string): boolean;
 ```
 
-Exemple d’utilisation d’`startsWith` :
+Exemple d’utilisation de `startsWith` :
 
 ```typescript
 import { stringExtensions } from "powerbi-visuals-utils-formattingutils";
@@ -402,7 +402,7 @@ stringExtensions.startsWith("Power BI", "Power");
 // returns: true
 ```
 
-### <a name="contains"></a>contient
+### <a name="contains"></a>contains
 
 Cette fonction vérifie si une chaîne contient une sous-chaîne spécifiée.
 
@@ -629,7 +629,7 @@ interface ValueFormatterOptions {
 }
 ```
 
-## <a name="create"></a>créer
+## <a name="create"></a>create
 
 Cette méthode crée une instance d’IValueFormatter.
 

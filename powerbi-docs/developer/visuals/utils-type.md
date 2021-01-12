@@ -1,6 +1,6 @@
 ---
-title: Introduction à l’utilisation des utilitaires de type dans un visuel Power BI
-description: Cet article explique comment utiliser les utilitaires SVG pour étendre les types de base pour les visuels Power BI
+title: Introduction à l’utilisation des utilitaires pour les types dans les visuels Power BI de l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Cet article explique comment utiliser les utilitaires pour les types pour étendre les types de base des visuels Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: 5a3cfb7ea9c9f398193b45652aa43c6b83c8f70b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 4f81f55f8d5cfc54020b3b4e02e8be55fb65b0d1
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79377992"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888118"
 ---
 # <a name="type-utils"></a>Utilitaires pour les types
 
@@ -40,7 +40,7 @@ Cette fonction retourne une puissance de 10.
 function pow10(exp: number): number;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { double } from "powerbi-visuals-utils-typeutils";
@@ -59,7 +59,7 @@ Cette fonction retourne un logarithme de base 10 du nombre.
 function log10(val: number): number;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { double } from "powerbi-visuals-utils-typeutils";
@@ -78,7 +78,7 @@ Cette fonction retourne une puissance de 10 représentant la précision du nombr
 function getPrecision(x: number, decimalDigits?: number): number;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { double } from "powerbi-visuals-utils-typeutils";
@@ -97,7 +97,7 @@ Cette fonction vérifie si un delta entre deux nombres est inférieur à la pré
 function equalWithPrecision(x: number, y: number, precision?: number): boolean;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { double } from "powerbi-visuals-utils-typeutils";
@@ -116,7 +116,7 @@ Cette fonction vérifie si la première valeur est inférieure à la deuxième v
 function lessWithPrecision(x: number, y: number, precision?: number): boolean;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { double } from "powerbi-visuals-utils-typeutils";
@@ -135,7 +135,7 @@ Cette fonction vérifie si la première valeur est inférieure ou égale à la d
 function lessOrEqualWithPrecision(x: number, y: number, precision?: number): boolean;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { double } from "powerbi-visuals-utils-typeutils";
@@ -154,7 +154,7 @@ Cette fonction vérifie si la première valeur est supérieure à la deuxième v
 function greaterWithPrecision(x: number, y: number, precision?: number): boolean;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { double } from "powerbi-visuals-utils-typeutils";
@@ -173,7 +173,7 @@ Cette fonction vérifie si la première valeur est supérieure ou égale à la d
 function greaterOrEqualWithPrecision(x: number, y: number, precision?: number): boolean;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { double } from "powerbi-visuals-utils-typeutils";
@@ -192,7 +192,7 @@ Cette fonction arrondit le nombre à l’entier inférieur ou égal avec la pré
 function floorWithPrecision(x: number, precision?: number): number;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { double } from "powerbi-visuals-utils-typeutils";
@@ -211,7 +211,7 @@ Cette fonction `ceils` le nombre à l’entier supérieur ou égal avec la préc
 function ceilWithPrecision(x: number, precision?: number): number;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { double } from "powerbi-visuals-utils-typeutils";
@@ -230,7 +230,7 @@ Cette fonction arrondit le nombre vers le bas à la précision fournie.
 function floorToPrecision(x: number, precision?: number): number;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { double } from "powerbi-visuals-utils-typeutils";
@@ -249,7 +249,7 @@ Cette fonction `ceils` le nombre vers le haut à la précision fournie.
 function ceilToPrecision(x: number, precision?: number): number;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { double } from "powerbi-visuals-utils-typeutils";
@@ -268,7 +268,7 @@ Cette fonction arrondit le nombre à la précision fournie.
 function roundToPrecision(x: number, precision?: number): number;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { double } from "powerbi-visuals-utils-typeutils";
@@ -287,7 +287,7 @@ Cette fonction retourne un nombre compris entre le minimum et le maximum.
 function ensureInRange(x: number, min: number, max: number): number;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { double } from "powerbi-visuals-utils-typeutils";
@@ -306,7 +306,7 @@ Cette fonction arrondit le nombre.
 function round(x: number): number;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { double } from "powerbi-visuals-utils-typeutils";
@@ -325,7 +325,7 @@ Cette fonction supprime le bruit décimal.
 function removeDecimalNoise(value: number): number;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { double } from "powerbi-visuals-utils-typeutils";
@@ -344,7 +344,7 @@ Cette fonction vérifie si le nombre est un entier.
 function isInteger(value: number): boolean;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { double } from "powerbi-visuals-utils-typeutils";
@@ -363,7 +363,7 @@ Cette fonction incrémente le nombre du nombre fourni et retourne le nombre arro
 function toIncrement(value: number, increment: number): number;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { double } from "powerbi-visuals-utils-typeutils";
@@ -388,7 +388,7 @@ Cette fonction retourne un nouvel objet avec l’objet fourni comme son prototyp
 function inherit<T>(obj: T, extension?: (inherited: T) => void): T;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { prototype } from "powerbi-visuals-utils-typeutils";
@@ -413,7 +413,7 @@ Cette fonction retourne un nouvel objet avec l’objet fourni comme son prototyp
 function inheritSingle<T>(obj: T): T;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { prototype } from "powerbi-visuals-utils-typeutils";
@@ -444,7 +444,7 @@ Cette fonction convertit la valeur de pixel en chaîne.
 function toString(px: number): string;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { pixelConverter } from "powerbi-visuals-utils-typeutils";
@@ -463,7 +463,7 @@ Cette fonction convertit la valeur de point fournie en valeur de pixel et retour
 function fromPoint(pt: number): string;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { pixelConverter } from "powerbi-visuals-utils-typeutils";
@@ -482,7 +482,7 @@ Cette fonction convertit la valeur de point fournie en valeur de pixel.
 function fromPointToPixel(pt: number): number;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { pixelConverter } from "powerbi-visuals-utils-typeutils";
@@ -501,7 +501,7 @@ Cette fonction convertit la valeur de pixel fournie en valeur de point.
 function toPoint(px: number): number;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { pixelConverter } from "powerbi-visuals-utils-typeutils";

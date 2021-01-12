@@ -1,6 +1,6 @@
 ---
-title: Conseils relatifs aux performances
-description: Guide pratique pour créer un visuel Power BI hautes performances
+title: Conseils pour améliorer les performances dans l’analytique incorporée Power BI et obtenir de meilleurs insights via la BI incorporée
+description: Guide pratique pour créer un visuel Power BI hautes performances. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 04/20/2020
-ms.openlocfilehash: c22c634ef59a1aae2994dcacaae62dc8ebed7474
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: c8bcf5e13ba769b976ab123adb3ba37f46b0359e
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746073"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885933"
 ---
 # <a name="how-to-build-a-high-performance-power-bi-visual"></a>Guide pratique pour créer un visuel Power BI hautes performances
 Cet article aborde les techniques permettant à un développeur d’obtenir des performances élevées lors du rendu des visuels. 

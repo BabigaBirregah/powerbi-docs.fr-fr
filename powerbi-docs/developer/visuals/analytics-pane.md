@@ -1,6 +1,6 @@
 ---
-title: Volet Analytique des visuels Power BI
-description: Cet article décrit comment créer des lignes de référence dynamiques dans les visuels Power BI.
+title: Volet Analytique dans les visuels Power BI de l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Cet article décrit comment créer des lignes de référence dynamiques dans les visuels Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 85dc34a2dbdfba02623f4d369d72311d9a93e997
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: dd3d3a8a3553dc9c3ab8c2867c6fee319ad74a07
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414182"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889153"
 ---
 # <a name="the-analytics-pane-in-power-bi-visuals"></a>Volet Analytique des visuels Power BI
 

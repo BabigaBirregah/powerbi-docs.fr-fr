@@ -10,12 +10,12 @@ ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 12/14/2020
-ms.openlocfilehash: 80aa8097ce38a9b1bac228ea61dcc959e4aba60d
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.openlocfilehash: 7c8fa59521be1cfc8bb25fb04c3904f257fb62be
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97492009"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97926688"
 ---
 # <a name="collaborate-in-microsoft-teams-with-power-bi"></a>Collaborer dans Microsoft Teams avec Power BI
 
@@ -44,6 +44,14 @@ L’incorporation d’un rapport dans Microsoft Teams ou l’envoi d’un lien v
 > Veillez à passer en revue les utilisateurs qui peuvent afficher le rapport dans le service Power BI et à accorder l’accès à ceux qui ne sont pas répertoriés.
 
 Pour garantir que tous les membres d’une équipe ont accès aux rapports, vous pouvez les placer dans un même espace de travail et accorder au groupe Microsoft 365 pour votre équipe l’accès.
+
+## <a name="share-with-external-users"></a>Partager avec des utilisateurs externes
+
+Vous pouvez intégrer un rapport Power BI dans Teams et le partager avec des utilisateurs externes. Voici la procédure à suivre :
+
+1.  Vous invitez l’utilisateur externe dans l’organisation et il accepte votre invitation. Pour plus d’informations, consultez [Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure Active Directory B2B](../guidance/whitepaper-azure-b2b-power-bi.md).
+2.  Accordez à l’utilisateur externe une autorisation sur le rapport. L’attribution d’autorisations individuelles est ce qui fonctionne mieux.
+3.  Vérifiez qu’une licence Power BI a été attribuée à l’utilisateur externe. Si le contenu se trouve dans une capacité Premium, l’utilisateur a seulement besoin d’une licence gratuite. Si ce n’est pas le cas, l’utilisateur peut [s’inscrire pour un essai gratuit de Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md#sign-up-for-an-individual-trial-of-power-bi-pro).
 
 ## <a name="known-issues-and-limitations"></a>Problèmes connus et limitations
 

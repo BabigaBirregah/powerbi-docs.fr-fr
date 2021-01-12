@@ -1,6 +1,6 @@
 ---
-title: Structure de projets de visuels Power BI
-description: Cet article décrit la structure des dossiers et fichiers d’un projet de visuels Power BI
+title: Structure de projet de visuel Power BI dans l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Cet article décrit la structure des dossiers et fichiers d’un projet de visuel Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 01/12/2020
-ms.openlocfilehash: df7a2909e3ccd745fdaa990ba5281a723ef6360d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 4c946021138e49c0aed9668d9b3ea6079f458ccd
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416712"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888026"
 ---
 # <a name="power-bi-visual-project-structure"></a>Structure de projets de visuels Power BI
 

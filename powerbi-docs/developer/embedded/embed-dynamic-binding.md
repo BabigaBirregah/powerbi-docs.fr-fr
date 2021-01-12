@@ -1,18 +1,18 @@
 ---
-title: Connecter un rapport à un jeu de données à l’aide d’une liaison dynamique dans l’analytique incorporée Power BI
-description: Découvrez comment incorporer un rapport à l’aide de la liaison dynamique.
+title: Connecter un rapport à un jeu de données en utilisant la liaison dynamique pour des insights via la BI incorporée dans l’analytique incorporée Power BI
+description: Découvrez comment incorporer un rapport en utilisant la liaison dynamique dans l’analytique incorporée Power BI en vue de créer de meilleurs insights pour vos clients via la BI incorporée.
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/07/2019
-ms.openlocfilehash: d8a460f68838faab11cdab6d39f0e757a9789899
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: aacae4dbfae30d72468419a717340c806c6c4bca
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098372"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888900"
 ---
 # <a name="connect-a-report-to-a-dataset-using-dynamic-binding"></a>Connecter un rapport à un jeu de données à l’aide de la liaison dynamique 
 

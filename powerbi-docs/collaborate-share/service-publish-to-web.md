@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 01/04/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 76f45ac7aee01cb907e727bc8cb12a69bd234d72
-ms.sourcegitcommit: 513c4b884a58e1da2680579339c24c46091bbfb2
+ms.openlocfilehash: 800e81b8fe5e9c2f108b71a4d8fb6bf9732a29ac
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96613874"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97926844"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publication sur le web à partir de Power BI
 
@@ -50,18 +50,19 @@ Les étapes suivantes décrivent comment utiliser **Publier sur le web**.
 
    ![Examinez l’avertissement](media/service-publish-to-web/publish_to_web3_ga.png)
 
-5. Une boîte de dialogue s’affiche avec un lien. Sélectionnez le lien pour l’envoyer par e-mail ou copiez le HTML. Vous pouvez l’incorporer dans du code comme un iFrame, ou le coller directement dans une page web ou un blog.
+5. Un aperçu du rapport s’affiche dans la boîte de dialogue **Opération réussie**. Sélectionnez la **Taille** et la **Page par défaut**. 
+
+    Vous pouvez aussi ajouter une image d’**Espace réservé** pour accélérer le chargement de la page web. Grâce à l’image d’espace réservé, les personnes qui consultent votre rapport sur le web voient un bouton **Afficher le contenu interactif** qu’ils peuvent sélectionner pour afficher le rapport proprement dit. 
+
+    Commencez par apporter ces modifications. Copiez ensuite le lien pour l’envoyer dans un e-mail, ou copiez le code HTML à coller dans un site web. Vous pouvez l’incorporer dans du code comme un iFrame, ou le coller directement dans une page web ou un blog.
 
    ![Opération réussie : un lien et du code HTML](media/service-publish-to-web/publish_to_web4.png)
 
-6. Si vous avez déjà créé un code incorporé pour un rapport et que vous sélectionnez **Publier sur le web**, vous ne verrez pas les boîtes de dialogue des étapes 2 à 4. Au lieu de cela, la boîte de dialogue **Code incorporé** s’affiche :
+6. Si vous avez déjà créé un code incorporé pour un rapport et que vous sélectionnez **Publier sur le web**, vous ne verrez pas les boîtes de dialogue des étapes 2 à 4. Au lieu de cela, vous voyez la boîte de dialogue **Incorporer le code**.
 
    ![Boîte de dialogue Incorporer le code](media/service-publish-to-web/publish_to_web5.png)
 
    Vous pouvez créer un seul code incorporé pour chaque rapport.
-
-Si vous apportez des changements dans la boîte de dialogue, veillez à copier l’URL ou l’iFrame mis à jour pour utiliser les paramètres mis à jour dans votre page.
-
 
 ### <a name="tips-for-view-modes"></a>Conseils pour les modes d’affichage
 
@@ -128,7 +129,7 @@ Une utilisation intensive peut se produire lorsqu’un rapport reçoit trop de r
 
 Nous vous recommandons de définir un espace réservé d’image pour votre rapport. En cas d’utilisation intensive, les utilisateurs verront l’espace réservé d’image. 
 
-Pour éviter une utilisation intensive, limitez le nombre de requêtes distinctes que votre rapport peut générer, ainsi que la fréquence d’actualisation des données.
+Pour éviter une utilisation intensive, limitez le nombre de requêtes distinctes que votre rapport peut générer, ainsi que la fréquence d’actualisation des données. Pour obtenir des conseils en vue de rationaliser vos rapports, consultez le [guide d’optimisation Power BI](../guidance/power-bi-optimization.md).
 
 ## <a name="power-bi-visuals"></a>Visuels Power BI
 

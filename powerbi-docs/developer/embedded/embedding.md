@@ -1,6 +1,6 @@
 ---
-title: Analytique intégrée avec Power BI
-description: Power BI offre des API pour utiliser l’analytique incorporée pour vos tableaux de bord et vos rapports dans des applications. Découvrez plus en détail l’incorporation avec Power BI à la fois dans un environnement PaaS et un environnement SaaS à l’aide de logiciels d’analytique intégrés, d’outils d’analytique intégrés ou d’outils d’analyse décisionnelle intégrés.
+title: L’analytique incorporée Power BI pour de meilleurs insights BI incorporés
+description: Power BI propose des API permettant d’incorporer des tableaux de bord et des rapports de l’analytique incorporée Power BI dans les applications. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: 4dba33e2ae800198d4840139d43893a7dca77e4f
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: c7278dee5957e2b63b6821decec0171ba6b628a0
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396814"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887129"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Analytique intégrée avec Power BI
 

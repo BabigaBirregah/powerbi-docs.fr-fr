@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 03/02/2020
-ms.openlocfilehash: 19fe2aa003c3d39169bc449dab83c09702f49b1d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b9cff6a4a59db3a30fc4bbe2373a723700d00fee
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96419150"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885013"
 ---
 # <a name="one-to-one-relationship-guidance"></a>Aide pour la relation un-à-un
 
@@ -99,11 +99,11 @@ Si cela est possible, nous vous recommandons d’éviter de créer des relations
 - Limiter la capacité à créer des hiérarchies, étant donné que leurs niveaux doivent être basés sur des colonnes de la _même table_
 - Donner des résultats inattendus lorsqu’il y a une correspondance complète de lignes entre les tables
 
-Des recommandations spécifiques diffèrent selon que la relation un-à-un est _intra-îlots_ ou _inter-îlots_. Pour plus d’informations sur l’évaluation des relations, consultez [Relations de modèle dans Power BI Desktop (évaluation de la relation)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
+Les recommandations varient selon que la relation un-à-un est de type _groupe intrasource_ ou _groupe intersource_. Pour plus d’informations sur l’évaluation des relations, consultez [Relations de modèle dans Power BI Desktop (évaluation de la relation)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
-### <a name="intra-island-one-to-one-relationship"></a>Relation un-à-un intra-îlot
+### <a name="intra-source-group-one-to-one-relationship"></a>Relation un-à-un de groupe intrasource
 
-Lorsqu’il y a une relation un-à-un _intra-îlot_ entre des tables, nous recommandons de consolider les donnés dans une table de modèle unique. Pour ce faire, il faut fusionner les requêtes Power Query.
+Quand il existe une relation de _groupe intrasource_ de type un-à-un entre des tables, nous recommandons de regrouper les donnés dans une même table de modèle. Pour ce faire, il faut fusionner les requêtes Power Query.
 
 Les étapes suivantes présentent une méthodologie pour consolider et modéliser les données relationnelles un-à-un :
 
@@ -131,11 +131,11 @@ Dans notre exemple, les auteurs des rapports peuvent trouver le champ **Catégor
 
 ![Le volet Champs montre le champ Catégorie dans un dossier d’affichage nommé Marketing.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-display-folder.png)
 
-Si vous souhaitez toujours définir les relations un-à-un intra-îlots dans votre modèle, vérifiez si possible qu’il y a des lignes correspondantes dans les tables liées. Une relation intra-îlot un-à-un étant évaluée comme une [relation régulière](../transform-model/desktop-relationships-understand.md#regular-relationships), les problèmes d’intégrité des données peuvent se traduire par des VIDES dans vos visuels de rapports. (Vous pouvez voir un exemple de regroupement VIDE dans le premier visuel de table présenté dans cet article.)
+Si vous souhaitez quand même définir des relations de groupe intrasource un-à-un dans votre modèle, vérifiez si possible qu’il y a des lignes correspondantes dans les tables liées. Une relation de groupe intrasource un-à-un étant évaluée comme étant une [relation régulière](../transform-model/desktop-relationships-understand.md#regular-relationships), les problèmes d’intégrité des données peuvent se traduire par des VIDES dans vos visuels de rapports. (Vous pouvez voir un exemple de regroupement VIDE dans le premier visuel de table présenté dans cet article.)
 
-### <a name="inter-island-one-to-one-relationship"></a>Relation un-à-un inter-îlot
+### <a name="cross-source-group-one-to-one-relationship"></a>Relation un-à-un de groupe intersource
 
-Lorsqu’il existe une relation un-à-un _inter-îlot_ entre des tables, il n’existe pas d’alternative de conception de modèle, sauf si vous consolidez préalablement les données dans vos sources de données. Power BI évaluera la relation de modèle un-à-un comme une [relation limitée](../transform-model/desktop-relationships-understand.md#limited-relationships). Par conséquent, assurez-vous qu’il y a des lignes correspondantes dans les tables associées, car les lignes sans correspondance seront éliminées des résultats de la requête.
+Quand il existe une relation de _groupe intersource_ de type un-à-un entre des tables, il n’existe pas d’autre conception de modèle possible, à moins que vous regroupiez préalablement les données dans vos sources de données. Power BI évaluera la relation de modèle un-à-un comme une [relation limitée](../transform-model/desktop-relationships-understand.md#limited-relationships). Par conséquent, assurez-vous qu’il y a des lignes correspondantes dans les tables associées, car les lignes sans correspondance seront éliminées des résultats de la requête.
 
 Voyons ce qui se passe lorsque des champs des deux tables sont ajoutés à un visuel de table et qu’il existe une relation limitée entre ces tables.
 

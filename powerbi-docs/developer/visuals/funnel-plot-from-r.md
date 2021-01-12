@@ -1,6 +1,6 @@
 ---
-title: Créer un tracé en entonnoir du script R au visuel R
-description: Cet article explique comment créer un tracé en entonnoir à partir d’un script R vers un visuel Power BI R.
+title: Créer un tracé en entonnoir d’un script R vers un visuel R dans l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Cet article explique comment créer un tracé en entonnoir à partir d’un script R vers un visuel Power BI R. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 04/02/2020
-ms.openlocfilehash: 7ef9b75f01dedaf55be77312f07217593d886ef0
-ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
+ms.openlocfilehash: f3d22a4143287588ad9290d000402a10a4cef227
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97675278"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889268"
 ---
 # <a name="tutorial-build-a-funnel-plot-from-r-script-to-r-visual"></a>Tutoriel : Créer un tracé en entonnoir du script R au visuel R
 Cet article explique comment créer étape par étape un tracé en entonnoir en utilisant un script R dans un visuel R.

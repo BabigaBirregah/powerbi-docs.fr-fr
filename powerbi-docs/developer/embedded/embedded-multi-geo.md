@@ -1,6 +1,6 @@
 ---
-title: Prise en charge de zones géographiques multiples pour l’analytique incorporée Power BI
-description: Découvrez comment déployer du contenu vers des centres de données dans des régions autres que la région d’origine du locataire Power BI Embedded.
+title: Prise en charge multigéographique pour l’analytique incorporée Power BI et l’obtention de meilleurs insights via la BI incorporée
+description: Découvrez comment déployer du contenu sur des centres de données situés dans d’autres régions que la région d’origine de votre solution d’analytique incorporée Power BI. Utilisez la prise en charge multigéographique pour offrir à vos clients de meilleurs insights via la BI incorporée.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 02/05/2019
-ms.openlocfilehash: 1868bab823408377ab600146b21592d902b59ff6
-ms.sourcegitcommit: bbf7e9341a4e1cc96c969e24318c8605440282a5
+ms.openlocfilehash: 4b9aacb460966f633161238cae82ba6731196ed4
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098096"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888279"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded"></a>Prise en charge de plusieurs zones géographiques pour Power BI Embedded
 

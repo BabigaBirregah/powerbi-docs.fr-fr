@@ -1,6 +1,6 @@
 ---
-title: Ajouter la prise en charge de l’exploration
-description: Cet article décrit comment ajouter la prise en charge de l’exploration aux visuels Power BI
+title: Ajouter la prise en charge de l’exploration dans l’analytique incorporée Power BI pour obtenir de meilleurs insights via la BI incorporée
+description: Cet article explique comment ajouter la prise en charge de l’exploration aux visuels Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 602c13964e5364f9d21ec4e761fd42ea8d3e85f7
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: 40c8d7f362ca461b4295507c0ddff8db4bcc3509
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95514122"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97885453"
 ---
 # <a name="add-drill-down-support"></a>Ajouter la prise en charge de l’exploration
 

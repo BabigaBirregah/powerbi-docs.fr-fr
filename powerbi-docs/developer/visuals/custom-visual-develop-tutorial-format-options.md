@@ -1,6 +1,6 @@
 ---
-title: Ajouter des options de mise en forme à un visuel personnalisé Power BI
-description: Tutoriel de développement d’options de mise en forme de visuels personnalisés Power BI
+title: Ajout d’options de mise en forme à un visuel personnalisé Power BI dans l’analytique incorporée Power BI pour obtenir de meilleurs insights via la BI incorporée
+description: Tutoriel montrant comment développer des options de mise en forme de visuels personnalisés Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 11/21/2018
-ms.openlocfilehash: ec3ba601eb6cd5db4fbc19298d76ce0cd7346f53
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: ec5dbe338cc27379d69781a83f58091d94011f08
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418736"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886575"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-visual"></a>Tutoriel : Ajouter des options de mise en forme à un visuel Power BI
 
 Dans ce tutoriel, nous allons étudier comment ajouter des propriétés communes au visuel.
 
-Dans ce tutoriel, vous allez découvrir comment :
+Dans ce tutoriel, vous allez apprendre à :
 > [!div class="checklist"]
 > * Ajouter des propriétés visuelles.
 > * Packager le visuel.
@@ -222,7 +222,7 @@ Entrez les valeurs des propriétés du projet de visuel personnalisé, mettez à
 
 5. Remplissez **supportUrl** et **gitHubUrl** pour le visuel.
 
-    Exemple :
+    Exemple :
 
     ```json
     {
@@ -235,7 +235,7 @@ Entrez les valeurs des propriétés du projet de visuel personnalisé, mettez à
 
 7. Enregistrez le fichier **pbiviz.json**.
 
-8. Dans l’objet **assets**, le document définit un chemin d’accès à une icône. L’icône est l’image qui apparaît dans le volet **_Visualisations_** . Ce doit être un fichier **PNG** de *20 pixels par 20 pixels*.
+8. Dans l’objet **assets**, le document définit un chemin d’accès à une icône. L’icône est l’image qui apparaît dans le volet **_Visualisations_**. Ce doit être un fichier **PNG** de *20 pixels par 20 pixels*.
 
 9. Dans l’Explorateur Windows, copiez le fichier icon.png, puis collez-le pour remplacer le fichier par défaut situé dans le dossier assets.
 
@@ -263,7 +263,7 @@ Vous pouvez maintenant ouvrir le rapport Power BI Desktop et importer le visuel 
 
 1. Ouvrez **Power BI Desktop**, créez un rapport avec un *exemple de jeu de données*.
 
-2. Dans le volet **_Visualisations_** , sélectionnez les **points de suspension**, puis **Importer à partir d’un fichier**.
+2. Dans le volet **_Visualisations_**, sélectionnez les **points de suspension**, puis **Importer à partir d’un fichier**.
 
     ![Ajouter un visuel personnalisé au bureau](media/custom-visual-develop-tutorial-format-options/add-custom-viz-to-desktop.png)
 
@@ -275,7 +275,7 @@ Vous pouvez maintenant ouvrir le rapport Power BI Desktop et importer le visuel 
 
 6. Une fois le visuel importé avec succès, sélectionnez **OK**.
 
-7. Vérifiez que le visuel a été ajouté au volet **_Visualisations_** .
+7. Vérifiez que le visuel a été ajouté au volet **_Visualisations_**.
 
     ![Affichage dans le volet Visualisations de Power BI Desktop](media/custom-visual-develop-tutorial-format-options/view-in-desktop-viz-pane.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Introduction à l’utilisation des utilitaires de test dans un visuel Power BI
-description: Cet article explique comment utiliser les utilitaires de test pour simplifier les simulations et l’utilisation de méthodes spécifiques dans les tests unitaires pour les visuels Power BI.
+title: Introduction à l’utilisation des utilitaires pour les tests dans les visuels Power BI de l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Cet article explique comment utiliser les utilitaires pour les tests afin de simplifier les simulations et l’utilisation de méthodes spécifiques dans les tests unitaires pour les visuels Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 02/14/2020
-ms.openlocfilehash: c50ad894b2e1f5eb838abdd4442f473f8bcbbb10
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 4b2a846f4905c4cb28fe92043cf3c71750b40f11
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82196603"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888049"
 ---
 # <a name="power-bi-visuals-test-utils"></a>Utilitaires de test des visuels Power BI
 
@@ -194,7 +194,7 @@ class MockIVisualHost implements IVisualHost {
   function createVisualHost(locale?: Object, allowInteractions?: boolean, colors?: IColorInfo[], isEnabled?: boolean, displayNames?: any, token?: string): IVisualHost;
   ```
 
-    Exemple
+     Exemple
     ```typescript
     import { createVisualHost } from "powerbi-visuals-utils-testutils"
 
@@ -234,7 +234,7 @@ Implémente **IColorPalette** pour tester des visuels Power BI sans dépendances
     function createColorPalette(colors?: IColorInfo[]): IColorPalette;
     ```
 
-    Exemple
+     Exemple
     ```typescript
     import { createColorPalette } from "powerbi-visuals-utils-testutils"
 
@@ -269,7 +269,7 @@ Implémente **ISelectionId** pour tester des visuels Power BI sans dépendances 
     function createSelectionId(key?: string): ISelectionId;
     ```
 
-    Exemple
+     Exemple
     ```typescript
     import { createColorPalette } from "powerbi-visuals-utils-testutils"
 
@@ -306,7 +306,7 @@ Implémente **ISelectionIdBuilder** pour tester des visuels Power BI sans dépen
     function createSelectionIdBuilder(): ISelectionIdBuilder;
     ```
 
-    Exemple
+     Exemple
     ```typescript
     import { selectionIdBuilder } from "powerbi-visuals-utils-testutils";
 
@@ -343,7 +343,7 @@ Implémente **ISelectionManager** pour tester des visuels Power BI sans dépenda
     function createSelectionManager(): ISelectionManager
     ```
 
-    Exemple
+     Exemple
     ```typescript
     import { createSelectionManager } from "powerbi-visuals-utils-testutils";
 
@@ -409,7 +409,7 @@ class MockILocalizationManager implements ILocalizationManager {
     function createLocalizationManager(displayNames?: any): ILocalizationManager;
     ```
 
-    Exemple
+     Exemple
     ```typescript
     import { createLocalizationManager } from "powerbi-visuals-utils-testutils";
     let localizationManagerMock: ILocalizationManager = createLocalizationManager();
@@ -485,7 +485,7 @@ Les utilitaires incluent des méthodes d’assistance pour les tests unitaires d
   ```typescript
   function testDom(height: number | string, width: number | string): JQuery
   ```
-  Exemple
+   Exemple
   ```typescript
   import { testDom }  from "powerbi-visuals-utils-testutils";
   describe("testDom", () => {

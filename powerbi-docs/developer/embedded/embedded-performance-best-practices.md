@@ -1,6 +1,6 @@
 ---
-title: Bonnes pratiques relatives aux performances de Power BI Embedded
-description: Cet article fournit des conseils relatifs aux bonnes pratiques de l’analytique incorporée
+title: Bonnes pratiques de l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Cet article fournit des conseils en matière de bonnes pratiques de l’analytique incorporée Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: 2d33ed5a707a3b4bc3e0a77a38128e7e00154798
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: f8bf41ae9a4b6f2e16aae2c05df8fa4448a0457c
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746674"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888785"
 ---
-# <a name="power-bi-embedded-performance-best-practices"></a>Bonnes pratiques relatives aux performances de Power BI Embedded
+# <a name="power-bi-embedded-analytics-performance-best-practices"></a>Bonnes pratiques en matière de performances de l’analytique incorporée Power BI
 
 Cet article fournit des recommandations pour un rendu plus rapide des rapports, des tableaux de bord et des vignettes dans votre application.
 
@@ -65,7 +65,7 @@ Les organisations avec une capacité Power BI Premium ou Power BI Embedded peuv
 
 Utilisez `powerbi.preload()` afin d’améliorer les performances pour l’utilisateur final. La méthode `powerbi.preload()` télécharge des fichiers JavaScript, CSS et d’autres artefacts, qui seront utilisés ultérieurement pour incorporer un rapport.
 
-Appelez `powerbi.preload()` si vous n’incorporez pas immédiatement le rapport. Par exemple, si le contenu Power BI intégré n'apparaît pas sur la page d'accueil, utilisez `powerbi.preload()` pour télécharger et mettre en cache les artefacts utilisés pour intégrer le contenu.
+Appelez `powerbi.preload()` si vous n’incorporez pas immédiatement le rapport. Par exemple, si le contenu Power BI incorporé n’apparaît pas dans la page d'accueil, utilisez `powerbi.preload()` pour télécharger et mettre en cache les artefacts utilisés pour l’incorporation du contenu.
 
 ## <a name="bootstrapping-the-iframe"></a>Amorçage de l’iframe
 
@@ -107,5 +107,5 @@ L’analyseur de performances vous permet de voir et d’enregistrer les journau
 ## <a name="next-steps"></a>Étapes suivantes
 
 * [Guide d’optimisation de Power BI](../../guidance/power-bi-optimization.md)
-* [Comment résoudre les problèmes de Power BI Embedded](embedded-troubleshoot.md)
-* [FAQ sur Power BI Embedded](embedded-faq.md)
+* [Guide pratique pour résoudre les problèmes liés à l’analytique incorporée Power BI](embedded-troubleshoot.md)
+* [Questions fréquentes (FAQ) sur l’analytique incorporée Power BI](embedded-faq.md)

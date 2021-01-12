@@ -1,6 +1,6 @@
 ---
-title: Introduction à l’utilisation des utilitaires de graphique dans un visuel Power BI
-description: Cet article explique comment utiliser les utilitaires de graphique pour dessiner des axes et des légendes dans un visuel Power BI
+title: Introduction à l’utilisation des utilitaires pour les graphiques dans les visuels Power BI de l’analytique incorporée Power BI pour obtenir de meilleurs insights via la BI incorporée
+description: Cet article explique comment utiliser les utilitaires pour les graphique afin de dessiner des axes et des légendes dans un visuel Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: 531da1ede8b83af9fb8093a3178c945f374b835c
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 9094d639225eb82cbcf427346d1ad78943ddc90f
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79379387"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887865"
 ---
 # <a name="chart-utils"></a>Utilitaires pour les graphiques
 
@@ -22,7 +22,7 @@ ChartUtils est un ensemble d’interfaces et de méthodes permettant de créer d
 
 ## <a name="installation"></a>Installation
 
-Pour installer le package, vous devez exécuter la commande suivante dans le répertoire avec votre visuel actuel :
+Pour installer le package, vous devez exécuter la commande suivante dans le répertoire contenant votre visuel actuel :
 
 ```bash
 npm install powerbi-visuals-utils-chartutils --save
@@ -42,7 +42,7 @@ Cette fonction retourne le nombre recommandé de graduations en fonction de la l
 function getRecommendedNumberOfTicksForXAxis(availableWidth: number): number;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -60,7 +60,7 @@ Cette fonction retourne le nombre recommandé de graduations en fonction de la h
 function getRecommendedNumberOfTicksForYAxis(availableWidth: number);
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -84,7 +84,7 @@ function getBestNumberOfTicks(
 ): number;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -132,7 +132,7 @@ function getTickLabelMargins(
 ): TickLabelMargins;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -164,7 +164,7 @@ Vérifie si une chaîne a la valeur Null, n’est pas définie ou est vide.
 function isOrdinal(type: ValueTypeDescriptor): boolean;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -183,7 +183,7 @@ Vérifie si la valeur est de type DateTime.
 function isDateTime(type: ValueTypeDescriptor): boolean;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -202,7 +202,7 @@ Utilise l’échelle D3 pour obtenir l’épaisseur de la catégorie réelle.
 function getCategoryThickness(scale: any): number;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -226,7 +226,7 @@ Sinon, elle retourne l’élément le plus grand dans scale.domain() qui est <= 
 function invertOrdinalScale(scale: d3.scale.Ordinal<any, any>, x: number);
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -256,7 +256,7 @@ function findClosestXAxisIndex(
 ): number;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -302,7 +302,7 @@ function diffScaled(
 ): number;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -335,7 +335,7 @@ function createDomain(
 ): number[];
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -386,7 +386,7 @@ function getCategoryValueType(
 ): number[];
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -431,7 +431,7 @@ Cette fonction crée un axe D3 incluant une échelle. Peut être vertical ou hor
 function createAxis(options: CreateAxisOptions): IAxisProperties;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -476,7 +476,7 @@ Cette fonction définit un domaine personnalisé, mais ne change pas quand rien 
 function applyCustomizedDomain(customizedDomain, forcedDomain: any[]): any[];
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -503,7 +503,7 @@ function combineDomain(
 ): any[];
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -526,7 +526,7 @@ Cette fonction indique si le nombre est une puissance de 10.
 function powerOfTen(d: any): boolean;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { axis } from "powerbi-visuals-utils-chartutils";
@@ -556,7 +556,7 @@ function hideCollidedLabels(
 ): LabelEnabledDataPoint[];
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 let dataLabelManager = new DataLabelManager();
@@ -576,7 +576,7 @@ Cette méthode statique vérifie si le rectangle fourni est valide (qu’il a un
 function isValid(rect: IRect): boolean;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 let rectangle = {
@@ -613,7 +613,7 @@ Cette fonction retourne la précision du format à partir d’un format donné.
 function getLabelFormattedText(options: LabelFormattedTextOptions): string;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { dataLabelUtils } from "powerbi-visuals-utils-chartutils";
@@ -661,7 +661,7 @@ Cette fonction retourne le gestionnaire de cache qui fournit un accès rapide au
 function createColumnFormatterCacheManager(): IColumnFormatterCacheManager;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 import { dataLabelUtils } from "powerbi-visuals-utils-chartutils";
@@ -699,7 +699,7 @@ function createLegend(
 ): ILegend;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 public constructor(options: VisualConstructorOptions) {
@@ -749,7 +749,7 @@ Cette fonction mesure la hauteur du texte avec les propriétés de texte SVG don
 function drawLegend(data: LegendData, viewport: IViewport): void;
 ```
 
-Exemple :
+Exemple :
 
 ```typescript
 private renderLegend(): void {

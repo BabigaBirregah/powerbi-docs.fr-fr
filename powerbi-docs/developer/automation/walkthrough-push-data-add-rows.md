@@ -1,6 +1,6 @@
 ---
-title: Ajouter des lignes à une table
-description: 'Procédure pas à pas pour transmettre des données : ajouter des lignes à une table Power BI'
+title: Ajouter des lignes à une table dans l’analytique incorporée Power BI pour obtenir de meilleurs insights via la BI incorporée
+description: Procédure pas à pas pour envoyer (push) des données – Ajouter des lignes à une table Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: madia
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 02/05/2019
-ms.openlocfilehash: b43e9c93499f60039a924051c30b0ed631c85e8e
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: b34bc292d832938f34766ef94c5d9addd7b9e271
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748376"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887543"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Étape 5 : Ajouter des lignes à une table Power BI
 

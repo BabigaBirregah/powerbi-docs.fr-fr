@@ -1,18 +1,18 @@
 ---
-title: Guide pratique pour migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI
-description: Découvrez comment migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded, et comment tirer profit des nouvelles fonctionnalités d’incorporation dans les applications.
+title: Guide pratique pour migrer le contenu d’une collection d’espaces de travail Power BI vers la solution d’analytique incorporée Power BI Embedded et obtenir de meilleurs insights via la BI incorporée
+description: Découvrez comment migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded, et comment tirer profit des nouvelles fonctionnalités d’incorporation dans les applications. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/30/2018
-ms.openlocfilehash: afff3023942352a25ff89fbed5f4a855b23d724d
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: a2e73ced427daa8aebf6b5c9836aa060d3591e3e
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416551"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886370"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Guide pratique pour migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded
 

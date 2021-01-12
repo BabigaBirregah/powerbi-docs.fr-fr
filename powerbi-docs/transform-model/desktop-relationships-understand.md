@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 10/15/2019
-ms.openlocfilehash: 32e6cccf738d85ed58922c199c3a6093a54019db
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 7aeae77efeadfa3b39f9c39cadc36b2a046286b2
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96413791"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888573"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Relations de modèle dans Power BI Desktop
 
@@ -146,21 +146,21 @@ Tout d’abord, une théorie de modélisation est nécessaire pour comprendre pa
 
 Un modèle Importer ou DirectQuery obtient toutes ses données du cache Vertipaq ou de la base de données source. Dans les deux cas, Power BI peut déterminer qu’il existe un côté « un » dans une relation.
 
-En revanche, un modèle Composite peut comprendre des tables qui utilisent différents modes de stockage (Importer, DirectQuery ou Double) ou plusieurs sources DirectQuery. Chaque source, dont le cache Vertipaq de données d’importation, est considérée comme un _îlot de données_. Les relations de modèle peuvent ensuite être classifiées comme étant _intra-îlot_ ou _inter-îlots_. Une relation intra-îlot établit un lien entre deux tables au sein d’un même îlot de données, alors qu’une relation inter-îlots établit un lien entre des tables issues de différents îlots de données. Notez que les relations dans les modèles Importer ou DirectQuery sont toujours de type intra-îlots.
+En revanche, un modèle Composite peut comprendre des tables qui utilisent différents modes de stockage (Importer, DirectQuery ou Double) ou plusieurs sources DirectQuery. Chaque source, dont le cache Vertipaq de données d’importation, est considérée comme étant un _groupe source_. Les relations de modèle peuvent ensuite être classifiées en tant que _groupe intrasource_ ou _groupe intersource_. Une relation de groupe intrasource est une relation qui lie deux tables au sein d’un même groupe source, tandis qu’une relation de groupe intersource lie des tables issues de groupes sources différents. Notez que les relations dans les modèles Importer ou DirectQuery sont toujours de type groupe intrasource.
 
 Penchons-nous sur un exemple de modèle Composite.
 
-:::image type="content" source="media/desktop-relationships-understand/data-island-example.png" alt-text="Exemple de modèle Composite constitué de deux îlots.":::
+:::image type="content" source="media/desktop-relationships-understand/source-group-example.png" alt-text="Exemple de modèle Composite constitué de deux groupes sources.":::
 
-Dans cet exemple, le modèle Composite se compose de deux îlots : un îlot de données Vertipaq et un îlot de données sources DirectQuery. L’îlot de données Vertipaq contient trois tables, tandis que l’îlot de données sources DirectQuery en contient deux. Il existe une relation inter-îlots pour associer une table de l’îlot de données Vertipaq à une table de l’îlot de données sources DirectQuery.
+Dans cet exemple, le modèle Composite se compose de deux groupes sources : un groupe source Vertipaq et un groupe source DirectQuery. Le groupe source Vertipaq contient trois tables, tandis que le groupe source DirectQuery en contient deux. Il existe une relation de groupe intersource pour associer une table du groupe source Vertipaq à une table du groupe source DirectQuery.
 
 ### <a name="regular-relationships"></a>Relations régulières
 
-Une relation de modèle est dite _régulière_ quand le moteur de requête peut déterminer le côté « un » d’une relation. Il a la confirmation que la colonne du côté « un » contient des valeurs uniques. Toutes les relations intra-îlots Un-à-plusieurs sont des relations régulières.
+Une relation de modèle est dite _régulière_ quand le moteur de requête peut déterminer le côté « un » d’une relation. Il a la confirmation que la colonne du côté « un » contient des valeurs uniques. Toutes les relations de groupe intrasource de type Un-à-plusieurs sont des relations régulières.
 
-Dans l’exemple suivant, il existe deux relations régulières, toutes deux représentées par la lettre **R**. Les relations incluent la relation Un-à-plusieurs contenue dans l’îlot Vertipaq et la relation Un-à-plusieurs contenue dans la source DirectQuery.
+Dans l’exemple suivant, il existe deux relations régulières, toutes deux représentées par la lettre **R**. Les relations englobent la relation Un-à-plusieurs contenue dans le groupe source Vertipaq et la relation Un-à-plusieurs contenue dans la source DirectQuery.
 
-:::image type="content" source="media/desktop-relationships-understand/data-island-example-regular.png" alt-text="Exemple de modèle Composite constitué de deux îlots avec indication de relations régulières.":::
+:::image type="content" source="media/desktop-relationships-understand/source-group-example-regular.png" alt-text="Exemple de modèle Composite constitué de deux groupes sources avec indication de relations régulières.":::
 
 Pour les modèles Importer, où toutes les données sont stockées dans le cache Vertipaq, une structure de données est créée pour chaque relation régulière au moment où les données sont actualisées. Les structures de données sont constituées de mappages indexés de toutes les valeurs de colonne à colonne, et leur objectif est d’accélérer la jointure des tables au moment de la requête.
 
@@ -171,7 +171,7 @@ Au moment de la requête, les relations régulières autorisent une _extension d
 
 Pour les relations Un-à-plusieurs, l’extension de table se produit du côté « plusieurs » vers le côté « un » en utilisant la sémantique de JOINTURE EXTERNE GAUCHE. Quand il n’existe pas de correspondance de valeur entre le côté « plusieurs » et le côté « un », une ligne virtuelle vide est ajoutée à la table du côté « un ».
 
-Si l’extension de table concerne aussi les relations intra-îlots Un-à-un, elle utilise la sémantique de jointure externe entière. Cela garantit que des lignes virtuelles vides sont ajoutées de chaque côté, si nécessaire.
+Si l’extension de table concerne aussi les relations intrasources Un-à-un, elle utilise la sémantique de jointure externe entière. Cela garantit que des lignes virtuelles vides sont ajoutées de chaque côté, si nécessaire.
 
 Les lignes virtuelles vides sont en fait des _membres inconnus_. Les membres inconnus représentent des violations d’intégrité référentielle où la valeur du côté « plusieurs » n’a pas de valeur correspondante du côté « un ». Dans l’idéal, ces lignes vides ne devraient pas exister et peuvent être éliminés par le nettoyage ou la réparation des données sources.
 
@@ -186,11 +186,11 @@ Dans cet exemple, le modèle se compose de trois tables : **Category**, **Produ
 Une relation de modèle est dite _limitée_ quand le côté « un » n’est pas garanti. Deux raisons peuvent expliquer cela :
 
 - La relation utilise un type de cardinalité Plusieurs-à-plusieurs (même si une colonne ou les deux contiennent des valeurs uniques)
-- La relation est de type inter-îlot (ce qui ne peut être le cas que des modèles Composite)
+- La relation est de type groupe intersource (ce qui ne peut être le cas que des modèles Composite)
 
-Dans l’exemple suivant, il existe deux relations limitées, toutes deux représentées par la lettre **L**. Les deux relations incluent la relation Plusieurs-à-plusieurs contenue dans l’îlot Vertipaq et la relation inter-ilôts Un-à-plusieurs.
+Dans l’exemple suivant, il existe deux relations limitées, toutes deux représentées par la lettre **L**. Les deux relations incluent la relation Plusieurs-à-plusieurs contenue dans le groupe source Vertipaq et la relation de groupe intersource Un-à-plusieurs.
 
-:::image type="content" source="media/desktop-relationships-understand/data-island-example-limited.png" alt-text="Exemple de modèle Composite constitué de deux îlots avec indication de relations limitées.":::
+:::image type="content" source="media/desktop-relationships-understand/source-group-example-limited.png" alt-text="Exemple de modèle Composite constitué de deux groupes sources avec indication de relations limitées.":::
 
 Pour les modèles Importer, les relations limitées ne font jamais l’objet d’une création de structure de données. Cela signifie que les jointures de table doivent être résolues au moment de la requête.
 
@@ -202,7 +202,7 @@ Les relations limitées s’accompagnent d’autres restrictions :
 - L’application de la sécurité au niveau des lignes est soumise à des restrictions de topologie
 
 > [!NOTE]
-> Dans la vue de modèle Power BI Desktop, il n’est pas toujours possible de déterminer si une relation de modèle est régulière ou limitée. Une relation Plusieurs-à-plusieurs est toujours limitée, ce qui est aussi le cas d’une relation Un-à-plusieurs de type inter-îlots. Pour déterminer s’il s’agit d’une relation inter-îlots, vous devez inspecter les modes de stockage de table et les sources de données.
+> Dans la vue de modèle Power BI Desktop, il n’est pas toujours possible de déterminer si une relation de modèle est régulière ou limitée. Une relation Plusieurs-à-plusieurs est toujours limitée, ce qui est aussi le cas d’une relation Un-à-plusieurs de type groupe intersource. Pour déterminer s’il s’agit d’une relation de groupe intersource, vous devez inspecter les modes de stockage de table et les sources de données.
 
 ### <a name="precedence-rules"></a>Règles de précédence
 
@@ -216,10 +216,10 @@ Les relations bidirectionnelles peuvent introduire plusieurs chemins de propagat
 
 La liste suivante classe les performances de propagation de filtre, des plus rapides aux plus lentes :
 
-1. Relations intra-îlots Un-à-plusieurs
+1. Relations de groupe intrasource Un à plusieurs
 2. Relations de cardinalité Plusieurs-à-plusieurs
 3. Relations de modèle Plusieurs-à-plusieurs avec une table intermédiaire et impliquant au moins une relation bidirectionnelle
-4. Relations inter-ilôts
+4. Relations de groupe intersource
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -1,6 +1,6 @@
 ---
-title: Introduction à l’utilisation des info-bulles dans un visuel Power BI
-description: Cet article décrit comment utiliser des utilitaires pour les info-bulles afin de simplifier la personnalisation des visuels Power BI
+title: Introduction à l’utilisation des utilitaires d’infos-bulles dans les visuels Power BI de l’analytique incorporée Power BI pour obtenir de meilleurs insights via la BI incorporée
+description: Cet article explique comment utiliser les utilitaires d’info-bulles pour simplifier la personnalisation des info-bulles pour les visuels Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,17 +8,17 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 02/14/2020
-ms.openlocfilehash: 69650982bd3e71c235ffb09b00a99959bc02c231
-ms.sourcegitcommit: 1428acb6334649fc2d3d8ae4c42cfbc17e8f7476
+ms.openlocfilehash: b2ddc85d9ba2530dc394b4106d72b4af702bd9b4
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92197630"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888647"
 ---
 # <a name="tooltip-utils"></a>Utilitaires pour les info-bulles
 Cet article va vous aider à installer, à importer et à utiliser les utilitaires pour les info-bulles. Cet utilitaire est utile pour toute personnalisation des info-bulles dans les visuels Power BI.
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 Pour utiliser le package, vous avez besoin de ce qui suit :
 * [node.js](https://nodejs.org) (nous vous recommandons de télécharger la version la plus récente de LTS)
 * [npm](https://www.npmjs.com/) (la version la plus ancienne prise en charge est 3.0.0)
@@ -26,14 +26,14 @@ Pour utiliser le package, vous avez besoin de ce qui suit :
 
 ## <a name="installation"></a>Installation
 
-Pour installer le package, vous devez exécuter la commande suivante dans le répertoire avec votre visuel actuel :
+Pour installer le package, vous devez exécuter la commande suivante dans le répertoire contenant votre visuel actuel :
 
 ```bash
 npm install powerbi-visuals-utils-tooltiputils --save
 ```
 Cette commande installe le package et ajoute un package comme dépendance á votre ```package.json```
 
-## <a name="usage"></a>Utilisation
+## <a name="usage"></a>Usage
 
 > Le guide d’utilisation décrit une API publique du package. Vous trouverez une description et quelques exemples de chaque interface publique du package.
 

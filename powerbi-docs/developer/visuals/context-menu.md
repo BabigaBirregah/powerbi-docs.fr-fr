@@ -1,6 +1,6 @@
 ---
-title: Ajouter un menu contextuel à un visuel Power BI
-description: Découvrez comment ajouter un menu contextuel à un visuel Power BI.
+title: Ajouter un menu contextuel au visuel Power BI dans l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Découvrez comment ajouter un menu contextuel à un visuel Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 9e63a1196ddc7557fcf8b2fceb424415a63d4df9
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 1c19ba94588628e002cdb9e65f59bd4182020e1c
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748077"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888693"
 ---
 # <a name="add-context-menu-to-power-bi-visual"></a>Ajouter un menu contextuel à un visuel Power BI
 

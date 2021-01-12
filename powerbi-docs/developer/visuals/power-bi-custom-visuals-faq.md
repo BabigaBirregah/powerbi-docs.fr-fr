@@ -1,6 +1,6 @@
 ---
-title: Questions fréquentes sur les visuels Power BI
-description: Parcourir une liste de questions fréquentes et de réponses sur les visuels Power BI
+title: Questions fréquentes sur les visuels Power BI dans l’analytique incorporée Power BI pour obtenir de meilleurs insights via la BI incorporée
+description: Parcourez une liste de questions fréquentes et de réponses sur les visuels Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 09/30/2020
-ms.openlocfilehash: f38aaf9ea5bcb62cabae6ce2b7aca99f97c75960
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b2bfac5cbd3ce9b850e42ebf25c63b6e22fbeb68
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96386432"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97884921"
 ---
 # <a name="power-bi-visuals-faq"></a>Questions fréquentes (FAQ) sur les visuels Power BI
 

@@ -1,6 +1,6 @@
 ---
-title: Transmission de données à un jeu de données
-description: Transmission de données à un jeu de données Power BI
+title: Envoyer (push) des données dans un jeu de données de l’analytique incorporée Power BI pour obtenir de meilleurs insights via la BI incorporée
+description: Envoyez (push) des données dans un jeu de données Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/22/2019
-ms.openlocfilehash: 792afe42cf302ae552b7f8f1c14d5f232ade320f
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 3c5805f4d498e8e2d8a788c5703a09a8109e024b
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746697"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887428"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Transmission de données à un jeu de données Power BI
 
@@ -23,11 +23,11 @@ Avant de commencer, vous devez disposer d’un annuaire Azure Active Directory (
 
 ## <a name="steps-to-push-data-into-a-dataset"></a>Étapes de transmission de données à un jeu de données
 
-* Étape 1 : [Inscrire une application auprès d’Azure AD](../embedded/register-app.md)
-* Étape 2 : [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md)
+* Étape 1 : [Inscrire une application auprès d’Azure AD](../embedded/register-app.md)
+* Étape 2 : [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md)
 * Étape 3 : [Créer un jeu de données dans Power BI](walkthrough-push-data-create-dataset.md)
-* Étape 4 : [Obtenir un jeu de données pour ajouter des lignes à une table Power BI](walkthrough-push-data-get-datasets.md)
-* Étape 5 : [Ajouter des lignes à une table Power BI](walkthrough-push-data-add-rows.md)
+* Étape 4 : [Obtenir un jeu de données pour ajouter des lignes à une table Power BI](walkthrough-push-data-get-datasets.md)
+* Étape 5 : [Ajouter des lignes à une table Power BI](walkthrough-push-data-add-rows.md)
 
 La section suivante est une présentation générale des opérations de l’API Power BI qui transmettent des données.
 
@@ -46,7 +46,7 @@ Vous créez un jeu de données dans Power BI en passant une chaîne JSON (JavaSc
 
 La chaîne JSON d’un jeu de données est au format suivant :
 
-**Objet JSON de jeu de données Power BI**
+**Objet JSON de jeu de données Power BI**
 
 ```json
 {"name": "dataset_name", "tables":
@@ -60,7 +60,7 @@ La chaîne JSON d’un jeu de données est au format suivant :
 }
 ```
 
-Pour notre exemple de jeu de données Sales Marketing, vous transmettriez une chaîne JSON, comme dans l’exemple ci-dessous. Dans cet exemple, **SalesMarketing** est le nom du jeu de données et **Product** le nom de la table. Après avoir défini la table, vous définissez le schéma de table. Pour le jeu de données **SalesMarketing**, le schéma de table comporte ces colonnes : ProductID, Manufacturer, Category, Segment, Product, et IsCompete.
+Pour notre exemple de jeu de données Sales Marketing, vous transmettriez une chaîne JSON, comme dans l’exemple ci-dessous. Dans cet exemple, **SalesMarketing** est le nom du jeu de données et **Product** le nom de la table. Après avoir défini la table, vous définissez le schéma de table. Pour le jeu de données **SalesMarketing**, le schéma de table comporte ces colonnes : ProductID, Manufacturer, Category, Segment, Product et IsCompete.
 
 **Exemple d’objet JSON de jeu de données**
 
@@ -109,9 +109,9 @@ Pour un schéma de table Power BI, vous pouvez utiliser les types de données su
 | --- | --- |
 | Int64 |Valeurs Int64.MaxValue et Int64.MinValue non autorisées. |
 | Double |Les valeurs Double.MaxValue et Double.MinValue ne sont pas autorisées. NAN non pris en charge. + Infinity et - Infinity non pris en charge dans certaines fonctions (par exemple, Min, Max). |
-| Booléen |Aucune |
-| DateTime |Lors du chargement des données nous quantifions les valeurs avec des fractions de jour en multiples de 1/300e de seconde (3,33 ms). |
-| Chaîne |Autorise actuellement jusqu’à 128 ko de caractères. |
+| Boolean |Aucun |
+| Datetime |Lors du chargement des données nous quantifions les valeurs avec des fractions de jour en multiples de 1/300e de seconde (3,33 ms). |
+| String |Autorise actuellement jusqu’à 128 ko de caractères. |
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>En savoir plus sur la transmission de données à Power BI
 

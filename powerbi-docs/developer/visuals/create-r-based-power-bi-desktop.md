@@ -1,6 +1,6 @@
 ---
-title: 'Tutoriel : Créer un visuel Power BI optimisé pour R'
-description: Ce didacticiel explique comment créer un visuel basé sur R pour Power BI à l’aide de l’éditeur de scripts R dans Power BI Desktop.
+title: Créer un visuel Power BI avec R dans l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Ce didacticiel explique comment créer un visuel basé sur R pour Power BI à l’aide de l’éditeur de scripts R dans Power BI Desktop. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 05/11/2020
-ms.openlocfilehash: 2046dc389b859ce71c4d26cc31cc686f812e461e
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: dde18b9945d808cc6b2630bdad4d83768b0e2e8b
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749318"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889038"
 ---
 # <a name="tutorial-create-an-r-powered-power-bi-visual"></a>Tutoriel : Créer un visuel Power BI optimisé pour R
 
@@ -33,7 +33,7 @@ Dans ce tutoriel, vous allez découvrir comment :
 * Un **compte Power BI Pro**. [Inscrivez-vous à un essai gratuit](https://powerbi.microsoft.com/pricing/) avant de commencer.
 * Le moteur R. Vous pouvez le télécharger et l’installer gratuitement à partir de nombreux emplacements, dont la [page de téléchargement Revolution Open](https://mran.revolutionanalytics.com/download/) et le [Référentiel CRAN](https://cran.r-project.org/bin/windows/base/). Pour plus d’informations, consultez [Créer des visuels Power BI avec R](../../create-reports/desktop-r-visuals.md).
 * [Power BI Desktop](../../fundamentals/desktop-get-the-desktop.md).
-* [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 ou ultérieure pour les utilisateurs Windows, OU [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) pour les utilisateurs OSX.
+* [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 ou ultérieure pour les utilisateurs Windows, OU [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) pour les utilisateurs OSX.
 
 ## <a name="getting-started"></a>Prise en main
 

@@ -1,19 +1,19 @@
 ---
-title: Mise en surbrillance
-description: Mise en surbrillance des sélections des points de données dans les visuels Power BI
+title: Mise en surbrillance dans l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Mise en surbrillance des sélections de points de données dans les visuels Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/31/2019
-ms.openlocfilehash: a472db6c6dcc1266a11e78d72ab8465df7682042
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f45b363ce4616a725d19d0b06f4f9fb96110ac8a
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114149"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886531"
 ---
 # <a name="highlight-data-points-in-power-bi-visuals"></a>Mettre en surbrillance des points de données dans les visuels Power BI
 
@@ -32,7 +32,7 @@ Dans l’exemple, vous pouvez remarquer que la barre 1 est sélectionnée. Il s
 
 ## <a name="highlight-data-points-with-categorical-data-view-mapping"></a>Mettre en surbrillance des points de données avec un mappage des vues de données par catégorie
 
-Les visuels avec mappage des vues de données par catégorie ont `capabilities.json` avec le paramètre `"supportsHighlight": true`. Par exemple :
+Les visuels avec mappage des vues de données par catégorie ont `capabilities.json` avec le paramètre `"supportsHighlight": true`. Exemple :
 
 ```json
 {
@@ -275,7 +275,7 @@ Dans le résultat, vous devez disposer de la vue suivante du visuel.
 
 ## <a name="highlight-data-points-with-matrix-data-view-mapping"></a>Mettre en surbrillance des points de données avec mappage des vues de données de matrice
 
-Les visuels avec mappage des vues de données de matrice ont `capabilities.json` avec le paramètre `"supportsHighlight": true`. Par exemple :
+Les visuels avec mappage des vues de données de matrice ont `capabilities.json` avec le paramètre `"supportsHighlight": true`. Exemple :
 
 ```json
 {

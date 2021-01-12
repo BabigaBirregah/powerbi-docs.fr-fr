@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/27/2020
+ms.date: 01/04/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: a7f8c6d52acff8cbaaa00004448a3fae300afb9b
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: cf056581c7c1f472e1e7ce20baf3d7afd8815bda
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411905"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97886010"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Incorporer un rapport dans un site web ou portail sécurisé
 
@@ -26,11 +26,11 @@ L’option **Incorporer** prend en charge les [filtres URL](service-url-filters.
 
 1. Ouvrez un rapport dans le service Power BI.
 
-2. Dans le menu **Plus d’options (...)** , sélectionnez **Incorporer** >  **Site web ou portail**.
+2. Dans le menu **Partager**, sélectionnez **Incorporer un rapport** >  **Site web ou portail**.
 
     ![Option Site web ou portail](media/service-embed-secure/power-bi-more-options-website.png)
 
-2. Sélectionnez l’option **Incorporer** pour ouvrir une boîte de dialogue qui fournit un lien et un iFrame que vous pouvez utiliser pour incorporer le rapport de manière sécurisée.
+2. Dans la boîte de dialogue **Code d’incorporation sécurisée**, sélectionnez le **Lien que vous pouvez utiliser pour incorporer ce contenu** ou le **Code HTML que vous pouvez coller dans votre blog ou votre site web** dans un iFrame.
 
     ![Boîte de dialogue de l’option Incorporer](media/service-embed-secure/secure-embed-code-dialog.png)
 

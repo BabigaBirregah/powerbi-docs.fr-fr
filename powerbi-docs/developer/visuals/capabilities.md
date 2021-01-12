@@ -1,6 +1,6 @@
 ---
-title: Fonctionnalités et propriétés des visuels Power BI
-description: Cet article décrit les fonctionnalités et propriétés des visuels Power BI.
+title: Fonctionnalités et propriétés des visuels Power BI dans l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Cet article décrit les fonctionnalités et propriétés des visuels Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: e3af800696fd593f092cc46f9a59df2d0a5f94e2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e0fb17053ff8e6d17321994d515d8b69dbe8e22b
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79380299"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888256"
 ---
 # <a name="capabilities-and-properties-of-power-bi-visuals"></a>Fonctionnalités et propriétés des visuels Power BI 
 
@@ -41,9 +41,9 @@ Pour définir les champs qui peuvent être liés à des données, utilisez `data
 
 * **name** : nom interne de ce champ de données (doit être unique).
 * **kind** : type du champ :
-    * `Grouping` : valeurs discrètes utilisées pour regrouper les champs de mesure.
-    * `Measure` : valeurs de données numériques.
-    * `GroupingOrMeasure` : valeurs qui peuvent être utilisées comme un regroupement ou une mesure.
+    * `Grouping` : valeurs discrètes utilisées pour regrouper les champs de mesure.
+    * `Measure` : valeurs de données numériques.
+    * `GroupingOrMeasure` : valeurs qui peuvent être utilisées comme un regroupement ou une mesure.
 * **displayName** : nom affiché à l’utilisateur dans le volet **Propriétés**.
 * **description** : brève description du champ (facultatif).
 * **requiredTypes** : type de données requis pour ce rôle de données. Les valeurs non valides sont définies sur Null (facultatif).
@@ -57,7 +57,7 @@ Pour définir les champs qui peuvent être liés à des données, utilisez `data
 * **text** : valeur de texte
 * **geography** : donnée géographique
 
-### <a name="example"></a>Exemple
+### <a name="example"></a> Exemple
 
 ```json
 "dataRoles": [

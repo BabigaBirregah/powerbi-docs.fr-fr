@@ -1,6 +1,6 @@
 ---
-title: Ajouter des couleurs à vos visuels Power BI
-description: Cet article explique comment ajouter des couleurs à vos visuels Power BI et comment gérer des points de données pour un visuel avec des couleurs.
+title: Ajouter des couleurs à vos visuels Power BI dans l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Cet article explique comment ajouter des couleurs à vos visuels Power BI et comment gérer des points de données pour un visuel avec des couleurs. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 03/27/2020
-ms.openlocfilehash: 3a68f3dedbef9e97b6c29d3a0923d43872a5f01a
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: e6b6fb1dbc1397b93ac12692c8610e6f36d0b8bf
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92048806"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97887980"
 ---
 # <a name="add-colors-to-your-power-bi-visuals"></a>Ajouter des couleurs à vos visuels Power BI
 

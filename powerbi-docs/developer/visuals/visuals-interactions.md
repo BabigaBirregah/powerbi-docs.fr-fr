@@ -1,19 +1,19 @@
 ---
-title: Interactions entre les visuels dans les visuels Power BI
-description: Cet article explique comment vérifier si les visuels Power BI doivent autoriser les interactions entre les visuels.
+title: Interactions visuelles dans les visuels Power BI de l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Cet article explique comment vérifier si les visuels Power BI doivent autoriser les interactions entre les visuels. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: b8b1a1a59ee9fae5a1c248548a14c5f91438edc9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a5b46e901b5e8cabc00d48e4ef307b2ae98de2b6
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79378935"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888509"
 ---
 # <a name="visual-interactions-in-power-bi-visuals"></a>Interactions entre les visuels dans les visuels Power BI
 

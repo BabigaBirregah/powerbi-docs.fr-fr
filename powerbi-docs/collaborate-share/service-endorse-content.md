@@ -8,12 +8,12 @@ ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 10/26/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7232cad4fc1216ac6e1aa7c8a01136239a2f09d2
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 5485f59e11f3c971c719b2604b9e1280a072c5b1
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96407052"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97926726"
 ---
 # <a name="endorse-your-content"></a>Approuver votre contenu
 
@@ -25,7 +25,7 @@ Power BI propose deux méthodes pour approuver votre contenu à forte valeur ajo
 
 * **Certification** : La certification signifie que le contenu répond aux normes de qualité de l’organisation et qu’il peut être considéré comme fiable, faisant autorité et prêt à être utilisé au sein de l’organisation.
 
-    Seuls des réviseurs autorisés peuvent certifier du contenu. Les propriétaires de contenu qui souhaitent voir leur contenu certifié et qui ne sont pas autorisés à le certifier eux-mêmes doivent suivre les instructions de leur organisation en matière de certification de contenu.
+    Seuls les [réviseurs autorisés (définis par l’administrateur Power BI)](../admin/service-admin-setup-certification.md) peuvent certifier du contenu. Les propriétaires de contenu qui souhaitent voir leur contenu certifié et qui ne sont pas autorisés à le certifier eux-mêmes doivent suivre les instructions de leur organisation en matière de certification de contenu.
 
 Il est actuellement possible d’approuver ceci :
 * Groupes de données

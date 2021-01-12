@@ -9,6 +9,8 @@
           href: embedding.md
         - name: Qu’est-ce que Power BI Embedded dans Azure
           href: azure-pbie-what-is-power-bi-embedded.md
+        - name: "Qu’est-ce que Power BI Embedded Génération 2\_?"
+          href: power-bi-embedded-generation-2.md
     - name: Tutoriels
       expanded: true
       items:

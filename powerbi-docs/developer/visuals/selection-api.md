@@ -1,6 +1,6 @@
 ---
-title: Sélection de points de données visuels Power BI
-description: L'article décrit comment ajouter des sélections à des visuels Power BI
+title: Sélections de points de données visuels Power BI dans l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: L'article explique comment ajouter des sélections aux visuels Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 57f443ec11d918966c25b9d59a1656bb02983fbb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: db215195444827f9464e10f9cbb190e292099584
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238051"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888325"
 ---
 # <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Ajoutez de l'interactivité à vos visuels grâce à des sélections de visuels Power BI
 

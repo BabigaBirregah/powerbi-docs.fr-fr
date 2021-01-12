@@ -1,6 +1,6 @@
 ---
-title: Capacité et références SKU dans l’analytique incorporée de Power BI
-description: Comprenez la capacité et les références SKU dans l’analytique incorporée de Power BI.
+title: Capacité et références SKU dans l’analytique incorporée Power BI pour de meilleurs insights via la BI incorporée
+description: Comprenez la capacité et les références SKU dans l’analytique incorporée de Power BI. Obtenez de meilleurs insights BI incorporés avec l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/17/2020
-ms.openlocfilehash: 4102ed7307c9b7be40fb682befc4056094cbe6ad
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 7ff6ada14128a6231b84adf83d90b3871e1c7537
+ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916932"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97888808"
 ---
 # <a name="capacity-and-skus-in-power-bi-embedded-analytics"></a>Capacité et références SKU dans l’analytique incorporée de Power BI
 
-En basculant en mode production, l’analytique incorporée de Power BI nécessite une capacité (référence SKU *A* , *EM* ou *P* ) pour la publication de contenu Power BI incorporé.
+En basculant en mode production, l’analytique incorporée de Power BI nécessite une capacité (référence SKU *A*, *EM* ou *P*) pour la publication de contenu Power BI incorporé.
 
 La capacité est un ensemble dédié de ressources réservées à une utilisation exclusive. Elle vous permet de publier des tableaux de bord, des rapports et des jeux de données pour les utilisateurs sans avoir à acheter des licences par utilisateur. De plus, le niveau de performance qu’elle offre pour votre contenu est fiable et homogène.
 

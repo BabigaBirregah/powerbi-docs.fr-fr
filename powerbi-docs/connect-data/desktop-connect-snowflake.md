@@ -7,16 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 01/04/2021
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 115fba44c69fceb3a4f309cd92358ef5bc2eff42
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 00f78fef9f1abd11d7c553009db5541822c59c85
+ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96405741"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97926366"
 ---
-# <a name="connect-to-a-snowflake-computing-warehouse-in-power-bi-desktop"></a>Se connecter à un entrepôt Snowflake Computing dans Power BI Desktop
+# <a name="connect-to-snowflake-in-power-bi-desktop"></a>Se connecter à Snowflake dans Power BI Desktop
 Dans Power BI Desktop, vous pouvez vous connecter à un entrepôt **Snowflake Computing** et utiliser les données sous-jacentes comme n’importe quelle autre source de données dans Power BI Desktop. 
 
 ## <a name="connect-to-a-snowflake-computing-warehouse"></a>Se connecter à un entrepôt Snowflake Computing
@@ -33,7 +33,7 @@ Lorsque vous y êtes invité, indiquez votre nom d’utilisateur et votre mot de
 ![Capture d’écran de l’invite à entrer des informations d’identification Snowflake, montrant les champs Nom d’utilisateur et Mot de passe.](media/desktop-connect-snowflake/connect-snowflake-4.png)
 
 > [!NOTE]
-> Une fois que vous indiquez le nom d’utilisateur et le mot de passe d’un serveur **Snowflake** donné, Power BI Desktop les utilise dans les tentatives de connexion ultérieures. Pour modifier ces informations d’identification, accédez à **Fichier > Options et paramètres > Paramètres de la source de données**.
+> Une fois que vous avez entré le nom d’utilisateur et le mot de passe d’un serveur **Snowflake** donné, Power BI Desktop utilise ces informations d’identification dans les tentatives de connexion ultérieures. Pour modifier ces informations d’identification, accédez à **Fichier > Options et paramètres > Paramètres de la source de données**.
 > 
 > 
 
