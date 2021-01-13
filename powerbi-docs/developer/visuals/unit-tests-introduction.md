@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: ee7ed48043a902a9b5ebd3c548ebec7505e76ab1
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 784f41e8efa5c6d02a95ef451488883a4422b854
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97887911"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969486"
 ---
 # <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Tutoriel : Ajouter des tests unitaires pour des projets de visuels Power BI
 
@@ -457,7 +457,7 @@ Quand vous placez des données dans des compartiments de champs de données, Pow
 
 Dans les tests unitaires, vous n’avez pas de fonctions principales Power BI pour reproduire les données. Toutefois, vous devez mapper vos données statiques au `dataview` catégorique. La classe `TestDataViewBuilder` peut vous aider à les mapper.
 
-Pour plus d’informations sur le mappage des vues de données, consultez [DataViewMappings](https://github.com/Microsoft/PowerBI-visuals/blob/master/Capabilities/DataViewMappings.md).
+Pour plus d’informations sur le mappage des vues de données, consultez [DataViewMappings](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/Capabilities/DataViewMappings.md).
 
 Dans la méthode `getDataView`, vous appelez la méthode `createCategoricalDataViewBuilder` avec vos données.
 

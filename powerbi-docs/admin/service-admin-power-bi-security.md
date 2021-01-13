@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: ee7954cff7863ff58370bbe1e58f26c64644c8e8
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 9019ed9e64bca94a87e2ab9b6febdb7a25055b75
+ms.sourcegitcommit: c700e78dfedc34f5a74b23bbefdaef77e2a87f8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857056"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97961152"
 ---
 # <a name="power-bi-security"></a>Sécurité dans Power BI
 
@@ -53,7 +53,7 @@ La sécurité de plateforme pour Power BI inclut également la sécurité d’en
 
 ## <a name="data-and-service-security"></a>Sécurité des données et des services
 
-Pour en savoir plus, visitez le [Centre de gestion de la confidentialité de Microsoft](https://www.microsoft.com/trustcenter).
+Pour en savoir plus, visitez le [Centre de gestion de la confidentialité de Microsoft](https://www.microsoft.com/trust-center/product-overview).
 
 Comme décrit plus haut dans cet article, la connexion Power BI d’un utilisateur est utilisée par les serveurs Active Directory locaux pour le mappage à un nom UPN pour obtenir les informations d’identification. Toutefois, il est **important** de noter que les utilisateurs sont responsables des données qu’ils partagent : si un utilisateur se connecte à des sources de données à l’aide de ses informations d’identification et qu’il partage ensuite un rapport (ou un tableau de bord ou un jeu de données) basé sur ces données, les utilisateurs avec lesquels le tableau de bord est partagé ne sont pas authentifiés par rapport à la source de données d’origine et ils auront accès au rapport.
 

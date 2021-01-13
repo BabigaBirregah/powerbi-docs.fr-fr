@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 03/08/2020
-ms.openlocfilehash: 1331543973680879e4fcc2dbafc7323e72a27694
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 5f337197655d41b830b237c04faa2642991c34ee
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888164"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969808"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Obtenir un visuel Power BI certifié
 
@@ -92,7 +92,7 @@ Suivez les exigences relatives au code ci-dessous pour vérifier que votre code 
 * N’utilisez que des composants OSS consultables par le public, comme des bibliothèques publiques JavaScript ou TypeScript.
 * Le code doit prendre en charge [l’API d’événements de rendu](event-service.md).
 * Vérifiez que le DOM est correctement manipulé. Utilisez l’assainissement pour la saisie ou les données utilisateur avant de les ajouter au DOM.
-* Utilisez [l’exemple de rapport](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) comme jeu de données de test.
+* Utilisez [l’exemple de rapport](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/gh-pages/assets) comme jeu de données de test.
 
 **Non autorisé**
 * Accès à des services ou ressources externes. Par exemple, aucune requête HTTP/S ou WebSocket ne peut accéder à des services à l’extérieur de Power BI.

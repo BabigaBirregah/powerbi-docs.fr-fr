@@ -10,16 +10,16 @@ ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 ms.date: 12/15/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: b7184f00af46ce5f49df2510ea5e676c89a37a7a
-ms.sourcegitcommit: fef29a5c5bf1e0dae663c42c9ce5ae50e29ae9be
+ms.openlocfilehash: dc3ce931664a3c125504865c6cccfe3fdfa404c4
+ms.sourcegitcommit: f791eef8e885f18c48997c9af63ab56211f1ceb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97558490"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "98053417"
 ---
 # <a name="monitor-usage-metrics-in-classic-workspaces"></a>Superviser les métriques d’utilisation dans des espaces de travail classiques
 
-Les métriques d’utilisation vous aident à comprendre l’impact de vos tableaux de bord et rapports. Quand vous exécutez des métriques d’utilisation de tableau de bord ou de rapport, vous découvrez comment elles sont utilisées dans votre organisation, qui les utilise et dans quel but. Cet article décrit les rapports de métriques d’utilisation pour les [espaces de travail classiques](service-create-workspaces.md). Si vos rapports se trouvent dans un des nouveaux espaces de travail, consultez l’article [Superviser les métriques d’utilisation dans la nouvelle expérience d’espace de travail](service-usage-metrics.md).  
+Les métriques d’utilisation vous aident à comprendre l’impact de vos tableaux de bord et rapports. Quand vous exécutez des métriques d’utilisation de tableau de bord ou de rapport, vous découvrez comment elles sont utilisées dans votre organisation, qui les utilise et dans quel but. Cet article décrit les rapports de métriques d’utilisation pour les [espaces de travail classiques](service-create-workspaces.md). Si vos rapports se trouvent dans un des nouveaux espaces de travail, consultez l’article [Superviser les métriques d’utilisation dans la nouvelle expérience d’espace de travail](service-modern-usage-metrics.md).  
 
 Les rapports de métriques d’utilisation sont en lecture seule. Vous pouvez cependant copier un rapport de métriques d’utilisation. Cette opération de copie crée un rapport Power BI standard que vous pouvez modifier. Vous pouvez également créer vos propres rapports dans Power BI Desktop basés sur le jeu de données sous-jacent, qui contient des métriques d’utilisation pour tous les tableaux de bord ou tous les rapports d’un espace de travail. Pour commencer, le rapport copié montre des métriques seulement pour le rapport ou le tableau de bord sélectionné. Vous pouvez supprimer le filtre par défaut et avoir accès au jeu de données sous-jacent, avec toutes les métriques d’utilisation de l’espace de travail sélectionné. Vous pouvez même voir les noms des utilisateurs spécifiques, si votre administrateur l’a autorisé.
 

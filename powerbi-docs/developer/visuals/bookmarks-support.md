@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 6a4f0e8ad8890e85db54e8d77a2ec19bb0d02ea8
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: a1bd0f694bbc2bc40fc35aef3c6017e7f4a8196a
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97889107"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969693"
 ---
 # <a name="add-bookmark-support-for-power-bi-visuals"></a>Ajouter la prise en charge des signets pour les visuels Power BI
 
@@ -47,7 +47,7 @@ Le visuel doit restaurer les valeurs de filtre afin d’afficher l’état corre
 
 ### <a name="visuals-with-selection"></a>Visuels avec Selection
 
-Si votre visuel interagit avec d’autres visuels à l’aide de [Selection](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/Selection.md), vous pouvez ajouter des signets de deux manières :
+Si votre visuel interagit avec d’autres visuels à l’aide de [Selection](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/Tutorial/Selection.md), vous pouvez ajouter des signets de deux manières :
 
 * Si le visuel n’a pas encore utilisé [InteractivityService](https://github.com/microsoft/powerbi-visuals-utils-interactivityutils/blob/master/src/interactivityService.ts), vous pouvez employer la méthode `FilterManager.restoreSelectionIds`.
 

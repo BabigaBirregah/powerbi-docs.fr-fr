@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/10/2020
-ms.openlocfilehash: 66d721670f90efb17f6167aba3c074bdf6ea0ae1
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 39357ec461ae96ef566719739aa76a61c7e7c539
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96394862"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969785"
 ---
 # <a name="tenant-settings-guidance"></a>Indications concernant les paramètres du locataire
 
@@ -39,7 +39,7 @@ Dans ce cas, nous vous recommandons d’activer le paramètre **Publier des info
 Ces URL deviennent alors disponibles dans le menu d’aide de Power BI et se présentent sous forme de liens.
 
 > [!NOTE]
-> Le fait de fournir l’URL **Requêtes de licences** empêche les utilisateurs individuels d’acheter une licence Power BI Pro. Au lieu de cela, ils sont dirigés vers votre site interne qui les renseigne sur la façon d’acquérir une licence. Le paramètre **Autoriser les utilisateurs à essayer Power BI Pro** est activé par défaut et sépare les expériences d’achat et d’évaluation gratuite. Pour en savoir plus sur la façon dont ces paramètres fonctionnent ensemble, consultez [Autoriser les utilisateurs à essayer Power BI Pro](../admin/service-admin-portal.md#allow-users-to-try-power-bi-pro).
+> Le fait de fournir l’URL **Requêtes de licences** empêche les utilisateurs individuels d’acheter une licence Power BI Pro. Au lieu de cela, ils sont dirigés vers votre site interne qui les renseigne sur la façon d’acquérir une licence. Le paramètre **Autoriser les utilisateurs à essayer Power BI Pro** est activé par défaut et sépare les expériences d’achat et d’évaluation gratuite. Pour en savoir plus sur la façon dont ces paramètres fonctionnent ensemble, consultez [Autoriser les utilisateurs à essayer Power BI Pro](../admin/service-admin-portal.md#allow-users-to-try-power-bi-paid-features).
 >
 >
 

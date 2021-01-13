@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 4d8096793c4663cbed71c3149bde11305ebee71e
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: d787dfbb926a3a1224d5b4949003e0b0d260260f
+ms.sourcegitcommit: b4c457bfb4676381dc4a0d04d965e8dab0bc230e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97886692"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98155638"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Questions fréquentes sur Power BI Embedded
 
@@ -35,7 +35,6 @@ Les développeurs et les éditeurs de logiciels (ISV) qui développent des appli
 Power BI est une solution d’analytique en tant que service qui offre aux organisations une vue unique de leurs données les plus critiques.
 
 Microsoft a développé Power BI Embedded pour les éditeurs de logiciels indépendants (ISV) qui souhaitent incorporer des visuels dans leurs applications afin d’aider leurs clients à prendre des décisions d’ordre analytique. De cette façon, les éditeurs n’ont pas à créer leurs propres solutions d’analytique. L’[analytique incorporée](embedding.md) permet aux utilisateurs métier d’accéder aux données de l’entreprise et d’exécuter des requêtes afin de générer des insights au sein de l’application.
-
 
 ### <a name="what-is-the-difference-between-power-bi-premium-and-power-bi-embedded"></a>Quelle est la différence entre Power BI Premium et Power BI Embedded ?
 

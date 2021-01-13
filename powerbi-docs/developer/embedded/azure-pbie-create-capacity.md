@@ -1,6 +1,6 @@
 ---
-title: Créer une capacité Power BI Embedded sur le portail Azure pour votre solution de BI incorporée avec l’analytique incorporée Power BI
-description: Cet article explique pas à pas comment créer une capacité Power BI Embedded dans Microsoft Azure pour votre solution de BI incorporée avec l’analytique incorporée Power BI.
+title: Créer une capacité Power BI Embedded dans le Portail Microsoft Azure | Microsoft Docs
+description: Cet article explique pas à pas comment créer une capacité Power BI Embedded dans Microsoft Azure.
 author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.reviewer: zakharb
 ms.custom: subject-armqs, devx-track-azurecli
 ms.date: 08/02/2020
-ms.openlocfilehash: 898da0f5e4284183f2ffa08fba8e6a50d9474d15
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 73be957feae7fb869cca0af7bce0eeeb8daab03f
+ms.sourcegitcommit: b4c457bfb4676381dc4a0d04d965e8dab0bc230e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97887520"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98155714"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Créer une capacité Power BI Embedded dans le Portail Microsoft Azure
 
@@ -47,7 +47,8 @@ Avant de créer une capacité Power BI Embedded, vous devez vous être connecté
 
 4. Fournissez les informations nécessaires, puis cliquez sur **Vérifier + créer**.
 
-    ![Capture d’écran montrant l’onglet Général de la page Power BI Embedded pour créer une nouvelle capacité dans le portail Azure.](media/azure-pbie-create-capacity/azure-create-capacity.png)
+    >[!div class="mx-imgBorder"]
+    >![Capture d’écran montrant l’onglet Général de la page Power BI Embedded pour créer une nouvelle capacité dans le portail Azure.](media/azure-pbie-create-capacity/azure-create-capacity-old.png)
 
     * **Abonnement** : abonnement pour lequel vous souhaitez créer la capacité.
 

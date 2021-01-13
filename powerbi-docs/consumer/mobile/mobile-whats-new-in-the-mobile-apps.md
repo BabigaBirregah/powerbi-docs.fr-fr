@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/17/2020
-ms.openlocfilehash: 7779976e7897b31e5f3dde2c4c3306c909ecf0f0
-ms.sourcegitcommit: 5c09d121d3205e65fb33a2eca0e60bc30e777773
+ms.openlocfilehash: 6eebe7b75db06b97d116ca0c17e67e9ee7b0562e
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97675547"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969647"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -570,7 +570,7 @@ Consultez le [résumé des fonctionnalités d’applications mobiles d’avril 
 #### <a name="all-devices"></a>Tous les appareils
 **Couleurs d’arrière-plan pour les rapports sur téléphone** Quand vous définissez la couleur d’arrière-plan d’un rapport dans Power BI Desktop, le rapport sur téléphone a la même couleur d’arrière-plan. En savoir plus sur l’[optimisation des pages de rapport pour les téléphones](../../create-reports/desktop-create-phone-report.md).
 
-**Développer un visuel Power BI pour appareils mobiles** Lisez ce [guide du développeur](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) pour obtenir des conseils sur la création de visuels Power BI qui s’affichent et fonctionnent correctement sur les appareils mobiles.
+**Développer un visuel Power BI pour appareils mobiles** Lisez ce [guide du développeur](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) pour obtenir des conseils sur la création de visuels Power BI qui s’affichent et fonctionnent correctement sur les appareils mobiles.
 
 #### <a name="ios-devices"></a>Appareils iOS
 **Parler à vos données : poser des questions en parlant** Vous pouvez maintenant [poser des questions sur vos données avec Questions et réponses](mobile-apps-ios-qna.md) en parlant au lieu de taper. 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 04/02/2020
-ms.openlocfilehash: f3d22a4143287588ad9290d000402a10a4cef227
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: f1f8c037a3ceb66d8ffb5abab6bccd4ec9bc7adc
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97889268"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969555"
 ---
 # <a name="tutorial-build-a-funnel-plot-from-r-script-to-r-visual"></a>Tutoriel : Créer un tracé en entonnoir du script R au visuel R
 Cet article explique comment créer étape par étape un tracé en entonnoir en utilisant un script R dans un visuel R.
@@ -36,13 +36,13 @@ Dans cet exemple, le tracé en entonnoir est utilisé pour comparer et analyser 
 
 ## <a name="build-an-r-script-with-dataset"></a>Créer un script R avec un jeu de données
 
-1. Téléchargez un [script R minimal](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter1_R/script_R_v1_00.r) et sa table de données, [dataset.csv](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter1_R/dataset.csv).
+1. Téléchargez un [script R minimal](https://github.com/PowerBi-Projects/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter1_R/script_R_v1_00.r) et sa table de données, [dataset.csv](https://github.com/PowerBi-Projects/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter1_R/dataset.csv).
 
-1. Ensuite, modifiez le script de façon à ce qu’il corresponde à [ce script](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter1_R/script_R_v1_01.r). Ceci ajoute la gestion des erreurs d’entrée et des paramètres utilisateur pour contrôler l’apparence du tracé.
+1. Ensuite, modifiez le script de façon à ce qu’il corresponde à [ce script](https://github.com/PowerBi-Projects/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter1_R/script_R_v1_01.r). Ceci ajoute la gestion des erreurs d’entrée et des paramètres utilisateur pour contrôler l’apparence du tracé.
 
 ## <a name="build-a-report"></a>Créer un rapport
 
-Ensuite, modifiez le script de façon à ce qu’il corresponde à [ce script](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter2_Rvisual/script_RV_v2_00.r). Ceci charge *dataset.csv* au lieu de *read.csv* dans l’espace de travail de Power BI Desktop et crée une table **Cancer Mortality** (Mortalité par cancer). Regardez les résultats dans le [fichier PBIX](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter2_Rvisual/funnelPlot_Rvisual.pbix) suivant.
+Ensuite, modifiez le script de façon à ce qu’il corresponde à [ce script](https://github.com/PowerBi-Projects/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter2_Rvisual/script_RV_v2_00.r). Ceci charge *dataset.csv* au lieu de *read.csv* dans l’espace de travail de Power BI Desktop et crée une table **Cancer Mortality** (Mortalité par cancer). Regardez les résultats dans le [fichier PBIX](https://github.com/PowerBi-Projects/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter2_Rvisual/funnelPlot_Rvisual.pbix) suivant.
 
 > [!NOTE]
 > Le `dataset` est un nom codé en dur pour le `data.frame` en entrée de n’importe quel visuel R. 
@@ -75,7 +75,7 @@ Ensuite, modifiez le script de façon à ce qu’il corresponde à [ce script](h
 1. Réempaquetez le visuel avec la commande `pbiviz package` et essayez de l’importer dans Power BI.
 
 > [!NOTE]
-> Pour télécharger, consultez [PBIX](https://github.com/microsoft/PowerBI-visuals/blob/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelPlot_RCustomVisual.pbix) et [code source](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v01/).
+> Pour télécharger, consultez [PBIX](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelPlot_RCustomVisual.pbix) et [code source](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v01/).
 
 ## <a name="make-r-based-visual-improvements"></a>Améliorer les visuels basés sur R
 
@@ -85,7 +85,7 @@ Le visuel n’est pas encore convivial, car l’utilisateur doit connaître l’
 
    ![CV01to02](./media/funnel-plot/diagram-one.PNG)
 
-1. Modifiez *capabilities.json* et remplacez le rôle `dataset` par les trois nouveaux rôles, ou téléchargez [capabilities.json](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02/capabilities.json).
+1. Modifiez *capabilities.json* et remplacez le rôle `dataset` par les trois nouveaux rôles, ou téléchargez [capabilities.json](https://github.com/PowerBi-Projects/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02/capabilities.json).
 
    Vous devez mettre à jour les sections `dataRoles` et `dataViewMappings`, qui définissent les noms, les types, les info-bulles et le nombre maximal de colonnes pour chaque champ d’entrée.
 
@@ -93,7 +93,7 @@ Le visuel n’est pas encore convivial, car l’utilisateur doit connaître l’
    
    Pour plus d’informations, consultez [fonctionnalités](./capabilities.md).
 
-1. Modifiez *script.r* de façon à prendre en charge `Population`, `Number` et `Tooltips` en tant que dataframes en entrée au lieu de `dataset`, ou téléchargez [script.r](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02/script.r).
+1. Modifiez *script.r* de façon à prendre en charge `Population`, `Number` et `Tooltips` en tant que dataframes en entrée au lieu de `dataset`, ou téléchargez [script.r](https://github.com/PowerBi-Projects/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02/script.r).
 
    ![script](./samples/funnel-plot/chapter-3/funnel-r-visual-v02/script-r-before-vs-after.png)
 
@@ -113,7 +113,7 @@ Le visuel n’est pas encore convivial, car l’utilisateur doit connaître l’
 1. Réempaquetez le visuel avec la commande `pbiviz package` et essayez de l’importer dans Power BI.
 
 > [!NOTE]
-> Pour télécharger, consultez [PBIX](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelPlot_RCustomVisual.pbix) et [code source](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02).
+> Pour télécharger, consultez [PBIX](https://github.com/PowerBi-Projects/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelPlot_RCustomVisual.pbix) et [code source](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02).
 
 ## <a name="add-user-parameters"></a>Ajouter des paramètres utilisateur
 
@@ -123,11 +123,11 @@ Le visuel n’est pas encore convivial, car l’utilisateur doit connaître l’
 
 1. Modifiez *capabilities.json* et mettez à jour la section `objects`. Nous définissons ici les noms, les info-bulles et les types de chaque paramètre, et nous décidons également la répartition des paramètres dans des groupes (trois groupes dans le cas présent).
 
-   Téléchargez [capabilities.json](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/capabilities.json) et consultez [Propriétés des objets](./objects-properties.md) pour plus d’informations
+   Téléchargez [capabilities.json](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/capabilities.json) et consultez [Propriétés des objets](./objects-properties.md) pour plus d’informations
 
    ![capabilities](./samples/funnel-plot/chapter-3/funnel-r-visual-v03/capabilities-before-after.PNG)
 
-1. Modifiez *src/settings.ts* de façon à ce qu’il corresponde à ce [fichier settings.ts](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/src/settings.ts). Ce fichier est écrit en TypeScript.  
+1. Modifiez *src/settings.ts* de façon à ce qu’il corresponde à ce [fichier settings.ts](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/src/settings.ts). Ce fichier est écrit en TypeScript.  
 
    Vous trouverez ici deux blocs du code ajoutés pour :
    - Déclarer une nouvelle interface pour contenir la valeur de la propriété
@@ -135,7 +135,7 @@ Le visuel n’est pas encore convivial, car l’utilisateur doit connaître l’
 
    ![de la source de données](./samples/funnel-plot/chapter-3/funnel-r-visual-v03/settings-ts-before-after.PNG)
 
-1. Modifiez *script.r* de façon à ce qu’il corresponde à ce fichier [script.r](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script.r). Ceci ajoute la prise en charge des paramètres dans l’interface utilisateur en ajoutant des appels `if.exists` pour chaque paramètre utilisateur.
+1. Modifiez *script.r* de façon à ce qu’il corresponde à ce fichier [script.r](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script.r). Ceci ajoute la prise en charge des paramètres dans l’interface utilisateur en ajoutant des appels `if.exists` pour chaque paramètre utilisateur.
 
    > [!TIP]
    > Pour suivre les modifications apportées au script R, recherchez des commentaires :
@@ -150,17 +150,17 @@ Le visuel n’est pas encore convivial, car l’utilisateur doit connaître l’
    > #RVIZ_IN_PBI_GUIDE:END:Removed to enable user parameters
    > ```
 
-   ![Script avant et après](https://raw.githubusercontent.com/microsoft/PowerBI-visuals/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script_r_before_after_1.png)
+   ![Script avant et après](https://raw.githubusercontent.com/PowerBi-Projects/PowerBI-visuals/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script_r_before_after_1.png)
 
    Vous pouvez décider de ne pas exposer les paramètres à l’interface utilisateur, comme nous l’avons fait.  
 
 1. Réempaquetez le visuel avec la commande `pbiviz package` et essayez de l’importer dans Power BI.
 
 > [!NOTE]
-> Pour télécharger, consultez [PBIX](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelPlot_RCustomVisual.pbix) et [code source](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/).
+> Pour télécharger, consultez [PBIX](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelPlot_RCustomVisual.pbix) et [code source](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/).
 
 > [!TIP]
-> Nous avons ajouté ici des paramètres de plusieurs types (booléen, numérique, chaîne et couleur), tous en même temps. Pour un cas simple, consultez [cet exemple](https://github.com/Microsoft/PowerBI-visuals/blob/master/RVisualTutorial/PropertiesPane.md) qui montre comment ajouter un seul paramètre. 
+> Nous avons ajouté ici des paramètres de plusieurs types (booléen, numérique, chaîne et couleur), tous en même temps. Pour un cas simple, consultez [cet exemple](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/RVisualTutorial/PropertiesPane.md) qui montre comment ajouter un seul paramètre. 
 
 ## <a name="convert-visual-to-rhtml-based-visual"></a>Convertir un visuel en visuel basé sur RHTML
 
@@ -184,21 +184,21 @@ Le visuel n’est pas encore convivial, car l’utilisateur doit connaître l’
    Ceci crée et enregistre *out.html*. Ce fichier est autonome (sans dépendances externes) et définit les graphiques à l’intérieur du widget HTML. 
 
    > [!IMPORTANT]
-   > Pour les utilisateurs de `htmlWidgets`, des utilitaires R sont fournis dans le [dossier r_files](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/r_files) pour faciliter la conversion d’objets `plotly` ou `widget` en HTML autonome. 
+   > Pour les utilisateurs de `htmlWidgets`, des utilitaires R sont fournis dans le [dossier r_files](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/r_files) pour faciliter la conversion d’objets `plotly` ou `widget` en HTML autonome. 
    > 
    > Cette version du visuel R prend également en charge la commande `source` (contrairement aux types de visuels précédents) pour rendre votre code plus lisible.   
  
-1. Remplacez *capabilities.json* par le fichier *capabilities.json* de l’étape précédente, ou téléchargez [capabilities.json](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/capabilities.json).
+1. Remplacez *capabilities.json* par le fichier *capabilities.json* de l’étape précédente, ou téléchargez [capabilities.json](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/capabilities.json).
 
    Veillez à conserver :
 
    `"scriptOutputType": "html"`
 
-1. Fusionnez la dernière version de *script.r* avec le fichier *script.r* provenant du modèle, ou téléchargez [script.r](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/script.r).
+1. Fusionnez la dernière version de *script.r* avec le fichier *script.r* provenant du modèle, ou téléchargez [script.r](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/script.r).
 
    Le nouveau script utilise le package `plotly` pour convertir l’objet **ggplot** en objet **plotly**, puis le package `htmlWidgets` pour l’enregistrer dans un fichier HTML. 
 
-   La plupart des fonctions utilitaires sont déplacées vers [_r_files/utils.r_](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/r_files/utils.r) et la fonction `generateNiceTooltips` est ajoutée pour l’apparence de l’objet **plotly**.
+   La plupart des fonctions utilitaires sont déplacées vers [_r_files/utils.r_](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/r_files/utils.r) et la fonction `generateNiceTooltips` est ajoutée pour l’apparence de l’objet **plotly**.
 
    ![1](./samples/funnel-plot/chapter-4/RHTML-v01/script-before-after-1.PNG)
    
@@ -217,14 +217,14 @@ Le visuel n’est pas encore convivial, car l’utilisateur doit connaître l’
    > #RVIZ_IN_PBI_GUIDE:BEGIN:Removed to create HTML-based
    > ```
 
-1. Fusionnez la dernière version de *dependencies.json* avec le fichier *dependencies.json* provenant du modèle de façon à y inclure les nouvelles dépendances du package R, ou téléchargez [dependencies.json](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/dependencies.json).
+1. Fusionnez la dernière version de *dependencies.json* avec le fichier *dependencies.json* provenant du modèle de façon à y inclure les nouvelles dépendances du package R, ou téléchargez [dependencies.json](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/dependencies.json).
 
 1. Modifiez *src/settings.ts* de la même façon que dans les étapes précédentes.
 
 1. Réempaquetez le visuel avec la commande `pbiviz package` et essayez de l’importer dans Power BI.
 
 > [!NOTE]
-> Pour télécharger, consultez [PBIX et code source](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01).
+> Pour télécharger, consultez [PBIX et code source](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01).
 
 ## <a name="build-additional-examples"></a>Créer d’autres exemples
 
@@ -250,7 +250,7 @@ Le visuel n’est pas encore convivial, car l’utilisateur doit connaître l’
    > [!IMPORTANT]
    > Le champ **guid** est l’identificateur unique d’un visuel. Si vous créez un projet pour chaque visuel, le GUID sera également différent. C’est le même seulement quand vous utilisez un ancien projet copié dans un nouveau visuel, ce que vous ne devriez pas faire.
 
-* Modifiez [*assets/icon.png*](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/assets/icon.png) pour créer des icônes uniques pour votre visuel. 
+* Modifiez [*assets/icon.png*](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/assets/icon.png) pour créer des icônes uniques pour votre visuel. 
 
 * Pour déboguer le code R dans RStudio avec les mêmes données que celles de votre rapport Power BI, ajoutez ce qui suit au début du script R-script (modifiez la variable `fileRda`) :
 
@@ -270,17 +270,17 @@ Le visuel n’est pas encore convivial, car l’utilisateur doit connaître l’
 
 * Vous n’avez pas besoin de développer des visuels R à partir de zéro grâce au code disponible sur [GitHub](https://github.com/Microsoft?utf8=%E2%9C%93&q=PowerBI&type=&language=R). Vous pouvez sélectionner le visuel à utiliser en tant que modèle, puis copier le code dans un nouveau projet.
 
-   Par exemple, essayez d’utiliser le [visuel personnalisé spline](https://github.com/Microsoft/PowerBI-visuals-spline).
+   Par exemple, essayez d’utiliser le [visuel personnalisé spline](https://github.com/PowerBi-Projects/PowerBI-visuals-spline).
 
 * Chaque visuel R applique l’opérateur `unique` à sa table d’entrée. Pour éviter la suppression des lignes identiques, vous pouvez ajouter un champ d’entrée supplémentaire avec un ID unique et l’ignorer dans le code R.   
 
 * Si vous avez un compte Power BI, utilisez le service Power BI pour développer un visuel [à la volée](./develop-circle-card.md) au lieu de le réempaqueter avec la commande `pbiviz package`.
 
 ### <a name="html-widgets-gallery"></a>Galerie de widgets HTML
-Explorez les visuels dans la [Galerie de widgets HTML](http://gallery.htmlwidgets.org/) que vous pouvez utiliser pour votre prochain visuel. Pour faciliter les choses, nous avons créé un [dépôt de projets de visuels](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML) avec plus de 20 visuels HTML interactifs !
+Explorez les visuels dans la [Galerie de widgets HTML](http://gallery.htmlwidgets.org/) que vous pouvez utiliser pour votre prochain visuel. Pour faciliter les choses, nous avons créé un [dépôt de projets de visuels](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML) avec plus de 20 visuels HTML interactifs !
 
 > [!TIP]
-> Pour parcourir les widgets HTML, utilisez **Format** > **Paramètres** > **Type**. Essayez-les avec [ce fichier PBIX](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML/assets/sample.pbix). 
+> Pour parcourir les widgets HTML, utilisez **Format** > **Paramètres** > **Type**. Essayez-les avec [ce fichier PBIX](https://github.com/PowerBi-Projects/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML/assets/sample.pbix). 
 
 #### <a name="to-use-a-sample-for-your-visual"></a>Pour utiliser un exemple pour votre visuel
 
