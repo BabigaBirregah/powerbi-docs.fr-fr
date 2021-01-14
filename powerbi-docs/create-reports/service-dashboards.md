@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/19/2019
+ms.date: 01/08/2021
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 092ce10b527c6160cb27de5e3de0ed5852219f6a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 2d5eb4047b467544110a5802fa1d41b7ed65bb6a
+ms.sourcegitcommit: f791eef8e885f18c48997c9af63ab56211f1ceb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96417287"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "98053348"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Introduction aux tableaux de bord pour les concepteurs Power BI
 
@@ -53,9 +53,9 @@ Les [rapports](../consumer/end-user-reports.md) et les tableaux de bord semblent
 | Sources de données |Un ou plusieurs rapports et un ou plusieurs jeux de données par tableau de bord |Un seul jeu de données par rapport |
 | Disponible dans Power BI Desktop |Non | Oui. Possibilité de créer et d’afficher des rapports dans Power BI Desktop |
 | S’abonner |Oui. Possibilité de s’abonner à un tableau de bord |Oui. Possibilité de s’abonner à une page de rapport |
-| Filtrage |Non. Impossible de filtrer ou découper |Oui. Différentes manières de filtrer, mettre en surbrillance et découper |
+| Filtrage |Non. Impossible de filtrer ou découper un tableau de bord. Il est *possible* de filtrer une [vignette de tableau de bord en mode Focus](../consumer/end-user-focus.md#working-in-focus-mode), mais pas d’enregistrer le filtre. |Oui. Différentes manières de filtrer, mettre en surbrillance et découper |
 | Sélection |Oui. Possibilité de définir un tableau de bord comme tableau de bord *par défaut* |Non |
-| Favori | Oui. Possibilité de définir plusieurs tableaux de bord comme *Favoris* | Oui. Possibilité de définir plusieurs rapports comme *Favoris*
+| Favori | Oui. Possibilité de définir plusieurs tableaux de bord comme *Favoris* | Oui. Possibilité de définir plusieurs rapports comme *Favoris* |
 | Définir des alertes |Oui. Disponible pour les vignettes de tableau de bord dans certaines circonstances |Non |
 | Requêtes en langage naturel (Questions et réponses) |Oui | Oui, pour autant que vous disposiez d’autorisations de modification sur me rapport et son jeu de données sous-jacent |
 | Possibilité d’afficher les tables et les champs sous-jacents d’un jeu de données |Non. Possibilité d’exporter les données, mais pas de voir les tables et les champs dans le tableau de bord |Oui |

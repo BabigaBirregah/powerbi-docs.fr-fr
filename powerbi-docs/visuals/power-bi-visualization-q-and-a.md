@@ -1,35 +1,31 @@
 ---
-title: Utiliser le visuel Questions et réponses de Power BI
-description: Comment configurer le visuel Questions et réponses de Power BI
-author: rien
-ms.author: rien
-ms.reviewer: mihart
+title: Créer un visuel Questions et réponses dans Power BI
+description: Découvrez comment créer et mettre en forme un visuel Questions et réponses Power BI dans Power BI Desktop ou le service Power BI.
+author: maggiesMSFT
+ms.author: maggies
+ms.reviewer: rien
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/19/2019
-ms.openlocfilehash: 43da67114808538d64aa2ceb7f59af590ee23857
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 01/05/2021
+ms.openlocfilehash: 1cf80593458c12a1bee07ed40202e3613fdcb5e9
+ms.sourcegitcommit: c700e78dfedc34f5a74b23bbefdaef77e2a87f8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96418940"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97961359"
 ---
-# <a name="introduction-to-power-bi-qa-visualizations"></a>Présentation des visualisations Questions et réponses de Power BI
+# <a name="create-a-qa-visual-in-power-bi"></a>Créer un visuel Questions et réponses dans Power BI
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+Le visuel Questions et réponses permet aux utilisateurs de poser des questions en langage naturel et d’obtenir des réponses sous la forme d’un visuel. Les *consommateurs* peuvent l’utiliser pour obtenir rapidement des réponses à leurs questions sur des données. Les *concepteurs* peuvent également l’utiliser pour créer rapidement des visuels. Si vous concevez des rapports, cet article vous concerne. Vous pouvez double-cliquer n’importe où dans un rapport et utiliser le langage naturel pour commencer. Cet article vous permet de créer, mettre en forme et personnaliser un visuel Questions et réponses. Le visuel prend en charge les thèmes et d’autres options de mise en forme par défaut disponibles dans Power BI. Une fois créé, il se comporte comme n’importe quel autre visuel, en prenant en charge le filtrage croisé, la sélection croisée et les signets. 
 
-## <a name="what-are-qa-visualizations"></a>Que sont les visualisations Questions et réponses ?
-
-Le visuel Questions et réponses permet aux utilisateurs de poser des questions en langage naturel et d’obtenir des réponses sous la forme d’un visuel. 
+Vous souhaitez avoir plus d’informations sur la fonctionnalité Questions et réponses dans Power BI ? Consultez [Présentation de Questions et réponses](../natural-language/q-and-a-intro.md). 
 
 ![Procédure pas à pas pour le visuel Questions et réponses](../natural-language/media/qna-visual-walkthrough.gif)
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
-
-Le visuel Questions et réponses peut être utilisé comme outil par les *consommateurs* pour obtenir rapidement des réponses à leurs questions sur des données, et par les *concepteurs* pour créer des visuels de rapport simplement en double-cliquant n’importe où dans un rapport et en utilisant le langage naturel pour commencer. À l’instar des autres types de visuels, le visuel Questions et réponses prend en charge le filtrage croisé/la sélection croisée et les signets. Il prend également en charge les thèmes et d’autres options de mise en forme par défaut disponibles dans Power BI.
 
 Le visuel Questions et réponses a quatre composants principaux :
 
@@ -40,20 +36,20 @@ Le visuel Questions et réponses a quatre composants principaux :
 
 ## <a name="prerequisites"></a>Prérequis
 
-1. Ce tutoriel utilise le [fichier PBIX de l’exemple Vente et marketing](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix). 
+1. Téléchargez le [fichier PBIX de l’exemple Vente et marketing](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) pour suivre la procédure.
 
-1. Dans la section supérieure gauche de la barre de menus Power BI Desktop, sélectionnez **Fichier** > **Ouvrir**
+1. Dans la section supérieure à gauche dans Power BI Desktop, sélectionnez **Fichier** > **Ouvrir**.
    
-2. Recherchez votre copie du **fichier PBIX de l’exemple Vente et marketing**
+2. Recherchez votre copie du **fichier PBIX de l’exemple Vente et marketing**.
 
 1. Ouvrez le fichier dans la vue Rapport ![Capture d’écran de l’icône de la vue Rapport.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Sélectionner ![Capture d’écran de l’onglet jaune.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) pour ajouter une nouvelle page.
+1. Sélectionner le signe plus ![Capture d’écran de l’onglet jaune.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) pour ajouter une nouvelle page.
 
-Si vous rencontrez une erreur quand vous créez un visuel Questions et réponses, consultez l’article sur les [limitations](../natural-language/q-and-a-limitations.md) pour vérifier que la configuration de la source de données est prise en charge.    
+Si vous rencontrez une erreur quand vous créez un visuel Questions et réponses, consultez l’article sur les [limitations de Questions et réponses](../natural-language/q-and-a-limitations.md) pour vérifier que la configuration de la source de données est prise en charge.    
 
 > [!NOTE]
-> Pour que vous puissiez partager votre rapport avec un collègue Power BI, il faut que vous disposiez tous deux de licences individuelles Power BI Pro ou que le rapport soit enregistré dans une capacité Premium. Consultez [partage des rapports](../collaborate-share/service-share-reports.md).
+> Pour que vous puissiez partager votre rapport avec un autre utilisateur de Power BI, il faut que vous disposiez tous deux de licences individuelles Power BI Pro ou que vous sauvegardiez le rapport dans un espace de travail de capacité Premium. Consultez [partage des rapports](../collaborate-share/service-share-dashboards.md).
 
 ## <a name="create-a-qa-visual-using-a-suggested-question"></a>Créer un visuel Questions et réponses à l’aide d’une question suggérée
 Dans cet exercice, nous allons sélectionner l’une des questions suggérées pour créer un visuel Questions et réponses. 
@@ -77,7 +73,7 @@ Dans cet exercice, nous allons sélectionner l’une des questions suggérées p
 ## <a name="create-a-qa-visual-using-a-natural-language-query"></a>Créer un visuel Questions et réponses à l’aide d’une requête en langage naturel
 Dans l’exemple ci-dessus, nous avons sélectionné l’une des questions suggérées pour créer notre visuel Questions et réponses.  Dans cet exercice, nous allons taper notre propre question. À mesure que nous taperons notre question, Power BI nous aidera avec l’autocomplétion, des suggestions et des commentaires.
 
-Si vous n’êtes pas sûr du type de questions à poser ou de la terminologie à employer, développez **Montrer toutes les suggestions** ou examinez le volet Champs qui se trouve sur le côté droit du canevas. Vous pourrez ainsi vous familiariser avec les termes et le contenu du jeu de données Vente et marketing.
+Si vous n’êtes pas sûr du type de questions à poser ou de la terminologie à employer, développez **Montrer toutes les suggestions** ou examinez le volet Champs qui se trouve sur le côté droit du canevas. Dans le volet Champ, vous pourrez vous familiariser avec les termes et le contenu du jeu de données Vente et marketing.
 
 ![option Montrer toutes les suggestions et volet Champs en surbrillance dans le canevas](media/power-bi-visualization-q-and-a/power-bi-terminology.png)
 
@@ -125,7 +121,7 @@ Mettez en forme le visuel Questions et réponses, le champ de question et le mod
 ![Visuel Questions et réponses avec nos résultats mis en forme](media/power-bi-visualization-q-and-a/power-bi-q-and-a-format.png)
 
 ## <a name="convert-your-qa-visual-into-a-standard-visual"></a>Convertir le visuel Questions et réponses en visuel standard
-Nous avons un peu mis en forme notre visuel d’histogramme adapté aux daltoniens, et avons ajouté un titre et une bordure. Nous sommes maintenant prêts à convertir ce visuel en visuel standard dans notre rapport et à l’épingler à un tableau de bord.
+Nous avons un peu mis en forme notre visuel d’histogramme adapté aux daltoniens : nous y avons ajouté un titre et une bordure. Nous sommes maintenant prêts à convertir ce visuel en visuel standard dans notre rapport et à l’épingler à un tableau de bord.
 
 Sélectionnez l’icône ![icône d’engrenage](media/power-bi-visualization-q-and-a/power-bi-convert-icon.png) pour **Transformer ce résultat Questions et réponses en visuel standard**.
 
@@ -144,7 +140,7 @@ La sélection de l’icône d’engrenage ouvre le volet des outils du visuel Qu
 
 ![Visuel Questions et réponses avec l’icône Outils sélectionnée](media/power-bi-visualization-q-and-a/power-bi-q-and-a-tooling.png)
 
-Utilisez le volet des outils pour apprendre au visuel Questions et réponses les termes qu’il ne reconnaît pas, pour gérer ces termes et pour gérer les questions suggérées pour ce jeu de données et ce rapport. Dans le volet des outils, vous pouvez également examiner les questions qui ont déjà été posées à l’aide de ce visuel Questions et réponses, ainsi que les questions qui ont été identifiées par des utilisateurs. Pour en savoir plus, consultez [Présentation des outils de Questions et réponses](../natural-language/q-and-a-tooling-intro.md).
+Utilisez le volet des outils pour apprendre au visuel Questions et réponses les termes qu’il ne reconnaît pas, pour gérer ces termes et pour gérer les questions suggérées pour ce jeu de données et ce rapport. Dans le volet des outils, vous pouvez également examiner les questions que d’autres utilisateurs ont posées dans ce visuel Questions et réponses, et voir les questions qui ont été identifiées par des utilisateurs. Pour en savoir plus, consultez [Présentation des outils Questions et réponses pour entraîner Questions et réponses Power BI](../natural-language/q-and-a-tooling-intro.md).
 
 ![Volet des outils de Questions et réponses](media/power-bi-visualization-q-and-a/power-bi-q-and-a-tooling-pane.png)
 
@@ -153,7 +149,7 @@ Intégré à Office et à Bing, le visuel Questions et réponses essaie de mettr
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Il existe diverses façons d’intégrer le langage naturel. Pour plus d’informations, consultez les articles suivants :
+Il existe plusieurs façons d’intégrer le langage naturel. Pour plus d’informations, consultez les articles suivants :
 
 _ [Outils Q&R](../natural-language/q-and-a-tooling-intro.md)
 * [Bonnes pratiques relatives à Questions et réponses](../natural-language/q-and-a-best-practices.md)

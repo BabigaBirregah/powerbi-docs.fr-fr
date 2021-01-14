@@ -8,12 +8,12 @@ ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 12/09/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: 14b3329ea2b8636c1e5cf2412ca9843bc777bed1
-ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
+ms.openlocfilehash: 09188b3b03fd5bfb720b98045ee9d895d337d677
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97600458"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969164"
 ---
 # <a name="how-to-apply-sensitivity-labels-in-power-bi"></a>Guide pratique pour appliquer des étiquettes de sensibilité dans Power BI
 
@@ -65,9 +65,6 @@ Dans l’onglet des paramètres du jeu de données, ouvrez la section Étiquette
 
 ## <a name="apply-sensitivity-labels-in-power-bi-desktop-preview"></a>Appliquer des étiquettes de sensibilité dans Power BI Desktop (préversion)
 
->[!NOTE]
->Pendant 48 heures après avoir choisi la fonctionnalité en préversion Information Protection de Power BI Desktop, **vous risquez de rencontrer des problèmes avec les fichiers .pbix sur lesquels des étiquettes de confidentialité ont été appliquées (par exemple pour publier ces fichiers dans le service ou les télécharger à partir du service)** . Ce type de problème est attendu et sera résolu automatiquement dans un délai de 48 heures.
-
 Pour utiliser des étiquettes de sensibilité dans Power BI Desktop :
 * Vous devez disposer d’une licence [Power BI Pro](./service-admin-purchasing-power-bi-pro.md).
 * Les étiquettes de sensibilité doivent être activées pour votre organisation. En cas de doute, contactez votre administrateur Power BI.
@@ -77,10 +74,13 @@ Pour utiliser des étiquettes de sensibilité dans Power BI Desktop :
 
     ![Capture d’écran de la page des fonctionnalités en préversion de Desktop.](media/service-security-apply-data-sensitivity-labels/desktop-preview-features-page.png)
 
+    >[!Important]
+    >Après avoir activé la fonctionnalité en préversion Information Protection, vous devez redémarrer Desktop pour pouvoir commencer à utiliser des étiquettes de sensibilité.
+    >
+    >Si Desktop plante lorsque vous le redémarrez, cela peut être dû au fait que la version requise de la bibliothèque Runtime Redistributable Visual C++ n’est pas installée sur votre ordinateur. Si vous rencontrez ce problème, accédez à la [page de téléchargement de Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/download/details.aspx?id=53587) pour obtenir des instructions sur le téléchargement et l’installation de la mise à jour. Après avoir installé la mise à jour, réessayez de démarrer Desktop.
+
     Si vous ne voyez pas l’option en préversion Information Protection, cette fonctionnalité est peut être bloquée pour votre organisation. Dans ce cas, contactez votre administrateur Power BI.
 
-    >[!NOTE]
-    >Après avoir activé la fonctionnalité en préversion Information Protection, vous devez redémarrer Desktop pour pouvoir commencer à utiliser des étiquettes de sensibilité.
 * Vous devez être connecté.
 
 Pour appliquer une étiquette de sensibilité sur le fichier sur lequel vous travaillez, cliquez sur le bouton de sensibilité dans l’onglet Accueil, puis choisissez l’étiquette souhaitée dans le menu qui s’affiche.

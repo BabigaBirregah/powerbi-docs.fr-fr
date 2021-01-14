@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 12/09/2020
+ms.date: 1/11/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 383c9bd20c86d89c5bf51c64c8027f86c1bfaab9
-ms.sourcegitcommit: 8250187368d3de48663eb516a816ff701119b579
+ms.openlocfilehash: 3a3a0f44fd9f02942ecc8f6646d219ace649b295
+ms.sourcegitcommit: c86ce723d5db16fb960d1731795d84f4654e4b4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96998964"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110756"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint"></a>Connectivité des jeux de données avec le point de terminaison XMLA
 
@@ -36,9 +36,9 @@ Voici quelques-uns des outils les plus courants utilisés avec Azure Analysis Se
 
 **Visual Studio avec Analysis Services projets** , également appelé SQL Server Data Tools ou simplement **SSDT**, est un outil de création de modèles de niveau entreprise pour les modèles tabulaires Analysis Services. Les extensions de projets Analysis Services sont prises en charge sur toutes les éditions de Visual Studio 2017 et versions ultérieures, y compris l’édition Communauté gratuite. La version d’extension 2.9.14 ou ultérieure est nécessaire pour déployer des modèles tabulaires dans un espace de travail Premium. Lors du déploiement vers un espace de travail Premium, le modèle doit être au niveau de compatibilité 1500 ou supérieur. La lecture-écriture XMLA est requise sur la charge de travail des jeux de données. Pour en savoir plus, consultez [Outils pour Analysis Services](/analysis-services/tools-and-applications-used-in-analysis-services?view=power-bi-premium-current&preserve-view=true).
 
-**SQL Server Management Studio (SSMS)**   : prend en charge les requêtes DAX, MDX et XMLA. Effectuez des opérations d’actualisation précises et des scripts de métadonnées du jeu de données à l’aide du [Langage de script de modèle tabulaire](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) (TMSL). L’accès en lecture seule est requis pour les opérations de requête. L’accès en lecture/écriture est requis pour les métadonnées de script. Nécessite SSMS version 18.7.1 ou ultérieure. Téléchargez [ici](/sql/ssms/download-sql-server-management-studio-ssms).
+**SQL Server Management Studio (SSMS)**   : prend en charge les requêtes DAX, MDX et XMLA. Effectuez des opérations d’actualisation précises et des scripts de métadonnées du jeu de données à l’aide du [Langage de script de modèle tabulaire](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) (TMSL). L’accès en lecture seule est requis pour les opérations de requête. L’accès en lecture/écriture est requis pour les métadonnées de script. Nécessite SSMS version **18.8** ou ultérieure. Téléchargez [ici](/sql/ssms/download-sql-server-management-studio-ssms).
 
-**SQL Server Profiler**  : installé avec SSMS, cet outil fournit le traçage et le débogage des événements des jeux de données. Bien qu’officiellement déprécié pour SQL Server, Profiler continue à être inclus dans SSMS. Il reste pris en charge pour Analysis Services et Power BI Premium. L’accès en lecture seule XMLA est requis. Pour en savoir plus, consultez  [SQL Server Profiler pour Analysis Services](/analysis-services/instances/use-sql-server-profiler-to-monitor-analysis-services?view=power-bi-premium-current&preserve-view=true).
+**SQL Server Profiler**  : installé avec SSMS, cet outil fournit le traçage et le débogage des événements des jeux de données. Bien qu’officiellement déprécié pour SQL Server, Profiler continue à être inclus dans SSMS. Il reste pris en charge pour Analysis Services et Power BI Premium. Nécessite SQL Server Profiler version **18.8** ou ultérieure, et l’activation du paramètre de lecture seule XMLA sur la capacité Premium. L’utilisateur doit spécifier le jeu de données ([catalogue initial](#initial-catalog)) lors de la connexion au point de terminaison XMLA. Pour en savoir plus, consultez  [SQL Server Profiler pour Analysis Services](/analysis-services/instances/use-sql-server-profiler-to-monitor-analysis-services?view=power-bi-premium-current&preserve-view=true).
 
 **Assistant de déploiement Analysis Services**  : installé avec SSMS, cet outil permet de déployer des projets de modèles tabulaires créés par Visual Studio dans des espaces de travail Analysis Services et Power BI Premium. Il peut être exécuté de manière interactive ou à partir de la ligne de commande pour l’automatisation. L’accès en lecture/écriture XMLA est requis. Pour en savoir plus, consultez [Assistant de déploiement Analysis Services](/analysis-services/deployment/deploy-model-solutions-using-the-deployment-wizard?view=power-bi-premium-current&preserve-view=true).
 
@@ -99,7 +99,9 @@ Dans **Paramètres d’espace de travail** > **Premium** > **Connexion d’espac
 
 ### <a name="initial-catalog"></a>Catalogue initial
 
-Pour certains outils, comme SQL Server Profiler, vous devrez peut-être spécifier un *Catalogue initial*. Spécifiez un jeu de données (une base de données) dans votre espace de travail. Dans la boîte de dialogue **Se connecter au serveur**, sélectionnez **Options** > **Propriétés de connexion** > **Connexion à une base de données**, entrez le nom du jeu de données.
+Avec certains outils, tels que SQL Server Profiler, vous devez spécifier un *catalogue initial*, qui est le jeu de données (base de données) auquel se connecter dans votre espace de travail. Dans la boîte de dialogue **Se connecter au serveur**, sélectionnez **Options** > **Propriétés de connexion** > **Connexion à une base de données**, entrez le nom du jeu de données.
+
+![Sélection du jeu de données dans SQL Server Profiler](media/service-premium-connect-tools/sql-profiler-connection-properties.png)
 
 ### <a name="duplicate-workspace-names"></a>Noms d’espaces de travail dupliqués
 
@@ -126,6 +128,10 @@ Les jeux de données suivants ne sont pas accessibles par le point de terminaiso
 - Jeux de données basés sur une connexion active à un jeu de données Power BI dans un autre espace de travail. Pour en savoir plus, consultez [Présentation de jeux de données dans des espaces de travail](../connect-data/service-datasets-across-workspaces.md).
 - Jeux de données avec des données push à l’aide de l’API REST.
 - Jeux de données de classeur Excel.
+
+### <a name="serverworkspace-alias"></a>Alias de serveur/d’espace de travail
+
+Les alias de nom de serveur pris en charge dans Azure Analysis Services ne sont pas pris en charge pour les espaces de travail Power BI Premium.
 
 ## <a name="security"></a>Sécurité
 

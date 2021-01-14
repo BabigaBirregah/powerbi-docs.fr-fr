@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: a06553a3e0c090d4e4b0e007b61148115f8f5eb5
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: b9623b91555efe01817e4ffca3c6f80bd73c5243
+ms.sourcegitcommit: c86ce723d5db16fb960d1731795d84f4654e4b4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97885220"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110886"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers"></a>Tutoriel : Incorporer des rapports paginés Power BI dans une application pour vos clients
 
@@ -58,10 +58,16 @@ Avant d’importer ou de charger un rapport paginé à incorporer, l’espace de
 * **Power BI Premium** : pour incorporer un rapport paginé, une capacité de référence SKU *P* est nécessaire. Lors de l’incorporation de contenu Power BI, cette solution est appelée *incorporation de Power BI*. Pour plus d’informations sur cet abonnement, consultez [Qu’est-ce que Power BI Premium ?](../../admin/service-premium-what-is.md)
 * **Azure Power BI Embedded** : vous pouvez acheter une capacité à partir du [portail Microsoft Azure](https://portal.azure.com). Cet abonnement utilise les références SKU *A*. Pour incorporer des rapports paginés, vous devez disposer au moins d’un abonnement *A4*. Pour en savoir plus sur la création d’une capacité Power BI Embedded, consultez [Créer une capacité Power BI Embedded dans le Portail Microsoft Azure](azure-pbie-create-capacity.md).
 
+    >[!NOTE]
+    >Power BI Embedded a récemment fait l’objet d’une nouvelle version, appelée **Embedded Gen2**. Embedded Gen2 simplifie la gestion des capacités intégrées et améliore l’expérience avec Power BI Embedded. Pour plus d’informations, consultez [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
+
 Le tableau ci-dessous décrit les ressources et les limites de chaque référence SKU. Pour déterminer la capacité qui correspond le mieux à vos besoins, consultez le tableau [Quelle référence SKU dois-je acheter pour mon scénario ?](./embedded-faq.md#which-solution-should-i-choose)
 
 | Nœuds de capacité | Total des v-cores | Cœurs virtuels backend | RAM (Go) | Cœurs virtuels frontend | 
 | --- | --- | --- | --- | --- |
+| A1 avec [Embedded Gen2](power-bi-embedded-generation-2.md) | 1 | 0,5 | 2.5 | 0,5 |
+| A2 avec [Embedded Gen2](power-bi-embedded-generation-2.md) | 2 | 1 | 5 | 1 |
+| A3 avec [Embedded Gen2](power-bi-embedded-generation-2.md) | 4 | 2 | 10 | 2 |
 | P1/A4 | 8 | 4 | 25 | 4 |
 | P2/A5 | 16 | 8 | 50 | 8 |
 | P3/A6 | 32 | 16 | 100 | 16 |

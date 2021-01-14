@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/17/2020
+ms.date: 01/08/2021
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 4b5c076837ea5f70a84c1782349fd27ced4d866c
-ms.sourcegitcommit: b8e4dd67c59db079fdfa82a8a01c2a28fd1673ca
+ms.openlocfilehash: d7dfcdadd4becddb46127106b390d566faa2f9b9
+ms.sourcegitcommit: f791eef8e885f18c48997c9af63ab56211f1ceb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97699342"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "98053440"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>S’abonner à un rapport ou un tableau de bord dans le service Power BI 
 
@@ -96,7 +96,7 @@ Un abonnement se termine si la licence Pro expire, si le tableau de bord ou le r
 * Si les liens qui sont fournis dans l’e-mail (et qui mènent au contenu) cessent de fonctionner, il est possible que le contenu ait été supprimé. Dans l’e-mail, sous la capture d’écran, vous pouvez voir si vous vous êtes abonné vous-même ou si quelqu’un d’autre s’est chargé de vous abonner. Si c’est quelqu’un d’autre, demandez-lui d’annuler les e-mails ou de vous réabonner.
 * Pour les abonnements aux tableaux de bord, certains types de mosaïques ne sont pas encore pris en charge, notamment les vignettes de streaming, vidéo, de contenu web personnalisé. 
 * Les abonnements aux pages de rapports sont liés au nom de la page de rapport. Si vous vous abonnez à une page de rapport et que vous la renommez, vous devez recréer votre abonnement.
-* Si vous ne pouvez pas utiliser la fonctionnalité d’abonnement, contactez votre administrateur système ou le service d’assistance informatique. Votre organisation a peut-être désactivé cette fonctionnalité.  
+* Si vous ne pouvez pas utiliser la fonctionnalité d’abonnement, contactez votre administrateur système ou le service d’assistance informatique. Votre organisation a peut-être désactivé cette fonctionnalité, ou une limite maximale d’abonnés a peut-être été atteinte.  
 * Les abonnements aux courriers ne prennent pas en charge la plupart des [visuels personnalisés](../developer/visuals/power-bi-custom-visuals.md).  L’exception est celle des visuels Power BI personnalisés qui ont été [certifiés](../developer/visuals/power-bi-custom-visuals-certified.md).    
 * Les abonnements aux e-mails sont envoyés avec l’état par défaut des filtres et des segments du rapport. Si vous changez les valeurs par défaut après l’abonnement, les changements ne s’affichent pas dans l’e-mail. Les rapports paginés prennent en charge cette fonctionnalité et vous permettent de définir les valeurs de paramètre spécifiques par abonnement.  
 * À ce stade, les abonnements aux e-mails ne prennent pas en charge les visuels Power BI alimentés par R.  

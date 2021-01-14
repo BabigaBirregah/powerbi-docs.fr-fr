@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/22/2020
-ms.openlocfilehash: f6ca898bafff0b3375df65b63f913eb81d8dc006
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: de954c5950f550c3ed2f3c340714851f5233d3e8
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888946"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969762"
 ---
 # <a name="tutorial-embed-power-bi-content-using-a-sample-embed-for-your-customers-application"></a>Tutoriel : Incorporer du contenu Power BI en utilisant un exemple d’application *Incorporer pour vos clients*
 
@@ -147,7 +147,7 @@ Le tableau ci-dessous décrit quelques-unes des principales différences entre l
 
 |Considération  |Principal du service  |Utilisateur maître  |
 |---------|---------|---------|
-|Mechanism     |L’[objet de principal de service](/azure/active-directory/develop/app-objects-and-service-principals.md#service-principal-object) de votre application Azure AD permet à Azure AD d’authentifier votre application de solution incorporée auprès de Power BI.        |Votre application Azure AD utilise les informations d’identification (nom d’utilisateur et mot de passe) d’un utilisateur Power BI pour s’authentifier auprès de Power BI.         |
+|Mechanism     |L’[objet de principal de service](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) de votre application Azure AD permet à Azure AD d’authentifier votre application de solution incorporée auprès de Power BI.        |Votre application Azure AD utilise les informations d’identification (nom d’utilisateur et mot de passe) d’un utilisateur Power BI pour s’authentifier auprès de Power BI.         |
 |Sécurité     |*Principal de service* est la méthode d’autorisation recommandée d’Azure AD. Si vous utilisez un principal de service, * vous pouvez vous authentifier en utilisant un *secret d’application* ou un *certificat*.</br></br>Ce tutoriel décrit l’utilisation du *principal de service* avec un *secret d’application*. Pour incorporer en utilisant un *principal de service* et un *certificat*, reportez-vous à l’article [principal de service avec un certificat](embed-service-principal-certificate.md).         |Cette méthode d’authentification n’est pas considérée comme étant aussi sécurisée que l’utilisation d’un *principal de service*. Cela est dû au fait que vous devez être vigilant avec les informations d’identification (nom d’utilisateur et mot de passe) de l’*utilisateur maître*. Par exemple, vous ne devez pas les exposer dans votre application d’incorporation, et vous devez changer le mot de passe fréquemment.         |
 |Autorisations déléguées d’Azure AD |Non obligatoire. |Votre *utilisateur maître* ou un administrateur doit donner son consentement à votre application pour qu’elle puisse accéder aux [autorisations](/azure/active-directory/develop/v2-permissions-and-consent) de l’API REST Power BI (également appelées « étendues »). Par exemple, *Report.ReadWrite.All*. |
 |Accès au service Power BI |Vous ne pouvez pas accéder au service Power BI avec un *principal de service*.|Vous pouvez accéder au service Power BI avec les informations d’identification de votre *utilisateur maître*.|
@@ -185,7 +185,7 @@ Pour créer un espace de travail, effectuez les actions suivantes :
 
 ## <a name="step-4---create-and-publish-a-power-bi-report"></a>Étape 4 - Créer et publier un rapport Power BI
 
-L’étape suivante consiste à créer un rapport et à le charger dans votre espace de travail. Vous pouvez [créer votre propre rapport](/powerbi-docs/fundamentals/desktop-getting-started#build-reports) en utilisant Power BI Desktop, puis le [publier](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work) dans votre espace de travail. Vous pouvez aussi charger un exemple de rapport dans votre espace de travail.
+L’étape suivante consiste à créer un rapport et à le charger dans votre espace de travail. Vous pouvez [créer votre propre rapport](/power-bi/fundamentals/desktop-getting-started#build-reports) en utilisant Power BI Desktop, puis le [publier](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work) dans votre espace de travail. Vous pouvez aussi charger un exemple de rapport dans votre espace de travail.
 
 >[!Tip]
 >Si vous disposez déjà d’un espace de travail avec un rapport, vous pouvez passer cette étape.
@@ -536,7 +536,7 @@ Effectuez les étapes suivantes pour modifier l’exemple d’application *Incor
 
     a. Dans le terminal de l’IDE, exécutez `npm start`.
 
-    b. Ouvrez un nouvel onglet dans votre navigateur et accédez à [http://localhost:5300](http://localhost:5300).
+    b. Ouvrez un nouvel onglet dans votre navigateur et accédez à `http://localhost:5300`.
 
 # <a name="python"></a>[Python](#tab/python)
 
@@ -571,7 +571,7 @@ Effectuez les étapes suivantes pour modifier l’exemple d’application *Incor
 
     a. Dans **PowerShell** ou **Invite de commandes**, accédez au dossier **Python** > **Incorporer pour vos clients** > **AppOwnesData**, puis exécutez `flask run`.
 
-    b. Ouvrez un nouvel onglet dans votre navigateur et accédez à [http://localhost:5300](http://localhost:5300).
+    b. Ouvrez un nouvel onglet dans votre navigateur et accédez à `http://localhost:5300`.
 
 ---
 
@@ -579,7 +579,7 @@ Effectuez les étapes suivantes pour modifier l’exemple d’application *Incor
 
 Après avoir configuré et exécuté l’exemple d’application *Incorporer pour vos clients*, vous pouvez commencer à développer votre propre application.
 
-Quand vous êtes prêt, examinez les exigences pour [passer en production](move-to-production.md). Vous aurez également besoin d’une [capacité](embedded-capacity.md), et vous devez passer en revue l’article sur la [planification de la capacité](embedded-capacity-planning.md) pour établir la référence SKU correspondant le mieux à vos besoins.
+Quand vous êtes prêt, examinez les exigences pour [passer en production](move-to-production.md). Vous aurez également besoin d’une [capacité](embedded-capacity.md) ; lisez l’article sur la [planification de la capacité](embedded-capacity-planning.md) pour déterminer la référence SKU la mieux adaptée à vos besoins.
 
 
 ## <a name="next-steps"></a>Étapes suivantes

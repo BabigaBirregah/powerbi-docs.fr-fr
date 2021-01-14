@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 01/08/2021
 LocalizationGroup: Consumer
-ms.openlocfilehash: f1265a8eb3fb4a7a1ec18a74c6b3a7d28b3b09ba
-ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
+ms.openlocfilehash: a4a89fd9db3ea3d92012bdaffdcaf248f7546c86
+ms.sourcegitcommit: f791eef8e885f18c48997c9af63ab56211f1ceb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96578242"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "98053463"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Ajouter des commentaires à un tableau de bord ou à un rapport
 
@@ -92,7 +92,7 @@ Vous pouvez également ajouter des commentaires à des vignettes de tableau de b
 5. Sélectionnez **Fermer** pour revenir au tableau de bord ou au rapport.
 
 ### <a name="get-your-colleagues-attention-by-using-the--sign"></a>Attirer l’attention de vos collègues à l’aide du symbole @
-Que vous ajoutiez des commentaires à un tableau de bord, un rapport, une vignette ou un visuel, vous pouvez utiliser le symbole « \@ » pour attirer l’attention de vos collègues.  Quand vous tapez le symbole « \@ », Power BI ouvre une liste déroulante dans laquelle vous pouvez rechercher des personnes de votre organisation et les sélectionner. Tout nom vérifié commençant par le symbole « \@ » s’affiche en bleu. Les personnes @mentioned reçoivent immédiatement un e-mail dans leur boîte de réception et, si elles utilisent une application Power BI Mobile, elles reçoivent une notification Push sur leur appareil. Elles peuvent ouvrir le commentaire directement à partir de la notification, afficher les données et répondre en conséquence.
+Que vous ajoutiez des commentaires à un tableau de bord, un rapport, une vignette ou un visuel, vous pouvez utiliser le symbole « \@ » pour attirer l’attention de vos collègues.  Quand vous tapez le symbole « \@ », Power BI ouvre une liste déroulante dans laquelle vous pouvez rechercher des personnes de votre organisation et les sélectionner. Tout nom vérifié commençant par le symbole « \@ » s’affiche en bleu. Les personnes @mentioned reçoivent immédiatement un e-mail dans leur boîte de réception et, si elles utilisent une application Power BI Mobile, elles reçoivent une notification Push sur leur appareil. Elles peuvent alors ouvrir le rapport ou le tableau de bord directement à partir de la notification, lire le commentaire, afficher les données et répondre en conséquence.
 
 Voici une conversation avec le *concepteur* d’une visualisation. Il utilise le symbole @ pour que je voie le commentaire. Je reçois une notification et je sélectionne le lien pour ouvrir ce tableau de bord et la conversation correspondante.  
 

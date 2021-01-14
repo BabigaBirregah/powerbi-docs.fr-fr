@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/18/2020
+ms.date: 01/08/2021
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 4a8234176dd44fd265ff2d4a6af8e1b5568a642c
-ms.sourcegitcommit: b8e4dd67c59db079fdfa82a8a01c2a28fd1673ca
+ms.openlocfilehash: 1253c2b2548a7e6333840b8d33fdf255d5634be5
+ms.sourcegitcommit: f791eef8e885f18c48997c9af63ab56211f1ceb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97699269"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "98053394"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports et tableaux de bord dans le service Power BI
 
@@ -128,6 +128,7 @@ Les administrateurs Power BI peuvent utiliser les journaux d’audit Power BI 
 - L’option permettant de fournir l’accès au rapport/tableau de bord s’affiche toujours comme étant activée quand vous modifiez un abonnement existant.  Si vous désactivez cette option et que vous enregistrez l’abonnement, il enregistre cet état. Cependant, quand vous modifiez à nouveau le rapport, elle est activée par défaut.
 - Si vous avez une adresse e-mail secondaire, mais pas d’adresse e-mail principale, Power BI l’utilise pour remettre l’abonnement.
 - Si vous abonnez des utilisateurs externes à un rapport ou à un tableau de bord, ils reçoivent une notification de partage dès que vous sélectionnez **Enregistrer et fermer** dans le volet d’abonnement. Cette notification est envoyée uniquement aux utilisateurs externes (pas aux utilisateurs internes), car ils ont besoin d’un lien d’invitation pour afficher le rapport ou le tableau de bord. 
+- Il existe une limite du nombre d’abonnés par rapport ou tableau de bord. Si vous dépassez le nombre de 200 abonnés, vous risquez de rencontrer des problèmes de remise.
 
 ### <a name="dashboards"></a>Tableaux de bord
 

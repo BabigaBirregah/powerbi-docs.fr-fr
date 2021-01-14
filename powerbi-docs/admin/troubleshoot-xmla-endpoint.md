@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 01/04/2021
+ms.date: 01/11/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: 191cf3ce71ca30f257276df78ad43cdb2e49a1e1
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 16a07065507abfe825c39677f234d626070827b4
+ms.sourcegitcommit: c86ce723d5db16fb960d1731795d84f4654e4b4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97886078"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110725"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>Résoudre les problèmes de connectivité des points de terminaison XMLA
 
@@ -213,6 +213,10 @@ Quand vous republiez un jeu de données connecté dynamique à l’aide du conne
 :::image type="content" source="media/troubleshoot-xmla-endpoint/couldnt-publish-to-power-bi.png" alt-text="Erreur Impossible de publier sur Power BI.":::
 
 Comme indiqué dans le message d’erreur, pour résoudre ce problème, supprimez ou renommez le jeu de données existant. De même, veillez à republier toutes les applications qui dépendent du rapport. Si nécessaire, les utilisateurs en aval doivent aussi être informés de la mise à jour des signets éventuels avec la nouvelle adresse du rapport de telle sorte qu’ils accèdent au rapport le plus récent.  
+
+## <a name="workspaceserver-alias"></a>Alias d’espace de travail/de serveur
+
+Contrairement à dans Azure Analysis Services, les [alias](/azure/analysis-services/analysis-services-server-alias) de nom de serveur **ne sont pas pris en charge** pour les espaces de travail Power BI Premium. 
 
 ## <a name="see-also"></a>Voir aussi
 

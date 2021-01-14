@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 408b5a03b415e6b1dabdb762eefee81e1a4fe483
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: cdb3543bc65e21f53cc21dea0f4da62910a7bd55
+ms.sourcegitcommit: c86ce723d5db16fb960d1731795d84f4654e4b4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97887359"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110840"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sécurité au niveau des lignes avec Power BI Embedded
 
@@ -320,15 +320,18 @@ La valeur fournie dans le blob d’identité doit être un jeton d’accès vali
 
 ## <a name="on-premises-data-gateway-with-service-principal"></a>Passerelle de données locale avec principal de service
 
-Les clients qui configurent la sécurité au niveau des lignes (SNL) à l’aide d’une source de données à connexion active locale SSAS (SQL Server Analysis Services) peuvent bénéficier de la nouvelle fonctionnalité du [principal de service](embed-service-principal.md) pour gérer les utilisateurs et leur accès aux données dans SSAS lors de l’intégration à **Power BI Embedded**.
+Les clients qui utilisent une source de données à connexion active locale SSAS (SQL Server Analysis Services) peuvent bénéficier de la fonctionnalité du [principal de service](embed-service-principal.md) pour gérer les utilisateurs et leur accès aux données dans SSAS lors de l’intégration à **Power BI Embedded**.
 
 L’utilisation des [API REST Power BI](/rest/api/power-bi/) vous permet de spécifier l’identité effective des connexions actives locales SSAS pour un jeton d’incorporation à l’aide d’un [objet de principal de service](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object).
 
-Jusqu’à présent, pour pouvoir spécifier l’identité effective d’une connexion active locale SSAS, l’utilisateur principal générant le jeton d’incorporation devait être administrateur de passerelle. Désormais, au lieu d’exiger que l’utilisateur soit administrateur de passerelle, ce dernier peut accorder à l’utilisateur une autorisation dédiée à cette source de données. L’utilisateur peut ainsi remplacer l’identité effective au moment de la génération du jeton d’incorporation. Cette nouvelle fonctionnalité permet l’incorporation de contenu avec un principal de service pour une connexion SSAS active.
+Jusqu’à présent, pour pouvoir spécifier l’identité effective d’une connexion active locale SSAS, l’*utilisateur principal* générant le jeton d’incorporation devait être administrateur de passerelle. Désormais, au lieu d’exiger que l’utilisateur soit administrateur de passerelle, ce dernier peut accorder à l’utilisateur une autorisation dédiée à cette source de données. L’utilisateur peut ainsi remplacer l’identité effective au moment de la génération du jeton d’incorporation. Cette nouvelle fonctionnalité permet l’incorporation de contenu avec un principal de service pour une connexion SSAS active.
 
-Pour activer ce scénario, l’administrateur de passerelle utilise l’[API REST d’ajout d’utilisateur à la source de données](/rest/api/power-bi/gateways/adddatasourceuser) afin de donner au principal de service l’autorisation *ReadOverrideEffectiveIdentity* pour Power BI Embedded.
+Pour ce scénario, l’administrateur de passerelle doit utiliser l’[API REST d’ajout d’utilisateur à la source de données](/rest/api/power-bi/gateways/adddatasourceuser) afin de donner au principal de service l’autorisation *ReadOverrideEffectiveIdentity* pour la source de données SSAS.
 
 Vous ne pouvez pas définir cette autorisation à l’aide du portail d’administration. Cette autorisation est définie uniquement avec l’API. Dans le portail d’administration, vous voyez une indication pour les utilisateurs et les SPN disposant de telles autorisations.
+
+>[!NOTE]
+>Si vous êtes connecté à une base de données SSAS sur laquelle la sécurité au niveau des lignes n’est pas configurée, vous devez fournir une identité effective (l’identité de l’administrateur de serveur SSAS) dans l’appel de génération de jetons d’incorporation.
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 

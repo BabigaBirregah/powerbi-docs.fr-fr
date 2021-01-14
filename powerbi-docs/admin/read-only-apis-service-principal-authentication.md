@@ -10,12 +10,12 @@ ms.date: 12/01/2020
 ms.author: painbar
 ms.custom: ''
 LocalizationGroup: Administration
-ms.openlocfilehash: ec3cd60916630fe355b9ea4f54d5a025788800bf
-ms.sourcegitcommit: 30d0668434283c633bda9ae03bc2aca75401ab94
+ms.openlocfilehash: 332101009946c64cb5e97bd40b9949f6daa67b7b
+ms.sourcegitcommit: b4c457bfb4676381dc4a0d04d965e8dab0bc230e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96906816"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98155684"
 ---
 # <a name="enable-service-principal-authentication-for-read-only-admin-apis-preview"></a>Activer l’authentification du principal de service pour les API d’administration en lecture seule (préversion)
 
@@ -42,7 +42,7 @@ Pour activer l’authentification du principal de service pour les API en lectur
         * Sélectionnez **Autorisations**. Vérifiez qu’il n’existe pas d’autorisations avec consentement requis de l’administrateur Power BI définies sur cette application. Pour plus d’informations, consultez [Gestion du consentement pour les applications et évaluation des demandes de consentement](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests). 
 4. Activez les paramètres d’administrateur de service Power BI. Pour ce faire :
     1. Connectez-vous au portail d’administration de Power BI. Vous devez être administrateur Power BI pour voir la page des paramètres du locataire.
-    1. Sous **Paramètres de développeur**, vous voyez **Autoriser les principaux de service à utiliser les API d’administration Power BI en lecture seule (préversion)** . Définissez le bouton bascule sur Activé, puis sélectionnez la case d’option **Groupes de sécurité spécifiques** et ajoutez le groupe de sécurité que vous avez créé à l’étape 2 dans le champ de texte qui apparaît en dessous de celui-ci, comme illustré dans la figure ci-dessous.
+    1. Sous **Paramètres des API d’administration**, vous voyez **Autoriser les principaux de service à utiliser les API d’administration Power BI en lecture seule (préversion)** . Définissez le bouton bascule sur Activé, puis sélectionnez la case d’option **Groupes de sécurité spécifiques** et ajoutez le groupe de sécurité que vous avez créé à l’étape 2 dans le champ de texte qui apparaît en dessous de celui-ci, comme illustré dans la figure ci-dessous.
 
         ![Capture d’écran du paramètre de locataire Autoriser les principaux de service.](media/read-only-apis-service-principal-auth/allow-service-principals-tenant-setting.png)
 
@@ -53,7 +53,7 @@ Pour activer l’authentification du principal de service pour les API en lectur
 
 ## <a name="considerations-and-limitations"></a>Observations et limitations
 * Vous ne pouvez pas vous connecter au portail Power BI avec un principal de service.
-* Vous devez disposer de droits d’administrateur Power BI pour activer le principal de service dans les paramètres du développeur dans le portail d’administration de Power BI.
+* Vous devez disposer de droits d’administrateur Power BI pour activer le principal de service dans les paramètres des API d’administration dans le portail d’administration de Power BI.
 * Le principal de service prend actuellement en charge les API suivantes :
     * [GetGroupsAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/groups_getgroupsasadmin) avec $expand pour les tableaux de bord, les jeux de données, les rapports et les dataflows 
     * [GetDashboardsAsAdmin](https://docs.microsoft.com/rest/api/power-bi/admin/dashboards_getdashboardsasadmin) avec le vignettes $expand

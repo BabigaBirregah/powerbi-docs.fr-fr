@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2020
 LocalizationGroup: Administration
-ms.openlocfilehash: ff41f702edc605ee346aa10a759e633377597504
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 9ed9b42a42e497eaa332b3b1eb93be6247ddc542
+ms.sourcegitcommit: c700e78dfedc34f5a74b23bbefdaef77e2a87f8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96408961"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97961221"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>FAQ sur la haute disponibilité, le basculement et la reprise d’activité avec Power BI
 
@@ -26,7 +26,7 @@ Power BI est un logiciel en tant que service (SaaS) complètement managé.  Micr
 
 ## <a name="what-is-a-power-bi-failover"></a>Qu’est-ce qu’un basculement Power BI ?
 
-Power BI conserve plusieurs instances de chaque composant dans des centres de données Azure (aussi appelés régions) pour assurer la continuité de l’activité. En cas de panne ou de problème rendant Power BI inaccessible ou inutilisable dans une région, Power BI bascule tous ses composants dans cette région sur une instance de sauvegarde. Le basculement restaure la disponibilité et l’utilisabilité de l’instance de service Power BI dans une nouvelle région (généralement dans la même zone géographique, comme indiqué dans [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)).
+Power BI conserve plusieurs instances de chaque composant dans des centres de données Azure (aussi appelés régions) pour assurer la continuité de l’activité. En cas de panne ou de problème rendant Power BI inaccessible ou inutilisable dans une région, Power BI bascule tous ses composants dans cette région sur une instance de sauvegarde. Le basculement restaure la disponibilité et l’utilisabilité de l’instance de service Power BI dans une nouvelle région (généralement dans la même zone géographique, comme indiqué dans [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview).
 
 Une instance de service Power BI qui a basculé prend uniquement en charge les _opérations de lecture_, ce qui signifie que les opérations suivantes ne sont pas prises en charge pendant le basculement : actualisations, opérations de publication de rapport, modifications de tableau de bord ou de rapport et autres opérations qui nécessitent un changement des métadonnées de Power BI (par exemple, insertion d’un commentaire dans un rapport).  Les opérations de lecture, comme l’affichage des tableaux de bord et des rapports (qui ne reposent pas sur DirectQuery ni Live Connect pour les sources de données locales) continuent à fonctionner normalement.
 
@@ -36,7 +36,7 @@ Tous les composants de service Power BI synchronisent régulièrement leurs inst
 
 ## <a name="where-are-the-failover-clusters-located"></a>Où se trouvent les clusters de basculement ?
 
-Les instances de sauvegarde résident dans la même zone géographique que celle sélectionnée quand votre organisation s’est inscrite à Power BI, sauf indication contraire dans [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). Une zone géographique peut contenir plusieurs régions et Microsoft peut répliquer des données sur n’importe quelle région d’une zone géographique donnée pour assurer la résilience des données. Microsoft ne réplique ni ne déplace les données d’un client en dehors de la zone géographique. Pour avoir un mappage des zones géographiques proposées par Power BI et des régions qu’elles contiennent, consultez [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location).
+Les instances de sauvegarde résident dans la même zone géographique que celle sélectionnée quand votre organisation s’est inscrite à Power BI, sauf indication contraire dans [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview). Une zone géographique peut contenir plusieurs régions et Microsoft peut répliquer des données sur n’importe quelle région d’une zone géographique donnée pour assurer la résilience des données. Microsoft ne réplique ni ne déplace les données d’un client en dehors de la zone géographique. Pour avoir un mappage des zones géographiques proposées par Power BI et des régions qu’elles contiennent, consultez [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview).
 
 ## <a name="how-does-microsoft-decide-to-fail-over"></a>Comment Microsoft détermine s’il faut effectuer un basculement ?
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 12/09/2020
+ms.date: 01/06/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: 2265559b9b978681b2f7b210a15f7200fbba7971
-ms.sourcegitcommit: 0711972326521944fdd8572403c0b15f31b916da
+ms.openlocfilehash: c1e5cad6ab1da796d2f10a64e867d5848e86aea4
+ms.sourcegitcommit: b4c457bfb4676381dc4a0d04d965e8dab0bc230e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97721452"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98155615"
 ---
 # <a name="what-is-power-bi-premium"></a>Qu’est-ce que Power BI Premium ?
 
@@ -37,7 +37,7 @@ Cet article présente les fonctionnalités clés de Power BI Premium. Toutefois,
 
 ## <a name="power-bi-premium-generation-2-preview"></a>Power BI Premium Generation 2 (préversion)
 
-Une nouvelle version de Power BI Premium a récemment été publiée. Celle-ci a pour nom **Power BI Premium Generation 2** (ou **Premium Gen2**). Premium Gen2 est actuellement en préversion et peut être utilisée par les abonnés Premium pendant la période de préversion. Vous pouvez soit utiliser la version d’origine de Premium, soit passer à Premium Gen2. Vous pouvez uniquement utiliser l’un ou l’autre pour votre capacité Premium. 
+Une nouvelle version de Power BI Premium a récemment été publiée. Celle-ci a pour nom **Power BI Premium Generation 2** (ou **Premium Gen2**). Premium Gen2 est actuellement en préversion et peut être utilisée par les abonnés Premium pendant la période de préversion. Vous pouvez soit utiliser la version d’origine de Premium, soit passer à Premium Gen2. Vous pouvez uniquement utiliser l’un ou l’autre pour votre capacité Premium.
 
 Premium Gen2 offre les mises à jour ou expériences améliorées suivantes :
 
@@ -95,10 +95,6 @@ Power BI Premium est un abonnement Microsoft 365 au niveau du locataire, dispo
 - Les références SKU **P** (P1-P5), pour l’incorporation et les fonctionnalités d’entreprise nécessitent un engagement mensuel ou annuel, une facturation mensuelle et incluent une licence permettant d’installer localement Power BI Report Server.
 
 - Les références SKU **EM** (EM1-EM3), pour l’_incorporation dans l’organisation_. Nécessitent un engagement annuel, avec une facturation mensuelle. Les références SKU EM1 et EM2 sont disponibles uniquement par le biais d’un programme de licence en volume. Vous ne pouvez pas les acheter directement.
-
-### <a name="updates-for-premium-gen2-preview"></a>Mises à jour pour Premium Gen2 (préversion)
-Premium Gen2 est actuellement disponible sous la forme de fonctionnalité d’évaluation entièrement prise en charge pour les références SKU **P** et **EM** uniquement. La capacité des références SKU **A** n’offre pas encore tous les avantages supplémentaires compris dans la mise à jour de Premium Gen2 en préversion.
-
 
 ### <a name="purchasing"></a>Achat
 
@@ -161,7 +157,6 @@ Les ressources et les limites de chaque référence SKU Premium (et des référ
 #### <a name="updates-for-premium-gen2-preview"></a>Mises à jour pour Premium Gen2 (préversion)
 
 Avec **Premium Gen2**, la quantité de mémoire disponible sur chaque taille de nœud est définie en fonction de la limite d’empreinte mémoire d’un seul artefact, et non pas de la consommation cumulée de mémoire. Par exemple, dans Premium Gen2, la taille d’un seul jeu de données est limitée à 25 Go, alors que dans l’offre Premium d’origine, l’empreinte mémoire totale des jeux de données gérés en même temps est limité à 25 Go.
-
 
 ### <a name="capacity-workloads"></a>Charges de travail de capacité
 
@@ -249,8 +244,6 @@ Pour plus d’informations sur la supervision des capacités, consultez [Supervi
 #### <a name="updates-for-premium-gen2-preview"></a>Mises à jour pour Premium Gen2 (préversion)
 Les capacités **Premium Gen2** n’utilisent pas l’application Métriques, mais elles utilisent l’application Utilisation de la capacité, qui sera rendue disponible pendant la période de préversion. Les clients souhaitant passer en revue leur utilisation peuvent obtenir auprès du support technique une copie de leur rapport d’utilisation des 7 derniers jours. Le rapport est communiqué dans un délai de 72 heures après la demande. Vous lancez l’application Utilisation de la capacité à partir de votre page de gestion de la capacité dans le **portail d’administration** pour chaque capacité. L’analyse obtenue porte sur au moins 30 jours de données.
 
-
-
 ### <a name="optimizing-capacities"></a>Optimisation des capacités
 
 Il est essentiel d’utiliser vos capacités de façon optimale afin de fournir aux utilisateurs les performances qu’ils attendent et de tirer le meilleur parti de votre investissement Premium. La supervision des métriques clés permet aux administrateurs de déterminer le meilleur moyen de résoudre les goulots d’étranglement et de prendre les mesures nécessaires. Pour plus d’informations, consultez [Optimiser les capacités Premium](service-premium-capacity-optimize.md) et [Scénarios de capacité Premium](service-premium-capacity-scenarios.md).
@@ -303,10 +296,10 @@ Pour plus d’informations, consultez [Actualisation incrémentielle dans Power�
 
 Les rapports paginés, qui sont pris en charge par les références SKU P1-P3 et A4-A6, sont basés sur la technologie RDL (Report Definition Language) de SQL Server Reporting Services. Même s’ils sont basés sur la technologie RDL, ce ne sont pas les mêmes que ceux de Power BI Report Server, qui est une plateforme de création de rapports téléchargeable que vous pouvez installer localement, et qui est fournie avec Power BI Premium. Les rapports paginés sont mis en forme de manière à tenir sur une page qui peut être imprimée ou partagée. Les données sont fournies dans un tableau, même si celui-ci s’étend sur plusieurs pages. Avec l’application de bureau Windows gratuite [**Générateur de rapports Power BI**](https://aka.ms/pbireportbuilder), les utilisateurs peuvent créer des rapports paginés et les publier dans le service.
 
-Dans Power BI Premium, les rapports paginés sont une charge de travail qui doit être activée pour une capacité à l’aide du portail d’administration. Les administrateurs de capacités peuvent l’activer, puis spécifier une quantité de mémoire sous la forme d’un pourcentage de la mémoire globale de la capacité. Contrairement aux autres types de charges de travail, Power BI Premium génère les rapports paginés dans un espace contenu au sein de la capacité. La mémoire maximale spécifiée pour cet espace est utilisée, que la charge de travail soit activée ou non. Par défaut, le pourcentage de mémoire est défini sur 20 %. 
+Dans Power BI Premium, les rapports paginés sont une charge de travail qui doit être activée pour une capacité à l’aide du portail d’administration. Les administrateurs de capacités peuvent l’activer, puis spécifier une quantité de mémoire sous la forme d’un pourcentage de la mémoire globale de la capacité. Contrairement aux autres types de charges de travail, Power BI Premium génère les rapports paginés dans un espace contenu au sein de la capacité. La mémoire maximale spécifiée pour cet espace est utilisée, que la charge de travail soit activée ou non. Par défaut, le pourcentage de mémoire est défini sur 20 %.
 
 > [!NOTE]
-> Dans **Premium Gen2 (préversion)** , la mémoire n’est pas gérée pour les rapports paginés. Avec Premium Gen2, les rapports paginés sont pris en charge sur les références SKU EM1-EM3.
+> Dans **Premium Gen2 (préversion)** , la mémoire n’est pas gérée pour les rapports paginés. Avec Premium Gen2, les rapports paginés sont pris en charge sur les références SKU EM1-EM3 et A1-A3.
 
 ### <a name="paginated-reports-and-premium-gen2"></a>Rapports paginés et Premium Gen2
 
@@ -340,7 +333,7 @@ Pour plus d’informations, consultez [Gestion des licences Power BI](service-a
 
 ## <a name="analysis-services-in-power-bi-premium"></a>Analysis Services dans Power BI Premium
 
-Le **moteur Vertipaq Analysis Services**, validé par Microsoft, alimente en arrière-plan les jeux de données et les espaces de travail Power BI Premium. Analysis Services fournit la programmabilité ainsi que la prise en charge des applications et des outils clients par le biais de bibliothèques clientes et d’API qui prennent en charge le protocole XMLA ouvert. Par défaut, les charges de travail des jeux de données de capacité Power BI Premium prennent en charge les opérations *en lecture seule* provenant des applications et outils clients tiers et Microsoft, par le biais d’un **point de terminaison XMLA**. Les administrateurs de capacité peuvent également choisir de désactiver ou d’autoriser des opérations de *lecture/écriture* via le point de terminaison.
+Le **moteur Analysis Services Vertical**, validé par Microsoft, alimente en arrière-plan les jeux de données et les espaces de travail Power BI Premium. Analysis Services fournit la programmabilité ainsi que la prise en charge des applications et des outils clients par le biais de bibliothèques clientes et d’API qui prennent en charge le protocole XMLA ouvert. Par défaut, les charges de travail des jeux de données de capacité Power BI Premium prennent en charge les opérations *en lecture seule* provenant des applications et outils clients tiers et Microsoft, par le biais d’un **point de terminaison XMLA**. Les administrateurs de capacité peuvent également choisir de désactiver ou d’autoriser des opérations de *lecture/écriture* via le point de terminaison.
 
 Avec un accès en lecture seule, les outils Microsoft comme SQL Server Management Studio (SSMS) et SQL Server Profiler, ainsi que les applications tierces telles que DAX Studio et les applications de visualisation des données, peuvent se connecter aux jeux de données Premium et les interroger à l’aide d’événements XMLA, DAX, MDX, DMV et Trace. Avec un accès en lecture/écriture, les outils de modélisation des données d’entreprise, tels que Visual Studio avec l’extension de projets Analysis Services ou l’éditeur tabulaire Open source, peuvent déployer des modèles tabulaires en tant que jeu de données dans un espace de travail Premium. Et, avec des outils tels que SSMS, les administrateurs peuvent utiliser TMSL (Tabular Model Scripting Language) pour écrire des modifications de métadonnées et des scénarios d’actualisation des données avancés. 
 

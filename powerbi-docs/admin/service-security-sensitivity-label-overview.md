@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.custom: contperf-fy21q2
 ms.date: 12/20/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: de7715fc37748ee80cba61f9cc246ad9e1df5c33
-ms.sourcegitcommit: a92a3570eb14793a758a32e8fa1a756ec5d83f8c
+ms.openlocfilehash: d47d9b973eadb06095c2a2aebb8fe93cf6ab4414
+ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97708039"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97969532"
 ---
 # <a name="sensitivity-labels-in-power-bi"></a>Étiquettes de sensibilité dans Power BI
 
@@ -80,7 +80,7 @@ Les étiquettes de sensibilité peuvent également être appliquées dans Power�
 
 >[!NOTE]
 >* Dans cette préversion, certaines limitations peuvent s’appliquer. Voir [Limitations](#limitations).
->* Pendant 48 heures après avoir choisi la fonctionnalité en préversion Information Protection, **vous êtes susceptible de rencontrer des problèmes avec les fichiers .pbix sur lesquels des étiquettes de confidentialité ont été appliquées (par exemple pour publier ces fichiers dans le service ou les télécharger à partir du service)** . Ce type de problème est attendu et sera résolu automatiquement dans un délai de 48 heures.
+>* Pour pouvoir utiliser des étiquettes de confidentialité dans Power BI Desktop, vous devez d’abord [activer la fonctionnalité Information Protection (préversion)](service-security-apply-data-sensitivity-labels.md#apply-sensitivity-labels-in-power-bi-desktop-preview), puis redémarrer le programme. Si le programme plante après son redémarrage, cela peut être dû au fait que la version requise de la bibliothèque Runtime Redistributable Visual C++ n’est pas installée sur votre ordinateur. Si vous rencontrez ce problème, accédez à la [page de téléchargement de Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/download/details.aspx?id=53587) pour obtenir des instructions sur le téléchargement et l’installation de la mise à jour. Après avoir installé la mise à jour, réessayez de démarrer Desktop.
 
 Si vous appliquez une étiquette de sensibilité dans Desktop, lorsque vous publiez votre travail sur le service ou téléchargez un fichier .pbix de ce travail vers le service, l’étiquette se déplace avec les données dans le service. Dans le service, l’étiquette est appliquée au jeu de données et au rapport que vous avez obtenus avec le fichier. Si le jeu de données et le rapport ont déjà des étiquettes de sensibilité, ces étiquettes seront remplacées par l’étiquette provenant de Desktop.
  

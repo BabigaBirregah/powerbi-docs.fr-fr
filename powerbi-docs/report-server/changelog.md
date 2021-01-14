@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 12/31/2020
-ms.openlocfilehash: 7c1df405c80f50b7b98803b68ae2d3887013a623
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.date: 01/06/2021
+ms.openlocfilehash: 51df40463a02c2c165ca6cde59ef2b16cda8860c
+ms.sourcegitcommit: f791eef8e885f18c48997c9af63ab56211f1ceb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97886186"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "98053325"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Journal des modifications pour Power BI Report Server
 
@@ -23,6 +23,10 @@ Pour plus d’informations sur les nouvelles fonctionnalités, consultez [Nouvea
 
 ## <a name="october-2020"></a>Octobre 2020
 - **Power BI Report Server**
+    - *Version : 1.9.7675.15620 (Build 15.0.1104.300), Date de publication : 8 janvier 2021*
+        - Résolution des bogues
+            - Correction du problème lié à l’actualisation des rapports utilisant deux sources de données ou plus qui diffèrent uniquement par la casse des lettres.
+            - Correction du problème lié à l’actualisation des rapports avec certaines combinaisons de jointures imbriquées.
     - *Version : 1.9.7627.11028 (Build 15.0.1104.264), Date de publication : 18 novembre 2020*
         - Résolution des bogues
             - Correction du problème empêchant les utilisateurs de modifier des champs dans les paramètres du site via le portail.

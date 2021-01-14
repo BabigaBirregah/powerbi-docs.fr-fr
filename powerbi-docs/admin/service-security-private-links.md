@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 12/14/2020
 ms.custom: ''
 LocalizationGroup: Administration
-ms.openlocfilehash: da5ee837345b6f26dd6636bc93f6b38c1e0f5ea7
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.openlocfilehash: 56ac55ceec480d6d33d6974b97871c5fa4d2d799
+ms.sourcegitcommit: 73ca86f7633317fe3831839c4dd14a333b2f514c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97491848"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "97979973"
 ---
 # <a name="private-links-for-accessing-power-bi"></a>Liaisons privées pour accéder à Power BI
 
@@ -305,7 +305,7 @@ Vous avez terminé ces étapes. Votre organisation a maintenant accès à Power 
 
 Il y a plusieurs points à prendre en compte si vous utilisez des liaisons privées dans Power BI :
 
-* Il n’est pas possible d’utiliser des images ou thèmes externes dans un environnement de liaison privée, et cela peut impacter les visuels personnalisés.
+* Il n’est pas possible d’utiliser des images ou thèmes externes dans un environnement de liaison privée.
 * Si l’accès à Internet est désactivé et que le jeu de données ou le dataflow se connecte à un jeu de données ou à un dataflow Power BI comme source de données, la connexion échoue.
 * Les métriques d’utilisation *ne fonctionnent pas* quand des liaisons privées sont activées.
 * La publication sur le web est grisée (ce qui signifie qu’elle n’est pas prise en charge) quand vous activez **Bloquer l’accès Internet public** dans Power BI.
