@@ -266,6 +266,8 @@
               href: ../visuals/power-bi-map-tips-and-tricks.md
             - name: "Personnaliser les propriétés des axes\_X et\_Y"
               href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
+            - name: Détection d’anomalie
+              href: ../visuals/power-bi-visualization-anomaly-detection.md
             - name: Interagir avec les cartes ArcGIS dans des visuels Power BI
               href: ../visuals/power-bi-visualizations-arcgis.md
             - name: Graphiques en aires simples
@@ -276,10 +278,6 @@
               href: ../visuals/power-bi-visualization-combo-chart.md
             - name: Visuels de l’arborescence hiérarchique
               href: ../visuals/power-bi-visualization-decomposition-tree.md
-            - name: Narrations intelligentes
-              href: ../visuals/power-bi-visualization-smart-narrative.md
-            - name: Détection d’anomalie
-              href: ../visuals/power-bi-visualization-anomaly-detection.md
             - name: Graphiques en anneau
               href: ../visuals/power-bi-visualization-doughnut-charts.md
             - name: Cartes thématiques (choroplèthes)
@@ -310,6 +308,8 @@
               href: ../visuals/desktop-high-density-scatter-charts.md
             - name: Visuels de carte de formes (préversion)
               href: ../visuals/desktop-shape-map.md
+            - name: Narrations intelligentes
+              href: ../visuals/power-bi-visualization-smart-narrative.md
             - name: Tableaux dans les rapports et les tableaux de bord
               href: ../visuals/power-bi-visualization-tables.md
             - name: Treemaps
