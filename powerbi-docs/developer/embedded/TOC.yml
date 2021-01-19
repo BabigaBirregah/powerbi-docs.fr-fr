@@ -9,8 +9,6 @@
           href: embedding.md
         - name: Qu’est-ce que Power BI Embedded dans Azure
           href: azure-pbie-what-is-power-bi-embedded.md
-        - name: "Qu’est-ce que Power BI Embedded Génération 2\_?"
-          href: power-bi-embedded-generation-2.md
     - name: Tutoriels
       expanded: true
       items:
@@ -40,6 +38,8 @@
           href: paginated-reports-row-level-security.md
         - name: Gérer plusieurs locataires
           href: embed-multi-tenancy.md
+        - name: Connecter un rapport avec la liaison dynamique
+          href: embed-dynamic-binding.md
         - name: Journalisation des diagnostics Azure pour Power BI Embedded
           href: azure-pbie-diag-logs.md
         - name: FAQ incorporation
@@ -64,8 +64,6 @@
           href: register-app.md
         - name: "Obtenir un jeton d’accès Azure\_AD"
           href: get-azuread-access-token.md
-        - name: Connecter un rapport avec la liaison dynamique
-          href: embed-dynamic-binding.md
         - name: Questions et réponses sur l’incorporation
           href: qanda.md
         - name: Résoudre les problèmes de votre application incorporée
