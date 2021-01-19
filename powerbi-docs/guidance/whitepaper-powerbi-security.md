@@ -9,12 +9,12 @@ ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 05/14/2020
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 806869b10b52ff7c161484f3e8d38fbc61b85f60
-ms.sourcegitcommit: c700e78dfedc34f5a74b23bbefdaef77e2a87f8a
+ms.openlocfilehash: 5cee5dd701f7ac40b3f363e1bdcee039037fcde9
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97961267"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565126"
 ---
 # <a name="power-bi-security-whitepaper"></a>Livre blanc sur la sécurité dans Power BI
 
@@ -33,7 +33,7 @@ ms.locfileid: "97961267"
 
 **Power BI** est une offre de service logiciel en ligne (_SaaS_, ou Software as a Service) de Microsoft qui vous permet de créer facilement et rapidement des tableaux de bord, des rapports, des jeux de données et des visualisations de décisionnel en libre-service. Avec Power BI, vous pouvez vous connecter à de nombreuses sources de données différentes, combiner et mettre en forme les données à partir de ces connexions, puis créer des rapports et des tableaux de bord partageables.
 
-Le service Power BI est régi par les [Conditions d’utilisation de Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) et la [Déclaration de confidentialité de Microsoft Enterprise](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Pour l’emplacement du traitement des données, consultez les modalités relatives à l’emplacement de traitement des données dans les Conditions d’utilisation de Microsoft Online Services. Pour les informations sur la conformité, le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/product-overview) est la ressource principale pour Power BI. L’équipe Power BI travaille sans relâche pour proposer à ses clients les dernières innovations et une meilleure productivité. Power BI se trouve actuellement dans le niveau D de l’infrastructure de conformité Microsoft 365. En savoir plus sur la conformité dans le centre de gestion de la [confidentialité Microsoft](https://docs.microsoft.com/compliance/regulatory/offering-home).
+Le service Power BI est régi par les [Conditions d’utilisation de Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) et la [Déclaration de confidentialité de Microsoft Enterprise](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Pour l’emplacement du traitement des données, consultez les modalités relatives à l’emplacement de traitement des données dans les Conditions d’utilisation de Microsoft Online Services. Pour les informations sur la conformité, le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/product-overview) est la ressource principale pour Power BI. L’équipe Power BI travaille sans relâche pour proposer à ses clients les dernières innovations et une meilleure productivité. Power BI se trouve actuellement dans le niveau D de l’infrastructure de conformité Microsoft 365. En savoir plus sur la conformité dans le centre de gestion de la [confidentialité Microsoft](/compliance/regulatory/offering-home).
 
 Cet article décrit la sécurité Power BI en fournissant une explication de l’architecture de Power BI, en expliquant comment les utilisateurs s’authentifient auprès de Power BI et comment sont établies les connexions de données, puis en décrivant comment Power BI stocke et déplace les données dans le service. La dernière section est consacrée aux questions liées à la sécurité.
 
@@ -91,7 +91,7 @@ Les métadonnées relatives à l’abonnement Power BI d’un utilisateur, telle
 
 ## <a name="tenant-creation"></a>Création de locataire
 
-Un locataire est une instance dédiée du service Azure AD qu’une organisation reçoit et possède lorsqu’elle s’inscrit à un service Cloud Microsoft tel qu’Azure, Microsoft Intune, Power BI ou Microsoft 365. Chaque locataire Azure AD est distinct et indépendant des autres locataires Azure AD.
+Un locataire est une instance dédiée du service Azure AD qu’une organisation reçoit et possède lorsqu’elle s’inscrit à un service Cloud Microsoft tel qu’Azure, Microsoft Intune, Power BI ou Microsoft 365. Chaque locataire Azure AD est distinct et indépendant des autres locataires Azure AD.
 
 Un client héberge les utilisateurs d'une entreprise et leurs informations, c’est-à-dire les mots de passe, les données de profil utilisateur, les autorisations, etc. Il contient également des groupes, des applications et d’autres informations relatives à une organisation et à sa sécurité. Pour plus d’informations, consultez [qu’est-ce qu’un locataire Azure ad](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
 
