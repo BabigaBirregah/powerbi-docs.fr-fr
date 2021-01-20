@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/02/2019
-ms.openlocfilehash: ab6d8f208300350a613cc63dab948f42376b905e
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 96859efbaf86c8c6e9abf459500c38d49ee4f112
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96414550"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565494"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Scanner un code QR Power BI à partir de votre appareil mobile
 S’applique à :
@@ -31,7 +31,7 @@ Vous pouvez scanner le code QR pour accéder directement à la vignette ou au r
 Si votre collègue n’a pas partagé le rapport ou le tableau de bord avec vous, vous pouvez demander l’accès directement à partir de l’application mobile. 
 
 > [!NOTE]
-> Vous pouvez aussi [scanner le code QR d’un rapport avec l’application Power BI for Mixed Reality](mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
+> Vous pouvez aussi [scanner le code QR d’un rapport avec l’application Power BI for Mixed Reality](./mobile-hololens2-app.md#open-reports-with-qr-codes).
 
 ## <a name="scan-a-power-bi-qr-code-on-your-iphone-with-the-power-bi-scanner"></a>Scanner un code QR Power BI sur votre iPhone avec le scanner de Power BI
 
@@ -77,5 +77,5 @@ Si votre collègue n’a pas partagé le rapport ou le tableau de bord avec vous
 * [Se connecter aux données Power BI réelles](mobile-apps-data-in-real-world-context.md) avec les applications mobiles
 * [Créer un code QR pour une vignette dans le service Power BI](../../create-reports/service-create-qr-code-for-tile.md)
 * [Créer un code QR pour un rapport dans le service Power BI](../../create-reports/service-create-qr-code-for-report.md)
-* Vous pouvez aussi [scanner un code QR avec l’application Power BI for Mixed Reality](mobile-mixed-reality-app.md).
+* Vous pouvez aussi [scanner un code QR avec l’application Power BI for Mixed Reality](./mobile-hololens2-app.md).
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

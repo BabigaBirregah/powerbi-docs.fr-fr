@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/06/2021
-ms.openlocfilehash: 6b0277b342d454536154207ede2cb4bc2a2ba340
-ms.sourcegitcommit: b4c457bfb4676381dc4a0d04d965e8dab0bc230e
+ms.openlocfilehash: c27d95715fe436b59825390b1cc16111e83ffc1d
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98155661"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98564993"
 ---
 # <a name="capacity-and-skus-in-power-bi-embedded-analytics"></a>Capacité et références SKU dans l’analytique incorporée de Power BI
 
@@ -152,4 +152,4 @@ Le tableau ci-dessous décrit les ressources et les limites de chaque référenc
 >[Incorporer pour votre organisation](embed-sample-for-your-organization.md)
 
 > [!div class="nextstepaction"]
-> [Incorporer à partir d’applications](embed-from-apps.md)
+> [Incorporer à partir d’applications](./index.yml)

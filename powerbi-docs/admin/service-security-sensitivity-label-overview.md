@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.custom: contperf-fy21q2
 ms.date: 12/20/2020
 LocalizationGroup: Data from files
-ms.openlocfilehash: d47d9b973eadb06095c2a2aebb8fe93cf6ab4414
-ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
+ms.openlocfilehash: df109f279a43826e164a461ae213bc74c0498cea
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97969532"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565042"
 ---
 # <a name="sensitivity-labels-in-power-bi"></a>Étiquettes de sensibilité dans Power BI
 
@@ -34,7 +34,7 @@ Les étiquettes de sensibilité de Microsoft Information Protection offrent aux 
 
 Dans le service Power BI, les étiquettes de confidentialité peuvent être appliquées à des jeux de données, à des rapports, à des tableaux de bord et à des dataflows. Quand les données étiquetées quittent Power BI, que ce soit par exportation dans des fichiers Excel, PDF ou .pbix, ou suivant d’autres scénarios d’exportation pris en charge (par exemple, Analyser dans Excel ou tableaux croisés dynamiques de connexion active dans Excel), Power BI applique automatiquement l’étiquette au fichier exporté et le protège en fonction des paramètres de chiffrement de fichier de l’étiquette. De cette façon, vos données sensibles restent protégées, même quand elles quittent Power BI.
 
-En outre, les étiquettes de sensibilité peuvent être appliquées aux fichiers .pbix dans Power BI Desktop pour sécuriser vos données et contenus lorsqu’ils sont partagés en dehors de Power BI (par exemple, afin que seuls les utilisateurs de votre organisation puissent ouvrir un fichier .pbix confidentiel partagé ou joint à un e-mail), même avant sa publication sur le service Power BI. Pour plus d’informations, consultez [Restreindre l’accès au contenu à l’aide d’étiquettes de sensibilité afin d’appliquer un chiffrement](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide) .
+En outre, les étiquettes de sensibilité peuvent être appliquées aux fichiers .pbix dans Power BI Desktop pour sécuriser vos données et contenus lorsqu’ils sont partagés en dehors de Power BI (par exemple, afin que seuls les utilisateurs de votre organisation puissent ouvrir un fichier .pbix confidentiel partagé ou joint à un e-mail), même avant sa publication sur le service Power BI. Pour plus d’informations, consultez [Restreindre l’accès au contenu à l’aide d’étiquettes de sensibilité afin d’appliquer un chiffrement](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide) .
 
 Les étiquettes de confidentialité appliquées à des rapports, tableaux de bord, jeux de données et dataflows sont visibles à de nombreux endroits du service Power BI. Les étiquettes de sensibilité sur les rapports et les tableaux de bord sont également visibles dans les applications mobiles Power BI sur iOS et Android, et dans les visuels incorporés. Dans Desktop, vous pouvez voir l’étiquette sensibilité dans la barre d’état.
 
@@ -185,7 +185,7 @@ Pour accéder aux étiquettes de sensibilité dans un de ces centres, accédez �
 
 ### <a name="power-bi-desktop-preview"></a>Power BI Desktop (préversion)
 
-* Les fichiers .pbix protégés peuvent uniquement être ouverts et/ou publiés par un utilisateur qui est le propriétaire RMS du fichier (l’utilisateur qui a appliqué l’étiquette au fichier à l’origine) ou qui dispose d’un [**contrôle total** et/ou des droits d’utilisation **Exporter**](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide) pour l’étiquette correspondante. Le propriétaire RMS dispose d’un contrôle total et ne peut jamais être exclu. [Consultez plus de détails](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)
+* Les fichiers .pbix protégés peuvent uniquement être ouverts et/ou publiés par un utilisateur qui est le propriétaire RMS du fichier (l’utilisateur qui a appliqué l’étiquette au fichier à l’origine) ou qui dispose d’un [**contrôle total** et/ou des droits d’utilisation **Exporter**](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide) pour l’étiquette correspondante. Le propriétaire RMS dispose d’un contrôle total et ne peut jamais être exclu. [Consultez plus de détails](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)
 
 * Si l’étiquette appliquée à un fichier .pbix n’a pas été publiée pour l’utilisateur dans le Centre de sécurité Microsoft 365 ou dans le Centre de conformité Microsoft 365, l’utilisateur ne pourra pas enregistrer le fichier dans Desktop.
 

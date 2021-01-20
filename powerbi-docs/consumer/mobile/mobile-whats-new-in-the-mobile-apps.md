@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/17/2020
-ms.openlocfilehash: 6eebe7b75db06b97d116ca0c17e67e9ee7b0562e
-ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
+ms.openlocfilehash: 8301b51ccbb2ac344e24a297f9a309fc3601b3e1
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97969647"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565595"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -442,7 +442,7 @@ Votre administrateur informatique peut désormais utiliser un outil MDM pour con
 
 #### <a name="power-bi-for-mixed-reality-app-preview"></a>Application Power BI pour la réalité mixte (Preview)
 
-L’application Power BI pour la réalité mixte est désormais disponible dans le Microsoft Store. Consultez vos tableaux de bord et vos rapports tout en étant immergé dans le monde virtuel, ou placez-les et consultez-les à des emplacements spécifiques dans le contexte de votre environnement. Consultez la nouvelle vidéo [Présentation de Power BI sur HoloLens](https://www.youtube.com/watch?v=J_X_nOFUBss) pour plus de contexte, ou lisez l’article consacré à la nouvelle [application Power BI for Mixed Reality](mobile-mixed-reality-app.md).
+L’application Power BI pour la réalité mixte est désormais disponible dans le Microsoft Store. Consultez vos tableaux de bord et vos rapports tout en étant immergé dans le monde virtuel, ou placez-les et consultez-les à des emplacements spécifiques dans le contexte de votre environnement. Consultez la nouvelle vidéo [Présentation de Power BI sur HoloLens](https://www.youtube.com/watch?v=J_X_nOFUBss) pour plus de contexte, ou lisez l’article consacré à la nouvelle [application Power BI for Mixed Reality](./mobile-hololens2-app.md).
 
 
 ### <a name="april-2018"></a>Avril 2018
@@ -460,7 +460,7 @@ Nous avons récemment mis à jour les filtres et les segments de rapport, afin q
 
 #### <a name="power-bi-for-mixed-reality-app-preview"></a>Application Power BI pour la réalité mixte (Preview)
 
-Dans notre effort le plus récent pour vous permettre d’accéder aux données là où vous êtes, nous avons créé l’application Power BI pour la réalité mixte. Consultez vos tableaux de bord et vos rapports tout en étant immergé dans le monde virtuel, ou placez-les et consultez-les à des emplacements spécifiques dans le contexte de votre environnement. Découvrez plus d’informations sur la nouvelle [application Power BI pour la réalité mixte](mobile-mixed-reality-app.md).
+Dans notre effort le plus récent pour vous permettre d’accéder aux données là où vous êtes, nous avons créé l’application Power BI pour la réalité mixte. Consultez vos tableaux de bord et vos rapports tout en étant immergé dans le monde virtuel, ou placez-les et consultez-les à des emplacements spécifiques dans le contexte de votre environnement. Découvrez plus d’informations sur la nouvelle [application Power BI pour la réalité mixte](./mobile-hololens2-app.md).
 
 #### <a name="share-reports-and-dashboards-externally"></a>Partager des rapports et des tableaux de bord en externe
 

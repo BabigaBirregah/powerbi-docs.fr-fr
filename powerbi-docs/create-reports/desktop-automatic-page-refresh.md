@@ -10,12 +10,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 08/13/2020
 LocalizationGroup: Connect to data
-ms.openlocfilehash: eb572c17705f06b989f15323322c0da11b1d85ac
-ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
+ms.openlocfilehash: 4e9d5783dd0c7d956f438358a5c20ad334a67aca
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97600688"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565950"
 ---
 # <a name="automatic-page-refresh-in-power-bi"></a>Actualisation automatique des pages dans Power BI
 
@@ -283,7 +283,7 @@ Si vous remarquez que la capacité est surchargée avec des requêtes de faible 
 
 **Après connexion à Analysis Services, je ne vois pas le bouton bascule APR**
 
-* Vérifiez que votre modèle Analysis Services est en mode [DirectQuery](https://docs.microsoft.com/analysis-services/tabular-models/directquery-mode-ssas-tabular).
+* Vérifiez que votre modèle Analysis Services est en mode [DirectQuery](/analysis-services/tabular-models/directquery-mode-ssas-tabular).
 
 
 ## <a name="next-steps"></a>Étapes suivantes
@@ -297,4 +297,4 @@ Pour plus d’informations, consultez les articles suivants :
 * [Sources de données dans Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Mettre en forme et combiner des données dans Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
 * [Se connecter à des classeurs Excel dans Power BI Desktop](../connect-data/desktop-connect-excel.md)   
-* [Entrer des données directement dans Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)   
+* [Entrer des données directement dans Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)

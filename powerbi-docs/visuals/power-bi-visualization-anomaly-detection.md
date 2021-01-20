@@ -9,12 +9,12 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 11/10/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cd08d5e6196c1cd321efbe89ec0727d314eff4ce
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: fdd93e0839f9eb0dd99586fb5ddcd07000de0dd7
+ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96409858"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191909"
 ---
 # <a name="anomaly-detection-preview"></a>Détection d’anomalie (préversion)
 
@@ -27,7 +27,7 @@ Cette fonctionnalité est en préversion, donc vous devez d’abord activer son 
 :::image type="content" source="media/power-bi-visualization-anomaly-detection//preview-feature-switch.png" alt-text="Capture d’écran montrant comment activer le commutateur de la fonctionnalité de détection d’anomalie.":::
  
 ## <a name="get-started"></a>Bien démarrer
-Ce tutoriel utilise des données de ventes en ligne pour différents produits. Pour suivre ce tutoriel, téléchargez l’[exemple de fichier](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix) d’un scénario de vente en ligne.
+Ce tutoriel utilise des données de ventes en ligne pour différents produits. Pour suivre ce tutoriel, téléchargez l’[exemple de fichier](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix) d’un scénario de vente en ligne.
 
 Vous pouvez activer la détection d’anomalie en sélectionnant le graphique et en ajoutant l’option « Rechercher les anomalies » dans le volet Analytique. 
 

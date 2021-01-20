@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 10/26/2020
-ms.openlocfilehash: c063d145919dfc6f075cf8945b88a5f3644dead7
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 72b81f10b6337530ab05f1fcef0a17a5869af867
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96415493"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226740"
 ---
 # <a name="change-data-source-connection-strings-in-power-bi-reports-with-powershell---power-bi-report-server-pre-october-2020"></a>Changer les chaînes de connexion des sources de données dans les rapports Power BI avec PowerShell - Version de Power BI Report Server antérieure à octobre 2020
 
@@ -37,7 +37,7 @@ Vous pouvez modifier les chaînes de connexion à la source de données des rapp
 2. Récupérez les informations de la source de données existante pour le fichier Power BI via les commandlets PowerShell :
 
     ```powershell
-    Get-RsRestItemDataSource -RsItem '/MyPbixReport'
+    $dataSources = Get-RsRestItemDataSource -RsItem '/MyPbixReport'
     ```
 
     Pour afficher les informations de la première source de données contenue dans le rapport Power BI : 

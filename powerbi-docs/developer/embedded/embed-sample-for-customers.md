@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/22/2020
-ms.openlocfilehash: de954c5950f550c3ed2f3c340714851f5233d3e8
-ms.sourcegitcommit: a5e98bc86915f7bea6a0ab5df282683840e63d2c
+ms.openlocfilehash: a0cfeaece56594c52a8d747350c5f9bfb0886cad
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97969762"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565464"
 ---
 # <a name="tutorial-embed-power-bi-content-using-a-sample-embed-for-your-customers-application"></a>Tutoriel : Incorporer du contenu Power BI en utilisant un exemple d’application *Incorporer pour vos clients*
 
@@ -185,7 +185,7 @@ Pour créer un espace de travail, effectuez les actions suivantes :
 
 ## <a name="step-4---create-and-publish-a-power-bi-report"></a>Étape 4 - Créer et publier un rapport Power BI
 
-L’étape suivante consiste à créer un rapport et à le charger dans votre espace de travail. Vous pouvez [créer votre propre rapport](/power-bi/fundamentals/desktop-getting-started#build-reports) en utilisant Power BI Desktop, puis le [publier](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work) dans votre espace de travail. Vous pouvez aussi charger un exemple de rapport dans votre espace de travail.
+L’étape suivante consiste à créer un rapport et à le charger dans votre espace de travail. Vous pouvez [créer votre propre rapport](../../fundamentals/desktop-getting-started.md#build-reports) en utilisant Power BI Desktop, puis le [publier](/powerbi-docs/fundamentals/desktop-getting-started#share-your-work) dans votre espace de travail. Vous pouvez aussi charger un exemple de rapport dans votre espace de travail.
 
 >[!Tip]
 >Si vous disposez déjà d’un espace de travail avec un rapport, vous pouvez passer cette étape.

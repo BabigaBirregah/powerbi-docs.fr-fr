@@ -7,12 +7,12 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/23/2020
-ms.openlocfilehash: 1bf62e99d666c05af8efc05ecbc496d69c586ae6
-ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
+ms.openlocfilehash: a44bd7837e7605fd23e49a91e3e9eba106d5a933
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97927116"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565783"
 ---
 # <a name="tutorial-automate-configuration-of-template-app-installation-using-an-azure-function"></a>Tutoriel : Automatiser la configuration de l’installation d’une application modèle en utilisant une fonction Azure
 
@@ -38,7 +38,7 @@ Dans ce tutoriel, vous allez utiliser un exemple d’installation automatisée A
 
 Pour plus d’informations sur le flux d’automatisation générale et les API que l’application utilise, consultez [Automatiser la configuration d’une installation d’application modèle](template-apps-auto-install.md).
 
-Notre application simple utilise une fonction Azure. Pour plus d’informations, consultez la [documentation sur Azure Functions](https://docs.microsoft.com/azure/azure-functions/).
+Notre application simple utilise une fonction Azure. Pour plus d’informations, consultez la [documentation sur Azure Functions](/azure/azure-functions/).
 
 ## <a name="basic-flow"></a>Flux de base
 
@@ -48,7 +48,7 @@ Le flux de base suivant liste les opérations que l’application effectue quand
 
 1. L’ISV acquiert un jeton d’*application uniquement* basé sur un [principal de service (jeton d’application uniquement)](../embedded/embed-service-principal.md), qui est inscrit dans le locataire de l’ISV.
 
-1. À l’aide des [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/), l’ISV crée un *ticket d’installation* qui contient la configuration des paramètres propre à l’utilisateur, telle qu’elle est préparée par l’ISV.
+1. À l’aide des [API REST Power BI](/rest/api/power-bi/), l’ISV crée un *ticket d’installation* qui contient la configuration des paramètres propre à l’utilisateur, telle qu’elle est préparée par l’ISV.
 
 1. L’ISV redirige l’utilisateur vers Power BI en employant une méthode de redirection ```POST``` qui contient le ticket d’installation.
 
@@ -59,18 +59,18 @@ Le flux de base suivant liste les opérations que l’application effectue quand
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Votre propre locataire Azure Active Directory (Azure AD) configuré. Pour savoir comment en configurer un, consultez les instructions dans [Créer un locataire Azure AD](https://docs.microsoft.com/power-bi/developer/embedded/create-an-azure-active-directory-tenant).
-* Un [principal de service (jeton d’application uniquement)](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal) inscrit dans le locataire précédent.
-* Une [application modèle](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-overview) paramétrable prête pour l’installation. L’application modèle doit être créée dans le même locataire que celui où vous inscrivez votre application dans Azure AD. Pour plus d’informations, consultez [Conseils pour les applications modèles](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-tips.md) ou [Créer une application modèle dans Power BI](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create).
+* Votre propre locataire Azure Active Directory (Azure AD) configuré. Pour savoir comment en configurer un, consultez les instructions dans [Créer un locataire Azure AD](../embedded/create-an-azure-active-directory-tenant.md).
+* Un [principal de service (jeton d’application uniquement)](../embedded/embed-service-principal.md) inscrit dans le locataire précédent.
+* Une [application modèle](../../connect-data/service-template-apps-overview.md) paramétrable prête pour l’installation. L’application modèle doit être créée dans le même locataire que celui où vous inscrivez votre application dans Azure AD. Pour plus d’informations, consultez [Conseils pour les applications modèles](../../connect-data/service-template-apps-tips.md) ou [Créer une application modèle dans Power BI](../../connect-data/service-template-apps-create.md).
 * Une licence Power BI Pro. Si vous n’êtes pas inscrit pour Power BI Pro, [inscrivez-vous pour un essai gratuit](https://powerbi.microsoft.com/pricing/) avant de commencer.
 
 ## <a name="set-up-your-template-apps-automation-development-environment"></a>Configurer votre environnement de développement d’automatisation d’applications modèles
 
-Avant de poursuivre la configuration de votre application, suivez les instructions de [Démarrage rapide : Créer une application Azure Functions avec Azure App Configuration](https://docs.microsoft.com/azure/azure-app-configuration/quickstart-azure-functions-csharp) pour développer une fonction Azure avec une configuration d’application Azure. Créez la configuration de votre application comme décrit dans l’article.
+Avant de poursuivre la configuration de votre application, suivez les instructions de [Démarrage rapide : Créer une application Azure Functions avec Azure App Configuration](/azure/azure-app-configuration/quickstart-azure-functions-csharp) pour développer une fonction Azure avec une configuration d’application Azure. Créez la configuration de votre application comme décrit dans l’article.
 
 ### <a name="register-an-application-in-azure-ad"></a>Inscrire une application dans Azure AD
 
-Créez un principal de service comme décrit dans [Incorporer du contenu Power BI avec un principal de service et un secret d’application](https://docs.microsoft.com/power-bi/developer/embedded/embed-service-principal).
+Créez un principal de service comme décrit dans [Incorporer du contenu Power BI avec un principal de service et un secret d’application](../embedded/embed-service-principal.md).
 
 Veillez à inscrire l’application en tant qu’**application web côté serveur**. Vous inscrivez une application web côté serveur pour créer un secret d’application.
 
@@ -89,12 +89,12 @@ Une fois que vous avez créé votre application modèle et qu’elle est prête 
 * Les *noms des paramètres* tels qu’ils sont définis dans le jeu de données de l’application modèle. Les noms de paramètres respectent la casse. Vous pouvez aussi les récupérer à partir de l’onglet **Valeurs des paramètres** au moment de [définir les propriétés de l’application modèle](../../connect-data/service-template-apps-create.md#define-the-properties-of-the-template-app) ou à partir des paramètres du jeux de données dans Power BI.
 
 >[!NOTE]
->Vous pouvez tester votre application d’installation préconfigurée sur votre application modèle si celle-ci est prête pour l’installation, même si elle n’est pas encore publiquement disponible sur AppSource. Pour permettre aux utilisateurs situés en dehors de votre locataire d’utiliser l’application d’installation automatisée afin d’installer votre application modèle, cette dernière doit être publiquement disponible dans la [Place de marché des applications Power BI](https://app.powerbi.com/getdata/services). Avant de distribuer votre application modèle en utilisant l’application d’installation automatisée que vous créez, veillez à la publier dans l’[Espace partenaires](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
+>Vous pouvez tester votre application d’installation préconfigurée sur votre application modèle si celle-ci est prête pour l’installation, même si elle n’est pas encore publiquement disponible sur AppSource. Pour permettre aux utilisateurs situés en dehors de votre locataire d’utiliser l’application d’installation automatisée afin d’installer votre application modèle, cette dernière doit être publiquement disponible dans la [Place de marché des applications Power BI](https://app.powerbi.com/getdata/services). Avant de distribuer votre application modèle en utilisant l’application d’installation automatisée que vous créez, veillez à la publier dans l’[Espace partenaires](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 
 
 ## <a name="install-and-configure-your-template-app"></a>Installer et configurer votre application modèle
 
-Dans cette section, vous allez utiliser un exemple d’installation automatisée Azure Functions que nous avons créé pour préconfigurer et installer votre application modèle. Cet exemple a été conçu délibérément simple pour faciliter la démonstration. Il vous permet d’utiliser une [fonction Azure](https://docs.microsoft.com/azure/azure-functions/functions-overview) et [Azure App Configuration](https://docs.microsoft.com/azure/azure-app-configuration/overview) pour déployer et utiliser facilement l’API d’installation automatisée pour vos applications modèles.
+Dans cette section, vous allez utiliser un exemple d’installation automatisée Azure Functions que nous avons créé pour préconfigurer et installer votre application modèle. Cet exemple a été conçu délibérément simple pour faciliter la démonstration. Il vous permet d’utiliser une [fonction Azure](/azure/azure-functions/functions-overview) et [Azure App Configuration](/azure/azure-app-configuration/overview) pour déployer et utiliser facilement l’API d’installation automatisée pour vos applications modèles.
 
 ### <a name="download-visual-studio-version-2017-or-later"></a>Télécharger [Visual Studio](https://www.visualstudio.com/) (version 2017 ou ultérieure)
 
@@ -200,7 +200,7 @@ Pour obtenir le secret de l’application, suivez ces étapes :
 
 ## <a name="test-your-function-locally"></a>Tester votre fonction localement
 
-Suivez les étapes décrites dans [Exécuter la fonction localement](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio#run-the-function-locally) pour exécuter votre fonction.
+Suivez les étapes décrites dans [Exécuter la fonction localement](/azure/azure-functions/functions-create-your-first-function-visual-studio#run-the-function-locally) pour exécuter votre fonction.
 
 Configurez votre portail pour qu’il émette une requête ```POST``` à l’URL de la fonction. par exemple ```POST http://localhost:7071/api/install```. Le corps de la demande doit être un objet JSON qui décrit les paires clé-valeur. Les clés sont les *noms de paramètres* définis dans Power BI Desktop. Les valeurs sont les valeurs souhaitées à définir pour chaque paramètre de l’application modèle.
 
@@ -218,4 +218,4 @@ Le flux souhaité doit être :
 
 ### <a name="publish-your-project-to-azure"></a>Publier votre projet sur Azure
 
-Pour publier votre projet dans Azure, suivez les instructions fournies dans la [documentation Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio#publish-the-project-to-azure). Vous pouvez ensuite intégrer les API d’installation automatisée d’application modèle dans votre produit et commencer à les tester dans des environnements de production.
+Pour publier votre projet dans Azure, suivez les instructions fournies dans la [documentation Azure Functions](/azure/azure-functions/functions-create-your-first-function-visual-studio#publish-the-project-to-azure). Vous pouvez ensuite intégrer les API d’installation automatisée d’application modèle dans votre produit et commencer à les tester dans des environnements de production.

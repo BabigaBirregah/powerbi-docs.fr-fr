@@ -9,12 +9,12 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 01/10/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fd4f984be74c0408eae5c476fa30994de55961a0
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 47a8ef221caadfabebc5da00793b7fff0b8687f8
+ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96386363"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191863"
 ---
 # <a name="create-and-view-decomposition-tree-visuals-in-power-bi"></a>Créer et afficher des visuels d’arborescence hiérarchique dans Power BI
 
@@ -32,7 +32,7 @@ Ce didacticiel utilise deux exemples :
 - Un scénario de vente qui décompose les ventes de jeux vidéo selon de nombreux facteurs tels que le genre de jeu et l'éditeur.
 
 Vous pouvez trouver le pbix utilisé dans le scénario de chaîne d’approvisionnement ici : [Supply Chain Sample.pbix](
-https://github.com/microsoft/powerbi-desktop-samples/blob/master/Sample%20Reports/Supply%20Chain%20Sample.pbix).
+https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Supply%20Chain%20Sample.pbix).
 
 > [!NOTE]
 > Pour que vous puissiez partager votre rapport avec un collègue Power BI, il faut que vous disposiez tous deux de licences individuelles Power BI Pro ou que le rapport soit enregistré dans une capacité Premium.    

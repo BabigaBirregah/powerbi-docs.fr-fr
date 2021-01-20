@@ -9,12 +9,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 01/23/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6168a1fb8d64444b703c6acac21c3bac67c4219a
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: a622da545d4fa9fca8b9478f6d5293d2b34296e9
+ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96396495"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191702"
 ---
 # <a name="use-performance-analyzer-to-examine-report-element-performance"></a>Utiliser l’analyseur de performances pour examiner les performances des éléments de rapport
 
@@ -58,7 +58,7 @@ Les informations de journal de chaque visuel incluent le temps passé (durée) �
 * **Affichage de visuel** : temps nécessaire pour que le visuel s’affiche à l’écran, comprenant le temps nécessaire pour récupérer les images web ou le géocodage. 
 * **Autre** : temps nécessaire au visuel pour préparer les requêtes, pour attendre la fin de l’exécution des autres visuels ou pour effectuer un autre traitement en arrière-plan.
 
-Les valeurs **Durée (ms)** indiquent la différence entre une heure de *début* une heure de *fin* pour chaque opération. La plupart des opérations de canevas et de visuels s’exécutent de façon séquentielle sur un seul thread d’interface utilisateur, qui est partagé par plusieurs opérations. Les durées signalées incluent le temps passé en file d’attente pendant l’exécution d’autres opérations. L’[exemple de l’Analyseur de performances](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer) sur GitHub et la [documentation](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx) qui lui est associée fournissent des détails sur la façon dont les visuels interrogent les données et dont ils s’affichent.
+Les valeurs **Durée (ms)** indiquent la différence entre une heure de *début* une heure de *fin* pour chaque opération. La plupart des opérations de canevas et de visuels s’exécutent de façon séquentielle sur un seul thread d’interface utilisateur, qui est partagé par plusieurs opérations. Les durées signalées incluent le temps passé en file d’attente pendant l’exécution d’autres opérations. L’[exemple de l’Analyseur de performances](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Performance%20Analyzer) sur GitHub et la [documentation](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx) qui lui est associée fournissent des détails sur la façon dont les visuels interrogent les données et dont ils s’affichent.
 
 
 ![Éléments des informations du journal](media/desktop-performance-analyzer/performance-analyzer-06.png)
@@ -94,5 +94,5 @@ Pour plus d’informations sur **Power BI Desktop** et la prise en main de cette
 
 Pour plus d’informations sur l’exemple de l’Analyseur de performances, consultez les ressources suivantes.
 
-* [Exemple de l’Analyseur de performances](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer)
-* [Documentation de l’exemple de l’Analyseur de performances](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx)
+* [Exemple de l’Analyseur de performances](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Performance%20Analyzer)
+* [Documentation de l’exemple de l’Analyseur de performances](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx)

@@ -9,12 +9,12 @@ ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 04/14/2020
 LocalizationGroup: Get started
-ms.openlocfilehash: aac8eac050a3c864833d16a12016a1cc0ae398b7
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 262f6d4ba95828ed77f1a3161ac1a9fca46f99f3
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888348"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565008"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
 Consultez cette page pour obtenir des informations sur les problèmes connus et les nouvelles fonctionnalités du **service Power BI**. Pour plus d’informations sur les nouveautés, consultez :
@@ -61,7 +61,7 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 ### <a name="october-2019"></a>Octobre 2019
 * Nouvelle action Power Automate pour actualiser les jeux de données Power BI.
 * [Liste de contacts](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) pour les rapports et les tableaux de bord dans le service Power BI.
-* Disponibilité générale du [Machine Learning automatisé](../transform-model/service-machine-learning-automated.md)
+* Disponibilité générale du [Machine Learning automatisé](../transform-model/dataflows/dataflows-machine-learning-integration.md)
 * Préversion publique de la vue de traçabilité des données Power BI.
 
 ### <a name="september-2019"></a>Septembre 2019

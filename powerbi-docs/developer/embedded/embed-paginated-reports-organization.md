@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 06/25/2020
-ms.openlocfilehash: d4ef44cb0e03c5de7807f0e95cefa532353f4685
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: b98e761a9ac2578a1af43bdb2c536f73fc3cc5af
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97885174"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565712"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-organization"></a>Tutoriel : Incorporer des rapports paginés Power BI dans une application pour votre organisation
 
@@ -209,7 +209,7 @@ Pour l’incorporation avec un invité, utilisez l’URL *`https://login.microso
 Dans ce tutoriel, vous avez appris à incorporer des rapports paginés Power BI dans une application à l’aide de votre compte d’organisation Power BI. 
 
 > [!div class="nextstepaction"]
-> [Incorporer à partir d’applications](embed-from-apps.md)
+> [Incorporer à partir d’applications](./index.yml)
 
 > [!div class="nextstepaction"]
 >[Incorporer du contenu Power BI pour vos clients](embed-sample-for-customers.md)

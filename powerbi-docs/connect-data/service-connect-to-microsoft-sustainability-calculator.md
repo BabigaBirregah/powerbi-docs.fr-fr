@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 12/22/2020
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 730a997a6d1d304fe868dd5bdd5bfbed6e359d91
-ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
+ms.openlocfilehash: bff53ac0e230a91dd980b461340ae4109f551999
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97927163"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565558"
 ---
 # <a name="microsoft-sustainability-calculator-support-page"></a>Page de support de Microsoft Sustainability Calculator
 
@@ -165,7 +165,7 @@ Vos émissions peuvent être signalées dans les émissions indirectes de CO2 «
 
 **Que puis-je faire pour réduire davantage les émissions ?**
 
-De bons rapports ressources-efficacité et coût-efficacité dans Azure permettent de réduire l’impact sur l’environnement lié à l’utilisation d’Azure. Par exemple, les machines virtuelles inutilisées représentent un gaspillage, que ce soit dans le cloud ou localement. Un dimensionnement des machines virtuelles approprié, qui améliore les facteurs d’utilisation du calcul (CUF, Compute Utilization Factor), permet de réduire la consommation d’énergie par sortie utile, comme avec les serveurs physiques. [Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices) vous donne les outils nécessaires pour anticiper, analyser et réduire vos dépenses afin d’optimiser votre investissement cloud.
+De bons rapports ressources-efficacité et coût-efficacité dans Azure permettent de réduire l’impact sur l’environnement lié à l’utilisation d’Azure. Par exemple, les machines virtuelles inutilisées représentent un gaspillage, que ce soit dans le cloud ou localement. Un dimensionnement des machines virtuelles approprié, qui améliore les facteurs d’utilisation du calcul (CUF, Compute Utilization Factor), permet de réduire la consommation d’énergie par sortie utile, comme avec les serveurs physiques. [Azure Cost Management](/azure/cost-management-billing/costs/cost-mgt-best-practices) vous donne les outils nécessaires pour anticiper, analyser et réduire vos dépenses afin d’optimiser votre investissement cloud.
 
 #### <a name="methodology"></a>Méthodologie
 

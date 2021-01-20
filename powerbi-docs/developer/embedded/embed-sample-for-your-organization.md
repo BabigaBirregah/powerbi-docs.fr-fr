@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: 78ba14c8a715c927f35c32244734e66a5fb80473
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: da356800a49e6d8876a147862dd08541ed2999bc
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888969"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565681"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Tutoriel : Incorporer du contenu Power BI dans une application pour votre organisation
 
@@ -57,7 +57,7 @@ Si vous choisissez de configurer l’environnement manuellement, vous pouvez con
 
 >[!NOTE]
 >Dans votre propre application, vous devrez accéder à *Authentification* et, dans le champ *URI de redirection*, insérer l’adresse de redirection.
-Pour en savoir plus sur la redirection, consultez [Limitations et restrictions des URI de redirection (URL de réponse)](https://docs.microsoft.com/azure/active-directory/develop/reply-url).
+Pour en savoir plus sur la redirection, consultez [Limitations et restrictions des URI de redirection (URL de réponse)](/azure/active-directory/develop/reply-url).
 
 ## <a name="set-up-your-power-bi-environment"></a>Configurer votre environnement Power BI
 
@@ -428,7 +428,7 @@ Les administrateurs généraux ou les administrateurs du service Power BI peuven
 Dans ce tutoriel, vous avez appris à incorporer du contenu Power BI dans une application à l’aide de votre compte d’organisation Power BI. Vous pouvez maintenant essayer d’incorporer du contenu Power BI dans une application à l’aide d’applications. Vous pouvez également tenter d’incorporer du contenu Power BI pour vos clients (ceci n’est pas encore pris en charge pour l’incorporation de rapports paginés) :
 
 > [!div class="nextstepaction"]
-> [Incorporer à partir d’applications](embed-from-apps.md)
+> [Incorporer à partir d’applications](./index.yml)
 
 > [!div class="nextstepaction"]
 >[Incorporer pour vos clients](embed-sample-for-customers.md)

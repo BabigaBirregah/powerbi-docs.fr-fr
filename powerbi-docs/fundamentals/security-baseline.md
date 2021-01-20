@@ -8,16 +8,16 @@ ms.subservice: pbi-security
 ms.topic: conceptual
 ms.date: 11/20/2020
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: ef74b3bcddd981c9f63172fa2e641335a081836d
-ms.sourcegitcommit: cb6e0202de27f29dd622e47b305c15f952c5769b
+ms.openlocfilehash: a76c7f9d205fe47322768a514a1e5d89a36a2306
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96577713"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565746"
 ---
 # <a name="azure-security-baseline-for-power-bi"></a>Base de référence de la sécurité Azure pour Power BI
 
-Cette base de référence de la sécurité applique les instructions du [Benchmark de sécurité Azure version 2.0](https://docs.microsoft.com/azure/security/benchmarks/overview) à Power BI. Le benchmark de sécurité Azure fournit des recommandations sur la façon dont vous pouvez sécuriser vos solutions cloud sur Azure. Le contenu est regroupé selon les **contrôles de sécurité** définis par le Benchmark de sécurité Azure et les instructions associées applicables à Power BI. Les **contrôles** non applicables à Power BI ont été exclus.
+Cette base de référence de la sécurité applique les instructions du [Benchmark de sécurité Azure version 2.0](/azure/security/benchmarks/overview) à Power BI. Le benchmark de sécurité Azure fournit des recommandations sur la façon dont vous pouvez sécuriser vos solutions cloud sur Azure. Le contenu est regroupé selon les **contrôles de sécurité** définis par le Benchmark de sécurité Azure et les instructions associées applicables à Power BI. Les **contrôles** non applicables à Power BI ont été exclus.
 
 Pour voir comment Power BI correspond intégralement au Benchmark de sécurité Azure, consultez le [fichier de correspondance complet de la base de référence de la sécurité Power BI](https://github.com/MicrosoftDocs/SecurityBenchmarks/tree/master/Azure%20Offer%20Security%20Baselines).
 
@@ -29,7 +29,7 @@ Pour voir comment Power BI correspond intégralement au Benchmark de sécurité
 
 **Instructions** : Power BI prend en charge la connexion de votre locataire Power BI à un point de terminaison de liaison privée et la désactivation de l’accès Internet public.
 
-- [Liaisons privées pour accéder à Power BI](https://docs.microsoft.com/power-bi/admin/service-security-private-links)
+- [Liaisons privées pour accéder à Power BI](../admin/service-security-private-links.md)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -47,13 +47,13 @@ La sécurisation d’Azure AD doit être d’une priorité élevée dans les pra
 
 Remarque : Azure AD prend en charge les identités externes qui permettent aux utilisateurs sans compte Microsoft de se connecter à leurs applications et ressources avec leur identité externe.
 
-- [Locataires dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps)
+- [Locataires dans Azure Active Directory](/azure/active-directory/develop/single-and-multi-tenant-apps)
 
-- [Création et configuration d’une instance Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)
+- [Création et configuration d’une instance Azure AD](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)
 
-- [Utilisez des fournisseurs d'identité externes pour l’application](https://docs.microsoft.com/azure/active-directory/b2b/identity-providers)
+- [Utilisez des fournisseurs d'identité externes pour l’application](/azure/active-directory/b2b/identity-providers)
 
-- [Qu’est-ce que le degré de sécurisation Identity Secure Score dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)
+- [Qu’est-ce que le degré de sécurisation Identity Secure Score dans Azure Active Directory](/azure/active-directory/fundamentals/identity-secure-score)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -73,7 +73,7 @@ Automatiser les tâches d’espace de travail Premium et de jeu de données avec
 
 **Instructions** : Power BI utilise Azure Active Directory pour fournir une gestion des identités et des accès aux ressources Azure, aux applications cloud et aux applications locales. Cela inclut les identités d’entreprise, comme les employés, ainsi que les identités externes, comme les partenaires et les fournisseurs. Cela permet à l’authentification unique de gérer et sécuriser l’accès aux données et ressources de votre organisation localement et dans le cloud. Connectez l’ensemble de vos utilisateurs, applications et appareils à Azure AD pour un accès transparent et sécurisé, ainsi qu’une visibilité et un contrôle accrus.
 
-- [Comprendre l’authentification unique des applications avec Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on)
+- [Comprendre l’authentification unique des applications avec Azure AD](/azure/active-directory/manage-apps/what-is-single-sign-on)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -89,9 +89,9 @@ Pour les administrateurs et les utilisateurs avec privilèges, vérifiez que le 
 
 Remarque : L’authentification multifacteur peut être appliquée seulement pour les comptes d’utilisateur activés dans Azure AD. Les principaux de service Power BI ne prennent pas en charge l’utilisation de l’authentification multifacteur.
 
-- [Guide pratique pour activer l’authentification MFA dans Azure](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
+- [Guide pratique pour activer l’authentification MFA dans Azure](/azure/active-directory/authentication/howto-mfa-getstarted)
 
-- [Introduction aux options d’authentification sans mot de passe pour Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless)
+- [Introduction aux options d’authentification sans mot de passe pour Azure Active Directory](/azure/active-directory/authentication/concept-authentication-passwordless)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -101,7 +101,7 @@ Remarque : L’authentification multifacteur peut être appliquée seulement po
 
 **Instructions** : Définissez des stratégies de détection des anomalies dans Microsoft Cloud App Security qui peuvent être délimitées de façon indépendante, afin qu’elles s’appliquent seulement aux utilisateurs et aux groupes que vous voulez inclure. Ces stratégies de détection des anomalies peuvent aider à détecter et à surveiller les anomalies de comportement liées aux utilisateurs qui accèdent à Power BI et qui l’utilisent.
 
-- [Utilisation de contrôles Microsoft Cloud App Security dans Power BI](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls)
+- [Utilisation de contrôles Microsoft Cloud App Security dans Power BI](../admin/service-security-using-microsoft-cloud-app-security-controls.md)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -111,13 +111,13 @@ Remarque : L’authentification multifacteur peut être appliquée seulement po
 
 **Instructions** : Power BI prend en charge l’accès conditionnel Azure AD pour un contrôle d’accès plus précis en fonction des conditions définies par l’utilisateur, comme le fait que les connexions utilisateur depuis certaines plages d’adresses IP doivent utiliser l’authentification multifacteur pour la connexion. Une stratégie de gestion granulaire des sessions d’authentification peut également être utilisée dans différents cas d’usage.
 
-- [Présentation de l’accès conditionnel Azure](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
+- [Présentation de l’accès conditionnel Azure](/azure/active-directory/conditional-access/overview)
 
-- [Stratégies d’accès conditionnel courantes](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)
+- [Stratégies d’accès conditionnel courantes](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)
 
-- [Configurer la gestion des sessions d’authentification avec l’accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)
+- [Configurer la gestion des sessions d’authentification avec l’accès conditionnel](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)
 
-- [Utilisation de contrôles Microsoft Cloud App Security dans Power BI](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls)
+- [Utilisation de contrôles Microsoft Cloud App Security dans Power BI](../admin/service-security-using-microsoft-cloud-app-security-controls.md)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -131,7 +131,7 @@ Stockez les clés de chiffrement ou les informations d’identification du princ
  
 Pour GitHub, vous pouvez utiliser la fonctionnalité native d’analyse de secret pour identifier les informations d’identification ou d’autres formes de secrets dans le code.
 
-- [Apporter vos propres clés de chiffrement pour Power BI](https://docs.microsoft.com/power-bi/admin/service-encryption-byok)
+- [Apporter vos propres clés de chiffrement pour Power BI](../admin/service-encryption-byok.md)
 
  
 Comment configurer les informations d’identification
@@ -164,11 +164,11 @@ Power BI prend en charge les stratégies de session dans Azure AD pour activer
 
 Activez l’accès privilégié juste-à-temps (JIT) pour les comptes d’administrateur Power BI en utilisant Privileged Access Management de Microsoft 365.
 
-- [Rôles d’administrateur liés à Power BI](https://docs.microsoft.com/power-bi/admin/service-admin-administering-power-bi-in-your-organization#administrator-roles-related-to-power-bi)
+- [Rôles d’administrateur liés à Power BI](../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi)
 
-- [Privileged Access Management de Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-overview?view=o365-worldwide&amp;preserve-view=true)
+- [Privileged Access Management de Microsoft 365](/microsoft-365/compliance/privileged-access-management-overview?amp;preserve-view=true&view=o365-worldwide)
 
-- [Contrôles Cloud App Security dans Power BI](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls)
+- [Contrôles Cloud App Security dans Power BI](../admin/service-security-using-microsoft-cloud-app-security-controls.md)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -178,7 +178,7 @@ Activez l’accès privilégié juste-à-temps (JIT) pour les comptes d’admini
 
 **Instructions** : Limitez le nombre de comptes ou de rôles à privilèges élevés avec un accès élevé à Power BI.
 
-Vous pouvez activer l’accès privilégié juste-à-temps (JIT) en utilisant les instructions de Privileged Access Management de Microsoft 365 disponibles [ici](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-overview?view=o365-worldwide&amp;preserve-view=true).
+Vous pouvez activer l’accès privilégié juste-à-temps (JIT) en utilisant les instructions de Privileged Access Management de Microsoft 365 disponibles [ici](/microsoft-365/compliance/privileged-access-management-overview?amp;preserve-view=true&view=o365-worldwide).
 
 Pour plus d’informations, consultez la page 183 du document sur le déploiement de Power BI en entreprise disponible[ici](https://aka.ms/PBIEnterpriseDeploymentWP).
 
@@ -196,7 +196,7 @@ Vous devez remplir ces conditions requises pour accéder au journal d’activit�
 
 Une fois ces conditions satisfaites, vous pouvez appliquer les instructions ci-dessous pour suivre l’activité des utilisateurs dans Power BI :
 
-- [Suivre l’activité des utilisateurs dans Power BI](https://docs.microsoft.com/power-bi/admin/service-admin-auditing)
+- [Suivre l’activité des utilisateurs dans Power BI](../admin/service-admin-auditing.md)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -208,9 +208,9 @@ Une fois ces conditions satisfaites, vous pouvez appliquer les instructions ci-d
 
 Vous devez vous assurer que les informations d’identification (telles que le mot de passe, le certificat ou la carte à puce) des comptes d’accès d’urgence restent sécurisées et connues des seules personnes autorisées à les utiliser en cas d’urgence.
 
-- [Gérer des comptes d’accès d’urgence dans Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access)
+- [Gérer des comptes d’accès d’urgence dans Azure AD](/azure/active-directory/users-groups-roles/directory-emergency-access)
 
-- [Protéger vos comptes Microsoft 365](https://docs.microsoft.com/microsoft-365/campaigns/m365-campaigns-protect-admin-accounts)
+- [Protéger vos comptes Microsoft 365](/microsoft-365/campaigns/m365-campaigns-protect-admin-accounts)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -221,9 +221,9 @@ Vous devez vous assurer que les informations d’identification (telles que le m
 **Conseils** : Les stations de travail sécurisées et isolées sont extrêmement importantes pour la sécurité des rôles sensibles comme les administrateurs, développeurs et opérateurs de service critique. Utilisez des stations de travail utilisateur hautement sécurisées et/ou Azure Bastion pour les tâches d’administration liées à la gestion de Power BI. Utilisez Azure Active Directory, Microsoft Defender Advanced Threat Protection (MDATP) et/ou Microsoft Intune pour déployer une station de travail utilisateur sécurisée et gérée pour les tâches d’administration. Les stations de travail sécurisées peuvent être gérées de manière centralisée pour appliquer une configuration sécurisée, notamment une authentification forte, des lignes de base logicielles et matérielles et un accès réseau et logique restreint.
 
 Comprendre l’accès privilégié
-- [Stations de travail](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-managed-workstation)
+- [Stations de travail](/azure/active-directory/devices/concept-azure-managed-workstation)
 
-- [Déployer une station de travail d’accès privilégié](https://docs.microsoft.com/azure/active-directory/devices/howto-azure-managed-workstation)
+- [Déployer une station de travail d’accès privilégié](/azure/active-directory/devices/howto-azure-managed-workstation)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -239,7 +239,7 @@ Comprendre l’accès privilégié
 
 Utilisez des étiquettes de confidentialité Microsoft Information Protection pour classifier et étiqueter vos rapports, tableaux de bord, jeux de données et dataflows dans le service Power BI, et pour protéger votre contenu sensible contre les accès non autorisés aux données et les fuites de données quand du contenu est exporté depuis le service Power BI vers des fichiers Excel, PowerPoint et PDF.
 
-- [Guide pratique pour appliquer des étiquettes de sensibilité dans Power BI](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)
+- [Guide pratique pour appliquer des étiquettes de sensibilité dans Power BI](../admin/service-security-apply-data-sensitivity-labels.md)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -247,13 +247,13 @@ Utilisez des étiquettes de confidentialité Microsoft Information Protection po
 
 ### <a name="dp-2-protect-sensitive-data"></a>DP-2 : Protection des données sensibles
 
-**Instructions** : Power BI s’intègre aux étiquettes de confidentialité Microsoft Information Protection pour la protection des données sensibles. Pour plus d’informations, consultez [Étiquettes de confidentialité Microsoft Information Protection dans Power BI](https://docs.microsoft.com/power-bi/admin/service-security-sensitivity-label-overview)
+**Instructions** : Power BI s’intègre aux étiquettes de confidentialité Microsoft Information Protection pour la protection des données sensibles. Pour plus d’informations, consultez [Étiquettes de confidentialité Microsoft Information Protection dans Power BI](../admin/service-security-sensitivity-label-overview.md)
 
-Power BI permet aux utilisateurs du service d’apporter leur propre clé pour protéger les données au repos. Pour plus d’informations, consultez [Apporter vos propres clés de chiffrement pour Power BI](https://docs.microsoft.com/power-bi/admin/service-encryption-byok).
+Power BI permet aux utilisateurs du service d’apporter leur propre clé pour protéger les données au repos. Pour plus d’informations, consultez [Apporter vos propres clés de chiffrement pour Power BI](../admin/service-encryption-byok.md).
 
-Les clients ont la possibilité de conserver des sources de données localement et de tirer parti de Direct Query ou de Live Connect avec une passerelle de données locale pour réduire l’exposition des données au service cloud. Pour plus d’informations, consultez [Qu’est-ce qu’une passerelle de données locale ?](https://docs.microsoft.com/data-integration/gateway/service-gateway-onprem)
+Les clients ont la possibilité de conserver des sources de données localement et de tirer parti de Direct Query ou de Live Connect avec une passerelle de données locale pour réduire l’exposition des données au service cloud. Pour plus d’informations, consultez [Qu’est-ce qu’une passerelle de données locale ?](/data-integration/gateway/service-gateway-onprem)
 
-Power BI prend en charge la sécurité au niveau des lignes. Pour plus d’informations, consultez [Sécurité au niveau des lignes avec Power BI](https://docs.microsoft.com/power-bi/admin/service-admin-rls). Notez que la sécurité au niveau des lignes peut être appliquée même à des sources Direct Query, auquel cas le fichier PBIX agit comme proxy d’activation de la sécurité.
+Power BI prend en charge la sécurité au niveau des lignes. Pour plus d’informations, consultez [Sécurité au niveau des lignes avec Power BI](../admin/service-admin-rls.md). Notez que la sécurité au niveau des lignes peut être appliquée même à des sources Direct Query, auquel cas le fichier PBIX agit comme proxy d’activation de la sécurité.
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -266,7 +266,7 @@ Power BI prend en charge la sécurité au niveau des lignes. Pour plus d’infor
 En utilisant Cloud App Security avec Power BI, vous pouvez protéger vos rapports, données et services Power BI contre les fuites non intentionnelles ou les violations. Cloud App Security vous permet de créer des stratégies d’accès conditionnel pour les données de votre organisation, à l’aide de contrôles de session en temps réel dans Azure Active Directory (Azure AD) qui contribuent de garantir la sécurité de vos analytiques Power BI. Une ces stratégies définies, les administrateurs peuvent superviser l’accès et l’activité des utilisateurs, effectuer une analyse des risques en temps réel et définir des contrôles spécifiques aux étiquettes.
 
 Utilisation
-- [Contrôles Microsoft Cloud App Security dans Power BI](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls)
+- [Contrôles Microsoft Cloud App Security dans Power BI](../admin/service-security-using-microsoft-cloud-app-security-controls.md)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -276,9 +276,9 @@ Utilisation
 
 **Instructions** : Veillez à ce que, pour le trafic HTTP, les clients et les sources de données qui se connectent à vos ressources Power BI puissent négocier TLS v1.2 ou ultérieur.
 
-- [Mise en œuvre de l’utilisation de la version TLS](https://docs.microsoft.com/power-bi/admin/service-admin-power-bi-security#enforcing-tls-version-usage)
+- [Mise en œuvre de l’utilisation de la version TLS](../admin/service-admin-power-bi-security.md#enforcing-tls-version-usage)
 
-- [Informations sur la sécurité TLS](https://docs.microsoft.com/security/engineering/solving-tls1-problem)
+- [Informations sur la sécurité TLS](/security/engineering/solving-tls1-problem)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -288,7 +288,7 @@ Utilisation
 
 **Instructions** : Power BI chiffre les données au repos et in-process. Par défaut, Power BI utilise des clés managées par Microsoft pour chiffrer vos données. Les organisations peuvent choisir d’utiliser leurs propres clés pour le chiffrement du contenu utilisateur au repos sur Power BI, des images de rapport vers les jeux de données importés dans les capacités Premium.
 
-- [Utiliser BYOK dans Power BI](https://docs.microsoft.com/power-bi/admin/service-encryption-byok)
+- [Utiliser BYOK dans Power BI](../admin/service-encryption-byok.md)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -302,7 +302,7 @@ Utilisation
 
 **Instructions** : Utilisez Azure Sentinel avec vos journaux d’audit Office Power BI afin de donner à votre équipe de sécurité une visibilité sur les risques pour vos ressources Power BI.
 
-- [Connecter des journaux Office 365 à Azure Sentinel](https://docs.microsoft.com/azure/sentinel/connect-office-365)
+- [Connecter des journaux Office 365 à Azure Sentinel](/azure/sentinel/connect-office-365)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -316,9 +316,9 @@ Azure Resource Graph peut rechercher et découvrir toutes les ressources Power B
 
 Organisez logiquement les ressources en fonction de la taxonomie de votre organisation à l’aide de balises, ainsi que d’autres métadonnées dans Azure (nom, description et catégorie).  
 
-- [Procédure pour créer des requêtes avec l’Explorateur Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/first-query-portal)
+- [Procédure pour créer des requêtes avec l’Explorateur Azure Resource Graph](/azure/governance/resource-graph/first-query-portal)
 
-- [Guides de décision concernant le nommage et l’étiquetage des ressources](https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/resource-tagging/?toc=/azure/azure-resource-manager/management/toc.json)
+- [Guides de décision concernant le nommage et l’étiquetage des ressources](/azure/cloud-adoption-framework/decision-guides/resource-tagging/?toc=%2fazure%2fazure-resource-manager%2fmanagement%2ftoc.json)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -330,13 +330,13 @@ Organisez logiquement les ressources en fonction de la taxonomie de votre organi
 
 Utilisez Azure Policy pour auditer et limiter les services que les utilisateurs peuvent approvisionner dans votre environnement. Utilisez Azure Resource Graph pour interroger et découvrir des ressources dans leurs abonnements. Vous pouvez également utiliser Azure Monitor pour créer des règles afin de déclencher des alertes lorsqu’un service non approuvé est détecté.
 
-- [Guide pratique pour configurer et gérer Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage)
+- [Guide pratique pour configurer et gérer Azure Policy](/azure/governance/policy/tutorials/create-and-manage)
 
 Comment refuser un type de ressource spécifique avec
-- [Azure Policy](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#general)
+- [Azure Policy](/azure/governance/policy/samples/built-in-policies#general)
 
 Comment créer des requêtes avec Azure
-- [Explorateur Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/first-query-portal)
+- [Explorateur Resource Graph](/azure/governance/resource-graph/first-query-portal)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -348,9 +348,9 @@ Comment créer des requêtes avec Azure
 
 ### <a name="lt-2-enable-threat-detection-for-azure-identity-and-access-management"></a>LT-2 : Activer la détection des menaces pour la gestion des identités et des accès Azure
 
-**Instructions** : Transférez tous les journaux de Power BI à votre serveur SIEM, qui peut être utilisé pour configurer des détections de menaces personnalisées. En outre, utilisez des contrôles Microsoft Cloud App Security (MCAS) dans Power BI pour activer la détection d’anomalies en utilisant le guide disponible [ici](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls).
+**Instructions** : Transférez tous les journaux de Power BI à votre serveur SIEM, qui peut être utilisé pour configurer des détections de menaces personnalisées. En outre, utilisez des contrôles Microsoft Cloud App Security (MCAS) dans Power BI pour activer la détection d’anomalies en utilisant le guide disponible [ici](../admin/service-security-using-microsoft-cloud-app-security-controls.md).
 
-- [Suivre les activités utilisateur dans Power BI](https://docs.microsoft.com/power-bi/admin/service-admin-auditing)
+- [Suivre les activités utilisateur dans Power BI](../admin/service-admin-auditing.md)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -360,7 +360,7 @@ Comment créer des requêtes avec Azure
 
 **Instructions** : Power BI est une offre SaaS complètement managée, et la configuration du réseau sous-jacent et la journalisation sont de la responsabilité de Microsoft. Pour les clients qui utilisent des liens privés, il est possible de configurer la journalisation et la supervision.
 
-- [Journalisation et supervision Private Link](https://docs.microsoft.com/azure/private-link/private-link-overview#logging-and-monitoring)
+- [Journalisation et supervision Private Link](/azure/private-link/private-link-overview#logging-and-monitoring)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -411,11 +411,11 @@ Journal d’activité de Power BI :
  
 - Ne conserve pas les données d’activité quand le client est déplacé vers une autre région Azure.
 
-- [Données d’audit de Power BI](https://docs.microsoft.com/power-bi/admin/service-admin-auditing#operations-available-in-the-audit-and-activity-logs)
+- [Données d’audit de Power BI](../admin/service-admin-auditing.md#operations-available-in-the-audit-and-activity-logs)
 
-- [Journal d’activité de Power BI](https://docs.microsoft.com/power-bi/admin/service-admin-auditing#use-the-activity-log)
+- [Journal d’activité de Power BI](../admin/service-admin-auditing.md#use-the-activity-log)
 
-- [Journal d’audit de Power BI](https://docs.microsoft.com/power-bi/admin/service-admin-auditing#use-the-audit-log)
+- [Journal d’audit de Power BI](../admin/service-admin-auditing.md#use-the-audit-log)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -456,11 +456,11 @@ Journal d’activité de Power BI :
 
 - Ne conserve pas les données d’activité lorsque le client est déplacé vers une autre région Azure.
 
-- [Données d’audit de Power BI](https://docs.microsoft.com/power-bi/admin/service-admin-auditing#operations-available-in-the-audit-and-activity-logs)
+- [Données d’audit de Power BI](../admin/service-admin-auditing.md#operations-available-in-the-audit-and-activity-logs)
 
-- [Journal d’activité de Power BI](https://docs.microsoft.com/power-bi/admin/service-admin-auditing#use-the-activity-log)
+- [Journal d’activité de Power BI](../admin/service-admin-auditing.md#use-the-activity-log)
 
-- [Journal d’audit de Power BI](https://docs.microsoft.com/power-bi/admin/service-admin-auditing#use-the-audit-log)
+- [Journal d’audit de Power BI](../admin/service-admin-auditing.md#use-the-audit-log)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -470,7 +470,7 @@ Journal d’activité de Power BI :
 
 **Instructions** : Configurez vos stratégies de conservation du stockage pour vos journaux d’audit Office en fonction de vos besoins en matière de conformité, de réglementation et métier.
 
-- [Stratégies de conservation du journal d’audit Office](https://docs.microsoft.com/microsoft-365/compliance/audit-log-retention-policies)
+- [Stratégies de conservation du journal d’audit Office](/microsoft-365/compliance/audit-log-retention-policies)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -484,9 +484,9 @@ Journal d’activité de Power BI :
 
 **Conseils** : Assurez-vous que votre organisation dispose de processus pour répondre aux incidents de sécurité, qu’elle a mis à jour ces processus pour Azure et qu’elle les exerce régulièrement pour garantir la préparation.
 
-- [Implémenter la sécurité dans l’environnement de l’entreprise](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
+- [Implémenter la sécurité dans l’environnement de l’entreprise](/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
 
-- [Guide de référence sur les réponses aux incidents](https://docs.microsoft.com/microsoft-365/downloads/IR-Reference-Guide.pdf)
+- [Guide de référence sur les réponses aux incidents](/microsoft-365/downloads/IR-Reference-Guide.pdf)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -496,7 +496,7 @@ Journal d’activité de Power BI :
 
 **Conseils** : Configurez les coordonnées des personnes à contacter en cas d’incident de sécurité dans Azure Security Center. Microsoft utilisera ces coordonnées afin de vous contacter si le Microsoft Security Response Center (MSRC) découvre que vos données ont été consultées de manière illégale ou par un tiers non autorisé. Vous avez également la possibilité de personnaliser les alertes et les notifications d’incidents dans différents services Azure en fonction de vos besoins en matière de réponse aux incidents. 
 
-- [Comment définir le contact de sécurité d’Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details)
+- [Comment définir le contact de sécurité d’Azure Security Center](/azure/security-center/security-center-provide-security-contact-details)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -508,7 +508,7 @@ Journal d’activité de Power BI :
 
 Surveillez les alertes liées à Power BI dans Microsoft Cloud App Security. Vous pouvez créer des alertes de bonne qualité en vous basant sur l’expérience des incidents passés, sur les sources validées par la communauté, et sur des outils conçus pour générer et nettoyer les alertes en fusionnant et en mettant en corrélation différentes sources de signaux.
 
-- [Surveiller les alertes dans Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts)
+- [Surveiller les alertes dans Cloud App Security](/cloud-app-security/monitor-alerts)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -520,7 +520,7 @@ Surveillez les alertes liées à Power BI dans Microsoft Cloud App Security. Vou
 
 Assurez-vous qu’il existe des plans de réponse aux incidents écrits qui définissent tous les rôles du personnel, ainsi que les phases de gestion des incidents, depuis la détection jusqu’à la revue une fois l’incident terminé.
 
-- [Vue d’ensemble des incidents dans Protection Microsoft contre les menaces](https://docs.microsoft.com/microsoft-365/security/mtp/incidents-overview)
+- [Vue d’ensemble des incidents dans Protection Microsoft contre les menaces](/microsoft-365/security/mtp/incidents-overview)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -533,7 +533,7 @@ Assurez-vous qu’il existe des plans de réponse aux incidents écrits qui déf
  
 Protection Microsoft contre les menaces applique une analytique des corrélations, et regroupe toutes les alertes et recherches associées provenant de différents produits en un seul incident. Protection Microsoft contre les menaces déclenche également des alertes uniques sur les activités qui peuvent être identifiées seulement comme malveillantes en raison de la visibilité de bout en bout de Protection Microsoft contre les menaces sur tous les actifs et toute la suite de produits. En procédant ainsi, Protection Microsoft contre les menaces donne une représentation du scénario d’attaque le plus large, permettant à un analyste des opérations de sécurité de comprendre et de gérer les menaces complexes dans toute l’organisation.
 
-- [Hiérarchiser les incidents dans Protection Microsoft contre les menaces](https://docs.microsoft.com/microsoft-365/security/mtp/incident-queue?view=o365-worldwide&amp;preserve-view=true)
+- [Hiérarchiser les incidents dans Protection Microsoft contre les menaces](/microsoft-365/security/mtp/incident-queue?amp;preserve-view=true&view=o365-worldwide)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -545,7 +545,7 @@ Protection Microsoft contre les menaces applique une analytique des corrélation
  
 Utilisez les fonctionnalités d’automatisation des workflows dans Protection Microsoft contre les menaces pour déclencher automatiquement des recherches et des remédiations en réponse à des alertes de sécurité entrantes. 
  
-- [Recherche et réponse automatisées dans Protection Microsoft contre les menaces](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Recherche et réponse automatisées dans Protection Microsoft contre les menaces](/microsoft-365/security/mtp/mtp-autoir)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -569,7 +569,7 @@ Utilisez les fonctionnalités d’automatisation des workflows dans Protection M
 
 **Instructions** : Surveillez votre instance de Power BI en utilisant les API REST d’administration de Power BI.
 
-- [API REST d’administration de Power BI](https://docs.microsoft.com/rest/api/power-bi/admin)
+- [API REST d’administration de Power BI](/rest/api/power-bi/admin)
 
 - [Livre blanc sur le déploiement de Power BI en entreprise](https://aka.ms/PBIEnterpriseDeploymentWP)
 
@@ -583,7 +583,7 @@ Utilisez les fonctionnalités d’automatisation des workflows dans Protection M
 
 Suivez les règles d’engagement de pénétration du cloud Microsoft pour vous assurer que vos tests d’intrusion sont conformes aux stratégies de Microsoft. Utilisez la stratégie et l’exécution de Red Teaming de Microsoft ainsi que les tests d’intrusion de site actif sur l’infrastructure cloud, les services et les applications gérés par Microsoft.
 
-- [Test d’intrusion dans Azure](https://docs.microsoft.com/azure/security/fundamentals/pen-testing)
+- [Test d’intrusion dans Azure](/azure/security/fundamentals/pen-testing)
 
 - [Règles d’engagement des tests d’intrusion](https://www.microsoft.com/msrc/pentest-rules-of-engagement?rtc=1)
 
@@ -601,7 +601,7 @@ Suivez les règles d’engagement de pénétration du cloud Microsoft pour vous 
 
 **Instructions** : Si vous utilisez la fonctionnalité Bring Your Own Key (BYOK) dans Power BI, vous devez vérifier périodiquement que vous pouvez accéder à vos clés gérées par le client et les restaurer.
 
-- [BYOK dans Power BI](https://docs.microsoft.com/power-bi/admin/service-encryption-byok)
+- [BYOK dans Power BI](../admin/service-encryption-byok.md)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -611,13 +611,13 @@ Suivez les règles d’engagement de pénétration du cloud Microsoft pour vous 
 
 **Instructions** : Si vous utilisez la fonctionnalité Bring Your Own Key (BYOK) dans Power BI, vous devez vérifier que le coffre de clés contrôlant vos clés gérées par le client est configuré avec les instructions de la documentation de BYOK dans Power BI ci-dessous. Activez la suppression réversible et la protection contre la purge dans Azure Key Vault pour protéger les clés contre une suppression accidentelle ou malveillante.
 
-- [BYOK dans Power BI](https://docs.microsoft.com/power-bi/admin/service-encryption-byok)
+- [BYOK dans Power BI](../admin/service-encryption-byok.md)
 
-- [Guide pratique pour activer la suppression réversible et la protection contre la purge dans Key Vault](https://docs.microsoft.com/azure/storage/blobs/storage-blob-soft-delete?tabs=azure-portal)
+- [Guide pratique pour activer la suppression réversible et la protection contre la purge dans Key Vault](/azure/storage/blobs/storage-blob-soft-delete?tabs=azure-portal)
 
 Pour les ressources de clé de passerelle, vérifiez que vous suivez les instructions de la documentation des clés de récupération de passerelle ci-dessous.
 
-- [Clé de récupération de la passerelle de données locale](https://docs.microsoft.com/data-integration/gateway/service-gateway-recovery-key)
+- [Clé de récupération de la passerelle de données locale](/data-integration/gateway/service-gateway-recovery-key)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -650,13 +650,13 @@ Cette stratégie doit inclure les recommandations, stratégies et normes documen
 -   Normes de chiffrement appropriées
 
 Pour plus d’informations, consultez les références suivantes :
-- [Recommandation d’architecture de sécurité Azure - Stockage, données et chiffrement](https://docs.microsoft.com/azure/architecture/framework/security/storage-data-encryption?toc=/security/compass/toc.json&amp;bc=/security/compass/breadcrumb/toc.json)
+- [Recommandation d’architecture de sécurité Azure - Stockage, données et chiffrement](/azure/architecture/framework/security/storage-data-encryption?amp;bc=%2fsecurity%2fcompass%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fcompass%2ftoc.json)
 
-- [Notions de base de la sécurité Azure - Sécurité, chiffrement et stockage des données Azure](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview)
+- [Notions de base de la sécurité Azure - Sécurité, chiffrement et stockage des données Azure](/azure/security/fundamentals/encryption-overview)
 
-- [Cloud Adoption Framework - Meilleures pratiques en matière de chiffrement et de sécurité des données Azure](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices?toc=/azure/cloud-adoption-framework/toc.json&amp;bc=/azure/cloud-adoption-framework/_bread/toc.json)
+- [Cloud Adoption Framework - Meilleures pratiques en matière de chiffrement et de sécurité des données Azure](/azure/security/fundamentals/data-encryption-best-practices?amp;bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
 
-- [Benchmark de sécurité Azure - Gestion des ressources](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-asset-management)
+- [Benchmark de sécurité Azure - Gestion des ressources](/azure/security/benchmarks/security-controls-v2-asset-management)
 
 - [Benchmark de sécurité Azure - Protection des données](/azure/security/benchmarks/security-controls-v2-data-protection)
 
@@ -672,11 +672,11 @@ Trouvez le bon équilibre entre la nécessité de séparation sur le plan de la 
 
 Veillez à ce que la stratégie de segmentation soit implémentée de manière cohérente pour tous les types de contrôle, y compris pour les modèles d'identité, d'accès et de sécurité du réseau, les modèles d'autorisation/d'accès aux applications et les contrôles des processus humains.
 
-- [Aide relative à la stratégie de segmentation dans Azure (vidéo)](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151)
+- [Aide relative à la stratégie de segmentation dans Azure (vidéo)](/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151)
 
-- [Aide relative à la stratégie de segmentation dans Azure (document)](https://docs.microsoft.com/security/compass/governance#enterprise-segmentation-strategy)
+- [Aide relative à la stratégie de segmentation dans Azure (document)](/security/compass/governance#enterprise-segmentation-strategy)
 
-- [Aligner la segmentation du réseau avec la stratégie de segmentation d’entreprise](https://docs.microsoft.com/security/compass/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)
+- [Aligner la segmentation du réseau avec la stratégie de segmentation d’entreprise](/security/compass/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -686,7 +686,7 @@ Veillez à ce que la stratégie de segmentation soit implémentée de manière c
 
 **Conseils** : Mesurez et atténuez en permanence les risques liés à vos ressources individuelles et à l’environnement dans lequel elles sont hébergées. Priorisez les ressources à valeur élevée et les surfaces d’attaque hautement exposées, comme les applications publiées, les points d’entrée et de sortie du réseau, les points de terminaison utilisateur et administrateur, etc.
 
-- [Benchmark de sécurité Azure - Gestion de la posture et des vulnérabilités](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-posture-vulnerability-management)
+- [Benchmark de sécurité Azure - Gestion de la posture et des vulnérabilités](/azure/security/benchmarks/security-controls-v2-posture-vulnerability-management)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -696,11 +696,11 @@ Veillez à ce que la stratégie de segmentation soit implémentée de manière c
 
 **Conseils** : Veillez à documenter et à communiquer une stratégie claire pour les rôles et les responsabilités de votre organisation de sécurité. Veillez à définir clairement les responsabilités pour les décisions relatives à la sécurité, à former tout le monde au modèle de responsabilité partagée et à former les équipes techniques à la technologie permettant de sécuriser le cloud.
 
-- [Meilleures pratiques pour la sécurité Azure 1 – Personnes : Former les équipes pour le parcours vers la sécurité dans le cloud](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#1-people-educate-teams-about-the-cloud-security-journey)
+- [Meilleures pratiques pour la sécurité Azure 1 – Personnes : Former les équipes pour le parcours vers la sécurité dans le cloud](/azure/cloud-adoption-framework/security/security-top-10#1-people-educate-teams-about-the-cloud-security-journey)
 
-- [Meilleures pratiques pour la sécurité Azure 2 – Personnes : Former les équipes pour les technologies de sécurité dans le cloud](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#2-people-educate-teams-on-cloud-security-technology)
+- [Meilleures pratiques pour la sécurité Azure 2 – Personnes : Former les équipes pour les technologies de sécurité dans le cloud](/azure/cloud-adoption-framework/security/security-top-10#2-people-educate-teams-on-cloud-security-technology)
 
-- [Meilleures pratiques pour la sécurité Azure 3 – Processus : Affecter les responsabilités pour les décisions de sécurité dans le cloud](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
+- [Meilleures pratiques pour la sécurité Azure 3 – Processus : Affecter les responsabilités pour les décisions de sécurité dans le cloud](/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -725,13 +725,13 @@ Cette stratégie doit inclure les recommandations, stratégies et normes documen
 -   Artefacts de sécurité réseau à jour (par exemple diagrammes réseau, architecture de réseau de référence)
 
 Pour plus d’informations, consultez les références suivantes :
-- [Meilleures pratiques pour la sécurité Azure 11 – Architecture. Stratégie de sécurité unifiée unique](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
+- [Meilleures pratiques pour la sécurité Azure 11 – Architecture. Stratégie de sécurité unifiée unique](/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
 
 - [Benchmark de sécurité Azure – Sécurité réseau](/azure/security/benchmarks/security-controls-v2-network-security)
 
-- [Vue d’ensemble de la sécurité réseau d’Azure](https://docs.microsoft.com/azure/security/fundamentals/network-overview)
+- [Vue d’ensemble de la sécurité réseau d’Azure](/azure/security/fundamentals/network-overview)
 
-- [Stratégie d’architecture de réseau d’entreprise](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/architecture)
+- [Stratégie d’architecture de réseau d’entreprise](/azure/cloud-adoption-framework/ready/enterprise-scale/architecture)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -755,13 +755,13 @@ Cette stratégie doit inclure les recommandations, stratégies et normes documen
 
 Pour plus d’informations, consultez les références suivantes :
 
-- [Benchmark de sécurité Azure - Gestion des identités](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-identity-management)
+- [Benchmark de sécurité Azure - Gestion des identités](/azure/security/benchmarks/security-controls-v2-identity-management)
 
 - [Benchmark de sécurité Azure - Accès privilégié](/azure/security/benchmarks/security-controls-v2-privileged-access)
 
-- [Meilleures pratiques pour la sécurité Azure 11 – Architecture. Stratégie de sécurité unifiée unique](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
+- [Meilleures pratiques pour la sécurité Azure 11 – Architecture. Stratégie de sécurité unifiée unique](/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
 
-- [Vue d’ensemble de la sécurité et de la gestion des identités Azure](https://docs.microsoft.com/azure/security/fundamentals/identity-management-overview)
+- [Vue d’ensemble de la sécurité et de la gestion des identités Azure](/azure/security/fundamentals/identity-management-overview)
 
 **Supervision d’Azure Security Center** : Non applicable
 
@@ -793,11 +793,11 @@ Pour plus d’informations, consultez les références suivantes :
 
 - [Benchmark de sécurité Azure - Réponse aux incidents](/azure/security/benchmarks/security-controls-v2-incident-response)
 
-- [Meilleures pratiques pour la sécurité Azure 4 - Processus. Mise à jour des processus de réponse aux incidents pour le cloud](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
+- [Meilleures pratiques pour la sécurité Azure 4 - Processus. Mise à jour des processus de réponse aux incidents pour le cloud](/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
 
-- [Guide pour le cadre d’adoption d’Azure, la journalisation et la prise de décision pour les rapports](https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/logging-and-reporting/)
+- [Guide pour le cadre d’adoption d’Azure, la journalisation et la prise de décision pour les rapports](/azure/cloud-adoption-framework/decision-guides/logging-and-reporting/)
 
-- [Mise à l’échelle, gestion et surveillance d’entreprise Azure](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/management-and-monitoring)
+- [Mise à l’échelle, gestion et surveillance d’entreprise Azure](/azure/cloud-adoption-framework/ready/enterprise-scale/management-and-monitoring)
 
 **Supervision d’Azure Security Center** : Non applicable
 
