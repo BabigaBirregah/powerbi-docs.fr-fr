@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 12/15/2020
+ms.date: 01/15/2021
 LocalizationGroup: Dashboards
-ms.openlocfilehash: dc3ce931664a3c125504865c6cccfe3fdfa404c4
-ms.sourcegitcommit: f791eef8e885f18c48997c9af63ab56211f1ceb8
+ms.openlocfilehash: acb1a1550c0ab216e4934e99f871df9321561314
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "98053417"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565419"
 ---
 # <a name="monitor-usage-metrics-in-classic-workspaces"></a>Superviser les métriques d’utilisation dans des espaces de travail classiques
 
@@ -162,7 +162,11 @@ Il est important de savoir que la comparaison entre les journaux d’audit et le
 
 ### <a name="discrepancies-between-rest-apis-and-usage-metrics"></a>Différences entre les API REST et les métriques d’utilisation
 
-Les [API REST de rapports](https://docs.microsoft.com/rest/api/power-bi/reports) et les [API REST d’administration](https://docs.microsoft.com/rest/api/power-bi/admin) Power BI utilisent également des données de service Power BI. Pour les raisons décrites dans la section précédente, les décomptes de rapports (nombre de rapports) issue des API peuvent différer des nombres de rapports indiqués dans les métriques d’utilisation. Les décomptes de rapports dérivés des API ne sont pas affectés par les problèmes des clients et doivent être considérés comme précis.
+Les [API REST de rapports](/rest/api/power-bi/reports) et les [API REST d’administration](/rest/api/power-bi/admin) Power BI utilisent également des données de service Power BI. Pour les raisons décrites dans la section précédente, les décomptes de rapports (nombre de rapports) issue des API peuvent différer des nombres de rapports indiqués dans les métriques d’utilisation. Les décomptes de rapports dérivés des API ne sont pas affectés par les problèmes des clients et doivent être considérés comme précis.
+
+### <a name="classic-usage-metrics-are-not-supported-with-private-links"></a>Les métriques d’utilisation classiques ne sont pas prises en charge avec les liaisons privées 
+
+Si votre organisation utilise des [liaisons privées](../admin/service-security-private-links.md), les rapports de métriques d’utilisation classiques ne contiendront aucune donnée. Il existe actuellement une limitation lors du transfert d’informations client par le biais de liaisons privées. 
 
 ### <a name="other-considerations"></a>Autres éléments à prendre en compte
 

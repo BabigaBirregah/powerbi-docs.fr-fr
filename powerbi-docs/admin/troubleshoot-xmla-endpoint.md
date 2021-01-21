@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 01/11/2021
+ms.date: 01/13/2021
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: 16a07065507abfe825c39677f234d626070827b4
-ms.sourcegitcommit: c86ce723d5db16fb960d1731795d84f4654e4b4e
+ms.openlocfilehash: 0753a9c3d5b832275f65ac11b87f90c38606f289
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98110725"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226982"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>Résoudre les problèmes de connectivité des points de terminaison XMLA
 
@@ -217,6 +217,10 @@ Comme indiqué dans le message d’erreur, pour résoudre ce problème, supprime
 ## <a name="workspaceserver-alias"></a>Alias d’espace de travail/de serveur
 
 Contrairement à dans Azure Analysis Services, les [alias](/azure/analysis-services/analysis-services-server-alias) de nom de serveur **ne sont pas pris en charge** pour les espaces de travail Power BI Premium. 
+
+## <a name="dataset-refresh-through-the-xmla-endpoint"></a>Actualisation des jeux de données par le biais du point de terminaison XMLA
+
+La date et l’heure de la dernière actualisation sont affichées à plusieurs endroits dans Power BI, tels que les colonnes Actualisé dans les rapports et les listes, les détails du jeu de données, les paramètres du jeu de données et l’historique d’actualisation du jeu de données. Actuellement, les dates et heures d’actualisation affichées dans Power BI **n’incluent pas** les opérations d’actualisation effectuées par le biais du point de terminaison XMLA à l’aide de TMSL/TOM, SSMS ou d’outils tiers.
 
 ## <a name="see-also"></a>Voir aussi
 

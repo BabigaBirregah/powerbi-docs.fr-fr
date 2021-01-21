@@ -8,14 +8,14 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.reviewer: ''
 ms.cunstom: ''
-ms.date: 09/16/2019
+ms.date: 01/12/2021
 LocalizationGroup: Get started
-ms.openlocfilehash: 4b2ce1624bcbbc352ab4f4eaaeb97927c09c2d78
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: b22ecdd806371455149f277b9114b1eaf315ce6d
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96411652"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227051"
 ---
 # <a name="get-started-with-third-party-apps"></a>Bien démarrer avec des applications tierces
 
@@ -27,18 +27,18 @@ Voici les différents types d’accès dont peut bénéficier une application.
 
 * **Afficher tous les tableaux de bord**
   
-  * Cette autorisation permet à une application d’afficher tous les tableaux de bord auxquels vous avez accès. Cela inclut les tableaux de bord que vous possédez, ceux provenant de packs de contenu, ainsi que ceux qui ont été partagés avec vous et qui se trouvent dans des groupes auxquels vous appartenez. L’application ne peut pas modifier le tableau de bord. Cette autorisation peut notamment être utilisée par une application pour incorporer le contenu de votre tableau de bord à ses expériences.
+  * Cette autorisation permet à une application d’afficher tous les tableaux de bord auxquels vous avez accès. Cela inclut les tableaux de bord que vous possédez, ceux provenant d’applications, ainsi que ceux qui ont été partagés avec vous et qui se trouvent dans des groupes auxquels vous appartenez. L’application ne peut pas modifier le tableau de bord. Cette autorisation peut notamment être utilisée par une application pour incorporer le contenu de votre tableau de bord à ses expériences.
 
 * **Afficher tous les rapports**
   
-  * Cette autorisation permet à une application d’afficher tous les rapports auxquels vous avez accès. Cela inclut les rapports que vous possédez, ceux provenant de packs de contenu, ainsi que ceux se trouvant dans des groupes auxquels vous appartenez. Étant donné qu’elle est autorisée à afficher le rapport, l’application peut également voir les données qu’il contient. L’application ne peut pas modifier les rapports. Cette autorisation peut notamment être utilisée par une application pour incorporer le contenu de votre rapport à ses expériences.
+  * Cette autorisation permet à une application d’afficher tous les rapports auxquels vous avez accès. Cela inclut les rapports que vous possédez, ceux provenant d’applications, ainsi que ceux se trouvant dans des groupes auxquels vous appartenez. Étant donné qu’elle est autorisée à afficher le rapport, l’application peut également voir les données qu’il contient. L’application ne peut pas modifier les rapports. Cette autorisation peut notamment être utilisée par une application pour incorporer le contenu de votre rapport à ses expériences.
 
 * **Afficher tous les jeux de données**
   
-  * Cette autorisation permet à une application de répertorier tous les jeux de données auxquels vous avez accès. Cela inclut les jeux de données que vous possédez, ceux provenant de packs de contenu, ainsi que ceux se trouvant dans des groupes auxquels vous appartenez. Une application peut voir les noms et la structure de tous vos jeux de données, y compris les noms des tables et des colonnes. Cette autorisation donne le droit de lire les données d’un jeu de données. L’autorisation ne donne pas à l’application le droit de faire des ajouts à un jeu de données ou de le modifier.
+  * Cette autorisation permet à une application de répertorier tous les jeux de données auxquels vous avez accès. Cela inclut les jeux de données que vous possédez, ceux provenant d’applications, ainsi que ceux se trouvant dans des groupes auxquels vous appartenez. Une application peut voir les noms et la structure de tous vos jeux de données, y compris les noms des tables et des colonnes. Cette autorisation donne le droit de lire les données d’un jeu de données. L’autorisation ne donne pas à l’application le droit de faire des ajouts à un jeu de données ou de le modifier.
 * **Lire et écrire tous les jeux de données**
   
-  * Cette autorisation permet à une application de répertorier tous les jeux de données auxquels vous avez accès. Cela inclut les jeux de données que vous possédez, ceux provenant de packs de contenu, ainsi que ceux se trouvant dans des groupes auxquels vous appartenez. Une application peut voir les noms et la structure de tous vos jeux de données, y compris les noms des tables et des colonnes. Cette autorisation donne le droit de lire et d’écrire des données dans un jeu de données. L’application peut aussi créer des jeux de données et modifier des jeux de données existants. Cette autorisation est couramment utilisée par une application pour envoyer des données directement à Power BI.
+  * Cette autorisation permet à une application de répertorier tous les jeux de données auxquels vous avez accès. Cela inclut les jeux de données que vous possédez, ceux provenant d’applications, ainsi que ceux se trouvant dans des groupes auxquels vous appartenez. Une application peut voir les noms et la structure de tous vos jeux de données, y compris les noms des tables et des colonnes. Cette autorisation donne le droit de lire et d’écrire des données dans un jeu de données. L’application peut aussi créer des jeux de données et modifier des jeux de données existants. Cette autorisation est couramment utilisée par une application pour envoyer des données directement à Power BI.
 
 * **Afficher les groupes d’un utilisateur**
   

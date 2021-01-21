@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/06/2020
+ms.date: 01/19/2021
 LocalizationGroup: Create reports
-ms.openlocfilehash: cadb8d45af40c91e7008e771f2a52ef2ea508341
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: abed7e9f6da352d5461868e6371ffefb814eb3ff
+ms.sourcegitcommit: 96080432af4c8e3fe46c23274478ccffa0970efb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96393459"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597647"
 ---
 # <a name="add-multiple-fields-to-a-hierarchy-slicer"></a>Ajout de plusieurs champs à un segment de hiérarchie
 
@@ -76,6 +76,11 @@ Si l’espace est limité sur votre rapport, vous pouvez réduire le retrait des
 1. Développez **Éléments**, puis faites glisser **Mise en retrait de la disposition échelonnée** vers la gauche (plus petite) ou vers la droite (plus grande). Vous pouvez également taper simplement un nombre dans la zone.
 
     :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-indentation.png" alt-text="Capture d’écran de la définition de la mise en retrait du segment de hiérarchie.":::
+    
+## <a name="limitations-and-considerations"></a>Considérations et limitations
+
+- Pour les modèles tabulaires, cette fonctionnalité nécessite SQL Server Analysis Services 2017 ou version ultérieure.
+- Pour les modèles multidimensionnels, cette fonctionnalité nécessite SQL Server Analysis Services 2019 CU5 ou version ultérieure avec SuperDAXMD activé. Apprenez-en davantage sur [SuperDAXMD](/analysis-services/multidimensional-models/dax-for-multidimensional-models#superdaxmd).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -8,13 +8,13 @@ featuredvideoid: DN1t5p9aui0
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: tutorial
-ms.date: 11/11/2020
-ms.openlocfilehash: e05078bf51cd33fb565dc783386258fe9ea305d1
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 12/31/2020
+ms.openlocfilehash: 504b5bcb63fa8c8897ae0b44922d3dc144a02730
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96416367"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227350"
 ---
 # <a name="power-bi-paginated-reports-in-a-day-course"></a>Rapports paginés Power BI en une journée
 
@@ -43,7 +43,7 @@ Regardez la vidéo de bienvenue et de présentation pour commencer le cours.
 
 ## <a name="course-outline"></a>Plan du cours
 
-Le [cours de 24 vidéos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT) est organisé en huit modules. Nous vous recommandons de regarder les vidéos dans l’ordre de leur enregistrement, en commençant par la vidéo 01 et en finissant par la vidéo 24.
+Le [cours de 25 vidéos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT) est organisé en huit modules. Nous vous recommandons de regarder les vidéos dans l’ordre de leur enregistrement, en commençant par la vidéo 01 et en finissant par la vidéo 25.
 
 - **Introduction**
   - Vidéo 01 : [Bienvenue et présentation du cours](https://www.youtube.com/watch?v=DN1t5p9aui0&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
@@ -78,6 +78,7 @@ Le [cours de 24 vidéos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icI
   - Vidéo 22 : [Contenu de bonus : Récapitulatif](https://www.youtube.com/watch?v=w5zlJ8BodxI&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
   - Vidéo 23 : [Contenu de bonus : Évolution des rapports paginés](https://www.youtube.com/watch?v=pevpai65MvY&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
   - Vidéo 24 : [Contenu de bonus : Réduction de la barrière à l’entrée](https://www.youtube.com/watch?v=vu32LfckCt8&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
+  - Vidéo 25 : [Contenu de bonus : Mise à jour de décembre 2020](https://www.youtube.com/watch?v=-7M4muS_3BI&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
 
 ## <a name="self-study-kit"></a>Kit d’auto-apprentissage
 

@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 12/15/2020
+ms.date: 01/15/2021
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 6ce7afedb43aa7abaffb3ad5afdb00b4749addb5
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.openlocfilehash: 573180ef4087af7654480da8ca581e1881729243
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97885391"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565287"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience-preview"></a>Superviser les métriques d’utilisation dans la nouvelle expérience d’espace de travail (préversion)
 
@@ -297,6 +297,7 @@ Outre les différences ci-dessus entre la version précédente et la version am�
 - L’initialisation du jeu de données du rapport de métriques d’utilisation est susceptible d’échouer en raison d’un délai d’expiration au cours de l’actualisation. Pour résoudre ce problème, consultez la section Dépannage.
 - Le partage est désactivé pour le rapport de métriques d’utilisation. Pour pouvoir accorder aux utilisateurs un accès en lecture au rapport, vous devez d’abord leur donner accès à l’espace de travail.
 - Dans certains scénarios, vous pouvez remarquer que les données de performances sont manquantes. Cela peut se produire si un utilisateur ouvre un rapport et interagit avec lui avant la fin de son chargement ou si une erreur s’est produite lors du chargement du rapport. 
+- Si votre organisation utilise des [liaisons privées](../admin/service-security-private-links.md), les rapports de métriques d’utilisation modernes contiendront des données partielles (vues Rapport uniquement). Une limitation actuelle lors du transfert d’informations client par le biais de liaisons privées nous empêche de capturer des vues de page de rapport et des données de performances par le biais de liaisons privées. 
 
 ## <a name="frequently-asked-questions"></a>Forum Aux Questions
 

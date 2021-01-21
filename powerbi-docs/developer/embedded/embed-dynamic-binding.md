@@ -1,18 +1,18 @@
 ---
-title: Connecter un rapport à un jeu de données en utilisant la liaison dynamique pour des insights via la BI incorporée dans l’analytique incorporée Power BI
-description: Découvrez comment incorporer un rapport en utilisant la liaison dynamique dans l’analytique incorporée Power BI en vue de créer de meilleurs insights pour vos clients via la BI incorporée.
+title: Connecter un rapport Power BI à un jeu de données à l’aide de la liaison dynamique
+description: Découvrez comment incorporer un rapport Power BI à l’aide d’une liaison dynamique dans l’analytique incorporée Power BI.
 author: KesemSharabi
 ms.author: kesharab
-ms.topic: how-to
+ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 11/07/2019
-ms.openlocfilehash: aacae4dbfae30d72468419a717340c806c6c4bca
-ms.sourcegitcommit: eeaf607e7c1d89ef7312421731e1729ddce5a5cc
+ms.date: 01/17/2021
+ms.openlocfilehash: 0bc33ed37e389b42f5c27f8271cc461eb99e229a
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97888900"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565812"
 ---
 # <a name="connect-a-report-to-a-dataset-using-dynamic-binding"></a>Connecter un rapport à un jeu de données à l’aide de la liaison dynamique 
 
@@ -36,33 +36,15 @@ La liaison dynamique est prise en charge dans les deux scénarios : *Incorporat
 |*Incorporation pour vos clients*     |L’application possède les données         |Jeton d’accès pour les clients qui n’utilisent pas Power BI         |Doit inclure des autorisations à la fois pour le rapport et le jeu de données lié dynamiquement. Utilisez [l’API pour générer un jeton incorporé pour plusieurs éléments](/rest/api/power-bi/embedtoken/generatetoken), afin de générer un jeton d’incorporation qui prend en charge plusieurs artefacts.         |
 
 ## <a name="adjusting-the-config-object"></a>Ajustement de l’objet de configuration
-Ajoutez `datasetBinding` à l’objet de configuration. Utilisez l’exemple ci-dessous comme référence.
 
-```javascript
-var config = {
-    type: 'report',
-    tokenType: models.TokenType.Embed,
-    accessToken: accessToken,
-    embedUrl: embedUrl,
-    id: "reportId", // The wanted report id
-    permissions: permissions,
-
-    // -----  Adjustment required for dynamic binding ---- //
-    datasetBinding: {
-        datasetId: "notOriginalDatasetId",  // </The wanted dataset id
-    }
-    // ---- End of dynamic binding adjustment ---- //
-};
-
-// Get a reference to the embedded report HTML element
-var embedContainer = $('#embedContainer')[0];
-
-// Embed the report and display it within the div container
-var report = powerbi.embed(embedContainer, config);
-```
+Pour que la liaison dynamique fonctionne, vous devez ajouter `datasetBinding` à l’objet de configuration. Pour savoir comment procéder, consultez [Lier des jeux de données de manière dynamique à un rapport](/javascript/api/overview/powerbi/bind-report-datasets). 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Si vous débutez avec l’incorporation dans Power BI, suivez ces tutoriels pour découvrir comment incorporer votre contenu Power BI :
-* [Tutoriel : Incorporer du contenu Power BI dans une application pour vos clients](embed-sample-for-customers.md)
-* [Tutoriel : Incorporer du contenu Power BI dans une application pour votre organisation](embed-sample-for-your-organization.md)
+Si vous débutez avec l’incorporation dans Power BI, suivez ces tutoriels pour découvrir comment incorporer votre contenu Power BI.
+
+>[!div class="nextstepaction"]
+>[Incorporer du contenu Power BI dans une application pour vos clients](embed-sample-for-customers.md)
+
+>[!div class="nextstepaction"]
+>[Incorporer du contenu Power BI dans une application pour votre organisation](embed-sample-for-your-organization.md)

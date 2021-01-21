@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/04/2021
+ms.date: 01/14/2021
 LocalizationGroup: Share your work
-ms.openlocfilehash: 800e81b8fe5e9c2f108b71a4d8fb6bf9732a29ac
-ms.sourcegitcommit: 932f6856849c39e34229dc9a49fb9379c56a888a
+ms.openlocfilehash: 6b28537c9ea757fb43179196f9d7cb053955c5e0
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97926844"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227212"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publication sur le web à partir de Power BI
 
@@ -189,7 +189,7 @@ La fonctionnalité **Publier sur le web** est prise en charge pour la grande maj
 - Rapports qui utilisent une source de données de connexion active, notamment une source de données tabulaire Analysis Services hébergée localement, une source de données multidimensionnelle Analysis Services et Azure Analysis Services.
 - Rapports utilisant un [jeu de données partagé](../connect-data/service-datasets-across-workspaces.md) qui est stocké dans un autre espace de travail que le rapport.
 - [Jeux de données partagés et certifiés](../connect-data/service-datasets-share.md)
-- Rapports partagés directement ou via un pack de contenu d’organisation
+- Rapports partagés avec vous directement ou par le biais d’une application.
 - Rapports dans un espace de travail où vous n’êtes pas membre avec l’autorisation de modification.
 - Les visuels « R » et Python ne sont actuellement pas pris en charge dans les rapports **Publier sur le web**.
 - Exportation de données à partir de visuels dans un rapport qui a été publié sur le web.

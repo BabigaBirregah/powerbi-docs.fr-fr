@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 10/21/2020
+ms.date: 01/12/2021
 ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5aabc825ecd22ed49d05428148133be17156645d
-ms.sourcegitcommit: 7bf09116163afaae312eb2b232eb7967baee2c92
+ms.openlocfilehash: 5aa4fb617bc4a6d362bcf17a5e6b4d6d7f355086
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97621484"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227258"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser le travail dans les nouveaux espaces de travail dans Power BI
 
@@ -37,7 +37,7 @@ Dans les nouveaux espaces de travail, certaines fonctionnalités ont été repen
 - **Liste des contacts** : Dans les nouveaux espaces de travail, vous pouvez spécifier qui reçoit la notification sur l’activité de l’espace de travail.
 - **Créer des applications modèles** : Vous pouvez uniquement créer des *applications de modèle* dans les nouveaux espaces de travail. Les applications de modèle sont des applications que vous pouvez distribuer aux clients en dehors de votre organisation. Ces clients peuvent ensuite se connecter à leurs propres données avec votre application de modèle. En savoir plus sur les [applications de modèle](../connect-data/service-template-apps-overview.md).
 - **Partager des jeux de données** : Pour partager un jeu de données en dehors d’un espace de travail spécifique, vous devez enregistrer le rapport qui contient le jeu de données dans l’un des nouveaux espaces de travail. Vous ne pouvez pas partager des jeux de données à partir d’espaces de travail classiques. En savoir plus sur les [jeux de données partagés](../connect-data/service-datasets-across-workspaces.md).
-- **Packs de contenu professionnels** : Vous pouvez créer et utiliser des packs de contenu d’organisation dans des espaces de travail classiques. Vous ne pouvez pas les consommer ou les créer dans les nouveaux espaces de travail. Les applications et les applications de modèle remplacent les packs de contenu d’organisation dans les nouveaux espaces de travail.
+- **Packs de contenu professionnels** : Vous pouvez créer et utiliser des packs de contenu d’organisation dans des espaces de travail classiques. Vous ne pouvez pas les consommer ou les créer dans les nouveaux espaces de travail. Les applications et les applications de modèle remplacent les packs de contenu d’organisation dans les nouveaux espaces de travail. Les packs de contenu d’organisation sont dépréciés. C’est le moment idéal pour mettre à niveau vos packs de contenu vers des applications. Consultez la section sur la feuille de route de mise à niveau de l’espace de travail dans le billet de blog intitulé [Announcing Power BI admins can upgrade classic workspaces](https://powerbi.microsoft.com/blog/announcing-power-bi-admins-can-upgrade-classic-workspaces-and-roadmap-update/) (Annonce relative au fait que les administrateurs Power BI peuvent mettre à niveau les espaces de travail classiques) pour connaître la chronologie.
 
 Cet article explique plus en détail ces fonctionnalités.
 
@@ -143,5 +143,5 @@ Oui. Étant donné que nous prenons en charge les deux types d’espaces de trav
 * [Créer les nouveaux espaces de travail dans Power BI](service-create-the-new-workspaces.md)
 * [Créer les espaces de travail classiques](service-create-workspaces.md)
 * [Installer et utiliser des applications dans Power BI](service-create-distribute-apps.md)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+* Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

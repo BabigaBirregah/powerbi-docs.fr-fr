@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 12/16/2020
+ms.date: 01/19/2021
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: c29728641560502e19486f47e3ec06e370399640
-ms.sourcegitcommit: b472236df99b490db30f0168bd7284ae6e6095fb
+ms.openlocfilehash: cbf41315f6b33483b7fdd0797bf4dfbcebb605c3
+ms.sourcegitcommit: 96080432af4c8e3fe46c23274478ccffa0970efb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97600527"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597692"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Utiliser des modèles composites dans Power BI Desktop
 
@@ -22,7 +22,7 @@ Dans Power BI Desktop, lorsque l’on utilisait le mode DirectQuery dans un rapp
 
 La fonctionnalité des modèles composites dans Power BI Desktop se compose de trois fonctionnalités connexes :
 
-* **Modèles composites** : permet à un rapport d’avoir plusieurs connexions de données, notamment des connexions DirectQuery ou d’importation, dans toutes les combinaisons possibles. Cet article décrit en détail les modèles composites.
+* **Modèles composites** : permet à un rapport d’avoir plusieurs connexions de données à partir de différents groupes sources, par exemple une ou plusieurs connexions DirectQuery et une connexion d’importation, plusieurs connexions DirectQuery ou toute combinaison de ces connexions. Cet article décrit en détail les modèles composites.
 
 * **Relations plusieurs à plusieurs** : avec les modèles composites, vous pouvez établir des *relations plusieurs à plusieurs* entre les tables. Cette approche supprime la nécessité d’avoir des valeurs uniques dans les tables. Les solutions de contournement précédentes, comme la présentation de nouvelles tables uniquement pour établir des relations, sont également supprimées. Pour plus d’informations, consultez [Appliquer des relations plusieurs à plusieurs dans Power BI Desktop](desktop-many-to-many-relationships.md).
 
@@ -141,6 +141,8 @@ Pour cette raison, les informations stockées dans la feuille de calcul sont dé
 * Les paramètres de chiffrement pour chaque source doivent être considérés. Il est préférable d’éviter que les informations ne soient récupérées à partir d’une source par une connexion chiffrée, puis incluses par inadvertance dans une requête envoyée à une autre source par une connexion non chiffrée.
 
 Afin de confirmer que les implications en matière de sécurité ont bien été prises en compte, Power BI Desktop affiche un message d’avertissement lors de la création d’un modèle composite.  
+
+En outre, si un auteur ajoute *Table1* de *Modèle A* à un modèle composite (nous l’appellerons *Modèle C* à des fins de référence), un utilisateur qui consulte un rapport basé sur *Modèle C* pourra interroger **n’importe quelle table** dans *Modèle A* qui n’est pas protégée par la sécurité au niveau des lignes.
 
 Pour des raisons similaires, vous devez faire attention quand vous ouvrez un fichier Power BI Desktop envoyé à partir d’une source non fiable. Si ce fichier contient des modèles composites, cela signifie que les informations récupérées à partir d’une source en utilisant les informations d’identification de l’utilisateur qui ouvre le fichier sont envoyées vers une autre source de données dans le cadre de la requête. Les informations peuvent être vues par l’auteur malveillant du fichier Power BI Desktop. La première fois que vous ouvrez un fichier Power BI Desktop contenant plusieurs sources, Power BI Desktop affiche un avertissement. Cet avertissement est similaire à l’avertissement affiché lors de l’ouverture d’un fichier contenant des requêtes SQL natives.  
 

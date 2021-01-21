@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 1/13/2021
 LocalizationGroup: Premium
-ms.openlocfilehash: 005f6c72dd67282e2f15ceb3c91fb74d7e723712
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: e5edcde0f367c573c86aaac1b7f14397614eeedf
+ms.sourcegitcommit: 396633fc5f7cff1f7d518f558b20043b2e05a513
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412250"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191638"
 ---
 # <a name="power-bi-premium-per-user-faq-preview"></a>Questions fréquentes (FAQ) sur Power BI Premium par utilisateur (préversion)
 
@@ -46,15 +46,21 @@ Cet article regroupe des questions et des réponses dans les catégories suivant
 4.  **Est-il possible de faire un essai ?**
 
     Deux expériences d’essai sont proposées : dans le produit et par le biais de Microsoft 365. Tout utilisateur, à supposer que son organisation n’ait pas restreint PPU, peut accéder à l’expérience d’essai dans le produit en activant Premium par utilisateur pour un espace de travail. L’expérience d’essai par le biais de Microsoft 365 peut être activée dans le portail de la même façon qu’un essai de Power BI Pro aujourd’hui.  
+    
+5.  **Mon essai initial a expiré et nous sommes toujours durant la période de préversion.  Comment étendre/renouveler mon essai pour Premium par utilisateur pendant la période de préversion ?**
 
-5.  **Quelles sont les fonctionnalités disponibles dans Premium par utilisateur ?**
+    Les clients qui utilisent l’essai gratuit dans le produit peuvent commencer un nouvel essai gratuit à tout moment après l’expiration de l’essai gratuit initial en cliquant sur l’icône de leur profil en haut à droite du portail.  Une option sera disponible pour leur permettre de valider  un nouvel essai gratuit de 60 jours.  Cette option sera disponible tout au long de la période de préversion.  
+    
+    Si vous utilisez l’essai gratuit offert par le biais de Microsoft 365, votre administrateur de locataire peut étendre votre période d’essai initiale de 30 jours pendant 30 jours supplémentaires. Il s’agit de la durée maximale pendant laquelle l’essai gratuit peut être étendu.
+
+6.  **Quelles sont les fonctionnalités disponibles dans Premium par utilisateur ?**
 
     Voici la grille de comparaison des fonctionnalités :    
 
     ![Premium par utilisateur - Comparaison des fonctionnalités](media/service-premium-per-user-faq/premium-per-user-faq-02.png)
 
 
-6.  **Mon organisation a déjà Power BI Premium. Ai-je besoin d’une licence Premium par utilisateur pour publier du contenu sur ma capacité ?**
+7.  **Mon organisation a déjà Power BI Premium. Ai-je besoin d’une licence Premium par utilisateur pour publier du contenu sur ma capacité ?**
     
     Votre organisation peut choisir de compléter sa capacité Premium par des licences Premium par utilisateur, mais cela n’est pas nécessaire pour publier du contenu sur des capacités existantes.  
 
@@ -89,6 +95,10 @@ Cet article regroupe des questions et des réponses dans les catégories suivant
 7.  **Les API de capacité sont-elles disponibles pour la version Premium par utilisateur ?**
 
     Un ensemble limité d’API est disponible pour permettre le déplacement des espaces de travail, mais vous ne pouvez pas effectuer d’opérations telles que la désactivation de charges de travail.  
+    
+7.  **Les principaux de service sont-ils pris en charge avec les espaces de travail Premium par utilisateur ?**
+
+    Non, nous ne prenons pas en charge les principaux de service dans les espaces de travail Premium par utilisateur actuellement.  
 
 
 ## <a name="end-user-experience-questions"></a>Questions sur l’expérience utilisateur final
@@ -113,9 +123,10 @@ Cet article regroupe des questions et des réponses dans les catégories suivant
 
     Premium par utilisateur fonctionne de la même façon que les cas d’usage incorporés dans le cadre d’une licence Pro. Si vous incorporez du contenu, chaque utilisateur devra disposer d’une licence PPU pour y accéder.
 
-5.  **Qu’advient-il de mon espace de travail PPU quand mon essai arrive à expiration ?**
+5.  **Qu’arrive-t-il à mon espace de travail PPU à la fin de la période de préversion si je choisis de ne pas acheter de licences Premium par utilisateur ?**
 
-    Les utilisateurs auront toujours accès à l’espace de travail. Toutefois, le contenu qui nécessite ce type de licence ne sera pas disponible. Vous devrez soit déplacer l’espace de travail vers une capacité Premium, soit simplement désactiver l’exigence. 
+    Vos utilisateurs et vous-même aurez toujours accès à l’espace de travail. Toutefois, le contenu qui nécessite ce type de licence ne sera pas disponible. Vous devrez soit déplacer l’espace de travail vers une capacité Premium, soit simplement désactiver l’exigence. 
+
 6.  **Quelle est la quantité totale de stockage offerte par Premium par utilisateur ?**
 
     En termes de stockage, l’ensemble du locataire est soumis à la même limite de 100 To que dans le cadre d’une capacité Premium.

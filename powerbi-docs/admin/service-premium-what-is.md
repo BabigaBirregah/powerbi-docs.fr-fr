@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 01/06/2021
+ms.date: 01/18/2021
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: c1e5cad6ab1da796d2f10a64e867d5848e86aea4
-ms.sourcegitcommit: b4c457bfb4676381dc4a0d04d965e8dab0bc230e
+ms.openlocfilehash: c89cf7b00d5167ffb68a491a9cfdcea21378dfd5
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98155615"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565145"
 ---
 # <a name="what-is-power-bi-premium"></a>Qu’est-ce que Power BI Premium ?
 
@@ -87,6 +87,15 @@ Les limitations connues suivantes s’appliquent actuellement à Premium Gen2 :
     |SQL Server Management Studio (SSMS)|18,8|8 décembre 2020|
     |SQL Server Data Tools (SSDT)|2.9.15|Disponibilité générale : 30 novembre 2020|
     | AS PowerShell| Supérieure à 21.1.18229|26 novembre 2020|
+
+5.  La réaffectation d’un espace de travail contenant des flux de données d’une capacité Premium Gen2 à une autre capacité Premium dans une région différente n’est pas prise en charge. Le déplacement d’un modèle de format à stockage volumineux d’une capacité Premium à une autre n’est pas non plus pris en charge. Si vous avez déjà migré vers une capacité dans une autre région, effectuez l’une des étapes suivantes pour restaurer les fonctionnalités :
+ 
+    1.  Créer un nouvel espace de travail et copier les dataflows
+    2.  Migrer l’espace de travail vers la capacité dans la région précédente
+    3.  Revenir à Premium Gen 1
+
+Cette limitation est susceptible de disparaître lors de la disponibilité générale (GA) de Premium Gen 2.
+
 
 ## <a name="subscriptions-and-licensing"></a>Abonnements et gestion des licences
 
@@ -184,7 +193,7 @@ Le processus qui consiste à supprimer un modèle de la mémoire est appelé *é
 
 Il est important de souligner que l’éviction des jeux de données est un comportement normal sur la capacité. La capacité s’efforce d’équilibrer l’utilisation de la mémoire en gérant le cycle de vie en mémoire des modèles d’une manière transparente pour les utilisateurs. Un taux élevé d’évictions ne signifie pas nécessairement que la capacité n’a pas suffisamment de ressources. Cela peut cependant devenir un problème si les performances des requêtes ou des actualisations sont dégradées en raison de la surcharge liée à des chargements et des suppressions répétés des modèles dans un laps de temps limité.
 
-L’actualisation des modèles d’importation sollicite toujours beaucoup la mémoire, car les modèles doivent être chargés en mémoire. De la mémoire intermédiaire supplémentaire est également nécessaire pour les traitements. Une actualisation complète peut utiliser approximativement le double de la quantité de mémoire nécessaire pour le modèle, car Power BI gère un instantané existant du modèle en mémoire jusqu’à ce que l’opération de traitement soit terminée. Ceci permet au modèle d’être interrogé même quand il est en cours de traitement. Les requêtes peuvent être envoyées à l’instantané existant du modèle jusqu’à ce que l’actualisation soit terminée et que les nouvelles données du modèle soient disponibles.
+L’actualisation des modèles d’importation sollicite toujours beaucoup la mémoire, car les modèles doivent être chargés en mémoire. De la mémoire intermédiaire supplémentaire est également nécessaire pour les traitements. Une actualisation complète peut utiliser approximativement le double de la quantité de mémoire nécessaire pour le modèle, car Power BI gère un instantané existant du modèle en mémoire jusqu’à ce que l’opération de traitement soit terminée. Ceci permet d’interroger le modèle même quand il est en cours de traitement. Les requêtes peuvent être envoyées à l’instantané existant du modèle jusqu’à ce que l’actualisation soit terminée et que les nouvelles données du modèle soient disponibles.
 
 L’actualisation incrémentielle effectue l’actualisation des partitions au lieu d’une actualisation complète du modèle, est généralement plus rapide et nécessite moins de mémoire, et elle peut considérablement réduire l’utilisation des ressources de la capacité. Les actualisations de modèles peuvent elles aussi solliciter le processeur de façon intensive, en particulier pour les modèles qui contiennent des transformations Power Query complexes, ou des tables ou des colonnes calculées qui sont complexes ou basées un grand volume de données.
 
@@ -299,7 +308,7 @@ Les rapports paginés, qui sont pris en charge par les références SKU P1-P3 e
 Dans Power BI Premium, les rapports paginés sont une charge de travail qui doit être activée pour une capacité à l’aide du portail d’administration. Les administrateurs de capacités peuvent l’activer, puis spécifier une quantité de mémoire sous la forme d’un pourcentage de la mémoire globale de la capacité. Contrairement aux autres types de charges de travail, Power BI Premium génère les rapports paginés dans un espace contenu au sein de la capacité. La mémoire maximale spécifiée pour cet espace est utilisée, que la charge de travail soit activée ou non. Par défaut, le pourcentage de mémoire est défini sur 20 %.
 
 > [!NOTE]
-> Dans **Premium Gen2 (préversion)** , la mémoire n’est pas gérée pour les rapports paginés. Avec Premium Gen2, les rapports paginés sont pris en charge sur les références SKU EM1-EM3 et A1-A3.
+> Dans **Premium Gen2 (préversion)** , la mémoire n’est pas gérée pour les rapports paginés. Avec Premium Gen2, les rapports paginés sont pris en charge sur les références SKU EM1-EM3.
 
 ### <a name="paginated-reports-and-premium-gen2"></a>Rapports paginés et Premium Gen2
 
@@ -333,7 +342,7 @@ Pour plus d’informations, consultez [Gestion des licences Power BI](service-a
 
 ## <a name="analysis-services-in-power-bi-premium"></a>Analysis Services dans Power BI Premium
 
-Le **moteur Analysis Services Vertical**, validé par Microsoft, alimente en arrière-plan les jeux de données et les espaces de travail Power BI Premium. Analysis Services fournit la programmabilité ainsi que la prise en charge des applications et des outils clients par le biais de bibliothèques clientes et d’API qui prennent en charge le protocole XMLA ouvert. Par défaut, les charges de travail des jeux de données de capacité Power BI Premium prennent en charge les opérations *en lecture seule* provenant des applications et outils clients tiers et Microsoft, par le biais d’un **point de terminaison XMLA**. Les administrateurs de capacité peuvent également choisir de désactiver ou d’autoriser des opérations de *lecture/écriture* via le point de terminaison.
+Le **moteur Vertipaq Analysis Services**, validé par Microsoft, alimente en arrière-plan les jeux de données et les espaces de travail Power BI Premium. Analysis Services fournit la programmabilité ainsi que la prise en charge des applications et des outils clients par le biais de bibliothèques clientes et d’API qui prennent en charge le protocole XMLA ouvert. Par défaut, les charges de travail des jeux de données de capacité Power BI Premium prennent en charge les opérations *en lecture seule* provenant des applications et outils clients tiers et Microsoft, par le biais d’un **point de terminaison XMLA**. Les administrateurs de capacité peuvent également choisir de désactiver ou d’autoriser des opérations de *lecture/écriture* via le point de terminaison.
 
 Avec un accès en lecture seule, les outils Microsoft comme SQL Server Management Studio (SSMS) et SQL Server Profiler, ainsi que les applications tierces telles que DAX Studio et les applications de visualisation des données, peuvent se connecter aux jeux de données Premium et les interroger à l’aide d’événements XMLA, DAX, MDX, DMV et Trace. Avec un accès en lecture/écriture, les outils de modélisation des données d’entreprise, tels que Visual Studio avec l’extension de projets Analysis Services ou l’éditeur tabulaire Open source, peuvent déployer des modèles tabulaires en tant que jeu de données dans un espace de travail Premium. Et, avec des outils tels que SSMS, les administrateurs peuvent utiliser TMSL (Tabular Model Scripting Language) pour écrire des modifications de métadonnées et des scénarios d’actualisation des données avancés. 
 

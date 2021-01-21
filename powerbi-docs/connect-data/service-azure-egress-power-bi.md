@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 01/19/2021
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 8fec8f4fa7a78a69693d4a200baa14e905cee943
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: ec47968294e0fd905d1733bdb30ae1840069aed7
+ms.sourcegitcommit: 96080432af4c8e3fe46c23274478ccffa0970efb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96410686"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597467"
 ---
 # <a name="power-bi-and-azure-egress"></a>Sortie Azure et Power BI
 
-Quand vous utilisez Power BI avec des sources de données Azure, vous pouvez éviter des frais de sortie Azure en vous assurant que votre locataire Power BI se trouve dans la même région que vos sources de données Azure.
+Le déplacement de données (sortie) hors des centres de données Azure peut entraîner des frais de bande passante. Quand vous utilisez Power BI avec des sources de données Azure, vous pouvez éviter des frais de sortie Azure en vous assurant que votre locataire Power BI se trouve dans la même région que vos sources de données Azure.
 
 Quand votre locataire Power BI est déployé sur la même région Azure que celle sur laquelle vous déployez vos sources de données, vous n’encourez pas de frais de sortie pour l’actualisation planifiée et les interactions DirectQuery. 
 
@@ -32,8 +32,9 @@ Pour les clients Multi-Géo Power BI Premium, si votre locataire Power BI ne se 
 
 Pour plus d’informations sur Power BI Premium ou la fonctionnalité Multi-Géo, consultez les ressources suivantes :
 
-* [Qu’est-ce que Microsoft Power BI Premium ?](../admin/service-premium-what-is.md)
+* [Détails de la tarification de la bande passante Azure](https://azure.microsoft.com/pricing/details/bandwidth/)
+* [Présentation de Microsoft Power BI Premium](../admin/service-premium-what-is.md)
 * [Acheter Power BI Premium](../admin/service-admin-premium-purchase.md)
-* [Prise en charge de Multi-Géo dans Power BI Premium (préversion)](../admin/service-admin-premium-multi-geo.md)
+* [Prise en charge de zones géographiques multiples dans Power BI Premium (préversion)](../admin/service-admin-premium-multi-geo.md)
 * [Où est situé mon locataire Power BI ?](../admin/service-admin-where-is-my-tenant-located.md)
-* [Questions fréquentes Power BI Premium](../admin/service-premium-faq.md)
+* [FAQ Power BI Premium](../admin/service-premium-faq.md)

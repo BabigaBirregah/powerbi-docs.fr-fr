@@ -10,12 +10,12 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 04/06/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: 83ba0234ef4f4e350f413f3c934e2f09f0a9a3f2
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: 59e88818adee9aaf893d9f32fe96386c3f7ac47e
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412779"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565789"
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi"></a>Utiliser le segment de plages numériques dans Power BI
 
@@ -84,3 +84,4 @@ Les considérations et limitations suivantes s’appliquent à l’utilisation d
 * Le sélecteur de plages numériques filtre chaque ligne sous-jacente dans les données, mais pas de valeur agrégée. Par exemple, supposez que vous utilisez un champ *Montant des ventes*. Le segment filtre alors chaque transaction en fonction du montant des ventes, et non de la somme du montant des ventes pour chaque point de données d’un visuel.
 * Cela ne fonctionne pas actuellement avec des mesures.
 * Vous pouvez taper n’importe quel nombre dans un sélecteur numérique, même s’il se trouve en dehors de la plage de valeurs de la colonne sous-jacente. Cette option vous permet de configurer des filtres si vous savez que les données peuvent changer ultérieurement.
+* Le segment de plage de dates autorise toute valeur de date, même si elle n’existe pas dans la colonne de date sous-jacente.

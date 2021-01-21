@@ -8,17 +8,17 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi
 ms.topic: conceptual
-ms.date: 02/16/2020
-ms.openlocfilehash: bd700ae7c6c175f4e9cf7841ce308a275ba9babb
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.date: 01/14/2021
+ms.openlocfilehash: a7da63efcc991da57eba9c6b9bb6b9527ad66e1f
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96393030"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227373"
 ---
 # <a name="monitor-report-performance-in-power-bi"></a>Surveiller les performances du rapport dans Power BI
 
-Surveillez les performances des rapports dans Power BI Desktop à l’aide de l’[application Power BI Premium Metrics](../admin/service-premium-metrics-app.md), découvrez où se trouvent les goulots d’étranglement et apprenez à améliorer les performances des rapports.
+Supervisez les performances des rapports dans Power BI Desktop à l’aide de l’[Analyseur de performances](../create-reports/desktop-performance-analyzer.md), et supervisez les performances du contenu déployé dans la capacité Power BI Premium de votre organisation à l’aide de l’[application Power BI Premium Capacity Metrics](../admin/service-premium-metrics-app.md). Découvrez où se trouvent les goulots d’étranglement et comment améliorer les performances des rapports.
 
 La surveillance des performances est utile dans les cas suivants :
 

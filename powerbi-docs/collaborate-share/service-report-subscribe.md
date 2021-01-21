@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/08/2021
+ms.date: 01/13/2021
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 1253c2b2548a7e6333840b8d33fdf255d5634be5
-ms.sourcegitcommit: f791eef8e885f18c48997c9af63ab56211f1ceb8
+ms.openlocfilehash: a72d6632eb8837fd6a0716842dc20a342edcce4b
+ms.sourcegitcommit: ab28cf07b483cb4b01a42fa879b788932bba919d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "98053394"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98227120"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports et tableaux de bord dans le service Power BI
 
@@ -128,7 +128,7 @@ Les administrateurs Power BI peuvent utiliser les journaux d’audit Power BI 
 - L’option permettant de fournir l’accès au rapport/tableau de bord s’affiche toujours comme étant activée quand vous modifiez un abonnement existant.  Si vous désactivez cette option et que vous enregistrez l’abonnement, il enregistre cet état. Cependant, quand vous modifiez à nouveau le rapport, elle est activée par défaut.
 - Si vous avez une adresse e-mail secondaire, mais pas d’adresse e-mail principale, Power BI l’utilise pour remettre l’abonnement.
 - Si vous abonnez des utilisateurs externes à un rapport ou à un tableau de bord, ils reçoivent une notification de partage dès que vous sélectionnez **Enregistrer et fermer** dans le volet d’abonnement. Cette notification est envoyée uniquement aux utilisateurs externes (pas aux utilisateurs internes), car ils ont besoin d’un lien d’invitation pour afficher le rapport ou le tableau de bord. 
-- Il existe une limite du nombre d’abonnés par rapport ou tableau de bord. Si vous dépassez le nombre de 200 abonnés, vous risquez de rencontrer des problèmes de remise.
+- Il existe une limite du nombre d’abonnés par rapport ou tableau de bord. Si vous dépassez le nombre de 200 abonnés, vous risquez de rencontrer des problèmes de remise. Pour réduire le nombre d’abonnés, utilisez plutôt des alias d’e-mails. Chaque alias d’e-mail compte comme un abonné.
 
 ### <a name="dashboards"></a>Tableaux de bord
 
@@ -140,7 +140,7 @@ Les administrateurs Power BI peuvent utiliser les journaux d’audit Power BI 
 
 ### <a name="reports"></a>Rapports
 
-- Pour les abonnements par e-mail aux rapports, si le jeu de données utilise SNL, vous pouvez créer un abonnement pour vous-même. Vous ne pouvez pas abonner d’autres utilisateurs à un rapport auquel la sécurité au niveau des lignes (SNL) est appliquée, excepté pour les rapports paginés. Vous pouvez abonner d’autres utilisateurs à un rapport paginé à l’aide de votre contexte de sécurité. Découvrez-en plus sur l’[abonnement à des rapports paginés](../consumer/paginated-reports-subscriptions.md).
+- Pour les abonnements par e-mail à des rapports paginés et Power BI, si le jeu de données utilise la sécurité au niveau des lignes, vous pouvez créer des abonnements pour vous-même. Vous pouvez également abonner d’autres personnes à un rapport avec la sécurité au niveau des lignes. Ces abonnements seront générés à l’aide de votre contexte de sécurité.
 - Les abonnements aux pages de rapports sont liés au nom de la page de rapport. Si vous vous abonnez à une page de rapport et que vous la renommez, vous devez recréer votre abonnement.
 - Votre organisation peut configurer certains paramètres dans Azure Active Directory, pour limiter la possibilité d’utiliser des abonnements par messagerie électronique dans Power BI. Vous pouvez limiter, entre autres, l’authentification multifacteur ou les restrictions de plage IP pour l’accès aux ressources.
 - Les abonnements aux e-mails ne prennent pas en charge la plupart des [visuels personnalisés](../developer/visuals/power-bi-custom-visuals.md). La seule exception est celle des éléments visuels personnalisés qui ont été [certifiés](../developer/visuals/power-bi-custom-visuals-certified.md).

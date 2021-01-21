@@ -8,14 +8,14 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/18/2019
+ms.date: 01/13/2021
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5f1b3d226fb7b27ebb31879d2f4a5c3489660b94
-ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
+ms.openlocfilehash: a44b6cbbc0517bee50d14447e790f6491483a894
+ms.sourcegitcommit: 1cad78595cca1175b82c04458803764ac36e5e37
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96412917"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98565865"
 ---
 # <a name="use-grouping-and-binning-in-power-bi-desktop"></a>Utiliser le regroupement et le compartimentage dans Power BI Desktop
 Lorsque Power BI Desktop crée des visuels, il regroupe vos données en blocs (ou groupes) en fonction des valeurs trouvées dans les données sous-jacentes. Cela suffit généralement, mais vous pouvez affiner la présentation de ces segments. Par exemple, vous pouvez placer trois catégories de produits dans une catégorie supérieure (un *groupe*). Ou vous pouvez souhaiter afficher les chiffres de ventes dans des compartiments de 1 000 000 dollars, au lieu de compartiments de 923 983 dollars.
@@ -47,7 +47,7 @@ Vous pouvez ajouter une valeur non groupée dans un groupe existant : sélectio
 > Vous pouvez créer des groupes pour n’importe quel champ de la zone **Champs** sans avoir à effectuer une sélection multiple à partir d’un visuel existant. Cliquez avec le bouton de droite et sélectionnez **Nouveau groupe** dans le menu qui s’affiche.
 
 ## <a name="using-binning"></a>Utilisation du compartimentage
-Vous pouvez définir la taille de compartiment des champs numériques et horaires dans **Power BI Desktop.** Vous pouvez utiliser le compartimentage (binning) pour redimensionner correctement les données affichées par Power BI Desktop.
+Vous pouvez définir la taille de compartiment des champs numériques et horaires dans **Power BI Desktop.** Vous pouvez créer des compartiments pour des colonnes calculées, mais pas pour des mesures. Utilisez le compartimentage (binning) pour dimensionner correctement les données affichées par Power BI Desktop.
 
 Pour appliquer une taille de compartiment, cliquez avec le bouton droit sur un **champ** et choisissez **Nouveau groupe**.
 
@@ -57,7 +57,7 @@ Dans la boîte de dialogue **Groupes**, configurez la **taille de compartiment**
 
 ![Taille de compartiment, boîte de dialogue Groupes (Power BI Desktop)](media/desktop-grouping-and-binning/grouping-binning_6.png)
 
-Lorsque vous sélectionnez **OK**, vous remarquez qu’un nouveau champ s’affiche dans le volet **Champs** et que **(compartiments)** a été ajouté. Vous pouvez ensuite faire glisser ce champ sur le canevas pour utiliser la taille de compartiment dans un visuel.
+Lorsque vous sélectionnez **OK**, vous remarquez qu’un nouveau champ s’affiche dans le volet **Champs** et que **(compartiments)** a été ajouté. Vous pouvez ensuite faire glisser ce champ sur le canevas pour utiliser la taille de classe dans un visuel.
 
 ![Faites glisser le champ des compartiments sur le canevas (Power BI Desktop)](media/desktop-grouping-and-binning/grouping-binning_7.png)
 

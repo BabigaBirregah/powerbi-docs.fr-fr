@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 12/14/2020
-ms.openlocfilehash: a11ac8edb9abab29f58c3e4eda15ae204d105b26
-ms.sourcegitcommit: 46cf62d9bb33ac7b7eae7910fbba6756f626c65f
+ms.openlocfilehash: f9a3558bd83f9c2e263d69ad37c3e985c2c6199a
+ms.sourcegitcommit: 96080432af4c8e3fe46c23274478ccffa0970efb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97491733"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597599"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Que sont les applications modèles Power BI ?
 
@@ -44,7 +44,12 @@ Les applications modèles Power BI permettent aux utilisateurs de Power BI Pro
     :::column-end:::
 :::row-end:::
 
+ > [!NOTE] 
+ > Les applications de la Place de marché ne sont pas disponibles pour les instances de cloud US Government. Pour plus d’informations, consultez [Power BI pour les clients du gouvernement des États-Unis](../admin/service-govus-overview.md).
+
+
 ## <a name="process"></a>Processus
+
 Le processus général de développement et de soumission d’une application modèle implique plusieurs étapes. Certaines étapes peuvent inclure plusieurs activités simultanées.
 
 
